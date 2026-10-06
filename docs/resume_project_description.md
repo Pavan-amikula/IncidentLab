@@ -36,9 +36,5 @@ IncidentLab is an end-to-end ML and observability project for detecting cloud se
 
 **Boundaries:** This is completed research plus a controlled local deployment demonstration. External transfer was weak. Long-duration reliability, log rotation, repeated restarts, independent healthy/onset labels, authenticated multi-user serving and company-scale validation remain open. New LLM generation and automatic remediation are disabled.
 
-## Keywords supported by the work
 
-Machine Learning Engineering; End-to-End ML Pipeline; Data Engineering; Telemetry Processing; Multimodal Features; Anomaly Detection; Time-Series Modeling; GRU; PyTorch; Isolation Forest; scikit-learn; Model Calibration; Train/Validation/Test Splits; External Validation; CPU Inference; Model Serving; FastAPI; REST APIs; Docker; Kubernetes; kind; Microservices; Distributed Tracing; Cloud Observability; Fault Injection; Incident Investigation; SQLite; Durable Ingestion; Deduplication; Chronological Replay; Reproducible Experiments; ROC-AUC; Precision-Recall; Confusion Matrix.
-
-Do not add AWS/Azure/GCP deployment, production-scale reliability, reliable LLM diagnosis, automated remediation or ML-only 100% fault recall: those are not demonstrated.
 
