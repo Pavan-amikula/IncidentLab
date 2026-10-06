@@ -1,14 +1,32 @@
-# IncidentLab
+# 🔍 IncidentLab
 
-### End-to-end ML for cloud incident detection and evidence-supported investigation
+### ML-Based Cloud Incident Detection and Investigation
 
 **Python · PyTorch · scikit-learn · FastAPI · Docker · Kubernetes (kind) · SQLite**
 
-IncidentLab connects multimodal telemetry research with a real three-service HTTP testbed. It processes logs, metrics and traces, compares anomaly-detection models, serves frozen checkpoints on CPU, and investigates controlled faults using request evidence.
+Detect unusual service behavior. Follow request evidence. Understand how a fault spreads across microservices.
 
-**Status:** Research and the controlled laptop demonstration are complete. Industrial reliability remains unverified. New LLM generation and automatic remediation are disabled.
+IncidentLab combines **machine learning, cloud observability and controlled fault experiments** in an end-to-end project. It processes logs, metrics and distributed traces, evaluates anomaly-detection models, serves saved checkpoints on CPU and presents evidence through an interactive dashboard.
 
-## Measured results
+> **Status:** Research and the controlled local Kubernetes demonstration are complete. Industrial reliability remains unverified. New LLM generation and automatic remediation are disabled.
+
+## 💡 What problem does it solve?
+
+A slow inventory service can make checkout and frontend look slow too. An alert tells you something changed; request traces help explain where the change occurred and which services were affected.
+
+IncidentLab connects those two steps: **detect abnormal behavior, then investigate it using captured telemetry**.
+
+## ✨ Features
+
+- **Multimodal ML:** Features from logs, metrics and traces; Isolation Forest, boosting and a temporal GRU.
+- **CPU serving:** Frozen checkpoints and FastAPI inference without an NVIDIA GPU.
+- **Interactive dashboard:** Research replay, bounded HTTP demos, cluster evidence and downloadable figures.
+- **Durable telemetry:** SQLite ingestion, duplicate rejection, chronological replay and restart state.
+- **Fault experiments:** Frontend → checkout → inventory, with delay, HTTP-error and unavailability trials.
+- **Evidence-supported investigation:** Request timing, status codes, dependency traces and capture reports.
+- **Reproducible evaluation:** Saved predictions, reports, source hashes and held-out workloads.
+
+## 📊 Measured results
 
 | Evaluation | Result | Meaning |
 |---|---:|---|
@@ -23,7 +41,7 @@ IncidentLab connects multimodal telemetry research with a real three-service HTT
 
 Operational results include latency/error envelopes and coverage checks. They are not ML-only results. The frozen GRU alerted on only 3/24 external AnoMod fault runs; missing healthy/onset labels prevent an external precision/F1 claim. Capture review found 21 incomplete successful trace chains near pod deletion. Negative results remain included.
 
-## Architecture
+## 🧭 Architecture
 
 ```mermaid
 flowchart LR
@@ -41,7 +59,7 @@ flowchart LR
 
 Research features and the live HTTP detector use separate schemas/checkpoints. The applications run in Kubernetes pods during cluster experiments; inference, capture and the dashboard run on the Windows host. The local HTTP demo does not require Docker.
 
-## Run on Windows, CPU only
+## 🚀 Quick start — Windows, CPU only
 
 Prerequisite: official 64-bit Python 3.14 with the `py` launcher. This setup installs CPU dependencies, verifies publication hashes and loads saved checkpoints. It does not retrain models or download raw datasets.
 
@@ -52,7 +70,14 @@ powershell -ExecutionPolicy Bypass -File .\Setup-GitHub.ps1
 powershell -ExecutionPolicy Bypass -File .\Start-Laptop.ps1
 ```
 
-Open **http://127.0.0.1:8768/**. Choose **Live demo**, run healthy traffic first, then run the Inventory delay test. The bounded demo lasts one minute and collects 20 observation windows. Saved results remain available afterward.
+Open **http://127.0.0.1:8768/**.
+
+1. Choose **Live demo** and run healthy traffic.
+2. Run the **Inventory delay** test.
+3. Compare latency, errors and warnings; inspect request evidence.
+4. Open **Figures** to view or export evaluation charts.
+
+The bounded demo lasts one minute and collects 20 observation windows. Saved results remain available afterward. Opening the dashboard does not launch training.
 
 ```powershell
 # Run the lean CPU suite after setup.
@@ -61,7 +86,7 @@ Open **http://127.0.0.1:8768/**. Choose **Live demo**, run healthy traffic first
 
 This GitHub edition uses `Setup-GitHub.ps1` and `repository_manifest.json`. Historical transfer scripts/manifests describe the original full ZIP and are retained for provenance; do not use them as the GitHub edition installer.
 
-## Docker and Kubernetes
+## 🐳 Docker and Kubernetes
 
 **Docker's Linux engine must run for fresh cluster workloads.** Its window can be minimized. Saved research/results/figures and the native localhost demo do not need it.
 
@@ -73,7 +98,7 @@ kubectl --context kind-incidentlab -n incidentlab-testbed get pods
 
 For a fresh cluster, follow [the measured laptop deployment procedure](docs/laptop_execution_20261006.md), including the compatibility and owned-testbed termination settings used in this run. The runner exposes Check, Deploy, Quick and Validate. Quick takes about five minutes and Validate about 21 minutes plus overhead. Do not rerun expensive research training just to demonstrate the dashboard.
 
-## Report figures
+## 📈 Figures and reports
 
 ![GRU confusion matrix](artifacts/report_figures/research-gru-confusion.png)
 
@@ -81,7 +106,7 @@ For a fresh cluster, follow [the measured laptop deployment procedure](docs/lapt
 
 Confusion matrices, per-system ROC/PR curves, original training curves and measured timelines are available in [PNG/SVG/PDF with exact figure data](artifacts/report_figures/). Research curves use saved scores; cluster matrices use control-completion timing proxies and exclude crossing windows. Trial impact was reviewed against traces, not independently labeled for every window.
 
-## Start reading here
+## 📚 Documentation
 
 | Reader | Document |
 |---|---|
@@ -95,7 +120,7 @@ Confusion matrices, per-system ROC/PR curves, original training curves and measu
 
 The report's PDF is a reviewed two-column fallback because the built-in LaTeX compiler failed on this host. IEEEtran source is editable; publication and venue-compliant compilation are not claimed.
 
-## Repository map
+## 🗂️ Repository structure
 
 - `incidentlab/`: processing, models, telemetry collection, APIs and runtime.
 - `scripts/`: acquisition/preprocessing, evaluation, replay checks and figure/report builders.
@@ -110,12 +135,10 @@ The report's PDF is a reviewed two-column fallback because the built-in LaTeX co
 
 Virtual environments, CUDA libraries, transformer/LLM weights, runtime databases and transient process logs are omitted. New local databases are created as needed. The publication inventory preserves hashes of included evidence. Serialized checkpoints should only be loaded from a trusted copy of this repository.
 
-## Limitations and next work
+## 🔬 Limitations and next steps
 
-Long-duration reliability, independent external healthy/onset labels, log rotation/repeated restart capture, authenticated multi-user deployment and company-scale testing remain open. This is a cloud-relevant local ML project, not an AWS/Azure/GCP production deployment. An alert or service ranking alone does not prove a root cause.
-
-## Author and attribution
-
-**Amikula Pavan Kumar Goud** — MSc Computer Science Student, Blekinge Institute of Technology, Karlskrona, Sweden.
-
-RCAEval and other external datasets belong to their respective creators. Original academic references and source records are retained. Historical college-PC paths and older “pending” notes remain provenance; dated laptop reports describe the subsequent execution.
+- External transfer was weak; results do not establish universal detection reliability.
+- Long-duration reliability, log rotation and repeated restart capture require further validation.
+- Independent external healthy/onset labels, authenticated multi-user serving and company-scale testing remain open.
+- This is a cloud-relevant local research and deployment project, not an AWS/Azure/GCP production deployment.
+- An anomaly alert or service ranking alone does not prove a root cause.
