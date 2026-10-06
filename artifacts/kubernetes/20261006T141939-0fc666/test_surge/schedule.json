@@ -1,0 +1,10 @@
+{
+  "kind": "surge",
+  "target": null,
+  "phase": "test_surge",
+  "onset": null,
+  "recovery": null,
+  "dropped": 0,
+  "commands": [],
+  "label_semantics": "Control command completion proxy; actual workload onset requires trace review"
+}

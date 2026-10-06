@@ -1,0 +1,30 @@
+{
+  "version": "anomod-transfer-v1",
+  "models": {
+    "temporal_best.pt": "5375557b97ac324d8b90ef9fcbd8c8fd3d26b3d3e8577b0530ad6b603fbc66ab",
+    "supervised_reference.joblib": "5df5f3f251a136d63425c22956f2c00c3eb58e7343ddd95b691b532ce8b43c9e"
+  },
+  "references": {
+    "TT_data": "c2874d49862d40b534862c9209f6be1a978f90b52334c210403ac878d7d31bd9",
+    "SN_data": "3704d6775ce5277f3b18112510c598d7d41085a824e5b9fcf1bf5642772930b1"
+  },
+  "reference_access": "Whole author-designated healthy run only; fixed robust scaling; no model retraining",
+  "thresholds": {
+    "temporal": {
+      "TT_data": 0.8923273533582687,
+      "SN_data": 0.8923273533582687
+    },
+    "boosting": {
+      "TT_data": 0.9565451794149058,
+      "SN_data": 0.9763558124658233
+    }
+  },
+  "unseen_system_policy": "SN uses maximum existing RCAEval system threshold, chosen before fault inference",
+  "interval_policy": "Complete minutes within metric coverage; begin at least 300 seconds after nominal case-start timestamp",
+  "labels": "Case directories denote designed fault runs. Per-window active-fault ground truth not available.",
+  "scoring": "Fault-run alert coverage and window alert fraction; no precision, F1, detection-delay or healthy false-alert claims",
+  "sources": "CPU/memory and traces; SocialNetwork logs. TrainTicket logs excluded for unresolved timezone.",
+  "unsupported_service": "No healthy reference => all sources unavailable and service excluded from ranking",
+  "source_changes": "Synthetic SkyWalking error indicator; six unmapped metric kinds explicit missing",
+  "no_external_tuning": true
+}

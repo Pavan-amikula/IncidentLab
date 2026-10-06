@@ -1,0 +1,1374 @@
+{
+  "scope": "Designated healthy reference directories only. Fault telemetry and labels not read.",
+  "training_performed": false,
+  "predictions_performed": false,
+  "systems": {
+    "TT_data": {
+      "metrics": [
+        {
+          "file": "TT_data\\metric_data\\Normal_case_em_20251103T134716Z\\Normal_case_em_20251103T134716Z_metrics_20251103_140128.csv",
+          "rows": 217605,
+          "columns": [
+            "metric_name",
+            "timestamp",
+            "datetime",
+            "value",
+            "app",
+            "app_kubernetes_io_component",
+            "app_kubernetes_io_instance",
+            "app_kubernetes_io_managed_by",
+            "app_kubernetes_io_name",
+            "app_kubernetes_io_part_of",
+            "app_kubernetes_io_version",
+            "beta_kubernetes_io_arch",
+            "beta_kubernetes_io_os",
+            "code",
+            "container",
+            "controller_revision_hash",
+            "cpu",
+            "device",
+            "device_error",
+            "fstype",
+            "handler",
+            "helm_sh_chart",
+            "id",
+            "image",
+            "instance",
+            "interface",
+            "job",
+            "k8s_app",
+            "kubernetes_io_arch",
+            "kubernetes_io_cluster_service",
+            "kubernetes_io_hostname",
+            "kubernetes_io_name",
+            "kubernetes_io_os",
+            "kubernetes_name",
+            "kubernetes_namespace",
+            "kubernetes_pod_name",
+            "method",
+            "mode",
+            "mountpoint",
+            "name",
+            "namespace",
+            "node_kubernetes_io_exclude_from_external_load_balancers",
+            "node_role_kubernetes_io_control_plane",
+            "plugin_name",
+            "pod",
+            "pod_template_generation",
+            "state"
+          ],
+          "metric_names": {
+            "node_cpu_seconds_total": 17136,
+            "container_cpu_usage_seconds_total": 11584,
+            "rate(node_cpu_seconds_total[5m])": 15792,
+            "node_load5": 153,
+            "node_memory_MemAvailable_bytes": 153,
+            "node_memory_MemTotal_bytes": 153,
+            "node_memory_MemFree_bytes": 153,
+            "container_memory_usage_bytes": 15701,
+            "container_memory_working_set_bytes": 15701,
+            "container_spec_memory_limit_bytes": 13248,
+            "node_filesystem_avail_bytes": 306,
+            "node_filesystem_size_bytes": 306,
+            "rate(node_disk_read_bytes_total[5m])": 141,
+            "rate(node_disk_written_bytes_total[5m])": 141,
+            "node_disk_io_time_seconds_total": 153,
+            "node_network_receive_bytes_total": 12416,
+            "node_network_transmit_bytes_total": 12416,
+            "node_network_receive_drop_total": 12416,
+            "node_network_transmit_drop_total": 12416,
+            "node_network_receive_errs_total": 12416,
+            "node_network_transmit_errs_total": 12416,
+            "container_network_receive_errors_total": 5905,
+            "container_network_transmit_errors_total": 5905,
+            "up": 853,
+            "http_requests_total": 68,
+            "process_open_fds": 1406,
+            "process_cpu_seconds_total": 703,
+            "process_resident_memory_bytes": 703,
+            "container_processes": 15701,
+            "container_memory_failcnt": 15701,
+            "container_cpu_cfs_throttled_periods_total": 4130,
+            "volume_manager_total_volumes": 510,
+            "process_max_fds": 703
+          },
+          "services": [
+            "alertsnitch",
+            "alertsnitch-mysql",
+            "chaos-daemon",
+            "chaos-dashboard",
+            "chaos-dns-server",
+            "chaos-mesh",
+            "chaosblade-operator",
+            "chaosblade-tool",
+            "coredns",
+            "elasticsearch",
+            "etcd",
+            "grafana-core",
+            "init-jacoco",
+            "k8snacos",
+            "kube-apiserver",
+            "kube-controller-manager",
+            "kube-flannel",
+            "kube-proxy",
+            "kube-scheduler",
+            "local-path-provisioner",
+            "mysql",
+            "node-exporter",
+            "prometheus",
+            "rabbitmq",
+            "skywalking",
+            "skywalking-ui",
+            "slowlog",
+            "ts-admin-basic-info-service",
+            "ts-admin-order-service",
+            "ts-admin-route-service",
+            "ts-admin-travel-service",
+            "ts-admin-user-service",
+            "ts-assurance-service",
+            "ts-auth-service",
+            "ts-avatar-service",
+            "ts-basic-service",
+            "ts-cancel-service",
+            "ts-config-service",
+            "ts-consign-price-service",
+            "ts-consign-service",
+            "ts-contacts-service",
+            "ts-delivery-service",
+            "ts-execute-service",
+            "ts-food-delivery-service",
+            "ts-food-service",
+            "ts-gateway-service",
+            "ts-inside-payment-service",
+            "ts-news-service",
+            "ts-notification-service",
+            "ts-order-other-service",
+            "ts-order-service",
+            "ts-payment-service",
+            "ts-preserve-other-service",
+            "ts-preserve-service",
+            "ts-price-service",
+            "ts-rebook-service",
+            "ts-route-plan-service",
+            "ts-route-service",
+            "ts-seat-service",
+            "ts-security-service",
+            "ts-station-food-service",
+            "ts-station-service",
+            "ts-ticket-office-service",
+            "ts-train-food-service",
+            "ts-train-service",
+            "ts-travel-plan-service",
+            "ts-travel-service",
+            "ts-travel2-service",
+            "ts-ui-dashboard",
+            "ts-user-service",
+            "ts-verification-code-service",
+            "ts-voucher-service",
+            "ts-wait-order-service",
+            "xenon"
+          ],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "numeric epoch seconds",
+          "first_timestamp": "1762177723",
+          "last_timestamp": "1762178488",
+          "unique_timestamps": 52,
+          "sha256": "fb96b7022b50cf6becc62b399d55fa9de0c719fc188f8223d6a8367456950f23"
+        }
+      ],
+      "logs": [
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\nacos-0\\nacos-0_20251103_140114.log",
+          "lines": 84,
+          "blank_lines": 11,
+          "timestamp_formats": {
+            "continuation_or_other_format": 64,
+            "leading_iso_or_space_time": 9
+          },
+          "sha256": "2c2ef9a1ad39ee05c440d26c043a585398d1da8d0a43a91b33b6d77ec2293373"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\nacos-1\\nacos-1_20251103_140114.log",
+          "lines": 84,
+          "blank_lines": 11,
+          "timestamp_formats": {
+            "continuation_or_other_format": 64,
+            "leading_iso_or_space_time": 9
+          },
+          "sha256": "d14fc36aaf501cb08010b7729a08b2771829b93ac2f61b34108e30e1365123f5"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\nacos-2\\nacos-2_20251103_140115.log",
+          "lines": 84,
+          "blank_lines": 11,
+          "timestamp_formats": {
+            "continuation_or_other_format": 64,
+            "leading_iso_or_space_time": 9
+          },
+          "sha256": "cf2c611c64be3d992b3c84e0eaf7cec480e3c365e485095898319c3790ca8204"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\nacosdb-mysql-0\\nacosdb-mysql-0_20251103_140115.log",
+          "lines": 196,
+          "blank_lines": 5,
+          "timestamp_formats": {
+            "continuation_or_other_format": 43,
+            "leading_iso_or_space_time": 148
+          },
+          "sha256": "0a7fdcffe9e01c053953d78f584042587247d56bbcfce0692e1246e52ffc50bd"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\nacosdb-mysql-1\\nacosdb-mysql-1_20251103_140115.log",
+          "lines": 194,
+          "blank_lines": 5,
+          "timestamp_formats": {
+            "continuation_or_other_format": 43,
+            "leading_iso_or_space_time": 146
+          },
+          "sha256": "d34e65a67c5028f1c29b3d29a239012843cb7716f80e3258a0d422d8a8cf5a93"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\nacosdb-mysql-2\\nacosdb-mysql-2_20251103_140115.log",
+          "lines": 194,
+          "blank_lines": 5,
+          "timestamp_formats": {
+            "continuation_or_other_format": 43,
+            "leading_iso_or_space_time": 146
+          },
+          "sha256": "d05dbaf2e81bcfc7f0396d504f4591fd04adac5c78ea5363dad1aef1545626fb"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\rabbitmq-6767c689c-g5md9\\rabbitmq-6767c689c-g5md9_20251103_140115.log",
+          "lines": 376,
+          "blank_lines": 7,
+          "timestamp_formats": {
+            "continuation_or_other_format": 36,
+            "leading_iso_or_space_time": 333
+          },
+          "sha256": "124a8f97964c55058c3fc69a7c542dc085d3dbd049bacdc6b7dedad09b341d37"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-admin-basic-info-service-6c76855f8d-rd7kw\\ts-admin-basic-info-service-6c76855f8d-rd7kw_20251103_140116.log",
+          "lines": 60,
+          "blank_lines": 4,
+          "timestamp_formats": {
+            "continuation_or_other_format": 11,
+            "leading_iso_or_space_time": 45
+          },
+          "sha256": "274ce49a4cfca3274885ffc85a6f6d89ff872457a69acd7ce33c7c7262202861"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-admin-order-service-695b8b7f4d-jw5wl\\ts-admin-order-service-695b8b7f4d-jw5wl_20251103_140116.log",
+          "lines": 60,
+          "blank_lines": 4,
+          "timestamp_formats": {
+            "continuation_or_other_format": 11,
+            "leading_iso_or_space_time": 45
+          },
+          "sha256": "d78dab873d14459c97801708af2ae579d8797a579c0435f27da30edd8b2c9e83"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-admin-route-service-54586fbd55-r7zqw\\ts-admin-route-service-54586fbd55-r7zqw_20251103_140116.log",
+          "lines": 60,
+          "blank_lines": 4,
+          "timestamp_formats": {
+            "continuation_or_other_format": 11,
+            "leading_iso_or_space_time": 45
+          },
+          "sha256": "18b701977fad490056df3bb999e2a8877b80ad0d71fb4a73d653dfe0ebac71bc"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-admin-travel-service-6668f5bc69-4whsp\\ts-admin-travel-service-6668f5bc69-4whsp_20251103_140116.log",
+          "lines": 60,
+          "blank_lines": 4,
+          "timestamp_formats": {
+            "continuation_or_other_format": 11,
+            "leading_iso_or_space_time": 45
+          },
+          "sha256": "85095cf1cbffc119fa67f8f7822c411f41a7893a3a23d67aca724295b5c6146c"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-admin-user-service-8cbb68cbb-xg9vj\\ts-admin-user-service-8cbb68cbb-xg9vj_20251103_140116.log",
+          "lines": 60,
+          "blank_lines": 4,
+          "timestamp_formats": {
+            "continuation_or_other_format": 11,
+            "leading_iso_or_space_time": 45
+          },
+          "sha256": "9cd9075cfb747be86ba9612ef4364d3acec3eddaa269716836eef5732754854c"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-assurance-service-59c89d6896-h8xmp\\ts-assurance-service-59c89d6896-h8xmp_20251103_140117.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "7ec0c23b0b258d9537f907c59a5606a7f56460aad17c5478e1938ed5cf38c96d"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-auth-service-67c685bc55-77z9w\\ts-auth-service-67c685bc55-77z9w_20251103_140117.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 948,
+            "leading_iso_or_space_time": 21
+          },
+          "sha256": "3353caf911cd90b69f8ab93be4a36864f7311cf5a7717492f32260d52769815b"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-avatar-service-bd6645bdb-hlcxs\\ts-avatar-service-bd6645bdb-hlcxs_20251103_140117.log",
+          "lines": 7,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "continuation_or_other_format": 7
+          },
+          "sha256": "424a9186967156b2f18e9ae7a94ecee494f7e7c606fa98a5654e13ebc21a1ff3"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-basic-service-6bf4c4bb58-zgbbl\\ts-basic-service-6bf4c4bb58-zgbbl_20251103_140117.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 934,
+            "leading_iso_or_space_time": 35
+          },
+          "sha256": "48878e2cbcd808a77bf17413968af9396f9899254d218be8cb69be683e03b66c"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-cancel-service-7c796f9bc8-775v9\\ts-cancel-service-7c796f9bc8-775v9_20251103_140118.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "13ea7160bc37f86774187404ee02a43674c7f5c7745ff09d8a2b167a6a565ed7"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-config-service-754b6cdc87-656zs\\ts-config-service-754b6cdc87-656zs_20251103_140118.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 944,
+            "leading_iso_or_space_time": 25
+          },
+          "sha256": "121a3106afbb8aef518a673ce557d6627a156ad0d66b8df5c3801d8f2a6ed633"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-consign-price-service-58b47759b7-zxcld\\ts-consign-price-service-58b47759b7-zxcld_20251103_140118.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "c3f173defcb5038c062531a8f8f54236390d61e5433f8e15158943b374e34d35"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-consign-service-8d4d7f8f5-hf7vw\\ts-consign-service-8d4d7f8f5-hf7vw_20251103_140119.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "051cea2a1bd616635341f28e169ba7f014dc685b6736c7d67601a24e5ebc7686"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-contacts-service-556f4d59c8-x4p65\\ts-contacts-service-556f4d59c8-x4p65_20251103_140119.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "b61176b7f86a1928ee356f9a877a987fc11c5dd108d113200eae7ae8fbce06a2"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-delivery-service-6c7ff9df95-fr4lz\\ts-delivery-service-6c7ff9df95-fr4lz_20251103_140119.log",
+          "lines": 92,
+          "blank_lines": 4,
+          "timestamp_formats": {
+            "continuation_or_other_format": 11,
+            "leading_iso_or_space_time": 77
+          },
+          "sha256": "a321a3560ca7513b4f7c7895daa184c09dbb334db1ce2e79771ae7d2456b979c"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-execute-service-54886c6ddb-nvzfs\\ts-execute-service-54886c6ddb-nvzfs_20251103_140119.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "c4742b506dd6ec711f4c129720f50be219edd33a7d929d4b969c78c915e346f9"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-food-delivery-service-7f47847fbb-89bv6\\ts-food-delivery-service-7f47847fbb-89bv6_20251103_140120.log",
+          "lines": 74,
+          "blank_lines": 4,
+          "timestamp_formats": {
+            "continuation_or_other_format": 12,
+            "leading_iso_or_space_time": 58
+          },
+          "sha256": "541d00c1c500060c29f497a51ae17171945ca397263a3f349caa617de6f23ea9"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-food-service-b47c4d979-w9c5v\\ts-food-service-b47c4d979-w9c5v_20251103_140120.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 943,
+            "leading_iso_or_space_time": 26
+          },
+          "sha256": "d8f8ae6ae5e61b373dc6015c68bad4d2b2cdd9a30a3756f2c0731cc3587414ae"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-gateway-service-c69b885c8-gs9p7\\ts-gateway-service-c69b885c8-gs9p7_20251103_140120.log",
+          "lines": 323,
+          "blank_lines": 2,
+          "timestamp_formats": {
+            "continuation_or_other_format": 80,
+            "leading_iso_or_space_time": 241
+          },
+          "sha256": "67c36448483f7566142576648ebf070ec308446bfe689f5eae5e8f379401a6ff"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-inside-payment-service-75b48b87f4-dk297\\ts-inside-payment-service-75b48b87f4-dk297_20251103_140120.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "678ed16635c48749b5fe9dcdf3f841bf2842c1b5839ead91d6890bbe9e6cdae4"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-news-service-796d7db4d5-4kcnm\\ts-news-service-796d7db4d5-4kcnm_20251103_140120.log",
+          "lines": 1,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "continuation_or_other_format": 1
+          },
+          "sha256": "8cb87589d22ccadd029eee50b40791e1ed4587040617c4548a9e8c713a6bd09b"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-notification-service-595655d6b-k2q6k\\ts-notification-service-595655d6b-k2q6k_20251103_140121.log",
+          "lines": 1000,
+          "blank_lines": 37,
+          "timestamp_formats": {
+            "continuation_or_other_format": 945,
+            "leading_iso_or_space_time": 18
+          },
+          "sha256": "9b83f3edd6e8ca90b5bd14bfa53b3c2e2c4981c755898d2a4cbef55da81ddded"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-order-other-service-8bfb495f8-gl86v\\ts-order-other-service-8bfb495f8-gl86v_20251103_140121.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "leading_iso_or_space_time": 31,
+            "continuation_or_other_format": 938
+          },
+          "sha256": "4e094b1c1714d23d7be7fc75632f174748422fd79b1a703117c89276cae5d8db"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-order-service-86d6f7876-fpsqf\\ts-order-service-86d6f7876-fpsqf_20251103_140121.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 943,
+            "leading_iso_or_space_time": 26
+          },
+          "sha256": "bebf6e64a9d7e55488e0726d35c39c6d6f1e40afb11ca55121d4d6a88df3786c"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-payment-service-64c79bdc4b-w8hh4\\ts-payment-service-64c79bdc4b-w8hh4_20251103_140121.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "93c6789bc09cbcce10a77d4dde6b0f23cb0b74338c3fb363a6f813fd5c6db55b"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-preserve-other-service-74499d4d89-wcmdc\\ts-preserve-other-service-74499d4d89-wcmdc_20251103_140122.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "b295c83f77ed2f0b027ed868faf4ef53d4770c4df65553d5991df6eda6367b7b"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-preserve-service-8c99659d6-s4ghw\\ts-preserve-service-8c99659d6-s4ghw_20251103_140122.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "9fb4d850a855c4e38a813275a009c2b0722dd47e7a8d4fa10919d054e32d97dc"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-price-service-68b5d47998-xn95c\\ts-price-service-68b5d47998-xn95c_20251103_140122.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 938,
+            "leading_iso_or_space_time": 31
+          },
+          "sha256": "d578eb502fabb231b7f193309efb308809b514b99abcffde454daf1ce3e66c12"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-rebook-service-75846648d9-p8tgd\\ts-rebook-service-75846648d9-p8tgd_20251103_140122.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "603dbb540a87a298878aa5094525022873e0605b81f7ee514c9e48cf8cf77809"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-route-plan-service-775c567c6-hhjsp\\ts-route-plan-service-775c567c6-hhjsp_20251103_140123.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "de5a1accfe6a35d8d726408a92ecf05f21347739c27586f05a43a3d0c328fdb9"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-route-service-78dd54bb58-cv7rh\\ts-route-service-78dd54bb58-cv7rh_20251103_140123.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 940,
+            "leading_iso_or_space_time": 29
+          },
+          "sha256": "1c255dc0f963136d3bf12709cdd9789f0d6e55f5cb9fbaa44b9021f205397a09"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-seat-service-c898f4dbd-8ph44\\ts-seat-service-c898f4dbd-8ph44_20251103_140123.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 942,
+            "leading_iso_or_space_time": 27
+          },
+          "sha256": "a3d2cd693cde9aa8c48dd77878580dd7d860c32d79e61c1f8599430af899d2dc"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-security-service-84677c445-hqm4l\\ts-security-service-84677c445-hqm4l_20251103_140123.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "b9b858651cd7c788f7ce03f38b0683d9947bd09a9053323b0ad5521665d9d465"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-station-food-service-7d7678c677-9zwvv\\ts-station-food-service-7d7678c677-9zwvv_20251103_140124.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 946,
+            "leading_iso_or_space_time": 23
+          },
+          "sha256": "9e1940a09788387c0fc075e16beab89d0fc823a0caa3665b47cf04ac0148f4be"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-station-service-bdb4858db-wk8rk\\ts-station-service-bdb4858db-wk8rk_20251103_140124.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 937,
+            "leading_iso_or_space_time": 32
+          },
+          "sha256": "a89aeaf94586fd370dcceba51e90c0bd82798b61adbf4d17555a8cb68715b570"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-ticket-office-service-65d5644f89-jtsp7\\ts-ticket-office-service-65d5644f89-jtsp7_20251103_140124.log",
+          "lines": 17,
+          "blank_lines": 2,
+          "timestamp_formats": {
+            "continuation_or_other_format": 15
+          },
+          "sha256": "4e639964f015edc4512429108942a931e25961d79aed9f40025125d3fbbd57b7"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-train-food-service-7786d868cc-l26wq\\ts-train-food-service-7786d868cc-l26wq_20251103_140124.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 948,
+            "leading_iso_or_space_time": 21
+          },
+          "sha256": "9382222ee163871f17a070c02b300c4760e947802748e2abed155150e7f182fa"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-train-service-6944bfccd7-pvlxh\\ts-train-service-6944bfccd7-pvlxh_20251103_140125.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 936,
+            "leading_iso_or_space_time": 33
+          },
+          "sha256": "52ab0a42bdfac0b4bc761382ae13fa585b6a7d0fbfeb92cfb513060013bff9c7"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-travel-plan-service-f86854f75-vnpp5\\ts-travel-plan-service-f86854f75-vnpp5_20251103_140125.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "4a667c05e49833ecc51bcea1c2f366137f7ecb1569356e569c8563cd778db219"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-travel-service-556884f465-9vvkx\\ts-travel-service-556884f465-9vvkx_20251103_140125.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 939,
+            "leading_iso_or_space_time": 30
+          },
+          "sha256": "ee3d6ad5bc418643b5b8217654a97969b6d38c0a79efcf09cc6444939440f9b9"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-travel2-service-565c8bfff7-zttrm\\ts-travel2-service-565c8bfff7-zttrm_20251103_140125.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 932,
+            "leading_iso_or_space_time": 37
+          },
+          "sha256": "0c70f9031a062dacb8ce9c3a80e6fa63b82257e47a4306d3f96f7e4a9293eaec"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-ui-dashboard-98b586bd5-8b4sf\\ts-ui-dashboard-98b586bd5-8b4sf_20251103_140126.log",
+          "lines": 0,
+          "blank_lines": 0,
+          "timestamp_formats": {},
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-user-service-7cdbdb5479-vnkfb\\ts-user-service-7cdbdb5479-vnkfb_20251103_140126.log",
+          "lines": 1000,
+          "blank_lines": 31,
+          "timestamp_formats": {
+            "continuation_or_other_format": 954,
+            "leading_iso_or_space_time": 15
+          },
+          "sha256": "d6f75373b687262e6342a72216c1ac89efce5c0099d195c1f7670ca4346997ae"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-verification-code-service-86cd67b4f9-xqvrw\\ts-verification-code-service-86cd67b4f9-xqvrw_20251103_140126.log",
+          "lines": 1000,
+          "blank_lines": 29,
+          "timestamp_formats": {
+            "continuation_or_other_format": 893,
+            "leading_iso_or_space_time": 78
+          },
+          "sha256": "58541c0db8e8cfba7e8e4d3a01a4d918e4b954142133407c7219d44fa8c41b47"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-voucher-service-689c6c4b4c-b9khr\\ts-voucher-service-689c6c4b4c-b9khr_20251103_140126.log",
+          "lines": 0,
+          "blank_lines": 0,
+          "timestamp_formats": {},
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "TT_data\\log_data\\Normal_case_em_20251103T134716Z\\ts-wait-order-service-6f996bbbdc-bq2f5\\ts-wait-order-service-6f996bbbdc-bq2f5_20251103_140127.log",
+          "lines": 72,
+          "blank_lines": 4,
+          "timestamp_formats": {
+            "continuation_or_other_format": 11,
+            "leading_iso_or_space_time": 57
+          },
+          "sha256": "a0554340091bef5abbedefc624801335733cb07b658d9dc620f93d7eae128204"
+        }
+      ],
+      "traces": [
+        {
+          "file": "TT_data\\trace_data\\Normal_case_em_20251103T134716Z\\Normal_case_em_20251103T134716Z_skywalking_traces_20251103_140200.json",
+          "traces": 4688,
+          "spans": 8458,
+          "collector_lookback_hours": 24.0,
+          "services": [
+            "ts-assurance-service",
+            "ts-auth-service",
+            "ts-basic-service",
+            "ts-cancel-service",
+            "ts-config-service",
+            "ts-consign-price-service",
+            "ts-consign-service",
+            "ts-contacts-service",
+            "ts-delivery-service",
+            "ts-execute-service",
+            "ts-food-service",
+            "ts-gateway-service",
+            "ts-inside-payment-service",
+            "ts-notification-service",
+            "ts-order-other-service",
+            "ts-order-service",
+            "ts-payment-service",
+            "ts-preserve-other-service",
+            "ts-preserve-service",
+            "ts-price-service",
+            "ts-rebook-service",
+            "ts-route-plan-service",
+            "ts-route-service",
+            "ts-seat-service",
+            "ts-security-service",
+            "ts-station-food-service",
+            "ts-station-service",
+            "ts-train-food-service",
+            "ts-train-service",
+            "ts-travel-plan-service",
+            "ts-travel-service",
+            "ts-travel2-service",
+            "ts-user-service",
+            "ts-verification-code-service"
+          ],
+          "duration_unit": "milliseconds; convert x1000 to microseconds for trained trace features",
+          "status_encoding": "is_error boolean; not an HTTP status code",
+          "error_spans": 1481,
+          "first_epoch_seconds": 1762178271.461,
+          "last_epoch_seconds": 1762178474.181,
+          "spans_outside_metric_interval": 0,
+          "sha256": "060a3dd0e71c2bba4c2ed68f5046ad3eb74b24fe1b68ef677afacde292e38ddc"
+        }
+      ],
+      "metric_rows": 217605,
+      "log_lines": 34098,
+      "trace_spans": 8458
+    },
+    "SN_data": {
+      "metrics": [
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\jaeger_spans_rate.csv",
+          "rows": 237,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "result"
+          ],
+          "metric_names": {
+            "jaeger_spans_rate": 237
+          },
+          "services": [],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:39",
+          "last_timestamp": "2025-11-03 22:23:09",
+          "unique_timestamps": 79,
+          "sha256": "c4d45ade7f0508bb892dea42ed90f076bf5995814f0b40a1d5e8f7fd46b1befe"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\socialnet_container_cpu.csv",
+          "rows": 2449,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "container_label_com_docker_compose_service"
+          ],
+          "metric_names": {
+            "socialnet_container_cpu": 2449
+          },
+          "services": [
+            "cadvisor",
+            "compose-post-redis",
+            "compose-post-service",
+            "home-timeline-redis",
+            "home-timeline-service",
+            "jaeger-agent",
+            "media-frontend",
+            "media-memcached",
+            "media-mongodb",
+            "media-service",
+            "nginx-thrift",
+            "node-exporter",
+            "post-storage-memcached",
+            "post-storage-mongodb",
+            "post-storage-service",
+            "prometheus",
+            "social-graph-mongodb",
+            "social-graph-redis",
+            "social-graph-service",
+            "text-service",
+            "unique-id-service",
+            "url-shorten-memcached",
+            "url-shorten-mongodb",
+            "url-shorten-service",
+            "user-memcached",
+            "user-mention-service",
+            "user-mongodb",
+            "user-service",
+            "user-timeline-mongodb",
+            "user-timeline-redis",
+            "user-timeline-service"
+          ],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:34",
+          "last_timestamp": "2025-11-03 22:23:04",
+          "unique_timestamps": 79,
+          "sha256": "6b8e5ae39f142a41c34421cb5ea450c056b704602df29ae2fafb75b206fd0cf7"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\socialnet_container_memory.csv",
+          "rows": 2480,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "__name__",
+            "container_label_com_docker_compose_config_hash",
+            "container_label_com_docker_compose_container_number",
+            "container_label_com_docker_compose_oneoff",
+            "container_label_com_docker_compose_project",
+            "container_label_com_docker_compose_project_config_files",
+            "container_label_com_docker_compose_project_working_dir",
+            "container_label_com_docker_compose_service",
+            "container_label_com_docker_compose_version",
+            "id",
+            "image",
+            "instance",
+            "job",
+            "name",
+            "container_label_maintainer",
+            "container_label_resty_config_options",
+            "container_label_resty_luarocks_version",
+            "container_label_resty_openssl_version",
+            "container_label_resty_pcre_version",
+            "container_label_resty_version",
+            "container_label_org_opencontainers_image_source"
+          ],
+          "metric_names": {
+            "socialnet_container_memory": 2480
+          },
+          "services": [
+            "cadvisor",
+            "compose-post-redis",
+            "compose-post-service",
+            "home-timeline-redis",
+            "home-timeline-service",
+            "jaeger-agent",
+            "media-frontend",
+            "media-memcached",
+            "media-mongodb",
+            "media-service",
+            "nginx-thrift",
+            "node-exporter",
+            "post-storage-memcached",
+            "post-storage-mongodb",
+            "post-storage-service",
+            "prometheus",
+            "social-graph-mongodb",
+            "social-graph-redis",
+            "social-graph-service",
+            "text-service",
+            "unique-id-service",
+            "url-shorten-memcached",
+            "url-shorten-mongodb",
+            "url-shorten-service",
+            "user-memcached",
+            "user-mention-service",
+            "user-mongodb",
+            "user-service",
+            "user-timeline-mongodb",
+            "user-timeline-redis",
+            "user-timeline-service"
+          ],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:19",
+          "last_timestamp": "2025-11-03 22:23:04",
+          "unique_timestamps": 80,
+          "sha256": "ba0bfad05c5fc217883cd72ae82fd4241e9c81cca890e51a1d8dcc209b6739a9"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\socialnet_container_network_receive.csv",
+          "rows": 2449,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "container_label_com_docker_compose_service"
+          ],
+          "metric_names": {
+            "socialnet_container_network_receive": 2449
+          },
+          "services": [
+            "cadvisor",
+            "compose-post-redis",
+            "compose-post-service",
+            "home-timeline-redis",
+            "home-timeline-service",
+            "jaeger-agent",
+            "media-frontend",
+            "media-memcached",
+            "media-mongodb",
+            "media-service",
+            "nginx-thrift",
+            "node-exporter",
+            "post-storage-memcached",
+            "post-storage-mongodb",
+            "post-storage-service",
+            "prometheus",
+            "social-graph-mongodb",
+            "social-graph-redis",
+            "social-graph-service",
+            "text-service",
+            "unique-id-service",
+            "url-shorten-memcached",
+            "url-shorten-mongodb",
+            "url-shorten-service",
+            "user-memcached",
+            "user-mention-service",
+            "user-mongodb",
+            "user-service",
+            "user-timeline-mongodb",
+            "user-timeline-redis",
+            "user-timeline-service"
+          ],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:35",
+          "last_timestamp": "2025-11-03 22:23:05",
+          "unique_timestamps": 79,
+          "sha256": "28e35b53dc431e930a2a615b064f3f88fc9ffba6c04f8818153c9f88b2c11c10"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\socialnet_container_network_transmit.csv",
+          "rows": 2449,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "container_label_com_docker_compose_service"
+          ],
+          "metric_names": {
+            "socialnet_container_network_transmit": 2449
+          },
+          "services": [
+            "cadvisor",
+            "compose-post-redis",
+            "compose-post-service",
+            "home-timeline-redis",
+            "home-timeline-service",
+            "jaeger-agent",
+            "media-frontend",
+            "media-memcached",
+            "media-mongodb",
+            "media-service",
+            "nginx-thrift",
+            "node-exporter",
+            "post-storage-memcached",
+            "post-storage-mongodb",
+            "post-storage-service",
+            "prometheus",
+            "social-graph-mongodb",
+            "social-graph-redis",
+            "social-graph-service",
+            "text-service",
+            "unique-id-service",
+            "url-shorten-memcached",
+            "url-shorten-mongodb",
+            "url-shorten-service",
+            "user-memcached",
+            "user-mention-service",
+            "user-mongodb",
+            "user-service",
+            "user-timeline-mongodb",
+            "user-timeline-redis",
+            "user-timeline-service"
+          ],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:36",
+          "last_timestamp": "2025-11-03 22:23:06",
+          "unique_timestamps": 79,
+          "sha256": "e9067d9d498fc8924c097367295094d1e528da519028c9e078bb3eb4db3bf517"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\system_cpu_usage.csv",
+          "rows": 79,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "instance"
+          ],
+          "metric_names": {
+            "system_cpu_usage": 79
+          },
+          "services": [],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:40",
+          "last_timestamp": "2025-11-03 22:23:10",
+          "unique_timestamps": 79,
+          "sha256": "f005991f4745e6fc502b49a6b022d33643c3f4d476fc465dbc974b0782a683ec"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\system_disk_io_time.csv",
+          "rows": 79,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "device",
+            "instance",
+            "job"
+          ],
+          "metric_names": {
+            "system_disk_io_time": 79
+          },
+          "services": [],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:43",
+          "last_timestamp": "2025-11-03 22:23:13",
+          "unique_timestamps": 79,
+          "sha256": "fdcea9d1df88bfe8bedd236b8a840e84c8874959fd8f6eb9ed172049d1f17a2e"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\system_disk_read_bytes.csv",
+          "rows": 79,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "device"
+          ],
+          "metric_names": {
+            "system_disk_read_bytes": 79
+          },
+          "services": [],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:44",
+          "last_timestamp": "2025-11-03 22:23:14",
+          "unique_timestamps": 79,
+          "sha256": "78a4ebc1196daa4acd9d81109ab61c0f304cc964e685499d2b5cd93ed00aef36"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\system_disk_usage_percent.csv",
+          "rows": 80,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "device",
+            "fstype",
+            "instance",
+            "job",
+            "mountpoint"
+          ],
+          "metric_names": {
+            "system_disk_usage_percent": 80
+          },
+          "services": [],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:31",
+          "last_timestamp": "2025-11-03 22:23:16",
+          "unique_timestamps": 80,
+          "sha256": "380658284bddb7e588ccfe2075ec4e8c8a728b0737a1ab35a51dc801fa9740c3"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\system_disk_write_bytes.csv",
+          "rows": 79,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "device"
+          ],
+          "metric_names": {
+            "system_disk_write_bytes": 79
+          },
+          "services": [],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:44",
+          "last_timestamp": "2025-11-03 22:23:14",
+          "unique_timestamps": 79,
+          "sha256": "d9dc8d07326fff5c2b49988c6c69dcdd62fe28ef790d63ff173ef81a5081dff8"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\system_load1.csv",
+          "rows": 80,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "__name__",
+            "instance",
+            "job"
+          ],
+          "metric_names": {
+            "system_load1": 80
+          },
+          "services": [],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:27",
+          "last_timestamp": "2025-11-03 22:23:12",
+          "unique_timestamps": 80,
+          "sha256": "a01db6d2ab032947ebc7eb2c0422d1ec0ee08c3a6b1c407172c56b212eb20f49"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\system_memory_usage_percent.csv",
+          "rows": 80,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "instance",
+            "job"
+          ],
+          "metric_names": {
+            "system_memory_usage_percent": 80
+          },
+          "services": [],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:26",
+          "last_timestamp": "2025-11-03 22:23:11",
+          "unique_timestamps": 80,
+          "sha256": "1c191d897a9b525c716a49dc3867bb4814a73515c056a6b80c832026ab9017ea"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\system_network_errors.csv",
+          "rows": 79,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric"
+          ],
+          "metric_names": {
+            "system_network_errors": 79
+          },
+          "services": [],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:42",
+          "last_timestamp": "2025-11-03 22:23:12",
+          "unique_timestamps": 79,
+          "sha256": "30b49e2ecb02a55c534e939d46f3f0238ed077d0b86f0031b849c199d697b33d"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\system_network_receive_bytes.csv",
+          "rows": 158,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "device"
+          ],
+          "metric_names": {
+            "system_network_receive_bytes": 158
+          },
+          "services": [],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:45",
+          "last_timestamp": "2025-11-03 22:23:15",
+          "unique_timestamps": 79,
+          "sha256": "fa07aff7a6c721fc4db467a66f4c92c2e6ac91f86c197b7f2bb8c0cfabf416d6"
+        },
+        {
+          "file": "SN_data\\metric_data\\Normal_Baseline_20251103_220228_metrics_2025-11-03_22-22-55\\system_network_transmit_bytes.csv",
+          "rows": 158,
+          "columns": [
+            "timestamp",
+            "value",
+            "metric",
+            "device"
+          ],
+          "metric_names": {
+            "system_network_transmit_bytes": 158
+          },
+          "services": [],
+          "nonfinite_or_invalid_values": 0,
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:03:46",
+          "last_timestamp": "2025-11-03 22:23:16",
+          "unique_timestamps": 79,
+          "sha256": "cb00d6ad3efc9da0e9f6eea7835e2ce1c615042114ac4783dd1deb743c888536"
+        }
+      ],
+      "logs": [
+        {
+          "file": "SN_data\\log_data\\Normal_Baseline_20251103_220228_logs_2025-11-03_22-22-55\\ComposePostService_.log",
+          "lines": 2401,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "bracket_month_name_no_timezone": 2401
+          },
+          "sha256": "591a391348ea816d43477e78a587f18370b2d8f268ca18653989be1b1b3c3594"
+        },
+        {
+          "file": "SN_data\\log_data\\Normal_Baseline_20251103_220228_logs_2025-11-03_22-22-55\\HomeTimelineService_.log",
+          "lines": 2201,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "bracket_month_name_no_timezone": 2201
+          },
+          "sha256": "39239bab4f138c20dc3edd6c966954f324c1f90c4859daa572e0e6dad074fe56"
+        },
+        {
+          "file": "SN_data\\log_data\\Normal_Baseline_20251103_220228_logs_2025-11-03_22-22-55\\MediaService_.log",
+          "lines": 601,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "bracket_month_name_no_timezone": 601
+          },
+          "sha256": "26d7c41e26abcc1cf9714035f22a4b498291aa98043e8e592a9655118bd39299"
+        },
+        {
+          "file": "SN_data\\log_data\\Normal_Baseline_20251103_220228_logs_2025-11-03_22-22-55\\NginxThrift_.log",
+          "lines": 0,
+          "blank_lines": 0,
+          "timestamp_formats": {},
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "file": "SN_data\\log_data\\Normal_Baseline_20251103_220228_logs_2025-11-03_22-22-55\\PostStorageService_.log",
+          "lines": 1001,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "bracket_month_name_no_timezone": 1001
+          },
+          "sha256": "950a3bb58cc8923ffe14354086a2529c79e63301b8b12d432d91e256c72899ba"
+        },
+        {
+          "file": "SN_data\\log_data\\Normal_Baseline_20251103_220228_logs_2025-11-03_22-22-55\\SocialGraphService_.log",
+          "lines": 153621,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "bracket_month_name_no_timezone": 153621
+          },
+          "sha256": "7caf74981c1d459c6ae292cce9c1a0065a80212f75cbd8c5751a82f4d2f2a7c0"
+        },
+        {
+          "file": "SN_data\\log_data\\Normal_Baseline_20251103_220228_logs_2025-11-03_22-22-55\\TextService_.log",
+          "lines": 1001,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "bracket_month_name_no_timezone": 1001
+          },
+          "sha256": "13202d6620b46e5e689b9ce8908b68f9ff432ef04668799f1985f8bdb7771ca2"
+        },
+        {
+          "file": "SN_data\\log_data\\Normal_Baseline_20251103_220228_logs_2025-11-03_22-22-55\\UniqueIdService_.log",
+          "lines": 403,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "bracket_month_name_no_timezone": 403
+          },
+          "sha256": "dba53bc2371fedaf840945858c259ecb27f98703513083aafce9871e712d19a0"
+        },
+        {
+          "file": "SN_data\\log_data\\Normal_Baseline_20251103_220228_logs_2025-11-03_22-22-55\\UrlShortenService_.log",
+          "lines": 401,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "bracket_month_name_no_timezone": 401
+          },
+          "sha256": "e51402ae0886692fe4fea0a163b26feef1dcf415ebff34d9b48c1ca78463502d"
+        },
+        {
+          "file": "SN_data\\log_data\\Normal_Baseline_20251103_220228_logs_2025-11-03_22-22-55\\UserMentionService_.log",
+          "lines": 601,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "bracket_month_name_no_timezone": 601
+          },
+          "sha256": "53649264938e30497657d909ad969718420020993a8cc931bc7e7c9140b2c8a3"
+        },
+        {
+          "file": "SN_data\\log_data\\Normal_Baseline_20251103_220228_logs_2025-11-03_22-22-55\\UserService_.log",
+          "lines": 153223,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "bracket_month_name_no_timezone": 153223
+          },
+          "sha256": "dd5d2a10da38dc2b3c68651f125bd8c601e5dfd77ca4f05052bd9bd70f450d2b"
+        },
+        {
+          "file": "SN_data\\log_data\\Normal_Baseline_20251103_220228_logs_2025-11-03_22-22-55\\UserTimelineService_.log",
+          "lines": 1601,
+          "blank_lines": 0,
+          "timestamp_formats": {
+            "bracket_month_name_no_timezone": 1601
+          },
+          "sha256": "6441307fbebc680e983e0fb69d495485f93a5cfc5bb427d9030f68b19d9f9f09"
+        }
+      ],
+      "traces": [
+        {
+          "file": "SN_data\\trace_data\\Normal_Baseline_20251103_220228_traces_2025-11-03_22-22-55\\all_traces.csv",
+          "spans": 2060,
+          "columns": [
+            "trace_id",
+            "span_id",
+            "parent_span_id",
+            "service",
+            "operation",
+            "start_time",
+            "duration_us",
+            "http_status_code",
+            "http_method",
+            "http_url",
+            "component",
+            "tags",
+            "logs"
+          ],
+          "services": {
+            "nginx-web-server": 615,
+            "social-graph-service": 236,
+            "compose-post-service": 320,
+            "post-storage-service": 118,
+            "home-timeline-service": 189,
+            "unique-id-service": 40,
+            "user-service": 92,
+            "text-service": 120,
+            "user-mention-service": 40,
+            "media-service": 40,
+            "url-shorten-service": 40,
+            "user-timeline-service": 210
+          },
+          "duration_unit": "microseconds",
+          "timestamp_encoding": "timezone-naive text; alignment requires verification",
+          "first_timestamp": "2025-11-03 22:05:14.738000",
+          "last_timestamp": "2025-11-03 22:22:50.747179",
+          "http_status_known": 410,
+          "sha256": "7deab1d326116d34fe5dd7a93beadc067e8d7837b7e2d14c18c82a9ab403f6aa"
+        }
+      ],
+      "metric_rows": 11015,
+      "log_lines": 317055,
+      "trace_spans": 2060
+    }
+  },
+  "checkpoints": {
+    "temporal_best.pt": "5375557b97ac324d8b90ef9fcbd8c8fd3d26b3d3e8577b0530ad6b603fbc66ab",
+    "supervised_reference.joblib": "5df5f3f251a136d63425c22956f2c00c3eb58e7343ddd95b691b532ce8b43c9e"
+  }
+}

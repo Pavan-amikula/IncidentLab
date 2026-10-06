@@ -1,0 +1,482 @@
+[
+  {
+    "window": 0,
+    "start": 1791221931.5377953,
+    "end": 1791221934.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1098.1786000193097,
+    "token_usage": {
+      "input_tokens": 647,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 0,
+    "start": 1791221931.5377953,
+    "end": 1791221934.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1054.6617000363767,
+    "token_usage": {
+      "input_tokens": 776,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 5,
+    "start": 1791221946.5377953,
+    "end": 1791221949.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 980.3706999518909,
+    "token_usage": {
+      "input_tokens": 647,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 5,
+    "start": 1791221946.5377953,
+    "end": 1791221949.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1050.4865000257269,
+    "token_usage": {
+      "input_tokens": 776,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 11,
+    "start": 1791221964.5377953,
+    "end": 1791221967.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 983.8116000173613,
+    "token_usage": {
+      "input_tokens": 647,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 11,
+    "start": 1791221964.5377953,
+    "end": 1791221967.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1051.1166999931447,
+    "token_usage": {
+      "input_tokens": 775,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 16,
+    "start": 1791221979.5377953,
+    "end": 1791221982.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1022.0944000175223,
+    "token_usage": {
+      "input_tokens": 689,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 16,
+    "start": 1791221979.5377953,
+    "end": 1791221982.5377953,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"abstain\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1151.698200032115,
+    "token_usage": {
+      "input_tokens": 842,
+      "output_tokens": 35
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 22,
+    "start": 1791221997.5377953,
+    "end": 1791222000.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1007.6349000446498,
+    "token_usage": {
+      "input_tokens": 689,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 22,
+    "start": 1791221997.5377953,
+    "end": 1791222000.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1092.6416000002064,
+    "token_usage": {
+      "input_tokens": 842,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 27,
+    "start": 1791222012.5377953,
+    "end": 1791222015.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1005.5782999843359,
+    "token_usage": {
+      "input_tokens": 688,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 27,
+    "start": 1791222012.5377953,
+    "end": 1791222015.5377953,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "No evidence of failure or abnormal latency observed.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"abstain\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"No evidence of failure or abnormal latency observed.\"}",
+    "latency_ms": 1205.4962000111118,
+    "token_usage": {
+      "input_tokens": 841,
+      "output_tokens": 37
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 33,
+    "start": 1791222030.5377953,
+    "end": 1791222033.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 984.9737999611534,
+    "token_usage": {
+      "input_tokens": 648,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 33,
+    "start": 1791222030.5377953,
+    "end": 1791222033.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1054.6393999829888,
+    "token_usage": {
+      "input_tokens": 776,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 39,
+    "start": 1791222048.5377953,
+    "end": 1791222051.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 988.6737000197172,
+    "token_usage": {
+      "input_tokens": 647,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 39,
+    "start": 1791222048.5377953,
+    "end": 1791222051.5377953,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1061.0631000017747,
+    "token_usage": {
+      "input_tokens": 774,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "4d354045e74ffac0ee982d1252744ce7b66d31e578b9a80d4b2b603cb9457626",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  }
+]

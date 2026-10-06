@@ -1,0 +1,21 @@
+{
+  "kind": "delay",
+  "target": "inventory",
+  "phase": "test_delay_inventory",
+  "onset": 1791288635.8148475,
+  "recovery": 1791288650.3039925,
+  "dropped": 0,
+  "commands": [
+    {
+      "action": "delay",
+      "target": "inventory",
+      "command_completed": 1791288635.8148475
+    },
+    {
+      "action": "recover",
+      "target": "inventory",
+      "command_completed": 1791288650.3039925
+    }
+  ],
+  "label_semantics": "Control command completion proxy; actual workload onset requires trace review"
+}

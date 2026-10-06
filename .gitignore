@@ -1,0 +1,11 @@
+.venv*/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.sqlite3
+*.sqlite3-*
+*.db
+*.log
+artifacts/live_runtime/
+reports/preview/

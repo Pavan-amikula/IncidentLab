@@ -1,0 +1,429 @@
+[
+  {
+    "case": "TT_data:Lv_C_exception_injection_20251103T185917Z_em",
+    "system": "TT_data",
+    "file": "TT_data-Lv_C_exception_injection_20251103T185917Z_em.parquet",
+    "windows": 15,
+    "start": 1762196760,
+    "end": 1762197660,
+    "metric_audit": {
+      "scanned": 329632,
+      "excluded_unmapped_or_infrastructure": 321802
+    },
+    "log_audit": {},
+    "trace_rows": 8871,
+    "trace_rows_outside_interval": 1793,
+    "unsupported_services": []
+  },
+  {
+    "case": "TT_data:Lv_C_security_check_20251103T183145Z_em",
+    "system": "TT_data",
+    "file": "TT_data-Lv_C_security_check_20251103T183145Z_em.parquet",
+    "windows": 13,
+    "start": 1762195080,
+    "end": 1762195860,
+    "metric_audit": {
+      "scanned": 300295,
+      "excluded_unmapped_or_infrastructure": 292793
+    },
+    "log_audit": {},
+    "trace_rows": 8837,
+    "trace_rows_outside_interval": 3539,
+    "unsupported_services": []
+  },
+  {
+    "case": "TT_data:Lv_C_travel_detail_failure_20251103T192904Z_em",
+    "system": "TT_data",
+    "file": "TT_data-Lv_C_travel_detail_failure_20251103T192904Z_em.parquet",
+    "windows": 13,
+    "start": 1762198560,
+    "end": 1762199340,
+    "metric_audit": {
+      "scanned": 289686,
+      "excluded_unmapped_or_infrastructure": 282146
+    },
+    "log_audit": {},
+    "trace_rows": 8902,
+    "trace_rows_outside_interval": 0,
+    "unsupported_services": []
+  },
+  {
+    "case": "TT_data:Lv_D_cachelimit_20251103T170657Z_em",
+    "system": "TT_data",
+    "file": "TT_data-Lv_D_cachelimit_20251103T170657Z_em.parquet",
+    "windows": 14,
+    "start": 1762190100,
+    "end": 1762190940,
+    "metric_audit": {
+      "scanned": 307480,
+      "excluded_unmapped_or_infrastructure": 300196
+    },
+    "log_audit": {},
+    "trace_rows": 8854,
+    "trace_rows_outside_interval": 1768,
+    "unsupported_services": []
+  },
+  {
+    "case": "TT_data:Lv_D_CONNECTION_POOL_exhaustion_20251103T173702Z_em",
+    "system": "TT_data",
+    "file": "TT_data-Lv_D_CONNECTION_POOL_exhaustion_20251103T173702Z_em.parquet",
+    "windows": 13,
+    "start": 1762191840,
+    "end": 1762192620,
+    "metric_audit": {
+      "scanned": 295734,
+      "excluded_unmapped_or_infrastructure": 288478
+    },
+    "log_audit": {},
+    "trace_rows": 8850,
+    "trace_rows_outside_interval": 0,
+    "unsupported_services": []
+  },
+  {
+    "case": "TT_data:Lv_D_TRANSACTION_timeout_20251103T180430Z_em",
+    "system": "TT_data",
+    "file": "TT_data-Lv_D_TRANSACTION_timeout_20251103T180430Z_em.parquet",
+    "windows": 13,
+    "start": 1762193460,
+    "end": 1762194240,
+    "metric_audit": {
+      "scanned": 299460,
+      "excluded_unmapped_or_infrastructure": 292002
+    },
+    "log_audit": {},
+    "trace_rows": 8836,
+    "trace_rows_outside_interval": 1768,
+    "unsupported_services": []
+  },
+  {
+    "case": "TT_data:Lv_P_CPU_preserve_20251103T140939Z_em",
+    "system": "TT_data",
+    "file": "TT_data-Lv_P_CPU_preserve_20251103T140939Z_em.parquet",
+    "windows": 20,
+    "start": 1762179240,
+    "end": 1762180440,
+    "metric_audit": {
+      "scanned": 395839,
+      "excluded_unmapped_or_infrastructure": 385623
+    },
+    "log_audit": {},
+    "trace_rows": 8940,
+    "trace_rows_outside_interval": 3537,
+    "unsupported_services": []
+  },
+  {
+    "case": "TT_data:Lv_P_DISKIO_preserve_20251103T144212Z_em",
+    "system": "TT_data",
+    "file": "TT_data-Lv_P_DISKIO_preserve_20251103T144212Z_em.parquet",
+    "windows": 12,
+    "start": 1762181160,
+    "end": 1762181880,
+    "metric_audit": {
+      "scanned": 259241,
+      "excluded_unmapped_or_infrastructure": 251957
+    },
+    "log_audit": {},
+    "trace_rows": 8940,
+    "trace_rows_outside_interval": 4313,
+    "unsupported_services": []
+  },
+  {
+    "case": "TT_data:Lv_P_NETLOSS_preserve_20251103T150613Z_em",
+    "system": "TT_data",
+    "file": "TT_data-Lv_P_NETLOSS_preserve_20251103T150613Z_em.parquet",
+    "windows": 12,
+    "start": 1762182660,
+    "end": 1762183380,
+    "metric_audit": {
+      "scanned": 267430,
+      "excluded_unmapped_or_infrastructure": 259934
+    },
+    "log_audit": {},
+    "trace_rows": 8835,
+    "trace_rows_outside_interval": 1766,
+    "unsupported_services": []
+  },
+  {
+    "case": "TT_data:Lv_S_DNSFAIL_preserve_no_order_20251103T153116Z_em",
+    "system": "TT_data",
+    "file": "TT_data-Lv_S_DNSFAIL_preserve_no_order_20251103T153116Z_em.parquet",
+    "windows": 12,
+    "start": 1762184160,
+    "end": 1762184880,
+    "metric_audit": {
+      "scanned": 262475,
+      "excluded_unmapped_or_infrastructure": 255145
+    },
+    "log_audit": {},
+    "trace_rows": 8862,
+    "trace_rows_outside_interval": 0,
+    "unsupported_services": []
+  },
+  {
+    "case": "TT_data:Lv_S_HTTPABORT_preserve_20251103T155524Z_em",
+    "system": "TT_data",
+    "file": "TT_data-Lv_S_HTTPABORT_preserve_20251103T155524Z_em.parquet",
+    "windows": 29,
+    "start": 1762185600,
+    "end": 1762187340,
+    "metric_audit": {
+      "scanned": 533892,
+      "excluded_unmapped_or_infrastructure": 520570
+    },
+    "log_audit": {},
+    "trace_rows": 8900,
+    "trace_rows_outside_interval": 0,
+    "unsupported_services": []
+  },
+  {
+    "case": "TT_data:Lv_S_KILLPOD_preserve_20251103T163624Z_em",
+    "system": "TT_data",
+    "file": "TT_data-Lv_S_KILLPOD_preserve_20251103T163624Z_em.parquet",
+    "windows": 12,
+    "start": 1762188060,
+    "end": 1762188780,
+    "metric_audit": {
+      "scanned": 260771,
+      "excluded_unmapped_or_infrastructure": 253573
+    },
+    "log_audit": {},
+    "trace_rows": 8940,
+    "trace_rows_outside_interval": 0,
+    "unsupported_services": []
+  },
+  {
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819",
+    "system": "SN_data",
+    "file": "SN_data-Code_Stop_MediaService_20251104_024819.parquet",
+    "windows": 24,
+    "start": 1762225020,
+    "end": 1762226460,
+    "metric_audit": {
+      "scanned": 6118,
+      "excluded_infrastructure": 810
+    },
+    "log_audit": {
+      "physical_lines": 313254,
+      "timestamped_events": 312853,
+      "continuation_lines": 201,
+      "unattached_lines": 200
+    },
+    "trace_rows": 1595,
+    "trace_rows_outside_interval": 43,
+    "unsupported_services": []
+  },
+  {
+    "case": "SN_data:Code_Stop_TextService_20251104_022416",
+    "system": "SN_data",
+    "file": "SN_data-Code_Stop_TextService_20251104_022416.parquet",
+    "windows": 19,
+    "start": 1762223160,
+    "end": 1762224300,
+    "metric_audit": {
+      "scanned": 4868,
+      "excluded_infrastructure": 644
+    },
+    "log_audit": {
+      "physical_lines": 312054,
+      "timestamped_events": 311654,
+      "continuation_lines": 200,
+      "unattached_lines": 200
+    },
+    "trace_rows": 1540,
+    "trace_rows_outside_interval": 23,
+    "unsupported_services": []
+  },
+  {
+    "case": "SN_data:Code_Stop_UserService_20251104_020019",
+    "system": "SN_data",
+    "file": "SN_data-Code_Stop_UserService_20251104_020019.parquet",
+    "windows": 19,
+    "start": 1762221720,
+    "end": 1762222860,
+    "metric_audit": {
+      "scanned": 4839,
+      "excluded_infrastructure": 638
+    },
+    "log_audit": {
+      "physical_lines": 162632,
+      "timestamped_events": 160032,
+      "continuation_lines": 200,
+      "unattached_lines": 2400
+    },
+    "trace_rows": 2219,
+    "trace_rows_outside_interval": 21,
+    "unsupported_services": []
+  },
+  {
+    "case": "SN_data:DB_Redis_CacheLimit_HomeTimeline_20251104_004905",
+    "system": "SN_data",
+    "file": "SN_data-DB_Redis_CacheLimit_HomeTimeline_20251104_004905.parquet",
+    "windows": 19,
+    "start": 1762217400,
+    "end": 1762218540,
+    "metric_audit": {
+      "scanned": 4929,
+      "excluded_infrastructure": 636
+    },
+    "log_audit": {
+      "physical_lines": 317055,
+      "timestamped_events": 317055
+    },
+    "trace_rows": 2205,
+    "trace_rows_outside_interval": 78,
+    "unsupported_services": []
+  },
+  {
+    "case": "SN_data:DB_Redis_CacheLimit_SocialGraph_20251104_013615",
+    "system": "SN_data",
+    "file": "SN_data-DB_Redis_CacheLimit_SocialGraph_20251104_013615.parquet",
+    "windows": 19,
+    "start": 1762220280,
+    "end": 1762221420,
+    "metric_audit": {
+      "scanned": 4872,
+      "excluded_infrastructure": 629
+    },
+    "log_audit": {
+      "physical_lines": 317055,
+      "timestamped_events": 317055
+    },
+    "trace_rows": 2152,
+    "trace_rows_outside_interval": 29,
+    "unsupported_services": []
+  },
+  {
+    "case": "SN_data:DB_Redis_CacheLimit_UserTimeline_20251104_011238",
+    "system": "SN_data",
+    "file": "SN_data-DB_Redis_CacheLimit_UserTimeline_20251104_011238.parquet",
+    "windows": 19,
+    "start": 1762218840,
+    "end": 1762219980,
+    "metric_audit": {
+      "scanned": 4868,
+      "excluded_infrastructure": 628
+    },
+    "log_audit": {
+      "physical_lines": 317055,
+      "timestamped_events": 317055
+    },
+    "trace_rows": 2050,
+    "trace_rows_outside_interval": 0,
+    "unsupported_services": []
+  },
+  {
+    "case": "SN_data:Perf_CPU_Contention_20251103_222601",
+    "system": "SN_data",
+    "file": "SN_data-Perf_CPU_Contention_20251103_222601.parquet",
+    "windows": 19,
+    "start": 1762208820,
+    "end": 1762209960,
+    "metric_audit": {
+      "scanned": 4991,
+      "excluded_infrastructure": 644
+    },
+    "log_audit": {
+      "physical_lines": 317055,
+      "timestamped_events": 317053,
+      "continuation_lines": 2
+    },
+    "trace_rows": 2098,
+    "trace_rows_outside_interval": 119,
+    "unsupported_services": []
+  },
+  {
+    "case": "SN_data:Perf_Disk_IO_Stress_20251103_231335",
+    "system": "SN_data",
+    "file": "SN_data-Perf_Disk_IO_Stress_20251103_231335.parquet",
+    "windows": 19,
+    "start": 1762211700,
+    "end": 1762212840,
+    "metric_audit": {
+      "scanned": 4869,
+      "excluded_infrastructure": 629
+    },
+    "log_audit": {
+      "physical_lines": 317055,
+      "timestamped_events": 317055
+    },
+    "trace_rows": 1870,
+    "trace_rows_outside_interval": 11,
+    "unsupported_services": []
+  },
+  {
+    "case": "SN_data:Perf_Network_Loss_20251103_224954",
+    "system": "SN_data",
+    "file": "SN_data-Perf_Network_Loss_20251103_224954.parquet",
+    "windows": 19,
+    "start": 1762210260,
+    "end": 1762211400,
+    "metric_audit": {
+      "scanned": 4891,
+      "excluded_infrastructure": 631
+    },
+    "log_audit": {
+      "physical_lines": 317055,
+      "timestamped_events": 317055
+    },
+    "trace_rows": 1713,
+    "trace_rows_outside_interval": 72,
+    "unsupported_services": []
+  },
+  {
+    "case": "SN_data:Svc_Kill_Media_20251104_000111",
+    "system": "SN_data",
+    "file": "SN_data-Svc_Kill_Media_20251104_000111.parquet",
+    "windows": 18,
+    "start": 1762214580,
+    "end": 1762215660,
+    "metric_audit": {
+      "scanned": 4948,
+      "excluded_infrastructure": 636
+    },
+    "log_audit": {
+      "physical_lines": 317056,
+      "timestamped_events": 317056
+    },
+    "trace_rows": 2209,
+    "trace_rows_outside_interval": 80,
+    "unsupported_services": []
+  },
+  {
+    "case": "SN_data:Svc_Kill_SocialGraph_20251104_002506",
+    "system": "SN_data",
+    "file": "SN_data-Svc_Kill_SocialGraph_20251104_002506.parquet",
+    "windows": 18,
+    "start": 1762216020,
+    "end": 1762217100,
+    "metric_audit": {
+      "scanned": 4948,
+      "excluded_infrastructure": 636
+    },
+    "log_audit": {
+      "physical_lines": 317056,
+      "timestamped_events": 317056
+    },
+    "trace_rows": 1887,
+    "trace_rows_outside_interval": 130,
+    "unsupported_services": []
+  },
+  {
+    "case": "SN_data:Svc_Kill_UserTimeline_20251103_233717",
+    "system": "SN_data",
+    "file": "SN_data-Svc_Kill_UserTimeline_20251103_233717.parquet",
+    "windows": 18,
+    "start": 1762213140,
+    "end": 1762214220,
+    "metric_audit": {
+      "scanned": 4948,
+      "excluded_infrastructure": 636
+    },
+    "log_audit": {
+      "physical_lines": 317056,
+      "timestamped_events": 317056
+    },
+    "trace_rows": 1979,
+    "trace_rows_outside_interval": 160,
+    "unsupported_services": []
+  }
+]

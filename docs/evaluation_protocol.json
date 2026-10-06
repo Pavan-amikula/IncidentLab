@@ -1,0 +1,10 @@
+{
+  "version": "2026-10-05-v2",
+  "development": "RCAEval fixed whole-case train/validation/development-test splits",
+  "checkpoint_selection": "validation only; no selection by development-test performance",
+  "external_final": "AnoMod first frozen-model evaluation completed on 24 fault runs; no model training or checkpoint selection on it",
+  "external_holdout_status": "Now inspected; future tuning must use fresh final held-out data or controlled live trials",
+  "live_final": "Fresh workload and fault trials after implementation freeze",
+  "warning": "Previously inspected RCAEval test results are development evidence, not a newly untouched final holdout",
+  "initial_warmup_assumption": "first 300 seconds healthy; retained as a declared limitation"
+}

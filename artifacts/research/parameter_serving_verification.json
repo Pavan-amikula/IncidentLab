@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "profile": "v4",
+  "streams": {
+    "normal2": "parameter-replay-v4-normal2-3e3a4a59",
+    "abnormal": "parameter-replay-v4-abnormal-93bd728b"
+  },
+  "parameter_events_sent": 6037,
+  "heldout_sessions_compared": 830,
+  "eligible_complete_ml_sessions": 828,
+  "missing_parameter_sessions": [
+    {
+      "source": "normal2",
+      "instance": "49ffab2b-3ae8-487a-a0a5-8174d9249a36",
+      "reason": "No explicitly associated numeric duration record"
+    },
+    {
+      "source": "abnormal",
+      "instance": "2b590f10-49fd-4ec9-ae41-19596c2f4b25",
+      "reason": "No explicitly associated numeric duration record"
+    }
+  ],
+  "max_score_difference": 0.0,
+  "duplicate_http_status": 409,
+  "source_sha256": {
+    "openstack_normal2.log": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7",
+    "openstack_abnormal.log": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4"
+  },
+  "seconds": 2.246341099962592,
+  "scope": "Archived full-file parameter replay through HTTP and SQLite, not a live company OpenStack connection",
+  "exclusions": "All normal2 parameter events are ingested; score verification uses only the published held-out split identities. No labels enter HTTP requests.",
+  "caveat": "Partial lifecycle ML decisions abstain; residual warnings use observed parameters. VM-session labels do not establish onset or early detection."
+}

@@ -1,0 +1,174 @@
+{
+  "figures": [
+    {
+      "name": "research-gru-confusion",
+      "title": "GRU: RCAEval window decisions",
+      "caption": "RCAEval development-test partition, 147 cases. Frozen validation thresholds; windows within a case are correlated. This does not establish external transfer or production reliability."
+    },
+    {
+      "name": "research-if-confusion",
+      "title": "Isolation Forest: RCAEval window decisions",
+      "caption": "RCAEval development-test partition, 147 cases. Frozen validation thresholds; windows within a case are correlated. This does not establish external transfer or production reliability."
+    },
+    {
+      "name": "research-ob-curves",
+      "title": "OB: ROC and precision\u2013recall",
+      "caption": "RCAEval development-test partition, 147 cases. Frozen validation thresholds; windows within a case are correlated. This does not establish external transfer or production reliability. Curves use continuous scores within one system; AP is average precision, not a thresholded F1."
+    },
+    {
+      "name": "research-ss-curves",
+      "title": "SS: ROC and precision\u2013recall",
+      "caption": "RCAEval development-test partition, 147 cases. Frozen validation thresholds; windows within a case are correlated. This does not establish external transfer or production reliability. Curves use continuous scores within one system; AP is average precision, not a thresholded F1."
+    },
+    {
+      "name": "research-tt-curves",
+      "title": "TT: ROC and precision\u2013recall",
+      "caption": "RCAEval development-test partition, 147 cases. Frozen validation thresholds; windows within a case are correlated. This does not establish external transfer or production reliability. Curves use continuous scores within one system; AP is average precision, not a thresholded F1."
+    },
+    {
+      "name": "research-training-curves",
+      "title": "GRU training and validation history",
+      "caption": "Original GPU training history; no retraining on this laptop. Checkpoint selected using validation only. Training loss and validation metrics have different units."
+    },
+    {
+      "name": "cluster-operational-confusion",
+      "title": "Kubernetes operational warnings",
+      "caption": "Actual kind run 20261006T141939-0fc666. Three-second window labels use control-command completion proxies; crossing windows excluded. Capture gaps can affect missing-service warnings. Trace review confirmed trial impact, not exact labels for every window. These warnings include rules and coverage checks, not ML alone."
+    },
+    {
+      "name": "cluster-ml-confusion",
+      "title": "Kubernetes Isolation Forest warnings",
+      "caption": "Actual kind run 20261006T141939-0fc666. Three-second window labels use control-command completion proxies; crossing windows excluded. Capture gaps can affect missing-service warnings. Trace review confirmed trial impact, not exact labels for every window."
+    },
+    {
+      "name": "cluster-delay-timeline",
+      "title": "Measured service latency during a cluster fault",
+      "caption": "Actual kind run 20261006T141939-0fc666. Three-second window labels use control-command completion proxies; crossing windows excluded. Capture gaps can affect missing-service warnings. Trace review confirmed trial impact, not exact labels for every window. Latency comes from captured request spans."
+    },
+    {
+      "name": "trial-detection-comparison",
+      "title": "Controlled trial detection",
+      "caption": "Native: original college-PC HTTP experiment. Kubernetes: laptop held-out fault trials. Different deployments, calibrated native models and sample sizes; no claim of production recall or a paired model improvement."
+    }
+  ],
+  "metrics": {
+    "research-gru-confusion": {
+      "matrix": [
+        [
+          881,
+          19
+        ],
+        [
+          72,
+          1563
+        ]
+      ],
+      "windows": 2535,
+      "unit": "observation windows"
+    },
+    "research-if-confusion": {
+      "matrix": [
+        [
+          865,
+          35
+        ],
+        [
+          421,
+          1214
+        ]
+      ],
+      "windows": 2535,
+      "unit": "observation windows"
+    },
+    "ob-GRU": {
+      "windows": 1153,
+      "roc_auc": 0.9986702211466348,
+      "average_precision": 0.9991487583808996
+    },
+    "ob-Isolation Forest": {
+      "windows": 1153,
+      "roc_auc": 0.9927271810578991,
+      "average_precision": 0.9948641147831162
+    },
+    "ss-GRU": {
+      "windows": 631,
+      "roc_auc": 0.9960134383798236,
+      "average_precision": 0.9982891135527383
+    },
+    "ss-Isolation Forest": {
+      "windows": 631,
+      "roc_auc": 0.9774765183239881,
+      "average_precision": 0.9905171509257014
+    },
+    "tt-GRU": {
+      "windows": 751,
+      "roc_auc": 0.9972776481419751,
+      "average_precision": 0.9987463769519898
+    },
+    "tt-Isolation Forest": {
+      "windows": 751,
+      "roc_auc": 0.8970903376351255,
+      "average_precision": 0.9173694661451073
+    },
+    "cluster-operational-confusion": {
+      "matrix": [
+        [
+          218,
+          0
+        ],
+        [
+          0,
+          64
+        ]
+      ],
+      "windows": 282,
+      "unit": "observation windows"
+    },
+    "cluster-ml-confusion": {
+      "matrix": [
+        [
+          213,
+          5
+        ],
+        [
+          47,
+          17
+        ]
+      ],
+      "windows": 282,
+      "unit": "observation windows"
+    }
+  },
+  "source_sha256": {
+    "artifacts/research/temporal_test_predictions.json": "e5357d7547a680db271a4ff11177760db06d51e2fbf150021f83beff014e843b",
+    "artifacts/research/full_test_predictions.json": "cdd914aa46a3c4d1495b271a8597f4003fed5004c33a9d50482d678ba54a4274",
+    "artifacts/research/temporal_test_report.json": "612c2ca94f4ead92cec66350151de4e4756e2793b8e40987d57cd5431b8211be",
+    "artifacts/research/temporal_training_report.json": "987a381f8acadee350efe11607378c2cbe3e2b2da841a16fabf5ed44d9a3b103",
+    "artifacts/laptop_validation/final_summary.json": "d56812d375af25fe31c8e459d2bddb3b962d2f21300dd06f6324063685ed86bc",
+    "artifacts/kubernetes/20261006T141939-0fc666/report.json": "bd7336e332a13aa8c4461ee0ad4c8a1af8d0c704243074e23d15c8b15ff5d20e",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_healthy/schedule.json": "cd525c5e783d1d1ea0b451f8fc39f441adedf764fb8133a4eae944b2671827ee",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_healthy/predictions.json": "bb9444ebaa36a9eb23d71c13743a94edd7f6fdccdbfede8de25c2c2cb872965d",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_surge/schedule.json": "e508f77f6d6e8193d2879a719856053c4ebffb91c7e19822f8bd2ccfff64526f",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_surge/predictions.json": "8a8d706f1eccd0924339eee092e2e0fa814b823057fc6930b7a2ed2ab5f8828d",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_delay_frontend/schedule.json": "ab175c570e5a35b916a4137c52e03c1a37616342cb544c9c611e08d9d6bcf3a2",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_delay_frontend/predictions.json": "b1d6cccfbeb612cd58a4514e80ab54938c0ed0aa0d62e3a0a6aa1aee1656d646",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_delay_checkout/schedule.json": "b1e2184a2d662c97f2d79d0dbc73a49ef4ac4efca5ca4177a19180104c2497ad",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_delay_checkout/predictions.json": "17b884c864a7aa397aa5c8e9bfeaf1a5f5ba6a65d5ab6bfcee89d940cccbb474",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_delay_inventory/schedule.json": "dc9f4f832e71fe49adbd454b8ba17134a18784d47693680ab4a44d2678d40cb4",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_delay_inventory/predictions.json": "5512b0e77e4f73b712fd7a6036cfccedfa8af489f84875f0fe72dc3687125e6e",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_error_frontend/schedule.json": "d7d07d93f75ffb5130720865c60586e8ef36dde94112d52de38bcce17e3310bf",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_error_frontend/predictions.json": "0dafa7878ee7f46121d95c5b06e55e4d9f11bbec740d1100644d5705882741f1",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_error_checkout/schedule.json": "ac7c70b9969b875e879e6c0f875e52a7df4d9f5d83f808bf798c92757a091d43",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_error_checkout/predictions.json": "d1e280e869f2bfc3f47fc7144f0546d8e3dd381391a1d1c734f02c8b391d51d9",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_error_inventory/schedule.json": "0be874bcaeeda1aae1f613cb071aabe5d69c9916a4f6a96a0b294afff01a29bf",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_error_inventory/predictions.json": "75d8ea482fc7d5b9f83f1cb60d4ae0f2b55bbaa7d04f0294ef012346db90198e",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_unavailable_frontend/schedule.json": "5078d932f7553ed16b0c2fa84fefc4f1dab061a1eb7540d2bcfe4173fa94bf67",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_unavailable_frontend/predictions.json": "507b71d6157265ab257aacfc36c17b1d02f2ad723589eb37ca4475f34f0839ff",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_unavailable_checkout/schedule.json": "7513d75ec0da97c46adfc373d26793066b25171ef0b68d66dd3a3e572dcc2141",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_unavailable_checkout/predictions.json": "a6907ca315a31124c008b937b514a72e81bc925949b1b8c24ae75138861d1b24",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_unavailable_inventory/schedule.json": "cbb3e83d800f151032f9065a21f0d29af50ada566010e8efd2968c3e83ec004d",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_unavailable_inventory/predictions.json": "de6ddf7d8e334a435b1c67def067d1930ed46e6066d7409e62fec68c18e74027"
+  },
+  "training_performed": false,
+  "boundary": "Saved development and controlled-lab evaluation; no external or production reliability claim."
+}

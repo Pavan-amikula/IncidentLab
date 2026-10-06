@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-06T13:56:11.0652564+02:00",
+  "responses": [
+    {
+      "endpoint": "/",
+      "status": 200,
+      "bytes": 11324
+    },
+    {
+      "endpoint": "/live",
+      "status": 200,
+      "bytes": 13184
+    },
+    {
+      "endpoint": "/api/status",
+      "status": 200,
+      "bytes": 71248
+    },
+    {
+      "endpoint": "/api/live/status",
+      "status": 200,
+      "bytes": 43833
+    },
+    {
+      "endpoint": "/api/kubernetes/status",
+      "status": 200,
+      "bytes": 155
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "delay",
+  "target": "checkout",
+  "started": 1791226866.0073001,
+  "ended": 1791226956.0073001,
+  "onset": 1791226893.0095942,
+  "recovery": 1791226929.0152688,
+  "actions": [
+    {
+      "timestamp": 1791226893.0095942,
+      "action": "delay",
+      "target": "checkout"
+    },
+    {
+      "timestamp": 1791226929.0152688,
+      "action": "recover",
+      "target": "checkout"
+    }
+  ],
+  "dropped_workload_requests": 0
+}

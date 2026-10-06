@@ -1,0 +1,70 @@
+[
+    {
+        "Id": "sha256:daa5cd0c5d3a158024cee7a8901276ef52dca7d8db94da7d774d9103b3d75706",
+        "RepoTags": [
+            "incidentlab-testbed:dev"
+        ],
+        "RepoDigests": [
+            "incidentlab-testbed@sha256:daa5cd0c5d3a158024cee7a8901276ef52dca7d8db94da7d774d9103b3d75706"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-10-06T12:07:00.780670147Z",
+        "Config": {
+            "User": "10001:10001",
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "PYTHON_VERSION=3.14.8",
+                "PYTHON_SHA256=c2215904f02b175596dc49351585104f4bc20341e1c47378b26a2c274360ce73",
+                "PYTHONDONTWRITEBYTECODE=1",
+                "PYTHONUNBUFFERED=1"
+            ],
+            "Cmd": [
+                "python",
+                "-m",
+                "incidentlab.native_service",
+                "--service",
+                "inventory",
+                "--port",
+                "8893",
+                "--directory",
+                "/telemetry",
+                "--bind",
+                "0.0.0.0",
+                "--stdout-events"
+            ],
+            "WorkingDir": "/app",
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 43531533,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:15f1c8eb1ab18eae260c7fb6296434cbe1ff0e1e30fd814ae92a80dd54005e62",
+                "sha256:056f347e757e8c8674eded7c59fda4cb4fccf302b5931a8c7f9d34cc69f568a2",
+                "sha256:2eb24f345599672dd6b9beddb4c58b8672dd4e74fed554990dc4ba27569a5dec",
+                "sha256:22a6d2b1cc03cee20656d6a029967ed687bd7f9c328d4461ffa3725d5679fc6c",
+                "sha256:b9f4467e1c6deeeae4b174eb0ceb5daadc973618375b2d61ca5b7d3219f65f2f",
+                "sha256:de439020ba84f5b1d0b42b60bd9380ba0647e6e22cf621f156ca0e9cf865ecd7",
+                "sha256:b233b6a81cae2ed14526bd8d3fc61bea6b994e8429066de72402f942b4002444"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-10-06T12:07:01.152115327Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:daa5cd0c5d3a158024cee7a8901276ef52dca7d8db94da7d774d9103b3d75706",
+            "size": 856
+        },
+        "Identity": {
+            "Build": [
+                {
+                    "Ref": "ylmmkf95sndrky104fwq3djwk",
+                    "CreatedAt": "2026-10-06T12:07:01.223580718Z"
+                }
+            ]
+        }
+    }
+]

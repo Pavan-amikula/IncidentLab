@@ -1,0 +1,9 @@
+{
+  "normal_service_windows": 78158,
+  "trees": 200,
+  "training_cases": 439,
+  "seconds": 4.25,
+  "validation_used": false,
+  "test_used": false,
+  "labels_used": "pre-fault windows only, for normal-only fit"
+}

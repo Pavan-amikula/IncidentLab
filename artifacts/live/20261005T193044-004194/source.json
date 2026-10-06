@@ -1,0 +1,11 @@
+{
+  "code_sha256": {
+    "native_service.py": "4bc425942f0ce406008c4e5dd69593c56bde4ae3a1d58e52de7c230dd1486bfc",
+    "live_monitor.py": "1b1cf91e92129b7e3301cf685f5651d5748fb4ef7f7837785fb2eef9f83aeb73",
+    "native_experiment.py": "216cf8bcad600e34c569cadb5a220b946a42d0a9f9402693164ed584fc35efc2"
+  },
+  "window_seconds": 3,
+  "run_seconds": 120,
+  "healthy_loads": true,
+  "purpose": "Actual local HTTP development trials, not Kubernetes or production evidence"
+}

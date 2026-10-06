@@ -1,0 +1,2 @@
+# Optional figure regeneration only; serving and inference do not import matplotlib.
+matplotlib==3.11.2

@@ -1,0 +1,10 @@
+.venv
+.venv-laptop
+.venv-laptop-cpu
+models
+data
+artifacts
+.git
+__pycache__
+*.pdf
+tests

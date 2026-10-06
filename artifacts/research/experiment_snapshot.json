@@ -1,0 +1,130 @@
+{
+  "python": "3.14.4",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.3",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.9.1",
+    "fastapi": "0.142.2",
+    "uvicorn": "0.54.0"
+  },
+  "files": {
+    "artifacts/research/rcaeval_calibrated.joblib": {
+      "bytes": 2218726,
+      "sha256": "ff75beb32c119f44f45f1618284ef47e415cbe5cb7f44e5450b0a1f42eab4815"
+    },
+    "artifacts/research/rcaeval_trained.joblib": {
+      "bytes": 2218571,
+      "sha256": "91e29184e5c3f088b8507121cf47e54cf75a9f703719a983164a1601366895b3"
+    },
+    "artifacts/research/supervised_reference.joblib": {
+      "bytes": 503756,
+      "sha256": "5df5f3f251a136d63425c22956f2c00c3eb58e7343ddd95b691b532ce8b43c9e"
+    },
+    "artifacts/research/temporal_best.pt": {
+      "bytes": 71098,
+      "sha256": "5375557b97ac324d8b90ef9fcbd8c8fd3d26b3d3e8577b0530ad6b603fbc66ab"
+    },
+    "data/processed/multimodal/split_manifest.json": {
+      "bytes": 33441,
+      "sha256": "b5633ed29f685ecbd460c1f6a558c6fe9907b481680174d8a46ee23364417d27"
+    },
+    "data/processed/rcaeval/split_manifest.json": {
+      "bytes": 33120,
+      "sha256": "31587be4eea0e59f608d25b2cb70124d8f25f6f3f19dbec9ba6185406ddce82f"
+    },
+    "incidentlab/__init__.py": {
+      "bytes": 79,
+      "sha256": "55525ebf9dac9e40df0d21b1f77eebfb54dfe33ed26f037e95c0400fe3321a79"
+    },
+    "incidentlab/datasets.py": {
+      "bytes": 3437,
+      "sha256": "a4a3ec961a7e3d2e0dd125328ad77f03eb4bf4217ec28c0e85dc7e98fec6cd88"
+    },
+    "incidentlab/detector.py": {
+      "bytes": 7951,
+      "sha256": "6bf33945b195c6f99d9ee02dd91b2aa6e6e096c59b5a9e23b2fcd8267799a2ca"
+    },
+    "incidentlab/evaluate.py": {
+      "bytes": 155,
+      "sha256": "54560207b10e4115da5a403266e8348ad65f60a01778637df5327f6bf8801306"
+    },
+    "incidentlab/real_logs.py": {
+      "bytes": 6625,
+      "sha256": "a75c085a723e17749ddad171a6f14c2b7e855bfaf42eaa4f051c8e42dc83182c"
+    },
+    "incidentlab/research_pipeline.py": {
+      "bytes": 15286,
+      "sha256": "19be4d60744f05c4259a3e839a05bab10da9d8c60b93ab06f347a408adac3ac4"
+    },
+    "incidentlab/research_server.py": {
+      "bytes": 8030,
+      "sha256": "5da57e434379f9f75ea8d4ba4ed4e865c9a7d7443ce8df9cc5705af0bf8bc724"
+    },
+    "incidentlab/schema.py": {
+      "bytes": 1204,
+      "sha256": "e8649aaf7ce09b6cea42d42c68b5968ee114dd13a75a0c12cc5a91cf586daa5d"
+    },
+    "incidentlab/server.py": {
+      "bytes": 3440,
+      "sha256": "7536b2c0fa59d140e21b3c906b1c6cf88f0caf03b56b8b53eb03722292cf73b7"
+    },
+    "incidentlab/simulation.py": {
+      "bytes": 2656,
+      "sha256": "5999434e9441f00439729784a1d559c69e230315a61696975c8cb8482f6028fd"
+    },
+    "incidentlab/streaming.py": {
+      "bytes": 5873,
+      "sha256": "99115e1ca9da7510708c0c1ca8be462bcea9a5ec6603c5b513403c0beb5b8920"
+    },
+    "incidentlab/supervised_reference.py": {
+      "bytes": 3538,
+      "sha256": "c4a6e6f203a262a9d79847deaa0a3677197d6fc2d59f6e3ba2215f6b6837dbcb"
+    },
+    "incidentlab/temporal_model.py": {
+      "bytes": 12846,
+      "sha256": "28699dd381500cab5c94cd9d361e63211e72b2ba5565dcb075173639f1be385e"
+    },
+    "incidentlab/test_model.py": {
+      "bytes": 3638,
+      "sha256": "22e354869f127f44ead625d2a15073d5ae0d2c1631de6410180927133892a720"
+    },
+    "incidentlab/trace_features.py": {
+      "bytes": 5966,
+      "sha256": "714acac2fcfb9cc2f2e8e35419916476d39278b96f4b8c90d355476cea8c16f8"
+    },
+    "incidentlab/train.py": {
+      "bytes": 1160,
+      "sha256": "13b99f142b0bf401e93af28ab05248b542fb71e0637dd54b40abd3b409808606"
+    },
+    "incidentlab/validate.py": {
+      "bytes": 1638,
+      "sha256": "17198655caef75079d646f68ccc495231ecd3495f6989ef136c1ef29e81b1636"
+    },
+    "scripts/acquire_research_data.py": {
+      "bytes": 2711,
+      "sha256": "bbe13e7eb1eb88ef085f40f0e36c57416e27c710378e04c9d378e55fef7724fc"
+    },
+    "scripts/audit_research_data.py": {
+      "bytes": 4222,
+      "sha256": "7eefa58d15843092247825171fa052960422508320fcde0d4a922b608906b9b2"
+    },
+    "scripts/extract_research_archives.py": {
+      "bytes": 1645,
+      "sha256": "69bc3429023bae0f2ae4fbf683a940cc8ca640a666b5ff82af906ccb22147cd5"
+    },
+    "scripts/freeze_experiment.py": {
+      "bytes": 1175,
+      "sha256": "1ae0213b069c97d3b5652fb94cf8c4ddff2e8f341fa3233c39a56922b1666aa4"
+    },
+    "scripts/summarize_experiments.py": {
+      "bytes": 1415,
+      "sha256": "8304d7dfc023ad02542e7fcf41dd42fdb6dce8e3bf7437193b0c96eb733e5365"
+    },
+    "scripts/verify_streaming.py": {
+      "bytes": 2302,
+      "sha256": "90b60a938a1bd335b2f7f16517e538605712fb28ac79fe55f9466eb5b0f8adf7"
+    }
+  },
+  "scope": "Local snapshot; processed file contents and raw provenance are separate audits"
+}

@@ -1,0 +1,68 @@
+{
+  "scope": "Healthy-reference trace schema normalization only; no inference, training or threshold adjustment",
+  "systems": {
+    "TT_data": {
+      "spans": 8458,
+      "services": [
+        "ts-assurance-service",
+        "ts-auth-service",
+        "ts-basic-service",
+        "ts-cancel-service",
+        "ts-config-service",
+        "ts-consign-price-service",
+        "ts-consign-service",
+        "ts-contacts-service",
+        "ts-delivery-service",
+        "ts-execute-service",
+        "ts-food-service",
+        "ts-gateway-service",
+        "ts-inside-payment-service",
+        "ts-notification-service",
+        "ts-order-other-service",
+        "ts-order-service",
+        "ts-payment-service",
+        "ts-preserve-other-service",
+        "ts-preserve-service",
+        "ts-price-service",
+        "ts-rebook-service",
+        "ts-route-plan-service",
+        "ts-route-service",
+        "ts-seat-service",
+        "ts-security-service",
+        "ts-station-food-service",
+        "ts-station-service",
+        "ts-train-food-service",
+        "ts-train-service",
+        "ts-travel-plan-service",
+        "ts-travel-service",
+        "ts-travel2-service",
+        "ts-user-service",
+        "ts-verification-code-service"
+      ],
+      "missing_epoch_timestamps": 0,
+      "missing_status": 0,
+      "file": "data\\processed\\anomod-normal\\TT_data-spans.parquet"
+    },
+    "SN_data": {
+      "spans": 2060,
+      "services": [
+        "compose-post-service",
+        "home-timeline-service",
+        "media-service",
+        "nginx-web-server",
+        "post-storage-service",
+        "social-graph-service",
+        "text-service",
+        "unique-id-service",
+        "url-shorten-service",
+        "user-mention-service",
+        "user-service",
+        "user-timeline-service"
+      ],
+      "missing_epoch_timestamps": 2060,
+      "missing_status": 1650,
+      "file": "data\\processed\\anomod-normal\\SN_data-spans.parquet"
+    }
+  },
+  "timezone_policy": "Naive timestamps stay local; epoch conversion requires separately verified source zone"
+}

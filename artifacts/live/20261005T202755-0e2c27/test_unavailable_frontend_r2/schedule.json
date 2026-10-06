@@ -1,0 +1,21 @@
+{
+  "kind": "unavailable",
+  "target": "frontend",
+  "started": 1791227871.2018523,
+  "ended": 1791227961.2018523,
+  "onset": 1791227898.20649,
+  "recovery": 1791227934.6439078,
+  "actions": [
+    {
+      "timestamp": 1791227898.20649,
+      "action": "unavailable",
+      "target": "frontend"
+    },
+    {
+      "timestamp": 1791227934.6439078,
+      "action": "recover",
+      "target": "frontend"
+    }
+  ],
+  "dropped_workload_requests": 0
+}

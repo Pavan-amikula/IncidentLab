@@ -1,0 +1,1014 @@
+[
+  {
+    "window": 0,
+    "start": 1791228054.083612,
+    "end": 1791228057.083612,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+    ],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": false,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "3dafe6ca55b04ff59db09402be63f868",
+        "trace_id": "f0ef6412ba974931925bef206abdfcf2",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 80.96742630004883,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "58617d6f236e46979f35696ed572133e",
+        "trace_id": "094222e9c54e4986ada05dc555cd152d",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 79.93960380554199,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E3": {
+        "service": "checkout",
+        "span_id": "e22b7b4f494b45e58e6dc73e7e1e8633",
+        "trace_id": "58b44601b6ea46f88d9559a6cfe0c61b",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 48.833370208740234,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E4": {
+        "service": "checkout",
+        "span_id": "c9f25ef124754a4cbc44f1e0cb2fed3f",
+        "trace_id": "f0ef6412ba974931925bef206abdfcf2",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 47.060251235961914,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E5": {
+        "service": "inventory",
+        "span_id": "81671580d73e4a7fa284c92d1ad53fdb",
+        "trace_id": "58b44601b6ea46f88d9559a6cfe0c61b",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.42043685913086,
+        "dependency": null,
+        "dependency_status": null
+      },
+      "E6": {
+        "service": "inventory",
+        "span_id": "0e32fb5a8e0c466e9b43a906a3a39b40",
+        "trace_id": "ce605ce3440c4c84b4c9436322721227",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 14.926433563232422,
+        "dependency": null,
+        "dependency_status": null
+      }
+    },
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"clear\",\n  \"suspected_service\": null,\n  \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\", \"E5\", \"E6\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"Requests completed successfully without observed failures.\"\n}",
+    "latency_ms": 2374.6007999870926,
+    "token_usage": {
+      "input_tokens": 876,
+      "output_tokens": 69
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 0,
+    "start": 1791228054.083612,
+    "end": 1791228057.083612,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": true,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1584.7948999144137,
+    "token_usage": {
+      "input_tokens": 1369,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 4,
+    "start": 1791228066.083612,
+    "end": 1791228069.083612,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+    ],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": false,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "2d6b62e2bd994a8f93e95abf976530f7",
+        "trace_id": "c7cf10dae89040aeac864a6a56c6ef24",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 94.05016899108887,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "3cdd0fe98deb461eacc34c29d2b5ecbc",
+        "trace_id": "cebde4de438643caa4e2510671219a1c",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 92.11587905883789,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E3": {
+        "service": "checkout",
+        "span_id": "fa767fb0df8c40ea881a0bd768371b41",
+        "trace_id": "c7cf10dae89040aeac864a6a56c6ef24",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 58.44616889953613,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E4": {
+        "service": "checkout",
+        "span_id": "5176acb1a2c9486296975b7e402ac986",
+        "trace_id": "2ed69a85f0eb4d7aabd48e2a15c79ffd",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 55.458784103393555,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E5": {
+        "service": "inventory",
+        "span_id": "f206fcb231f249699b90446d7649e5fd",
+        "trace_id": "ad934bf4ecb44972853778d512be3d24",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 16.64447784423828,
+        "dependency": null,
+        "dependency_status": null
+      },
+      "E6": {
+        "service": "inventory",
+        "span_id": "3aa6cbf7e3d54a64b4bdd90fd8608c7d",
+        "trace_id": "af2c9ee522bb47fe9f62266717b8fd10",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.984535217285156,
+        "dependency": null,
+        "dependency_status": null
+      }
+    },
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"clear\",\n  \"suspected_service\": null,\n  \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\", \"E5\", \"E6\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"Requests completed successfully without observed failures.\"\n}",
+    "latency_ms": 2145.7169000059366,
+    "token_usage": {
+      "input_tokens": 876,
+      "output_tokens": 69
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 4,
+    "start": 1791228066.083612,
+    "end": 1791228069.083612,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": true,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1503.798499936238,
+    "token_usage": {
+      "input_tokens": 1371,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 8,
+    "start": 1791228078.083612,
+    "end": 1791228081.083612,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+    ],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": false,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "801957f6aa104969acf3a73cd064d366",
+        "trace_id": "2c468695061145278ebd74c9f78f2da1",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 79.31780815124512,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "0d619b1ef0b04a67870af4baf25059a0",
+        "trace_id": "65108bf5c6194142a89efc6b99ae52ad",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 79.19192314147949,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E3": {
+        "service": "checkout",
+        "span_id": "80732e9ef1fe4c2ca463c3b96303c07d",
+        "trace_id": "2c468695061145278ebd74c9f78f2da1",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 46.45800590515137,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E4": {
+        "service": "checkout",
+        "span_id": "5043d041a68a48b9ab0485e18a90a751",
+        "trace_id": "bad1a7a5878848bbb8d94934f37ffa21",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 45.806169509887695,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E5": {
+        "service": "inventory",
+        "span_id": "05ef5b1a4a6248e6b7cb44a4730b96b3",
+        "trace_id": "cca5be2d5602497481bbb063ad8274d0",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 13.488054275512695,
+        "dependency": null,
+        "dependency_status": null
+      },
+      "E6": {
+        "service": "inventory",
+        "span_id": "ee026f85a230486f8996007efbc57e0e",
+        "trace_id": "2c468695061145278ebd74c9f78f2da1",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 13.450384140014648,
+        "dependency": null,
+        "dependency_status": null
+      }
+    },
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"clear\",\n  \"suspected_service\": null,\n  \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\", \"E5\", \"E6\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"Requests completed successfully without observed failures.\"\n}",
+    "latency_ms": 2140.7803000183776,
+    "token_usage": {
+      "input_tokens": 876,
+      "output_tokens": 69
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 8,
+    "start": 1791228078.083612,
+    "end": 1791228081.083612,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": true,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1510.2147000143304,
+    "token_usage": {
+      "input_tokens": 1369,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 12,
+    "start": 1791228090.083612,
+    "end": 1791228093.083612,
+    "status": "review",
+    "suspected_service": "checkout",
+    "evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "runbook_id": "dependency",
+    "summary": "Check the checkout dependency endpoint and service readiness as the cited downstream requests failed.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": false,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "2151d3db922e487f87f6f8bfdbf94364",
+        "trace_id": "06748ba349114dc08533d2e96a18a558",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 1034.3458652496338,
+        "dependency": "checkout",
+        "dependency_status": 0
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "079dcdaf70634aebbfb65b2b0fa3175c",
+        "trace_id": "cd38c6e209074a3b85b8df8a6038476b",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 1029.860258102417,
+        "dependency": "checkout",
+        "dependency_status": 0
+      }
+    },
+    "runbook": {
+      "title": "Inspect a failing dependency",
+      "check": "Check the cited dependency endpoint and service readiness. Distinguish failed requests from missing collection; verify recovery."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suspected_service\": \"checkout\",\n  \"evidence_ids\": [\"E1\", \"E2\"],\n  \"runbook_id\": \"dependency\",\n  \"summary\": \"Check the checkout dependency endpoint and service readiness as the cited downstream requests failed.\"\n}",
+    "latency_ms": 1868.178499978967,
+    "token_usage": {
+      "input_tokens": 736,
+      "output_tokens": 62
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 12,
+    "start": 1791228090.083612,
+    "end": 1791228093.083612,
+    "status": "review",
+    "suspected_service": "checkout",
+    "evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "runbook_id": "dependency",
+    "summary": "Check the checkout dependency as the downstream service failed with no completed requests and missing collection.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": true,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "2151d3db922e487f87f6f8bfdbf94364",
+        "trace_id": "06748ba349114dc08533d2e96a18a558",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 1034.3458652496338,
+        "dependency": "checkout",
+        "dependency_status": 0
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "079dcdaf70634aebbfb65b2b0fa3175c",
+        "trace_id": "cd38c6e209074a3b85b8df8a6038476b",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 1029.860258102417,
+        "dependency": "checkout",
+        "dependency_status": 0
+      }
+    },
+    "runbook": {
+      "title": "Inspect a failing dependency",
+      "check": "Check the cited dependency endpoint and service readiness. Distinguish failed requests from missing collection; verify recovery."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suspected_service\": \"checkout\",\n  \"evidence_ids\": [\"E1\", \"E2\"],\n  \"runbook_id\": \"dependency\",\n  \"summary\": \"Check the checkout dependency as the downstream service failed with no completed requests and missing collection.\"\n}",
+    "latency_ms": 2609.408500022255,
+    "token_usage": {
+      "input_tokens": 1380,
+      "output_tokens": 64
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 16,
+    "start": 1791228102.083612,
+    "end": 1791228105.083612,
+    "status": "review",
+    "suspected_service": "checkout",
+    "evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "runbook_id": "dependency",
+    "summary": "Check the checkout dependency endpoint and service readiness as the cited downstream requests failed.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": false,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "3d4b6f638c0246379fe080f144c19a62",
+        "trace_id": "4ade7392cb85499f8f6ed743520260f2",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 1027.6875495910645,
+        "dependency": "checkout",
+        "dependency_status": 0
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "c9e55001653b47629c02141a9eae1959",
+        "trace_id": "fa7f1393758d4346a9a3ec38b9a79bcb",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 1027.311086654663,
+        "dependency": "checkout",
+        "dependency_status": 0
+      }
+    },
+    "runbook": {
+      "title": "Inspect a failing dependency",
+      "check": "Check the cited dependency endpoint and service readiness. Distinguish failed requests from missing collection; verify recovery."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suspected_service\": \"checkout\",\n  \"evidence_ids\": [\"E1\", \"E2\"],\n  \"runbook_id\": \"dependency\",\n  \"summary\": \"Check the checkout dependency endpoint and service readiness as the cited downstream requests failed.\"\n}",
+    "latency_ms": 1839.170299936086,
+    "token_usage": {
+      "input_tokens": 736,
+      "output_tokens": 62
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 16,
+    "start": 1791228102.083612,
+    "end": 1791228105.083612,
+    "status": "review",
+    "suspected_service": "checkout",
+    "evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "runbook_id": "dependency",
+    "summary": "Check the checkout dependency as the downstream service failed with a 502 error, indicating a potential issue with the dependency endpoint.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": true,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "3d4b6f638c0246379fe080f144c19a62",
+        "trace_id": "4ade7392cb85499f8f6ed743520260f2",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 1027.6875495910645,
+        "dependency": "checkout",
+        "dependency_status": 0
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "c9e55001653b47629c02141a9eae1959",
+        "trace_id": "fa7f1393758d4346a9a3ec38b9a79bcb",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 1027.311086654663,
+        "dependency": "checkout",
+        "dependency_status": 0
+      }
+    },
+    "runbook": {
+      "title": "Inspect a failing dependency",
+      "check": "Check the cited dependency endpoint and service readiness. Distinguish failed requests from missing collection; verify recovery."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suspected_service\": \"checkout\",\n  \"evidence_ids\": [\"E1\", \"E2\"],\n  \"runbook_id\": \"dependency\",\n  \"summary\": \"Check the checkout dependency as the downstream service failed with a 502 error, indicating a potential issue with the dependency endpoint.\"\n}",
+    "latency_ms": 2946.2279999861494,
+    "token_usage": {
+      "input_tokens": 1380,
+      "output_tokens": 73
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 20,
+    "start": 1791228114.083612,
+    "end": 1791228117.083612,
+    "status": "review",
+    "suspected_service": "checkout",
+    "evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "runbook_id": "dependency",
+    "summary": "Check the checkout dependency endpoint and service readiness as the cited downstream requests failed.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": false,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "3c8faf70d9604c299b60c7a1b2c78577",
+        "trace_id": "f2fba068df1d4bef958e5300e16e2ccb",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 1028.6059379577637,
+        "dependency": "checkout",
+        "dependency_status": 0
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "2b1122482c174ccb9a3ffae09ccb808e",
+        "trace_id": "a4e7e2956c2a462385f312b050e0e039",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 1019.6802616119385,
+        "dependency": "checkout",
+        "dependency_status": 0
+      }
+    },
+    "runbook": {
+      "title": "Inspect a failing dependency",
+      "check": "Check the cited dependency endpoint and service readiness. Distinguish failed requests from missing collection; verify recovery."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suspected_service\": \"checkout\",\n  \"evidence_ids\": [\"E1\", \"E2\"],\n  \"runbook_id\": \"dependency\",\n  \"summary\": \"Check the checkout dependency endpoint and service readiness as the cited downstream requests failed.\"\n}",
+    "latency_ms": 1828.8803999312222,
+    "token_usage": {
+      "input_tokens": 736,
+      "output_tokens": 62
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 20,
+    "start": 1791228114.083612,
+    "end": 1791228117.083612,
+    "status": "review",
+    "suspected_service": "checkout",
+    "evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "runbook_id": "dependency",
+    "summary": "Check the checkout dependency as the downstream service failed with no completed requests and missing collection.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": true,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "3c8faf70d9604c299b60c7a1b2c78577",
+        "trace_id": "f2fba068df1d4bef958e5300e16e2ccb",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 1028.6059379577637,
+        "dependency": "checkout",
+        "dependency_status": 0
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "2b1122482c174ccb9a3ffae09ccb808e",
+        "trace_id": "a4e7e2956c2a462385f312b050e0e039",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 1019.6802616119385,
+        "dependency": "checkout",
+        "dependency_status": 0
+      }
+    },
+    "runbook": {
+      "title": "Inspect a failing dependency",
+      "check": "Check the cited dependency endpoint and service readiness. Distinguish failed requests from missing collection; verify recovery."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suspected_service\": \"checkout\",\n  \"evidence_ids\": [\"E1\", \"E2\"],\n  \"runbook_id\": \"dependency\",\n  \"summary\": \"Check the checkout dependency as the downstream service failed with no completed requests and missing collection.\"\n}",
+    "latency_ms": 2618.6870000092313,
+    "token_usage": {
+      "input_tokens": 1380,
+      "output_tokens": 64
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 24,
+    "start": 1791228126.083612,
+    "end": 1791228129.083612,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+    ],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": false,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "7cc7698ea1a648a39f312a2c4631b94c",
+        "trace_id": "379040b0f8634efcb8cc9386b446e3d9",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 83.85252952575684,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "34b6b47f95984bf59b628554191275d1",
+        "trace_id": "eb26e9e1163d49d188161412e9e2d031",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 80.8706283569336,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E3": {
+        "service": "checkout",
+        "span_id": "4bb672bc7aaa4853ad76ffd39aa95f58",
+        "trace_id": "379040b0f8634efcb8cc9386b446e3d9",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 52.190542221069336,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E4": {
+        "service": "checkout",
+        "span_id": "ec8e1de069c84423991d8acb9afd9f45",
+        "trace_id": "eb26e9e1163d49d188161412e9e2d031",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 48.270463943481445,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E5": {
+        "service": "inventory",
+        "span_id": "0af1f1f55c9c4e0dabb1a68d81f2496c",
+        "trace_id": "379040b0f8634efcb8cc9386b446e3d9",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.87057113647461,
+        "dependency": null,
+        "dependency_status": null
+      },
+      "E6": {
+        "service": "inventory",
+        "span_id": "67d20e43744b4a7dab1052390e4416f0",
+        "trace_id": "eb26e9e1163d49d188161412e9e2d031",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.825271606445312,
+        "dependency": null,
+        "dependency_status": null
+      }
+    },
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"clear\",\n  \"suspected_service\": null,\n  \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\", \"E5\", \"E6\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"Requests completed successfully without observed failures.\"\n}",
+    "latency_ms": 2149.8838999541476,
+    "token_usage": {
+      "input_tokens": 876,
+      "output_tokens": 69
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 24,
+    "start": 1791228126.083612,
+    "end": 1791228129.083612,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": true,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1514.65659996029,
+    "token_usage": {
+      "input_tokens": 1371,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 29,
+    "start": 1791228141.083612,
+    "end": 1791228144.083612,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+    ],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": false,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "66a26ddeab0e4759a0d95b760d610d77",
+        "trace_id": "38a11ada128544d381b2d6a6c40f74ef",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 77.47197151184082,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "5fe85e73317c40b491530be8c32e0be6",
+        "trace_id": "180871c50ec2426e8e16bb704983506c",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 76.59482955932617,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E3": {
+        "service": "checkout",
+        "span_id": "1913caa3badd4cb9a32b0500d3c8c38f",
+        "trace_id": "62a122667f504a9aa7ba672614cd3eb3",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 50.94480514526367,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E4": {
+        "service": "checkout",
+        "span_id": "57c36b27211c465db45cbeb16e5a0da0",
+        "trace_id": "2fe26b73fd564294a700996025b3b31f",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 49.19743537902832,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E5": {
+        "service": "inventory",
+        "span_id": "7e9b6da32f074196a93afd092ff159de",
+        "trace_id": "ad4bc13a3cdf413899bfac4e7fd2933d",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 13.958930969238281,
+        "dependency": null,
+        "dependency_status": null
+      },
+      "E6": {
+        "service": "inventory",
+        "span_id": "d41983c3e43747cdab9750b858f68051",
+        "trace_id": "9172d75649e347fd954cf8c0edfa91f3",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 13.844966888427734,
+        "dependency": null,
+        "dependency_status": null
+      }
+    },
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"clear\",\n  \"suspected_service\": null,\n  \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\", \"E5\", \"E6\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"Requests completed successfully without observed failures.\"\n}",
+    "latency_ms": 2138.8906999491155,
+    "token_usage": {
+      "input_tokens": 875,
+      "output_tokens": 69
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 29,
+    "start": 1791228141.083612,
+    "end": 1791228144.083612,
+    "status": "clear",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "Requests completed successfully without observed failures.",
+    "mode": "hybrid",
+    "structurally_valid": true,
+    "accepted": true,
+    "operational_consistency_checked": true,
+    "policy_version": "v2",
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\"status\":\"clear\",\"suspected_service\":null,\"evidence_ids\":[],\"runbook_id\":\"none\",\"summary\":\"Requests completed successfully without observed failures.\"}",
+    "latency_ms": 1504.8127000918612,
+    "token_usage": {
+      "input_tokens": 1370,
+      "output_tokens": 33
+    },
+    "model_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "cuda",
+    "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  }
+]

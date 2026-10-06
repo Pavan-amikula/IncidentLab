@@ -1,0 +1,21 @@
+{
+  "kind": "unavailable",
+  "target": "inventory",
+  "phase": "test_unavailable_inventory",
+  "onset": 1791290466.477487,
+  "recovery": 1791290496.1444378,
+  "dropped": 0,
+  "commands": [
+    {
+      "action": "unavailable",
+      "target": "inventory",
+      "command_completed": 1791290466.477487
+    },
+    {
+      "action": "recover",
+      "target": "inventory",
+      "command_completed": 1791290496.1444378
+    }
+  ],
+  "label_semantics": "Control command completion proxy; actual workload onset requires trace review"
+}

@@ -1,0 +1,354 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Live. Collect healthy runs, train, calibrate and test real HTTP faults",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-u",
+        "-m",
+        "incidentlab.native_experiment",
+        "--seconds",
+        "120",
+        "--window",
+        "3",
+        "--healthy-loads"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Research. Semantic encoder comparison on all eligible AnoMod logs",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-u",
+        "-m",
+        "incidentlab.semantic_log_content"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Research. Full OpenStack log and sequence benchmark",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-u",
+        "-m",
+        "incidentlab.openstack_benchmark"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Research. Local LLM-only versus hybrid evidence comparison",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-u",
+        "-m",
+        "incidentlab.llm_live_evaluation"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Research. Run frozen AnoMod transfer evaluation",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "incidentlab.external_evaluation"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Research. Inspect external transfer failure",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "scripts/analyze_external_transfer.py"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Research. Verify sequential HTTP inference",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "scripts/verify_streaming.py"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Research. Inspect completed model comparison",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/Run-Research.ps1",
+        "-Mode",
+        "Inspect"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Research. Train temporal comparison with visible logs",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/Run-Research.ps1",
+        "-Mode",
+        "Temporal"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Research 1. Preprocess complete RCAEval",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "incidentlab.research_pipeline",
+        "prepare"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Research 2. Train full-data baseline",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "incidentlab.research_pipeline",
+        "train"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Research 3. Validate full-data thresholds",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "incidentlab.research_pipeline",
+        "validate"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Research 4. Test full-data baseline",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "incidentlab.research_pipeline",
+        "test"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Research. Run full experiment",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Research 1. Preprocess complete RCAEval",
+        "Research 2. Train full-data baseline",
+        "Research 3. Validate full-data thresholds",
+        "Research 4. Test full-data baseline"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Research. Serve real telemetry replay",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "uvicorn",
+        "incidentlab.research_server:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8768"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "1. Prepare datasets",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "incidentlab.datasets"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "2. Train model",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "incidentlab.train"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "3. Validate threshold",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "incidentlab.validate"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "4. Test frozen model",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "incidentlab.test_model"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Run full synthetic experiment",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "1. Prepare datasets",
+        "2. Train model",
+        "3. Validate threshold",
+        "4. Test frozen model"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "5. Real-log experiment",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "incidentlab.real_logs"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Run correctness tests",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Serve saved model",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "uvicorn",
+        "incidentlab.server:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8767"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Live. Longer validation and repeated faults (57 minutes)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/Run-Live.ps1",
+        "-Mode",
+        "Validation"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Research. Restore raw OpenStack operation durations",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/Run-Live.ps1",
+        "-Mode",
+        "Parameters"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Live. Run application and durable monitor (10 minutes)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": ["-NoProfile", "-File", "${workspaceFolder}/Run-Live.ps1", "-Mode", "Runtime"],
+      "problemMatcher": [],
+      "presentation": {"reveal": "always", "panel": "dedicated"}
+    }
+  ]
+}

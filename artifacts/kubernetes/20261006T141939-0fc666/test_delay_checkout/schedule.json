@@ -1,0 +1,21 @@
+{
+  "kind": "delay",
+  "target": "checkout",
+  "phase": "test_delay_checkout",
+  "onset": 1791290006.6487799,
+  "recovery": 1791290030.3606832,
+  "dropped": 0,
+  "commands": [
+    {
+      "action": "delay",
+      "target": "checkout",
+      "command_completed": 1791290006.6487799
+    },
+    {
+      "action": "recover",
+      "target": "checkout",
+      "command_completed": 1791290030.3606832
+    }
+  ],
+  "label_semantics": "Control command completion proxy; actual workload onset requires trace review"
+}

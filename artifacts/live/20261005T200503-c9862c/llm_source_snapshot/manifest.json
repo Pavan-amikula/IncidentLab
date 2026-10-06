@@ -1,0 +1,6 @@
+{
+  "evidence_diagnosis.py": "fdd56ccd34f674d1677460cccffb4833a3cf6a681bddfff0ee272026379c6b74",
+  "llm_live_evaluation.py": "f92bac60ba90be4645d73479be524a7df898a3732ba857df58d77858488d99a0",
+  "semantic_models.py": "a3ac94b4c3e2578f78faede213df193890fdf9978dc56ccdbf34467d0618aa30",
+  "notice": "Post-experiment source snapshot; these three files were unchanged during the 176-generation evaluation. Original native collection sources are separately preserved."
+}

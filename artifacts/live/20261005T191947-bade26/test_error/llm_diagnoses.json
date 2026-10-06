@@ -1,0 +1,806 @@
+[
+  {
+    "window": 0,
+    "start": 1791221096.3202584,
+    "end": 1791221099.3202584,
+    "status": "review",
+    "suspected_service": "checkout",
+    "evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+    ],
+    "runbook_id": "none",
+    "summary": "The frontend requests completed successfully, indicating no issues with the frontend service, while the checkout and inventory services also completed their requests without errors, suggesting no root cause for the observed failures.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "53ab7ed28b6a4297992b060a0cbf08bd",
+        "trace_id": "c89d8696840f42da9c25d6f581d5054e",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 83.79030227661133,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "8dfd04fdb6554d369f5eca690a924cc0",
+        "trace_id": "c21ab721932f42259d063852c6ec3496",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 78.7508487701416,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E3": {
+        "service": "checkout",
+        "span_id": "8656611ef7c8472aafcecdc563497ce5",
+        "trace_id": "c89d8696840f42da9c25d6f581d5054e",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 51.28169059753418,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E4": {
+        "service": "checkout",
+        "span_id": "d430199c0eb2446688debd4d117d4ba7",
+        "trace_id": "c11458a2184744d6b4bae7f06fa4ae58",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 46.48470878601074,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E5": {
+        "service": "inventory",
+        "span_id": "5040b7e726d348c0bd11ba9a85e8a8ba",
+        "trace_id": "22295c3379fb4d84ba0ab622b62dea84",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.259265899658203,
+        "dependency": null,
+        "dependency_status": null
+      },
+      "E6": {
+        "service": "inventory",
+        "span_id": "713825efdd544194a5590f4dd24f5a13",
+        "trace_id": "bd65654f7a9041d7acf30161aa8b3a58",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 14.886617660522461,
+        "dependency": null,
+        "dependency_status": null
+      }
+    },
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suspected_service\": \"checkout\",\n  \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\", \"E5\", \"E6\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"The frontend requests completed successfully, indicating no issues with the frontend service, while the checkout and inventory services also completed their requests without errors, suggesting no root cause for the observed failures.\"\n}",
+    "latency_ms": 7495.008199999575,
+    "token_usage": {
+      "input_tokens": 528,
+      "output_tokens": 99
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 0,
+    "start": 1791221096.3202584,
+    "end": 1791221099.3202584,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "The generated diagnosis did not pass citation/schema checks. Inspect the measured evidence.",
+    "mode": "hybrid",
+    "structurally_valid": false,
+    "semantic_support_verified": false,
+    "validation_error": "2 validation errors for Diagnosis\nsuggested_service\n  Extra inputs are not permitted [type=extra_forbidden, input_value='frontend', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\nsuspected_service",
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suggested_service\": \"frontend\",\n  \"evidence_ids\": [\"E1\", \"E2\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"The frontend service appears to be consistently successful with no observed issues, while the checkout and inventory services also show successful responses.\"\n}",
+    "latency_ms": 5523.374700045679,
+    "token_usage": {
+      "input_tokens": 656,
+      "output_tokens": 71
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 2,
+    "start": 1791221102.3202584,
+    "end": 1791221105.3202584,
+    "status": "review",
+    "suspected_service": "checkout",
+    "evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+    ],
+    "runbook_id": "none",
+    "summary": "The frontend requests completed successfully, indicating that the checkout service was properly executed, and the inventory service was also successful. There is no evidence of failure in the dependencies.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "9b5cdb15d4c1414a87d8721f38dbdf98",
+        "trace_id": "920af882939f4db28b517fa74ee27b82",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 80.44910430908203,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "9b74264e583c46acb88492405844017c",
+        "trace_id": "d58c9c946770422a9977bb214e17393f",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 80.39259910583496,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E3": {
+        "service": "checkout",
+        "span_id": "7b639c69f6c5451c84ae8e8872ca54cf",
+        "trace_id": "920af882939f4db28b517fa74ee27b82",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 48.957109451293945,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E4": {
+        "service": "checkout",
+        "span_id": "f8d7ad6597d54bcf8eacdd87f380a987",
+        "trace_id": "d58c9c946770422a9977bb214e17393f",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 48.158884048461914,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E5": {
+        "service": "inventory",
+        "span_id": "1863cd04188040f78f4909ca62aae0bb",
+        "trace_id": "d58c9c946770422a9977bb214e17393f",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 16.67165756225586,
+        "dependency": null,
+        "dependency_status": null
+      },
+      "E6": {
+        "service": "inventory",
+        "span_id": "af0336c551b74cd3b25f8ee9f758192f",
+        "trace_id": "920af882939f4db28b517fa74ee27b82",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.972375869750977,
+        "dependency": null,
+        "dependency_status": null
+      }
+    },
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suspected_service\": \"checkout\",\n  \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\", \"E5\", \"E6\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"The frontend requests completed successfully, indicating that the checkout service was properly executed, and the inventory service was also successful. There is no evidence of failure in the dependencies.\"\n}",
+    "latency_ms": 7451.027100032661,
+    "token_usage": {
+      "input_tokens": 528,
+      "output_tokens": 96
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 2,
+    "start": 1791221102.3202584,
+    "end": 1791221105.3202584,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "The generated diagnosis did not pass citation/schema checks. Inspect the measured evidence.",
+    "mode": "hybrid",
+    "structurally_valid": false,
+    "semantic_support_verified": false,
+    "validation_error": "2 validation errors for Diagnosis\nsuggested_service\n  Extra inputs are not permitted [type=extra_forbidden, input_value='checkout', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\nsuspected_service",
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suggested_service\": \"checkout\",\n  \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\", \"E5\", \"E6\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"The frontend requests completed successfully, indicating no issues with the frontend service. The checkout service also completed successfully, suggesting no issues with the checkout dependency. The inventory service completed successfully, indicating no issues with the inventory dependency.\"\n}",
+    "latency_ms": 7967.269199958537,
+    "token_usage": {
+      "input_tokens": 656,
+      "output_tokens": 106
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 5,
+    "start": 1791221111.3202584,
+    "end": 1791221114.3202584,
+    "status": "review",
+    "suspected_service": "checkout",
+    "evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+    ],
+    "runbook_id": "none",
+    "summary": "The frontend requests completed successfully, indicating that the checkout service was properly executed, and the inventory service also completed its request. There is no evidence of failure or dependency issues.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "a076af61e7f74c51890a8be418ebfad9",
+        "trace_id": "a53468a86fa048818821294b4efd24dc",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 83.05144309997559,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "d0afd2aca7074f9e9d2b70574204f8fb",
+        "trace_id": "8c0e7c30f4e142e08d87265836a02cb6",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 83.01138877868652,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E3": {
+        "service": "checkout",
+        "span_id": "7a22b8fc65974188a1c84ae583779d93",
+        "trace_id": "d309d747bb344cb9a74f7111d9c7fa89",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 46.178579330444336,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E4": {
+        "service": "checkout",
+        "span_id": "972cc07e522e4e66a536dbf3966622f5",
+        "trace_id": "8c0e7c30f4e142e08d87265836a02cb6",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 45.612335205078125,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E5": {
+        "service": "inventory",
+        "span_id": "b859f08fef764f0386bd996dadbb184c",
+        "trace_id": "f40ce4d0061d442dadd06949109366f8",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.884876251220703,
+        "dependency": null,
+        "dependency_status": null
+      },
+      "E6": {
+        "service": "inventory",
+        "span_id": "6b1776fb89934fc982b4e2fcb1a1df25",
+        "trace_id": "b7c64a59f26b4b758264d3a8df6ced46",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.718936920166016,
+        "dependency": null,
+        "dependency_status": null
+      }
+    },
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suspected_service\": \"checkout\",\n  \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\", \"E5\", \"E6\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"The frontend requests completed successfully, indicating that the checkout service was properly executed, and the inventory service also completed its request. There is no evidence of failure or dependency issues.\"\n}",
+    "latency_ms": 6671.069799980614,
+    "token_usage": {
+      "input_tokens": 528,
+      "output_tokens": 97
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 5,
+    "start": 1791221111.3202584,
+    "end": 1791221114.3202584,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "The generated diagnosis did not pass citation/schema checks. Inspect the measured evidence.",
+    "mode": "hybrid",
+    "structurally_valid": false,
+    "semantic_support_verified": false,
+    "validation_error": "2 validation errors for Diagnosis\nsuggested_service\n  Extra inputs are not permitted [type=extra_forbidden, input_value='frontend', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\nsuspected_service",
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suggested_service\": \"frontend\",\n  \"evidence_ids\": [\"E1\", \"E2\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"The frontend service appears to be functioning correctly with no observed issues, while the checkout and inventory services also show successful responses.\"\n}",
+    "latency_ms": 5064.171799982432,
+    "token_usage": {
+      "input_tokens": 657,
+      "output_tokens": 71
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 8,
+    "start": 1791221120.3202584,
+    "end": 1791221123.3202584,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "The generated diagnosis did not pass citation/schema checks. Inspect the measured evidence.",
+    "mode": "logs_only",
+    "structurally_valid": false,
+    "semantic_support_verified": false,
+    "validation_error": "3 validation errors for Diagnosis\nsuggested_service\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\nsuspected_service\n",
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"abstain\",\n  \"suggested_service\": null,\n  \"evidence_ids\": [],\n  \"runbook_id\": null,\n  \"summary\": \"No evidence of failure or root cause identified.\"\n}",
+    "latency_ms": 3345.435200026259,
+    "token_usage": {
+      "input_tokens": 613,
+      "output_tokens": 49
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 8,
+    "start": 1791221120.3202584,
+    "end": 1791221123.3202584,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "The generated diagnosis did not pass citation/schema checks. Inspect the measured evidence.",
+    "mode": "hybrid",
+    "structurally_valid": false,
+    "semantic_support_verified": false,
+    "validation_error": "3 validation errors for Diagnosis\nsuggested_service\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\nsuspected_service\n",
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"abstain\",\n  \"suggested_service\": null,\n  \"evidence_ids\": [],\n  \"runbook_id\": null,\n  \"summary\": \"No evidence of failure observed in the observations.\"\n}",
+    "latency_ms": 3560.540900041815,
+    "token_usage": {
+      "input_tokens": 766,
+      "output_tokens": 49
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 10,
+    "start": 1791221126.3202584,
+    "end": 1791221129.3202584,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "The generated diagnosis did not pass citation/schema checks. Inspect the measured evidence.",
+    "mode": "logs_only",
+    "structurally_valid": false,
+    "semantic_support_verified": false,
+    "validation_error": "3 validation errors for Diagnosis\nsuggested_service\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\nsuspected_service\n",
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"abstain\",\n  \"suggested_service\": null,\n  \"evidence_ids\": [],\n  \"runbook_id\": null,\n  \"summary\": \"No evidence of a root cause or service failure observed.\"\n}",
+    "latency_ms": 3393.414899997879,
+    "token_usage": {
+      "input_tokens": 615,
+      "output_tokens": 51
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 10,
+    "start": 1791221126.3202584,
+    "end": 1791221129.3202584,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "The generated diagnosis did not pass citation/schema checks. Inspect the measured evidence.",
+    "mode": "hybrid",
+    "structurally_valid": false,
+    "semantic_support_verified": false,
+    "validation_error": "3 validation errors for Diagnosis\nsuggested_service\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\nsuspected_service\n",
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"abstain\",\n  \"suggested_service\": null,\n  \"evidence_ids\": [],\n  \"runbook_id\": null,\n  \"summary\": \"No evidence of failure observed in the observations.\"\n}",
+    "latency_ms": 3316.5948999812827,
+    "token_usage": {
+      "input_tokens": 768,
+      "output_tokens": 49
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 13,
+    "start": 1791221135.3202584,
+    "end": 1791221138.3202584,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "The generated diagnosis did not pass citation/schema checks. Inspect the measured evidence.",
+    "mode": "logs_only",
+    "structurally_valid": false,
+    "semantic_support_verified": false,
+    "validation_error": "3 validation errors for Diagnosis\nsuggested_service\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\nsuspected_service\n",
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"abstain\",\n  \"suggested_service\": null,\n  \"evidence_ids\": [],\n  \"runbook_id\": null,\n  \"summary\": \"No evidence of failure or root cause identified.\"\n}",
+    "latency_ms": 3557.0027999929152,
+    "token_usage": {
+      "input_tokens": 615,
+      "output_tokens": 49
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 13,
+    "start": 1791221135.3202584,
+    "end": 1791221138.3202584,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "The generated diagnosis did not pass citation/schema checks. Inspect the measured evidence.",
+    "mode": "hybrid",
+    "structurally_valid": false,
+    "semantic_support_verified": false,
+    "validation_error": "3 validation errors for Diagnosis\nsuggested_service\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\nsuspected_service\n",
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"abstain\",\n  \"suggested_service\": null,\n  \"evidence_ids\": [],\n  \"runbook_id\": null,\n  \"summary\": \"No evidence of failure observed in the observations.\"\n}",
+    "latency_ms": 3321.354200015776,
+    "token_usage": {
+      "input_tokens": 768,
+      "output_tokens": 49
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 16,
+    "start": 1791221144.3202584,
+    "end": 1791221147.3202584,
+    "status": "review",
+    "suspected_service": "checkout",
+    "evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+    ],
+    "runbook_id": "none",
+    "summary": "The frontend requests completed successfully, indicating that the checkout service was properly executed, and the inventory service was also successful. There is no evidence of failure in the dependencies.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "f20814e87f594d2fbb0720c5cb23c340",
+        "trace_id": "c28a091ef6204defbd769ff3022b282a",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 79.7882080078125,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "283e9308862e4392b32e5f2dadd4edec",
+        "trace_id": "5a8f11e47085490f8ecb775267ce841e",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 78.45449447631836,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E3": {
+        "service": "checkout",
+        "span_id": "c6e906fb626846cda2c2d5d95e5985b2",
+        "trace_id": "3b95f1e93ab34f3aa3ee2c3160bc51d2",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 46.85378074645996,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E4": {
+        "service": "checkout",
+        "span_id": "570afe01cdea404ca0cd0c9a3c61b7b2",
+        "trace_id": "5a8f11e47085490f8ecb775267ce841e",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 46.15926742553711,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E5": {
+        "service": "inventory",
+        "span_id": "7865ded10d9442a39007154d48936c2b",
+        "trace_id": "3b95f1e93ab34f3aa3ee2c3160bc51d2",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.964031219482422,
+        "dependency": null,
+        "dependency_status": null
+      },
+      "E6": {
+        "service": "inventory",
+        "span_id": "c2878e98ad3c4c0d85f59c81dcf48695",
+        "trace_id": "c28a091ef6204defbd769ff3022b282a",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 14.979124069213867,
+        "dependency": null,
+        "dependency_status": null
+      }
+    },
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suspected_service\": \"checkout\",\n  \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\", \"E5\", \"E6\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"The frontend requests completed successfully, indicating that the checkout service was properly executed, and the inventory service was also successful. There is no evidence of failure in the dependencies.\"\n}",
+    "latency_ms": 6911.676799994893,
+    "token_usage": {
+      "input_tokens": 528,
+      "output_tokens": 96
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 16,
+    "start": 1791221144.3202584,
+    "end": 1791221147.3202584,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "The generated diagnosis did not pass citation/schema checks. Inspect the measured evidence.",
+    "mode": "hybrid",
+    "structurally_valid": false,
+    "semantic_support_verified": false,
+    "validation_error": "2 validation errors for Diagnosis\nsuggested_service\n  Extra inputs are not permitted [type=extra_forbidden, input_value='frontend', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\nsuspected_service",
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suggested_service\": \"frontend\",\n  \"evidence_ids\": [\"E1\", \"E2\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"The frontend service appears to be consistently successful, with no observed failures, and has no evidence of a root cause related to its dependency on the checkout service.\"\n}",
+    "latency_ms": 5684.735500020906,
+    "token_usage": {
+      "input_tokens": 657,
+      "output_tokens": 78
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 19,
+    "start": 1791221153.3202584,
+    "end": 1791221156.3202584,
+    "status": "review",
+    "suspected_service": "checkout",
+    "evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+    ],
+    "runbook_id": "none",
+    "summary": "The frontend requests completed successfully, indicating that the checkout service was properly executed, and the inventory service was also successful, suggesting no root cause identified.",
+    "mode": "logs_only",
+    "structurally_valid": true,
+    "semantic_support_verified": false,
+    "validation_error": null,
+    "cited_evidence": {
+      "E1": {
+        "service": "frontend",
+        "span_id": "8067fe3f14174b6b94e724a7d5349a8f",
+        "trace_id": "25a0d3325e9a4b2b82e3f6b159050847",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 86.2874984741211,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E2": {
+        "service": "frontend",
+        "span_id": "58c07993ef2b4459b08f5bd2b82fd68f",
+        "trace_id": "f390866ae86c40c7866c516ec22132db",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 83.3442211151123,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      "E3": {
+        "service": "checkout",
+        "span_id": "8bfebe6b340141979b9b38bb3f2076cc",
+        "trace_id": "25a0d3325e9a4b2b82e3f6b159050847",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 49.12543296813965,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E4": {
+        "service": "checkout",
+        "span_id": "1ac9d0acbe7046e28255c807cdeed4d9",
+        "trace_id": "f390866ae86c40c7866c516ec22132db",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 46.96249961853027,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      "E5": {
+        "service": "inventory",
+        "span_id": "91c2e3e941ef439a9328a60c0e085696",
+        "trace_id": "25a0d3325e9a4b2b82e3f6b159050847",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 16.57557487487793,
+        "dependency": null,
+        "dependency_status": null
+      },
+      "E6": {
+        "service": "inventory",
+        "span_id": "8137d0ee050f4bf890abb4767f9a6ea0",
+        "trace_id": "f390866ae86c40c7866c516ec22132db",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 14.905452728271484,
+        "dependency": null,
+        "dependency_status": null
+      }
+    },
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suspected_service\": \"checkout\",\n  \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\", \"E5\", \"E6\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"The frontend requests completed successfully, indicating that the checkout service was properly executed, and the inventory service was also successful, suggesting no root cause identified.\"\n}",
+    "latency_ms": 6383.410600014031,
+    "token_usage": {
+      "input_tokens": 528,
+      "output_tokens": 92
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  },
+  {
+    "window": 19,
+    "start": 1791221153.3202584,
+    "end": 1791221156.3202584,
+    "status": "abstain",
+    "suspected_service": null,
+    "evidence_ids": [],
+    "runbook_id": "none",
+    "summary": "The generated diagnosis did not pass citation/schema checks. Inspect the measured evidence.",
+    "mode": "hybrid",
+    "structurally_valid": false,
+    "semantic_support_verified": false,
+    "validation_error": "2 validation errors for Diagnosis\nsuggested_service\n  Extra inputs are not permitted [type=extra_forbidden, input_value='frontend', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\nsuspected_service",
+    "cited_evidence": {},
+    "runbook": {
+      "title": "Continue observation",
+      "check": "No supported action from these observations."
+    },
+    "raw_model_output": "{\n  \"status\": \"review\",\n  \"suggested_service\": \"frontend\",\n  \"evidence_ids\": [\"E1\", \"E2\"],\n  \"runbook_id\": \"none\",\n  \"summary\": \"The frontend service appears to be consistently successful with no observed issues, while the checkout and inventory services also show successful responses.\"\n}",
+    "latency_ms": 5077.383399999235,
+    "token_usage": {
+      "input_tokens": 656,
+      "output_tokens": 71
+    },
+    "model_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "device": "cuda",
+    "notice": "Validated IDs and fixed investigation steps; summary accuracy still requires review. No automatic remediation."
+  }
+]

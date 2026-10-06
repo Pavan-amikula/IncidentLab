@@ -1,0 +1,139 @@
+{
+  "protocol": "RCAEval development-test; external final holdout not evaluated",
+  "checkpoint_epoch": 9,
+  "thresholds": {
+    "ob": 0.5491166791319846,
+    "ss": 0.7010137653350829,
+    "tt": 0.8923273533582687
+  },
+  "full": {
+    "overall": {
+      "windows": 2535,
+      "precision": 0.9879898862199747,
+      "recall": 0.9559633027522936,
+      "f1": 0.9717127758781473,
+      "pr_auc": 0.9985122501161786,
+      "false_alert_windows_per_healthy_hour": 1.2666666666666666
+    },
+    "cases": 147,
+    "incident_recall": 1.0,
+    "top1_at_first_alert": 0.9115646258503401,
+    "top3_at_first_alert": 0.9795918367346939,
+    "median_detection_delay_seconds": 60.0,
+    "by_system": {
+      "ob": {
+        "windows": 1153,
+        "precision": 0.9745762711864406,
+        "recall": 0.9871244635193133,
+        "f1": 0.9808102345415778,
+        "pr_auc": 0.9991487583808996,
+        "false_alert_windows_per_healthy_hour": 2.378854625550661
+      },
+      "ss": {
+        "windows": 631,
+        "precision": 0.9975550122249389,
+        "recall": 0.9315068493150684,
+        "f1": 0.9634002361275088,
+        "pr_auc": 0.9982891135527383,
+        "false_alert_windows_per_healthy_hour": 0.31088082901554404
+      },
+      "tt": {
+        "windows": 751,
+        "precision": 1.0,
+        "recall": 0.9337349397590361,
+        "f1": 0.9657320872274143,
+        "pr_auc": 0.9987463769519898,
+        "false_alert_windows_per_healthy_hour": 0.0
+      }
+    }
+  },
+  "missing_logs": {
+    "overall": {
+      "windows": 2535,
+      "precision": 0.9690909090909091,
+      "recall": 0.9779816513761468,
+      "f1": 0.9735159817351599,
+      "pr_auc": 0.9982981286751166,
+      "false_alert_windows_per_healthy_hour": 3.4
+    },
+    "cases": 147,
+    "incident_recall": 1.0,
+    "top1_at_first_alert": 0.9047619047619048,
+    "top3_at_first_alert": 0.9727891156462585,
+    "median_detection_delay_seconds": 60.0,
+    "by_system": {
+      "ob": {
+        "windows": 1153,
+        "precision": 0.9584487534626038,
+        "recall": 0.9899856938483548,
+        "f1": 0.9739619985925405,
+        "pr_auc": 0.9991346097237456,
+        "false_alert_windows_per_healthy_hour": 3.9647577092511015
+      },
+      "ss": {
+        "windows": 631,
+        "precision": 0.9555555555555556,
+        "recall": 0.9817351598173516,
+        "f1": 0.9684684684684685,
+        "pr_auc": 0.9969868734704297,
+        "false_alert_windows_per_healthy_hour": 6.217616580310881
+      },
+      "tt": {
+        "windows": 751,
+        "precision": 0.997907949790795,
+        "recall": 0.9578313253012049,
+        "f1": 0.9774590163934426,
+        "pr_auc": 0.9982378522815907,
+        "false_alert_windows_per_healthy_hour": 0.23715415019762845
+      }
+    }
+  },
+  "missing_traces": {
+    "overall": {
+      "windows": 2535,
+      "precision": 0.9781795511221946,
+      "recall": 0.9596330275229358,
+      "f1": 0.9688175362766286,
+      "pr_auc": 0.997457017214133,
+      "false_alert_windows_per_healthy_hour": 2.3333333333333335
+    },
+    "cases": 147,
+    "incident_recall": 1.0,
+    "top1_at_first_alert": 0.891156462585034,
+    "top3_at_first_alert": 0.9795918367346939,
+    "median_detection_delay_seconds": 60.0,
+    "by_system": {
+      "ob": {
+        "windows": 1153,
+        "precision": 0.9705056179775281,
+        "recall": 0.9885550786838341,
+        "f1": 0.9794472005669738,
+        "pr_auc": 0.9991733195598383,
+        "false_alert_windows_per_healthy_hour": 2.775330396475771
+      },
+      "ss": {
+        "windows": 631,
+        "precision": 0.9975550122249389,
+        "recall": 0.9315068493150684,
+        "f1": 0.9634002361275088,
+        "pr_auc": 0.9982891135527383,
+        "false_alert_windows_per_healthy_hour": 0.31088082901554404
+      },
+      "tt": {
+        "windows": 751,
+        "precision": 0.9730848861283644,
+        "recall": 0.9437751004016064,
+        "f1": 0.9582059123343527,
+        "pr_auc": 0.9954928631710466,
+        "false_alert_windows_per_healthy_hour": 3.08300395256917
+      }
+    }
+  },
+  "seconds": 2.28,
+  "limitations": [
+    "aggregate log indicators, not semantic text encoder",
+    "no graph message passing yet",
+    "first five minutes assumed healthy",
+    "controlled failures; no production pilot"
+  ]
+}

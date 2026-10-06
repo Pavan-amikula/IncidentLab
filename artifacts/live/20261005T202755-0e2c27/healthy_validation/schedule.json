@@ -1,0 +1,10 @@
+{
+  "kind": "healthy_loads",
+  "target": null,
+  "started": 1791225178.4365416,
+  "ended": 1791225478.4365416,
+  "onset": null,
+  "recovery": null,
+  "actions": [],
+  "dropped_workload_requests": 0
+}

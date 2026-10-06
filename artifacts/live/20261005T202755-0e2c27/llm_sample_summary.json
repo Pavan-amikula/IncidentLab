@@ -1,0 +1,32 @@
+{
+  "run_id": "20261005T202755-0e2c27",
+  "role": "llm_medium",
+  "policy_version": "v2",
+  "stage": "fresh known-fault trials after candidate freeze",
+  "seconds": 625.1038872000063,
+  "modes": {
+    "logs_only": {
+      "generations": 160,
+      "structurally_valid": 156,
+      "policy_accepted": 156,
+      "healthy_samples": 106,
+      "healthy_reviews": 0,
+      "fault_samples": 54,
+      "fault_reviews": 32,
+      "fault_target_reviews": 30,
+      "fault_abstentions": 10
+    },
+    "hybrid": {
+      "generations": 160,
+      "structurally_valid": 155,
+      "policy_accepted": 152,
+      "healthy_samples": 106,
+      "healthy_reviews": 0,
+      "fault_samples": 54,
+      "fault_reviews": 40,
+      "fault_target_reviews": 39,
+      "fault_abstentions": 14
+    }
+  },
+  "scope": "Uniform sampled complete windows; neither incident recall nor semantic accuracy"
+}

@@ -1,0 +1,21 @@
+{
+  "stream": "running-app-20261006T135636-9a73f9",
+  "windows": 20,
+  "operational_warning_windows": 0,
+  "ml_warning_windows": 1,
+  "final_incident": {
+    "active": false,
+    "warning_streak": 0,
+    "clear_streak": 20,
+    "opened_incidents": 0,
+    "closed_incidents": 0,
+    "transition": null
+  },
+  "final_collector_audit": {
+    "records_read": 1074,
+    "late_records": 48,
+    "pending_records": 0,
+    "partial_record_bytes": 0,
+    "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+  }
+}

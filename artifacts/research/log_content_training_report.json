@@ -1,0 +1,15 @@
+{
+  "model": "TF-IDF nearest healthy template, lexical novelty only",
+  "healthy_training_events": 312968,
+  "healthy_validation_events": 4087,
+  "unique_training_templates": 74,
+  "vocabulary_size": 511,
+  "event_novelty_threshold": 0.05,
+  "window_novel_fraction": 0.1,
+  "minimum_events": 20,
+  "consecutive_minutes": 2,
+  "chronological_healthy_split": "first 70% training, final 30% validation; same normal run, not independent deployment",
+  "fault_data_used_for_fit": false,
+  "instrumentation_markers_excluded": true,
+  "input": "message text only; timestamps/paths/service IDs not vectorized"
+}

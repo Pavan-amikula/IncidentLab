@@ -1,0 +1,14 @@
+# CPU-only serving and small cluster testbed; no CUDA wheels or training command.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.11.0+cpu
+fastapi==0.142.2
+uvicorn==0.54.0
+scikit-learn==1.9.1
+numpy==2.5.3
+scipy==1.18.1
+joblib==1.6.0
+pydantic==2.13.5
+pyarrow==25.0.1
+httpx==0.28.1
+drain3==0.9.11
+PyYAML==6.0.3

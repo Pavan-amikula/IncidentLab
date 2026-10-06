@@ -1,0 +1,118 @@
+{
+  "status": "Development revision after inspecting original AnoMod results; not final held-out accuracy",
+  "base_policy_sha256": "a8312e5a3faabc52fbc37c88bc5008cc33e614f2bf49ed0b65a4efc04b93ddbc",
+  "models": {
+    "temporal_best.pt": "5375557b97ac324d8b90ef9fcbd8c8fd3d26b3d3e8577b0530ad6b603fbc66ab",
+    "supervised_reference.joblib": "5df5f3f251a136d63425c22956f2c00c3eb58e7343ddd95b691b532ce8b43c9e"
+  },
+  "alert_thresholds": {
+    "temporal": {
+      "TT_data": 0.8923273533582687,
+      "SN_data": 0.8923273533582687
+    },
+    "boosting": {
+      "TT_data": 0.9565451794149058,
+      "SN_data": 0.9763558124658233
+    }
+  },
+  "startup_exclusion_seconds": 0,
+  "sources": {
+    "external_evaluation.py": "fdbc5e87cb3905927f5a64d73bdbdfa910a81ee0ea8320ef71a0f1800f509a24",
+    "coverage_guard.py": "e1673e8abe86ea1b7327b4e22b37357cdc2c81376cb4dd3a486a5193bb515d2a",
+    "development_monitor.py": "386f4ea11b51e852379cffc54df8e7dadefd0ba2ccd3f802410d9bb4fc8b0736"
+  },
+  "changes": [
+    "retain expected healthy services even when observations vanish",
+    "do not discard five minutes at the start of a fault run",
+    "independent expected-metric-availability guard; no root-cause or down-service claim"
+  ],
+  "inventories": {
+    "TT_data": {
+      "expected_gap_minutes": {
+        "ts-admin-basic-info-service": 2,
+        "ts-admin-order-service": 2,
+        "ts-admin-route-service": 2,
+        "ts-admin-travel-service": 2,
+        "ts-admin-user-service": 2,
+        "ts-assurance-service": 2,
+        "ts-auth-service": 2,
+        "ts-avatar-service": 2,
+        "ts-basic-service": 2,
+        "ts-cancel-service": 2,
+        "ts-config-service": 2,
+        "ts-consign-price-service": 2,
+        "ts-consign-service": 2,
+        "ts-contacts-service": 2,
+        "ts-delivery-service": 2,
+        "ts-execute-service": 2,
+        "ts-food-delivery-service": 2,
+        "ts-food-service": 2,
+        "ts-gateway-service": 2,
+        "ts-inside-payment-service": 2,
+        "ts-news-service": 2,
+        "ts-notification-service": 2,
+        "ts-order-other-service": 2,
+        "ts-order-service": 2,
+        "ts-payment-service": 2,
+        "ts-preserve-other-service": 2,
+        "ts-preserve-service": 2,
+        "ts-price-service": 2,
+        "ts-rebook-service": 2,
+        "ts-route-plan-service": 2,
+        "ts-route-service": 2,
+        "ts-seat-service": 2,
+        "ts-security-service": 2,
+        "ts-station-food-service": 2,
+        "ts-station-service": 2,
+        "ts-ticket-office-service": 2,
+        "ts-train-food-service": 2,
+        "ts-train-service": 2,
+        "ts-travel-plan-service": 2,
+        "ts-travel-service": 2,
+        "ts-travel2-service": 2,
+        "ts-ui-dashboard": 2,
+        "ts-user-service": 2,
+        "ts-verification-code-service": 2,
+        "ts-voucher-service": 2,
+        "ts-wait-order-service": 2
+      },
+      "peer_coverage_required": 0.8,
+      "fitting": "Designated healthy metric availability only; no fault labels"
+    },
+    "SN_data": {
+      "expected_gap_minutes": {
+        "compose-post-redis": 2,
+        "compose-post-service": 2,
+        "home-timeline-redis": 2,
+        "home-timeline-service": 2,
+        "media-frontend": 2,
+        "media-memcached": 2,
+        "media-mongodb": 2,
+        "media-service": 2,
+        "nginx-thrift": 2,
+        "post-storage-memcached": 2,
+        "post-storage-mongodb": 2,
+        "post-storage-service": 2,
+        "social-graph-mongodb": 2,
+        "social-graph-redis": 2,
+        "social-graph-service": 2,
+        "text-service": 2,
+        "unique-id-service": 2,
+        "url-shorten-memcached": 2,
+        "url-shorten-mongodb": 2,
+        "url-shorten-service": 2,
+        "user-memcached": 2,
+        "user-mention-service": 2,
+        "user-mongodb": 2,
+        "user-service": 2,
+        "user-timeline-mongodb": 2,
+        "user-timeline-redis": 2,
+        "user-timeline-service": 2
+      },
+      "peer_coverage_required": 0.8,
+      "fitting": "Designated healthy metric availability only; no fault labels"
+    }
+  },
+  "no_model_retraining": true,
+  "no_threshold_tuning": true
+}

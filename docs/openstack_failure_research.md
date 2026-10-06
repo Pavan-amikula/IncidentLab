@@ -1,0 +1,50 @@
+# OpenStack missed detections: parameter information and evaluation limits
+
+Research date: 2026-10-05. This note reviews primary publications, maintainer material and the current local implementation. It does not announce a new model result.
+
+## What the local experiment establishes
+
+`incidentlab/openstack_benchmark.py` and `artifacts/research/openstack_full_v2_report.json` show that the complete three-file corpus was scanned: 207,820 physical lines. Only 51,553 events carry the explicit `[instance: UUID]` association accepted by this implementation. The remaining parsed events are counted but not guessed into VM sessions. There are 557 training sessions, 680 healthy calibration sessions, 634 healthy test sessions and 198 abnormal-file sessions. One reused normal2 identity was excluded.
+
+The archive's `data/research/OpenStack/anomaly_labels.txt` identifies four VM instances with injected anomalies. It provides neither individual faulty-line labels nor exact onset times. The frozen Isolation Forest, lexical novelty, MiniLM novelty and first-order Drain transition controls all detected zero of these four at their healthy-calibrated thresholds. Those negative results remain evidence; a subsequent development revision must retain them.
+
+The current text normalization masks numeric values. It therefore turns a log such as `Took 19.73 seconds to spawn the instance` into effectively the same text as a much slower operation. Neither normalized-text novelty nor an event-ID transition model can recover a discarded duration. The six Isolation Forest features contain log count, error/warning proportions, text diversity and lexical novelty, but no operation duration or timestamp gaps. This is a concrete representation limitation, not evidence that every LLM or sequence model fails.
+
+The working audit reported by the implementing agent found 25 normal-looking lifecycle events in each annotated session. In normal1, extracted spawn duration had median 19.73 seconds, p99 21.438 seconds and maximum 22.15 seconds. The four inspected positive-session spawn durations were 41.81, 29.46, 50.72 and 31.27 seconds; build durations were 42.81, 30.32, 51.59 and 32.12 seconds. These are **local measurements from already inspected development data**, not paper facts, proof of a particular injected root cause or a fresh held-out discovery. The versioned structured-parameter experiment must archive its reproducible audit before these numbers are used in a final report.
+
+## What the primary sources support
+
+The Loghub maintainer describes CloudLab-generated OpenStack normal logs and failure-injection cases, links a preprocessing example and requests citations to DeepLog and Loghub. Its download deposit is the provenance of the locally acquired archive. [Maintainer README](https://github.com/logpai/loghub/blob/master/OpenStack/README.md), [Loghub deposit](https://zenodo.org/records/8196385).
+
+DeepLog separates log-key sequence detection from numeric-parameter and elapsed-time detection. Section 5.2 evaluates VM creation timing anomalies produced by throttling network transfer. It uses normal training and a separate validation set to calibrate prediction-error distributions. Its main OpenStack experiment describes 1,335,318 records and a VM lifecycle with optional stop/start, pause/unpause and suspend/resume pairs; three injected fault families include neutron timeout and libvirt destruction/cleanup errors. That larger experiment is not identical to our 207,820-line public corpus. We cannot inherit its scores, event-level labels or fault assignments. [Author-hosted DeepLog paper, sections 2.1, 5.1.2 and 5.2](https://www2.cs.utah.edu/~lifeifei/papers/deeplog.pdf).
+
+LogAnomaly distinguishes sequential deviations from quantitative relationships between event counts, and combines semantic template representations with sequence and count-vector models. Its reported experiments use HDFS and BGL, rather than this OpenStack split. MiniLM nearest-prototype novelty plus a first-order Markov control is therefore **not an implementation of LogAnomaly**. [Original IJCAI paper, sections 2–3](https://www.ijcai.org/proceedings/2019/0658.pdf).
+
+Drain is an online template parser using a fixed-depth search tree and domain-aware preprocessing. Parsing produces a representation; it does not itself establish an anomaly or preserve every variable as a useful feature. A downstream detector must retain parameters that matter. [Author-hosted Drain paper](https://pinjiahe.github.io/files/pdf/research/ICWS17.pdf).
+
+The authors of the Critical Review directly analyze the Loghub OpenStack corpus. Section III-D reports extensive overlap of normal and abnormal event sequences and warns that event identities alone do not separate those classes. Their Table I treats 198 abnormal-file sessions as anomalous, whereas the local archive's explicit injection list names four. Their ground-truth policy and parser coverage therefore differ from ours. Their metrics must not be presented as comparable four-UUID benchmark results. Their timing method is useful motivation, but their paper also warns that observed timing differences are sparse and dataset quality matters. [Original research paper, section III-D and Table I](https://arxiv.org/pdf/2309.02854).
+
+## Recommended implementation, with its assumptions explicit
+
+1. Extract `Took N seconds to ...` parameters from raw records **before** UUID/number masking. Preserve operation type, numeric value, timestamp, logger, source line and association provenance alongside normalized text. Apply exactly the same extraction to train, calibration and every test record. Reject nonfinite or negative durations; report missing, malformed and unsupported values separately.
+2. Fit operation-specific robust references on normal1 and choose thresholds from healthy calibration only. Freeze the policy and checkpoint before scoring. Keep a transparent parameter-deviation control beside Isolation Forest. Any multivariate model needs explicit missingness and enough healthy support for each operation; absence of a duration must not become zero seconds or healthy confidence.
+3. Keep the first-order sequence control for comparison, but describe its information limits. Averaging transition surprise can dilute an isolated violation. Whole-VM aggregate log count can hide a missing completion event among otherwise familiar events. These are mathematical/design inferences, not measured causes of the four misses. Higher-order sequence or event-count models are candidates only if healthy-only experiments justify them.
+4. Treat lifecycle completion as a separate state problem. A logfile ending is not proof that a VM operation completed: file boundaries can truncate observations. Mark sessions as complete, incomplete or censored using reviewed start/end evidence and capture bounds. Do not enforce one fixed count of optional lifecycle tasks as universal normality.
+
+## Request-based association can improve coverage, with an audit
+
+Nova documents local and global request IDs, asynchronous server actions and the distinction between accepting an API request and completing the operation. Modern global-ID support does not prove that the historical Mitaka logs carry the same cross-service behavior. [Official Compute API fault and request-ID guide](https://docs.openstack.org/api-guide/compute/faults.html).
+
+A conservative development association policy is: first retain explicit VM tags; then map a request ID to a VM only where observed records establish exactly one explicit VM for that request. Associate otherwise untagged records only through that unambiguous mapping, retaining request ID and supporting line references. Keep unresolved and multi-VM requests unassigned. Do not map arbitrary UUIDs: they may identify images, networks or volumes. Collection/list API requests can refer to multiple VMs. Never duplicate an ambiguous request into all sessions merely to increase coverage.
+
+For streaming use, mapping must use evidence available by the current time. An offline two-pass join may use a later VM-tagged line to associate an earlier record; label it retrospective rather than claiming causal online availability. Publish explicit-only versus associated counts, conflict counts and prediction differences. Inspect healthy examples to validate the mapping before assessing annotated failures.
+
+## Evaluation rules for the next revision
+
+- Preserve the author-list policy of four positive VM sessions, explicitly state the assumption that unlisted abnormal-file sessions are negative and note that annotation completeness is not independently established. Separately report healthy normal2 false alarms; do not hide them in the class imbalance.
+- A duration revision motivated after inspecting these four positives is **development**, even if its thresholds use healthy data only. Do not optimize thresholds, operations or aggregation to maximize their four-label F1. Freeze the revised design for a genuinely independent acquisition or future controlled experiment.
+- Publish integer hits out of four, confusion counts, coverage and healthy false-alert fraction. Four positives cannot support a precise population recall claim. Missing sessions and censored completion require their own denominators.
+- VM-session labels do not justify fault-line accuracy, onset delay, per-minute recall or root-cause accuracy. Explicit timing evidence may support an operation-performance warning; it does not identify the underlying network, storage or hypervisor cause.
+- The maintainer-linked example resamples event IDs into one-minute windows. That is an example transformation, not a source of minute-level anomaly labels or the original authors' entire evaluation protocol. [Linked preprocessing source](https://raw.githubusercontent.com/aaron-y-chen/deeplog/master/example/preprocess.py).
+
+The immediate justified next step is a separate, reproducible structured-duration development control, followed by an independent experiment. Replacing the encoder or downloading a larger LLM would not restore numeric evidence that preprocessing removed.

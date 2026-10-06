@@ -1,0 +1,139 @@
+{
+  "model": "Frozen pretrained MiniLM + healthy template prototypes",
+  "device": "cuda",
+  "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "checkpoint_sha256": "1fad0d94731c01e4f5c33fdae8adbc73a1d0824260077fab713345629efe8b24",
+  "neural_weights_fine_tuned": false,
+  "fault_data_used_for_fit": false,
+  "healthy_training_events": 312968,
+  "healthy_validation_events": 4087,
+  "unique_training_templates": 74,
+  "event_novelty_threshold": 0.05,
+  "matched_lexical_policy": {
+    "minimum_events": 20,
+    "window_novel_fraction": 0.1,
+    "consecutive_minutes": 2,
+    "text_input": "same normalized message text; service IDs, fault names and timestamps excluded"
+  },
+  "evaluated_fault_runs": 12,
+  "processed_events": 3606959,
+  "runs_with_content_warnings": 3,
+  "warning_service_windows": 51,
+  "lexical_warning_service_windows": 51,
+  "unique_templates_embedded": 83,
+  "embedding_seconds": 0.36806939996313304,
+  "peak_cuda_allocated_mb": 172.44873046875,
+  "cases": [
+    {
+      "case": "SN_data:Code_Stop_MediaService_20251104_024819",
+      "warning_service_windows": 17,
+      "services": [
+        "compose-post-service"
+      ],
+      "events": 312759,
+      "unique_templates": 39,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Code_Stop_TextService_20251104_022416",
+      "warning_service_windows": 17,
+      "services": [
+        "compose-post-service"
+      ],
+      "events": 311572,
+      "unique_templates": 32,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Code_Stop_UserService_20251104_020019",
+      "warning_service_windows": 17,
+      "services": [
+        "compose-post-service"
+      ],
+      "events": 159982,
+      "unique_templates": 32,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:DB_Redis_CacheLimit_HomeTimeline_20251104_004905",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 316735,
+      "unique_templates": 59,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:DB_Redis_CacheLimit_SocialGraph_20251104_013615",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 316979,
+      "unique_templates": 59,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:DB_Redis_CacheLimit_UserTimeline_20251104_011238",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 317040,
+      "unique_templates": 59,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Perf_CPU_Contention_20251103_222601",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 316550,
+      "unique_templates": 61,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Perf_Disk_IO_Stress_20251103_231335",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 316979,
+      "unique_templates": 59,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Perf_Network_Loss_20251103_224954",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 316796,
+      "unique_templates": 59,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Svc_Kill_Media_20251104_000111",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 303476,
+      "unique_templates": 56,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Svc_Kill_SocialGraph_20251104_002506",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 301538,
+      "unique_templates": 56,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Svc_Kill_UserTimeline_20251103_233717",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 316553,
+      "unique_templates": 60,
+      "excluded_instrumentation_events": 0
+    }
+  ],
+  "seconds": 222.37948730000062,
+  "limitations": [
+    "Already-inspected AnoMod development cases; not a fresh held-out test",
+    "One short healthy run split chronologically; no independent healthy alert-rate measurement",
+    "General sentence encoder may suppress important log differences or miss familiar errors",
+    "Distance-based warnings are not causal diagnosis or verified incident recall",
+    "Neural encoder is frozen; prototypes and threshold fitted from healthy references only"
+  ]
+}

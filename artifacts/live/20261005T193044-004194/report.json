@@ -1,0 +1,122 @@
+{
+  "run_id": "20261005T193044-004194",
+  "status": "complete",
+  "model": "healthy-fitted per-service IsolationForest",
+  "feature_schema": "incidentlab-http-v1",
+  "features": [
+    "p95_latency_ms",
+    "error_fraction",
+    "requests_per_second",
+    "max_active_requests"
+  ],
+  "checkpoint_sha256": "bd1bd9e2e83194a79325e3adc35eb08cd9861540937dc65033ab6eea19bba3c9",
+  "split": "distinct chronological service-process trials",
+  "training_windows": 40,
+  "validation_windows": 40,
+  "trials": [
+    {
+      "kind": "healthy",
+      "healthy_windows": 40,
+      "active_fault_windows": 0,
+      "boundary_windows_excluded": 0,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 0.0
+      },
+      "operational_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 0.0
+      }
+    },
+    {
+      "kind": "surge",
+      "healthy_windows": 40,
+      "active_fault_windows": 0,
+      "boundary_windows_excluded": 0,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 450.0
+      },
+      "operational_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 0.0
+      }
+    },
+    {
+      "kind": "delay",
+      "healthy_windows": 23,
+      "active_fault_windows": 15,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.995533227920532,
+        "false_alert_windows_per_healthy_hour": 0.0
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.995533227920532,
+        "false_alert_windows_per_healthy_hour": 0.0
+      }
+    },
+    {
+      "kind": "error",
+      "healthy_windows": 23,
+      "active_fault_windows": 15,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 0.0,
+        "incident_detected": false,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 52.173913043478265
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.997838973999023,
+        "false_alert_windows_per_healthy_hour": 0.0
+      }
+    },
+    {
+      "kind": "unavailable",
+      "healthy_windows": 23,
+      "active_fault_windows": 15,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.994029521942139,
+        "false_alert_windows_per_healthy_hour": 0.0
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.994029521942139,
+        "false_alert_windows_per_healthy_hour": 0.0
+      }
+    }
+  ],
+  "inference_p50_ms": 15.21300000604242,
+  "inference_p95_ms": 43.93223997321908,
+  "limitations": [
+    "Short healthy periods give unstable false-alert rates",
+    "One application and one trial per fault; no cross-system or unseen-fault claim",
+    "Requests and faults are controlled; infrastructure/CPU/memory/Kubernetes faults not evaluated",
+    "Separate HTTP model; pretrained RCAEval GRU was not silently reused",
+    "Trace-supported service hypotheses are not causal proof"
+  ]
+}

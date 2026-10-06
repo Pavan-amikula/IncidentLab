@@ -1,0 +1,21 @@
+{
+  "kind": "delay",
+  "target": "frontend",
+  "phase": "test_delay_frontend",
+  "onset": 1791289939.3766785,
+  "recovery": 1791289964.150943,
+  "dropped": 0,
+  "commands": [
+    {
+      "action": "delay",
+      "target": "frontend",
+      "command_completed": 1791289939.3766785
+    },
+    {
+      "action": "recover",
+      "target": "frontend",
+      "command_completed": 1791289964.150943
+    }
+  ],
+  "label_semantics": "Control command completion proxy; actual workload onset requires trace review"
+}

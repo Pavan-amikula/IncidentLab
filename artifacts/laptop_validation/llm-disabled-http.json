@@ -1,0 +1,5 @@
+{
+  "endpoint": "/api/live/diagnose",
+  "status": 503,
+  "body": "{\"detail\":\"Local LLM generation is disabled in the CPU laptop profile. Saved explanations remain available.\"}"
+}

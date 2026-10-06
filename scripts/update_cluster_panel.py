@@ -1,0 +1,13 @@
+"""Apply the live-status panel separately from saved experiment charts."""
+from pathlib import Path
+p=Path(__file__).resolve().parents[1]/'web/workspace.html'
+s=p.read_text(encoding='utf-8')
+marker='<section style="margin-top:20px"><h2>Pick a held-out phase</h2>'
+panel='''<section style="margin-top:20px"><h2>Where is Kubernetes?</h2><p><strong>Docker engine → incidentlab-control-plane → three Kubernetes pods.</strong><br>The container you see in Docker holds your Kubernetes node. Each app runs in a pod inside it.</p><p>Keep Docker running for cluster workloads. You can minimize its window.<br>Saved results and the local HTTP demo work without Docker.</p><p id="cluster-health-message" aria-live="polite">Checking current pods…</p><div class="scroll"><table><thead><tr><th>App</th><th>Ready now?</th><th>Container restarts</th></tr></thead><tbody id="cluster-health-rows"></tbody></table></div><small id="cluster-health-time"></small><p><strong>The graphs below show the saved validation run.</strong> Ready pods do not mean new telemetry is being collected.</p></section>'''
+if 'id="cluster-health-message"' not in s:s=s.replace(marker,panel+marker)
+js='''async function health(){if(location.hash!=='#cluster')return;try{const d=await api('/api/workspace/cluster-health');$('cluster-health-message').textContent=d.message;$('cluster-health-rows').replaceChildren();for(const p of d.pods){const tr=document.createElement('tr');for(const v of [p.service,p.ready?'Yes':'No',p.restarts]){const td=document.createElement('td');td.textContent=v;tr.append(td)}$('cluster-health-rows').append(tr)}$('cluster-health-time').textContent='Checked '+new Date(d.checked_at*1000).toLocaleTimeString()+' · kind-incidentlab / incidentlab-testbed';}catch(e){$('cluster-health-message').textContent='Status unavailable. Saved results still work.'}}window.addEventListener('hashchange',health);health();setInterval(health,15000);
+'''
+if 'async function health()' not in s:s=s.replace('</script>',js+'</script>')
+if '/api/workspace/documents/ieee.pdf' not in s:
+    s=s.replace('<div id="figures-list"', '<section><h2>Your report and resume</h2><div class="actions"><a class="button" href="/api/workspace/documents/ieee.pdf">Download readable IEEE-style PDF</a><a class="button secondary" href="/api/workspace/documents/ieee-source.zip">Download IEEE LaTeX source</a><a class="button secondary" href="/api/workspace/documents/resume.md">Download resume description</a></div><p>The PDF uses a two-column fallback renderer. The editable source uses IEEEtran; the built-in LaTeX compiler is unavailable on this host. Your name and university are included.</p></section><div id="figures-list"')
+p.write_text(s,encoding='utf-8')

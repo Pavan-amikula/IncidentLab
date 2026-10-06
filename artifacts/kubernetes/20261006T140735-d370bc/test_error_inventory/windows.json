@@ -1,0 +1,1478 @@
+[
+  {
+    "service": "frontend",
+    "start": 1791288666.2528226,
+    "end": 1791288669.2528226,
+    "count": 8,
+    "features": [
+      45.70220708847045,
+      0.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "bff64b36f70248adb6d41e27c87a9bee",
+        "trace_id": "7803d9cdf4d144c785cded75687e552a",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 49.370765686035156,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "434474ea594b4e56a7a26329a0a8a8e4",
+        "trace_id": "a74659fd63ce4b9b9dd082cd53630593",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 38.889169692993164,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "b46f5bc85bf546a5ab63fb1b3dd63666",
+        "trace_id": "c3513239243d4874a44c4b1a045d54c5",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 38.175344467163086,
+        "dependency": "checkout",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "checkout",
+    "start": 1791288666.2528226,
+    "end": 1791288669.2528226,
+    "count": 8,
+    "features": [
+      29.78405952453613,
+      0.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "fe93ed0b1fe841d2b0ce22121cbf424d",
+        "trace_id": "7803d9cdf4d144c785cded75687e552a",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 32.27376937866211,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "f594e7e93ca2477182b36763bffec519",
+        "trace_id": "a74659fd63ce4b9b9dd082cd53630593",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 25.16031265258789,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "f3e2f666036f4a9191bfc39c97b5a901",
+        "trace_id": "c3513239243d4874a44c4b1a045d54c5",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 24.654626846313477,
+        "dependency": "inventory",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "inventory",
+    "start": 1791288666.2528226,
+    "end": 1791288669.2528226,
+    "count": 8,
+    "features": [
+      13.887226581573485,
+      0.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "740eda87e1f4474193f1018b2bc33eec",
+        "trace_id": "7803d9cdf4d144c785cded75687e552a",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.231132507324219,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "2188ed7d2ed74b949704c26640d3b231",
+        "trace_id": "c3513239243d4874a44c4b1a045d54c5",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 11.391401290893555,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "7e0d6d4676e142d588ff24187f2b861d",
+        "trace_id": "a74659fd63ce4b9b9dd082cd53630593",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 11.352062225341797,
+        "dependency": null,
+        "dependency_status": null
+      }
+    ]
+  },
+  {
+    "service": "frontend",
+    "start": 1791288669.2528226,
+    "end": 1791288672.2528226,
+    "count": 7,
+    "features": [
+      45.629310607910156,
+      0.0,
+      2.3333333333333335,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "39bed0bb276c4dbd9a6e25715be81747",
+        "trace_id": "fe3362af53bb419b8aafb9f7a9765ac5",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 46.16832733154297,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "1b3b422844c64746813866e983038a32",
+        "trace_id": "f15de7dc3a57454d81febbc9ddfe3d05",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 44.371604919433594,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "003903d9231849c9af43a090b0f62565",
+        "trace_id": "ef370757b72541119e6d05b66fea1b32",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 41.66150093078613,
+        "dependency": "checkout",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "checkout",
+    "start": 1791288669.2528226,
+    "end": 1791288672.2528226,
+    "count": 7,
+    "features": [
+      29.8797607421875,
+      0.0,
+      2.3333333333333335,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "8972cee04dff4b3ba1f5c9f85d3188bd",
+        "trace_id": "fe3362af53bb419b8aafb9f7a9765ac5",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 30.223369598388672,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "18f1be4b35844fbda754cc893ece7ad4",
+        "trace_id": "f15de7dc3a57454d81febbc9ddfe3d05",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 29.078006744384766,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "39f6a94bea144cbc91ba77fd4b705b9b",
+        "trace_id": "ef370757b72541119e6d05b66fea1b32",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 27.291297912597656,
+        "dependency": "inventory",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "inventory",
+    "start": 1791288669.2528226,
+    "end": 1791288672.2528226,
+    "count": 7,
+    "features": [
+      14.07628059387207,
+      0.0,
+      2.3333333333333335,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "850906cb445f4e998439c5dc8a0b9e49",
+        "trace_id": "fe3362af53bb419b8aafb9f7a9765ac5",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 14.316320419311523,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "9fdb73d7bf5040d8a736f387c9029929",
+        "trace_id": "f15de7dc3a57454d81febbc9ddfe3d05",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 13.51618766784668,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "f5e59025bb54453e8af217725e19f52b",
+        "trace_id": "ef370757b72541119e6d05b66fea1b32",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 12.6800537109375,
+        "dependency": null,
+        "dependency_status": null
+      }
+    ]
+  },
+  {
+    "service": "frontend",
+    "start": 1791288672.2528226,
+    "end": 1791288675.2528226,
+    "count": 8,
+    "features": [
+      49.60310459136963,
+      0.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "9aaea16f572b4197b96bda52fb0e4c75",
+        "trace_id": "fceaba5780d54e078f7b3ab2d16ecd57",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 51.46479606628418,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "f85e65659cd943bdbb5d75407546cbbc",
+        "trace_id": "44258ce01a0e4f238ce23aa45a680a67",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 46.14567756652832,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "9fdd76d883a0445f86f496f5e890e1a7",
+        "trace_id": "e4f328a2b35a4a2dbeb17212826dec87",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 45.719146728515625,
+        "dependency": "checkout",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "checkout",
+    "start": 1791288672.2528226,
+    "end": 1791288675.2528226,
+    "count": 8,
+    "features": [
+      32.531654834747314,
+      0.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "61341ef782454de99dc956494e45bcc3",
+        "trace_id": "fceaba5780d54e078f7b3ab2d16ecd57",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 33.79678726196289,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "1ce8b63b2a754ed693fbd1a1ca5bd6f2",
+        "trace_id": "44258ce01a0e4f238ce23aa45a680a67",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 30.1821231842041,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "e1a9b03e06cb464ca326793a15adcf35",
+        "trace_id": "6733cfebd8244545941aa5d17d757ab9",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 29.927492141723633,
+        "dependency": "inventory",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "inventory",
+    "start": 1791288672.2528226,
+    "end": 1791288675.2528226,
+    "count": 8,
+    "features": [
+      15.526306629180906,
+      0.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "c1264979797d40abb27a34ae3f1678f9",
+        "trace_id": "fceaba5780d54e078f7b3ab2d16ecd57",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 16.186952590942383,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "19859a6e3f3c4054bfc7fe4a2d67e6fa",
+        "trace_id": "6733cfebd8244545941aa5d17d757ab9",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 14.299392700195312,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "9a50e630770343ceb012fc62827ef365",
+        "trace_id": "44258ce01a0e4f238ce23aa45a680a67",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 14.179468154907227,
+        "dependency": null,
+        "dependency_status": null
+      }
+    ]
+  },
+  {
+    "service": "frontend",
+    "start": 1791288675.2528226,
+    "end": 1791288678.2528226,
+    "count": 6,
+    "features": [
+      49.88396167755127,
+      0.16666666666666666,
+      2.0,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "a609fcc59953441cb655361bf7572da7",
+        "trace_id": "a13e893135c7454e82ba5211534d0c2e",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 50.169944763183594,
+        "dependency": "checkout",
+        "dependency_status": 502
+      },
+      {
+        "span_id": "8ec299dfe8d0404696c9bae806826c37",
+        "trace_id": "9aebe34dc96643e489d366dd8000a190",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 49.0260124206543,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "478a22c3d2e9491ba3ed28cfe790ed34",
+        "trace_id": "19c51f685b4f450dadf8f3244595816e",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 46.913862228393555,
+        "dependency": "checkout",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "checkout",
+    "start": 1791288675.2528226,
+    "end": 1791288678.2528226,
+    "count": 6,
+    "features": [
+      32.36180543899536,
+      0.16666666666666666,
+      2.0,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "5fa3750ad82f49628c40e0e3e628d5ee",
+        "trace_id": "a13e893135c7454e82ba5211534d0c2e",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 32.41705894470215,
+        "dependency": "inventory",
+        "dependency_status": 503
+      },
+      {
+        "span_id": "e3990afb0bb244f18c59602659a4ac75",
+        "trace_id": "9aebe34dc96643e489d366dd8000a190",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 32.196044921875,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "2477b94919a344449c4aacd0e77bb21a",
+        "trace_id": "19c51f685b4f450dadf8f3244595816e",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 30.851364135742188,
+        "dependency": "inventory",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "inventory",
+    "start": 1791288675.2528226,
+    "end": 1791288678.2528226,
+    "count": 6,
+    "features": [
+      15.068888664245605,
+      0.16666666666666666,
+      2.0,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "298aef643e8f4896898b20dc0b924275",
+        "trace_id": "a13e893135c7454e82ba5211534d0c2e",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 14.899730682373047,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "5f8ee159c6554473ae32d71e6e0fbede",
+        "trace_id": "9aebe34dc96643e489d366dd8000a190",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.125274658203125,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "1ac19551a03c4b55aab1d54e52f2cba0",
+        "trace_id": "19c51f685b4f450dadf8f3244595816e",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 14.46390151977539,
+        "dependency": null,
+        "dependency_status": null
+      }
+    ]
+  },
+  {
+    "service": "frontend",
+    "start": 1791288678.2528226,
+    "end": 1791288681.2528226,
+    "count": 8,
+    "features": [
+      49.854576587677,
+      1.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "d938d2b82f96441f918a50927de89f19",
+        "trace_id": "210d64667df64a03b794f93b45fbf3c4",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 51.62239074707031,
+        "dependency": "checkout",
+        "dependency_status": 502
+      },
+      {
+        "span_id": "c9b634a0e34f4cda8385bc46e73f5090",
+        "trace_id": "6227e75db41f4aa99a0259b5209cc2e9",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 46.57149314880371,
+        "dependency": "checkout",
+        "dependency_status": 502
+      },
+      {
+        "span_id": "0341577cc5ba4cbf8ea04eb2bdc30052",
+        "trace_id": "e6e6d988989c4fe691d2f8ec1c65b1ef",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 33.25533866882324,
+        "dependency": "checkout",
+        "dependency_status": 502
+      }
+    ]
+  },
+  {
+    "service": "checkout",
+    "start": 1791288678.2528226,
+    "end": 1791288681.2528226,
+    "count": 8,
+    "features": [
+      32.74641036987305,
+      1.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "b2064f885f99429dabc133254c292b66",
+        "trace_id": "210d64667df64a03b794f93b45fbf3c4",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 33.94269943237305,
+        "dependency": "inventory",
+        "dependency_status": 503
+      },
+      {
+        "span_id": "0a2c0ebdf8ce40c9bf3b5f29a35b346f",
+        "trace_id": "6227e75db41f4aa99a0259b5209cc2e9",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 30.524730682373047,
+        "dependency": "inventory",
+        "dependency_status": 503
+      },
+      {
+        "span_id": "156512665b9c405c9ba311117efef16b",
+        "trace_id": "e6e6d988989c4fe691d2f8ec1c65b1ef",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 21.479129791259766,
+        "dependency": "inventory",
+        "dependency_status": 503
+      }
+    ]
+  },
+  {
+    "service": "inventory",
+    "start": 1791288678.2528226,
+    "end": 1791288681.2528226,
+    "count": 8,
+    "features": [
+      15.241491794586182,
+      1.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "8aefe8d2ece544a88d4f70873155dccb",
+        "trace_id": "210d64667df64a03b794f93b45fbf3c4",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 15.78831672668457,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "1cd7a3b1398e480d90c9f6deabfd8a6b",
+        "trace_id": "6227e75db41f4aa99a0259b5209cc2e9",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 14.225959777832031,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "a79c5a3d1ef140e3b617a4a45ed27aa0",
+        "trace_id": "e6e6d988989c4fe691d2f8ec1c65b1ef",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 9.608745574951172,
+        "dependency": null,
+        "dependency_status": null
+      }
+    ]
+  },
+  {
+    "service": "frontend",
+    "start": 1791288681.2528226,
+    "end": 1791288684.2528226,
+    "count": 7,
+    "features": [
+      44.95985507965087,
+      1.0,
+      2.3333333333333335,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "db718de6af4d43acbe603b6afb9e702d",
+        "trace_id": "7d96ecf980644579b25d1f99dd76d77c",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 47.36590385437012,
+        "dependency": "checkout",
+        "dependency_status": 502
+      },
+      {
+        "span_id": "3be11487e320426090a68e2b987da61b",
+        "trace_id": "a8b17829ca3d4878bcfcdfbb8b7997bb",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 39.345741271972656,
+        "dependency": "checkout",
+        "dependency_status": 502
+      },
+      {
+        "span_id": "4cc6e051b8f34b4e853c0275d65e2f06",
+        "trace_id": "7684c3b380404f0396423d34bdb59911",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 37.49513626098633,
+        "dependency": "checkout",
+        "dependency_status": 502
+      }
+    ]
+  },
+  {
+    "service": "checkout",
+    "start": 1791288681.2528226,
+    "end": 1791288684.2528226,
+    "count": 7,
+    "features": [
+      29.42116260528564,
+      1.0,
+      2.3333333333333335,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "61e5893d43f047dbae25c1eddb5675f6",
+        "trace_id": "7d96ecf980644579b25d1f99dd76d77c",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 31.0060977935791,
+        "dependency": "inventory",
+        "dependency_status": 503
+      },
+      {
+        "span_id": "6c3c495223e84a228e9cfe4aad205cc0",
+        "trace_id": "a8b17829ca3d4878bcfcdfbb8b7997bb",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 25.722980499267578,
+        "dependency": "inventory",
+        "dependency_status": 503
+      },
+      {
+        "span_id": "7ee923ed6e13414e9440758c333af54f",
+        "trace_id": "7684c3b380404f0396423d34bdb59911",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 24.24335479736328,
+        "dependency": "inventory",
+        "dependency_status": 503
+      }
+    ]
+  },
+  {
+    "service": "inventory",
+    "start": 1791288681.2528226,
+    "end": 1791288684.2528226,
+    "count": 7,
+    "features": [
+      13.650465011596678,
+      1.0,
+      2.3333333333333335,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "c650d27de8be4cfb9d8edf41bd9b02f4",
+        "trace_id": "7d96ecf980644579b25d1f99dd76d77c",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 14.524221420288086,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "7d5ee287d5bf46fd963ebe2102620986",
+        "trace_id": "a8b17829ca3d4878bcfcdfbb8b7997bb",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 11.611700057983398,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "6d0182ec1d424fca8979efba60d91556",
+        "trace_id": "7684c3b380404f0396423d34bdb59911",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 11.158227920532227,
+        "dependency": null,
+        "dependency_status": null
+      }
+    ]
+  },
+  {
+    "service": "frontend",
+    "start": 1791288684.2528226,
+    "end": 1791288687.2528226,
+    "count": 7,
+    "features": [
+      46.5346097946167,
+      1.0,
+      2.3333333333333335,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "086917da3f114be49656801175fb5d7c",
+        "trace_id": "89b39fe318634a1390267625aa06a253",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 46.886444091796875,
+        "dependency": "checkout",
+        "dependency_status": 502
+      },
+      {
+        "span_id": "9205bcdefa0d4ad3a73c37e7f24734a7",
+        "trace_id": "3fc1a2ab58244b9991f198eed79ec8ec",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 45.71366310119629,
+        "dependency": "checkout",
+        "dependency_status": 502
+      },
+      {
+        "span_id": "5b4bd466c7b44e6ebabf90e7b44796cb",
+        "trace_id": "2c43324d65af482483efb769922f3db1",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 44.30556297302246,
+        "dependency": "checkout",
+        "dependency_status": 502
+      }
+    ]
+  },
+  {
+    "service": "checkout",
+    "start": 1791288684.2528226,
+    "end": 1791288687.2528226,
+    "count": 7,
+    "features": [
+      30.391764640808105,
+      1.0,
+      2.3333333333333335,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "fb33366cd689425baf3ba7e09842b97f",
+        "trace_id": "89b39fe318634a1390267625aa06a253",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 30.594825744628906,
+        "dependency": "inventory",
+        "dependency_status": 503
+      },
+      {
+        "span_id": "0c81a9e1e5d04c7eaedaaea9296d5317",
+        "trace_id": "3fc1a2ab58244b9991f198eed79ec8ec",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 29.91795539855957,
+        "dependency": "inventory",
+        "dependency_status": 503
+      },
+      {
+        "span_id": "8ba7de0db09043df998e7402b9a4b2fc",
+        "trace_id": "2c43324d65af482483efb769922f3db1",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 28.933286666870117,
+        "dependency": "inventory",
+        "dependency_status": 503
+      }
+    ]
+  },
+  {
+    "service": "inventory",
+    "start": 1791288684.2528226,
+    "end": 1791288687.2528226,
+    "count": 7,
+    "features": [
+      14.02592658996582,
+      1.0,
+      2.3333333333333335,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "1c5e1e4a0efa48ada6e167af372939c0",
+        "trace_id": "89b39fe318634a1390267625aa06a253",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 14.037370681762695,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "60bf10673f8c4a1f832525b408e7b823",
+        "trace_id": "3fc1a2ab58244b9991f198eed79ec8ec",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 13.999223709106445,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "d574328bc99344a285b2947a79138c69",
+        "trace_id": "2c43324d65af482483efb769922f3db1",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 13.30113410949707,
+        "dependency": null,
+        "dependency_status": null
+      }
+    ]
+  },
+  {
+    "service": "frontend",
+    "start": 1791288687.2528226,
+    "end": 1791288690.2528226,
+    "count": 8,
+    "features": [
+      39.73597288131713,
+      1.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "4c468a0988924622867316bfab4513df",
+        "trace_id": "c1a0609124414f36b32de34b3c7a606c",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 43.26367378234863,
+        "dependency": "checkout",
+        "dependency_status": 502
+      },
+      {
+        "span_id": "50812ffa335f4d6597461903173b47b9",
+        "trace_id": "8724b238422448a1982d1c8c81c32c15",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 33.18452835083008,
+        "dependency": "checkout",
+        "dependency_status": 502
+      },
+      {
+        "span_id": "4ec534d1047a4b5dbbb0299d173aae39",
+        "trace_id": "db0ae9c59a5248ecb6649971cf91fbd1",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 29.394149780273438,
+        "dependency": "checkout",
+        "dependency_status": 502
+      }
+    ]
+  },
+  {
+    "service": "checkout",
+    "start": 1791288687.2528226,
+    "end": 1791288690.2528226,
+    "count": 8,
+    "features": [
+      25.89520215988159,
+      1.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "795fed4932d04e1aa92e0f6c80f21f8b",
+        "trace_id": "c1a0609124414f36b32de34b3c7a606c",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 28.219938278198242,
+        "dependency": "inventory",
+        "dependency_status": 503
+      },
+      {
+        "span_id": "0029777f90f341129575df463ca15dfd",
+        "trace_id": "8724b238422448a1982d1c8c81c32c15",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 21.577835083007812,
+        "dependency": "inventory",
+        "dependency_status": 503
+      },
+      {
+        "span_id": "7a3f359e68194b8797d4ab3f1a87e844",
+        "trace_id": "5893836629b242bdbeda48b151e7db4f",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 19.066572189331055,
+        "dependency": "inventory",
+        "dependency_status": 503
+      }
+    ]
+  },
+  {
+    "service": "inventory",
+    "start": 1791288687.2528226,
+    "end": 1791288690.2528226,
+    "count": 8,
+    "features": [
+      12.11271286010742,
+      1.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "df67fc6c4b804e5583b8a0dad27d7e52",
+        "trace_id": "c1a0609124414f36b32de34b3c7a606c",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 13.227224349975586,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "78b3301698c744ef9fdda1c5d55d5258",
+        "trace_id": "8724b238422448a1982d1c8c81c32c15",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 10.042905807495117,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "03b0e796928f4e729d7de18d9fb41dc6",
+        "trace_id": "5893836629b242bdbeda48b151e7db4f",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 8.59689712524414,
+        "dependency": null,
+        "dependency_status": null
+      }
+    ]
+  },
+  {
+    "service": "frontend",
+    "start": 1791288690.2528226,
+    "end": 1791288693.2528226,
+    "count": 5,
+    "features": [
+      46.81692123413086,
+      0.6,
+      1.6666666666666667,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "10fbd9e408664eddb2dc733c688314d2",
+        "trace_id": "49f33864fb924884a0f115bcdf1f9f6c",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 36.20624542236328,
+        "dependency": "checkout",
+        "dependency_status": 502
+      },
+      {
+        "span_id": "d78400e9ae9b49e6b527d28221633402",
+        "trace_id": "c2917ce446b14e51a7986e5c1ee3721e",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 22.600173950195312,
+        "dependency": "checkout",
+        "dependency_status": 502
+      },
+      {
+        "span_id": "f0df230955314b1e9f5370ec700d2d27",
+        "trace_id": "2260331f9f4d49658aee92afe73d0a57",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 20.7517147064209,
+        "dependency": "checkout",
+        "dependency_status": 502
+      }
+    ]
+  },
+  {
+    "service": "checkout",
+    "start": 1791288690.2528226,
+    "end": 1791288693.2528226,
+    "count": 5,
+    "features": [
+      30.566120147705078,
+      0.6,
+      1.6666666666666667,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "8abb7eff25a44cc386e8544e253855ac",
+        "trace_id": "49f33864fb924884a0f115bcdf1f9f6c",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 23.398399353027344,
+        "dependency": "inventory",
+        "dependency_status": 503
+      },
+      {
+        "span_id": "e6cbff50396941d09fcd38353856b7d9",
+        "trace_id": "c2917ce446b14e51a7986e5c1ee3721e",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 14.435529708862305,
+        "dependency": "inventory",
+        "dependency_status": 503
+      },
+      {
+        "span_id": "2f55dcd9b123419fb2158bbb055b3218",
+        "trace_id": "2260331f9f4d49658aee92afe73d0a57",
+        "message": "downstream request failed",
+        "status": 502,
+        "duration_ms": 13.134241104125977,
+        "dependency": "inventory",
+        "dependency_status": 503
+      }
+    ]
+  },
+  {
+    "service": "inventory",
+    "start": 1791288690.2528226,
+    "end": 1791288693.2528226,
+    "count": 5,
+    "features": [
+      14.38136100769043,
+      0.6,
+      1.6666666666666667,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "2c2657315a474358951501f35b6035b0",
+        "trace_id": "49f33864fb924884a0f115bcdf1f9f6c",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 10.861396789550781,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "c344bc6b24984446822b9f9ad445b3af",
+        "trace_id": "c2917ce446b14e51a7986e5c1ee3721e",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 6.435394287109375,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "edf89d1290e04ea6b73b3898ae3e0af3",
+        "trace_id": "2260331f9f4d49658aee92afe73d0a57",
+        "message": "local dependency capacity exhausted",
+        "status": 503,
+        "duration_ms": 5.675554275512695,
+        "dependency": null,
+        "dependency_status": null
+      }
+    ]
+  },
+  {
+    "service": "frontend",
+    "start": 1791288693.2528226,
+    "end": 1791288696.2528226,
+    "count": 8,
+    "features": [
+      49.18645620346069,
+      0.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "ecbdd5513362479ca49359e54364fcd5",
+        "trace_id": "291b998f53b346d7ab00315f20518577",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 49.445390701293945,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "f185ef28fe9a469bb9502b391a7f9002",
+        "trace_id": "5d08b98a51f243129152bb44a8bcc09b",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 48.7055778503418,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "fcd00241a1e647cab7fb11280b9518af",
+        "trace_id": "9198bfbc817d4711a131e5e14d7d7a06",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 40.7712459564209,
+        "dependency": "checkout",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "checkout",
+    "start": 1791288693.2528226,
+    "end": 1791288696.2528226,
+    "count": 8,
+    "features": [
+      32.435762882232666,
+      0.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "80fb5eb0db084333afc8ce15357ea022",
+        "trace_id": "291b998f53b346d7ab00315f20518577",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 32.698869705200195,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "95007262b8aa4929a1dea5efa1065123",
+        "trace_id": "5d08b98a51f243129152bb44a8bcc09b",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 31.94713592529297,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "c413a82712ac4bd98645c294280dd68e",
+        "trace_id": "9198bfbc817d4711a131e5e14d7d7a06",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 26.80659294128418,
+        "dependency": "inventory",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "inventory",
+    "start": 1791288693.2528226,
+    "end": 1791288696.2528226,
+    "count": 8,
+    "features": [
+      15.177416801452637,
+      0.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "27b79640a62c4260b4171791b5a34d20",
+        "trace_id": "291b998f53b346d7ab00315f20518577",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.222311019897461,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "82d7f9061a0e40e09949822412d8602e",
+        "trace_id": "5d08b98a51f243129152bb44a8bcc09b",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.09404182434082,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "b29640478dc241649f4cb1ac05af0925",
+        "trace_id": "6f6a8cba4d364c33b911a39f12347048",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 12.210369110107422,
+        "dependency": null,
+        "dependency_status": null
+      }
+    ]
+  },
+  {
+    "service": "frontend",
+    "start": 1791288696.2528226,
+    "end": 1791288699.2528226,
+    "count": 8,
+    "features": [
+      51.29462480545044,
+      0.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "2f9515b4861246b09fb85b7910b3941a",
+        "trace_id": "88054766a2c443c49321d4350fb74449",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 52.094459533691406,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "9bc1ff4fb4cb4ff09d85b42731d4f098",
+        "trace_id": "4c06c09d10044bada5b7062dcfaa588b",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 49.80921745300293,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "9b45e223f7a04fed80da52de12dc45bf",
+        "trace_id": "0248e758e771412ea1642a80718c1831",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 47.011375427246094,
+        "dependency": "checkout",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "checkout",
+    "start": 1791288696.2528226,
+    "end": 1791288699.2528226,
+    "count": 8,
+    "features": [
+      33.551788330078125,
+      0.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "b793336841d545f38766d473831bea38",
+        "trace_id": "88054766a2c443c49321d4350fb74449",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 34.18564796447754,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "bc1e453aa185419ca26e400f7229388e",
+        "trace_id": "4c06c09d10044bada5b7062dcfaa588b",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 32.37462043762207,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "3974603b07224e9fb0b57fcab5e050a1",
+        "trace_id": "0248e758e771412ea1642a80718c1831",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 30.71761131286621,
+        "dependency": "inventory",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "inventory",
+    "start": 1791288696.2528226,
+    "end": 1791288699.2528226,
+    "count": 8,
+    "features": [
+      15.755343437194824,
+      0.0,
+      2.6666666666666665,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "5c774ee5b3124bb29e109f59cd06b764",
+        "trace_id": "88054766a2c443c49321d4350fb74449",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 16.260862350463867,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "78a28564001348c4844403ed0f2bca5c",
+        "trace_id": "4c06c09d10044bada5b7062dcfaa588b",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 14.816522598266602,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "f2b7d0e682b2491eaf6e34b628766402",
+        "trace_id": "0248e758e771412ea1642a80718c1831",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 14.533042907714844,
+        "dependency": null,
+        "dependency_status": null
+      }
+    ]
+  },
+  {
+    "service": "frontend",
+    "start": 1791288699.2528226,
+    "end": 1791288702.2528226,
+    "count": 7,
+    "features": [
+      50.84226131439209,
+      0.0,
+      2.3333333333333335,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "4204883230094584b0871e501e8ebbb6",
+        "trace_id": "f24d6ad0a75c4a23a1d4b4a5d051b8f2",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 51.36418342590332,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "df0d258f42a64617b07ea38817b6cbd8",
+        "trace_id": "91c66e47267d4a23aef7fd2da3e20282",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 49.62444305419922,
+        "dependency": "checkout",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "027247a103fb431386f7691a875b90bb",
+        "trace_id": "b285b0d37168485f933313b6d38a45d9",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 36.58032417297363,
+        "dependency": "checkout",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "checkout",
+    "start": 1791288699.2528226,
+    "end": 1791288702.2528226,
+    "count": 7,
+    "features": [
+      33.33179950714111,
+      0.0,
+      2.3333333333333335,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "69c702c34a8344cf88df90d93a375979",
+        "trace_id": "f24d6ad0a75c4a23a1d4b4a5d051b8f2",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 33.61654281616211,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "e01285748b3c476596b4e4065229d087",
+        "trace_id": "91c66e47267d4a23aef7fd2da3e20282",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 32.66739845275879,
+        "dependency": "inventory",
+        "dependency_status": 200
+      },
+      {
+        "span_id": "31d16b4e9158449a84a09f2f79bf6de7",
+        "trace_id": "b285b0d37168485f933313b6d38a45d9",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 23.883342742919922,
+        "dependency": "inventory",
+        "dependency_status": 200
+      }
+    ]
+  },
+  {
+    "service": "inventory",
+    "start": 1791288699.2528226,
+    "end": 1791288702.2528226,
+    "count": 7,
+    "features": [
+      15.40536880493164,
+      0.0,
+      2.3333333333333335,
+      1
+    ],
+    "evidence": [
+      {
+        "span_id": "698649eda97b409a836198248a45f123",
+        "trace_id": "f24d6ad0a75c4a23a1d4b4a5d051b8f2",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.533685684204102,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "5cd6ae3019414ca4b8bdef02f541f47e",
+        "trace_id": "91c66e47267d4a23aef7fd2da3e20282",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 15.105962753295898,
+        "dependency": null,
+        "dependency_status": null
+      },
+      {
+        "span_id": "74303b9772884d4bb20b05b34ce16dd2",
+        "trace_id": "b285b0d37168485f933313b6d38a45d9",
+        "message": "request completed",
+        "status": 200,
+        "duration_ms": 10.835886001586914,
+        "dependency": null,
+        "dependency_status": null
+      }
+    ]
+  }
+]

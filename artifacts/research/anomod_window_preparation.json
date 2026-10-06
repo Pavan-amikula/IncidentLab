@@ -1,0 +1,471 @@
+{
+  "scope": "Healthy-reference preparation only; no model inference or external fault evaluation",
+  "systems": {
+    "TT_data": {
+      "complete_windows": 9,
+      "service_rows": 414,
+      "start": 1762177920,
+      "end": 1762178460,
+      "coverage": {
+        "ts-admin-basic-info-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "ts-admin-order-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "ts-admin-route-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "ts-admin-travel-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "ts-admin-user-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "ts-assurance-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-auth-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-avatar-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "ts-basic-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 3
+        },
+        "ts-cancel-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-config-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-consign-price-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-consign-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 3
+        },
+        "ts-contacts-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 3
+        },
+        "ts-delivery-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-execute-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-food-delivery-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "ts-food-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 3
+        },
+        "ts-gateway-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-inside-payment-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-news-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "ts-notification-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-order-other-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 3
+        },
+        "ts-order-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 1
+        },
+        "ts-payment-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-preserve-other-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-preserve-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-price-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 1
+        },
+        "ts-rebook-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 1
+        },
+        "ts-route-plan-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-route-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 3
+        },
+        "ts-seat-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-security-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-station-food-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 4
+        },
+        "ts-station-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 3
+        },
+        "ts-ticket-office-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "ts-train-food-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 4
+        },
+        "ts-train-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 3
+        },
+        "ts-travel-plan-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 2
+        },
+        "ts-travel-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 3
+        },
+        "ts-travel2-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 3
+        },
+        "ts-ui-dashboard": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "ts-user-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 4
+        },
+        "ts-verification-code-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 3
+        },
+        "ts-voucher-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "ts-wait-order-service": {
+          "cpu_windows": 9,
+          "memory_windows": 9,
+          "log_windows": 0,
+          "trace_windows": 0
+        }
+      }
+    },
+    "SN_data": {
+      "complete_windows": 19,
+      "service_rows": 532,
+      "start": 1762207440,
+      "end": 1762208580,
+      "coverage": {
+        "compose-post-redis": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "compose-post-service": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 18,
+          "trace_windows": 18
+        },
+        "home-timeline-redis": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "home-timeline-service": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 18,
+          "trace_windows": 18
+        },
+        "media-frontend": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "media-memcached": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "media-mongodb": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "media-service": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 18,
+          "trace_windows": 18
+        },
+        "nginx-thrift": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "nginx-web-server": {
+          "cpu_windows": 0,
+          "memory_windows": 0,
+          "log_windows": 0,
+          "trace_windows": 18
+        },
+        "post-storage-memcached": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "post-storage-mongodb": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "post-storage-service": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 18,
+          "trace_windows": 18
+        },
+        "social-graph-mongodb": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "social-graph-redis": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "social-graph-service": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 19,
+          "trace_windows": 18
+        },
+        "text-service": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 18,
+          "trace_windows": 18
+        },
+        "unique-id-service": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 18,
+          "trace_windows": 18
+        },
+        "url-shorten-memcached": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "url-shorten-mongodb": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "url-shorten-service": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 18,
+          "trace_windows": 18
+        },
+        "user-memcached": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "user-mention-service": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 18,
+          "trace_windows": 18
+        },
+        "user-mongodb": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "user-service": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 19,
+          "trace_windows": 18
+        },
+        "user-timeline-mongodb": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "user-timeline-redis": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 0,
+          "trace_windows": 0
+        },
+        "user-timeline-service": {
+          "cpu_windows": 19,
+          "memory_windows": 19,
+          "log_windows": 18,
+          "trace_windows": 18
+        }
+      }
+    }
+  },
+  "limitations": [
+    "full healthy run used for reference fitting; cannot report unbiased false alerts on that same run",
+    "six of eight metric kinds unavailable; logged as missing rather than mapped to unrelated signals",
+    "short and sparse trace references; source coverage must accompany external results",
+    "SocialNetwork log UTC alignment inferred; TrainTicket logs excluded until source offset verified"
+  ]
+}

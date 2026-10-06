@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "manifest_files_verified": 2502,
+  "torch_version": "2.11.0+cpu",
+  "torch_cuda_version": null,
+  "device": "cpu",
+  "threads": 2,
+  "model_run": "20261005T202755-0e2c27",
+  "native_checkpoint_sha256": "118e99295e06b8afe45e4101140143ed1141a4cfe1d8bd670ba8086564d28711",
+  "parameter_checkpoint_sha256": "45293e9ae8cb26fe176ff7ab25f83cfc86e2df16c73a24b6c3b640ad3fafcd60",
+  "temporal_comparisons": [
+    {
+      "case": "re1ob_adservice_cpu_2",
+      "windows": 65,
+      "max_cpu_gpu_score_difference": 6.705522537231445e-07,
+      "milliseconds": 63.28380000195466
+    },
+    {
+      "case": "re1ss_carts_cpu_3",
+      "windows": 7,
+      "max_cpu_gpu_score_difference": 1.1641532182693481e-09,
+      "milliseconds": 24.994799998239614
+    },
+    {
+      "case": "re1tt_ts-auth-service_delay_5",
+      "windows": 11,
+      "max_cpu_gpu_score_difference": 1.3709068298339844e-06,
+      "milliseconds": 33.75249999226071
+    }
+  ],
+  "training_performed": false,
+  "llm_generation_disabled": true,
+  "boundary": "CPU artifact loading/replay verification; Docker and Kubernetes still require execution on the laptop"
+}

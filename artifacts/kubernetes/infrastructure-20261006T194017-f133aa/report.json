@@ -1,0 +1,28 @@
+{
+  "run_id": "infrastructure-20261006T194017-f133aa",
+  "status": "passed",
+  "kind": "same-pod-container-restart",
+  "target": "inventory",
+  "training": false,
+  "pod_uid": "cd6a8002-062c-4f82-a377-dd0e9c27019c",
+  "previous_restart_count": 0,
+  "restart_command_started": 1791308419.3175948,
+  "runtime_stop_exit_code": 0,
+  "same_pod_uid": true,
+  "current_restart_count": 1,
+  "previous_log_source": "cd6a8002-062c-4f82-a377-dd0e9c27019c/previous/1",
+  "unpolled_tail_requests": 8,
+  "recovered_inventory_tail_traces": 8,
+  "duplicate_poll_insertions": 0,
+  "clients": 32,
+  "successful_clients": 32,
+  "exported": {
+    "events": 96,
+    "sources": 5,
+    "snapshot_count": 3,
+    "storage": "SQLite unique service/span IDs and transactional transport watermarks",
+    "limitation": "Pod deletion/rotation between polls can lose tail records; snapshots expose lifecycle changes but cannot reconstruct missing logs"
+  },
+  "recovered_at": 1791308428.7226577,
+  "boundary": "One controlled same-pod restart. Does not establish log-rotation or repeated-restart completeness."
+}

@@ -1,0 +1,537 @@
+{
+  "run_id": "20261005T202755-0e2c27",
+  "status": "complete",
+  "model": "healthy-fitted per-service IsolationForest",
+  "feature_schema": "incidentlab-http-v1",
+  "features": [
+    "p95_latency_ms",
+    "error_fraction",
+    "requests_per_second",
+    "max_active_requests"
+  ],
+  "repetitions_per_fault": 2,
+  "healthy_run_seconds": 300,
+  "control_run_seconds": 600,
+  "fault_run_seconds": 90,
+  "checkpoint_sha256": "118e99295e06b8afe45e4101140143ed1141a4cfe1d8bd670ba8086564d28711",
+  "split": "distinct chronological service-process trials",
+  "training_windows": 100,
+  "validation_windows": 100,
+  "trials": [
+    {
+      "kind": "healthy",
+      "target": null,
+      "phase": "test_healthy",
+      "healthy_windows": 200,
+      "active_fault_windows": 0,
+      "boundary_windows_excluded": 0,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 18.0,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      }
+    },
+    {
+      "kind": "surge",
+      "target": null,
+      "phase": "test_surge",
+      "healthy_windows": 200,
+      "active_fault_windows": 0,
+      "boundary_windows_excluded": 0,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 174.0,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 6.0,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      }
+    },
+    {
+      "kind": "delay",
+      "target": "frontend",
+      "phase": "test_delay_frontend_r1",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.995009183883667,
+        "false_alert_windows_per_healthy_hour": 141.1764705882353,
+        "first_alert_service": "frontend",
+        "first_alert_service_matches_injected_target": true
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.995009183883667,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "frontend",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "delay",
+      "target": "frontend",
+      "phase": "test_delay_frontend_r2",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.9952991008758545,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "frontend",
+        "first_alert_service_matches_injected_target": true
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.9952991008758545,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "frontend",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "delay",
+      "target": "checkout",
+      "phase": "test_delay_checkout_r1",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.997705936431885,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "checkout",
+        "first_alert_service_matches_injected_target": true
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.997705936431885,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "checkout",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "delay",
+      "target": "checkout",
+      "phase": "test_delay_checkout_r2",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.994834661483765,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "checkout",
+        "first_alert_service_matches_injected_target": true
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.994834661483765,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "checkout",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "delay",
+      "target": "inventory",
+      "phase": "test_delay_inventory_r1",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.994933128356934,
+        "false_alert_windows_per_healthy_hour": 141.1764705882353,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.994933128356934,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "delay",
+      "target": "inventory",
+      "phase": "test_delay_inventory_r2",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.996323823928833,
+        "false_alert_windows_per_healthy_hour": 70.58823529411765,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.996323823928833,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "error",
+      "target": "frontend",
+      "phase": "test_error_frontend_r1",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 0.0,
+        "incident_detected": false,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 70.58823529411765,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.996740102767944,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "frontend",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "error",
+      "target": "frontend",
+      "phase": "test_error_frontend_r2",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 0.0,
+        "incident_detected": false,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.9989752769470215,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "frontend",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "error",
+      "target": "checkout",
+      "phase": "test_error_checkout_r1",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 0.0,
+        "incident_detected": false,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 70.58823529411765,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.998748540878296,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "checkout",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "error",
+      "target": "checkout",
+      "phase": "test_error_checkout_r2",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 0.0,
+        "incident_detected": false,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 70.58823529411765,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.998475790023804,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "checkout",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "error",
+      "target": "inventory",
+      "phase": "test_error_inventory_r1",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 0.0,
+        "incident_detected": false,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 70.58823529411765,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.997820854187012,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "error",
+      "target": "inventory",
+      "phase": "test_error_inventory_r2",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 0.0,
+        "incident_detected": false,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 70.58823529411765,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.996891736984253,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "unavailable",
+      "target": "frontend",
+      "phase": "test_unavailable_frontend_r1",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 0.0,
+        "incident_detected": false,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 70.58823529411765,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.995074510574341,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "frontend",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "unavailable",
+      "target": "frontend",
+      "phase": "test_unavailable_frontend_r2",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 0.0,
+        "incident_detected": false,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.995362281799316,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "frontend",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "unavailable",
+      "target": "checkout",
+      "phase": "test_unavailable_checkout_r1",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.99732232093811,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "checkout",
+        "first_alert_service_matches_injected_target": true
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.99732232093811,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "checkout",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "unavailable",
+      "target": "checkout",
+      "phase": "test_unavailable_checkout_r2",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.996536493301392,
+        "false_alert_windows_per_healthy_hour": 141.1764705882353,
+        "first_alert_service": "checkout",
+        "first_alert_service_matches_injected_target": true
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.996536493301392,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "checkout",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "unavailable",
+      "target": "inventory",
+      "phase": "test_unavailable_inventory_r1",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.99656081199646,
+        "false_alert_windows_per_healthy_hour": 141.1764705882353,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.99656081199646,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "unavailable",
+      "target": "inventory",
+      "phase": "test_unavailable_inventory_r2",
+      "healthy_windows": 17,
+      "active_fault_windows": 11,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.99594521522522,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.99594521522522,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      }
+    }
+  ],
+  "inference_p50_ms": 13.289500027894974,
+  "fault_target_distribution": {
+    "frontend": 6,
+    "checkout": 6,
+    "inventory": 6
+  },
+  "service_prior_only_localization": 0.3333333333333333,
+  "inference_p95_ms": 33.852819970343255,
+  "limitations": [
+    "Short healthy periods give unstable false-alert rates",
+    "One controlled application; repeated known faults do not establish cross-system or unseen-fault performance",
+    "Requests and faults are controlled; infrastructure/CPU/memory/Kubernetes faults not evaluated",
+    "Separate HTTP model; pretrained RCAEval GRU was not silently reused",
+    "Trace-supported service hypotheses are not causal proof"
+  ]
+}

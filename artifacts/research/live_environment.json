@@ -1,0 +1,8 @@
+{
+  "administrator": false,
+  "docker_command_available": false,
+  "kubectl_command_available": false,
+  "kind_command_available": false,
+  "docker_engine_running": false,
+  "note": "Read-only preflight; no installer or restart is invoked."
+}

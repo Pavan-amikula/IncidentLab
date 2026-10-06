@@ -1,0 +1,21 @@
+{
+  "kind": "delay",
+  "target": "inventory",
+  "started": 1791227140.1851265,
+  "ended": 1791227230.1851265,
+  "onset": 1791227167.1888027,
+  "recovery": 1791227203.1908362,
+  "actions": [
+    {
+      "timestamp": 1791227167.1888027,
+      "action": "delay",
+      "target": "inventory"
+    },
+    {
+      "timestamp": 1791227203.1908362,
+      "action": "recover",
+      "target": "inventory"
+    }
+  ],
+  "dropped_workload_requests": 0
+}

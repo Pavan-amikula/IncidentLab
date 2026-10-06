@@ -1,0 +1,122 @@
+{
+  "run_id": "20261005T191947-bade26",
+  "status": "complete",
+  "model": "healthy-fitted per-service IsolationForest",
+  "feature_schema": "incidentlab-http-v1",
+  "features": [
+    "p95_latency_ms",
+    "error_fraction",
+    "requests_per_second",
+    "max_active_requests"
+  ],
+  "checkpoint_sha256": "ab55127cd85ee5dbcece24f2b258f8e350a049a47f2d863bf21ac1844edaf6ae",
+  "split": "distinct chronological service-process trials",
+  "training_windows": 20,
+  "validation_windows": 20,
+  "trials": [
+    {
+      "kind": "healthy",
+      "healthy_windows": 20,
+      "active_fault_windows": 0,
+      "boundary_windows_excluded": 0,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 300.0
+      },
+      "operational_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 0.0
+      }
+    },
+    {
+      "kind": "surge",
+      "healthy_windows": 20,
+      "active_fault_windows": 0,
+      "boundary_windows_excluded": 0,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 240.0
+      },
+      "operational_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 0.0
+      }
+    },
+    {
+      "kind": "delay",
+      "healthy_windows": 11,
+      "active_fault_windows": 7,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.996055364608765,
+        "false_alert_windows_per_healthy_hour": 545.4545454545455
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.996055364608765,
+        "false_alert_windows_per_healthy_hour": 0.0
+      }
+    },
+    {
+      "kind": "error",
+      "healthy_windows": 11,
+      "active_fault_windows": 7,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 0.14285714285714285,
+        "incident_detected": true,
+        "detection_delay_seconds": 8.996709823608398,
+        "false_alert_windows_per_healthy_hour": 218.1818181818182
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.996709823608398,
+        "false_alert_windows_per_healthy_hour": 0.0
+      }
+    },
+    {
+      "kind": "unavailable",
+      "healthy_windows": 11,
+      "active_fault_windows": 7,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.995175123214722,
+        "false_alert_windows_per_healthy_hour": 0.0
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 5.995175123214722,
+        "false_alert_windows_per_healthy_hour": 0.0
+      }
+    }
+  ],
+  "inference_p50_ms": 33.52150003775023,
+  "inference_p95_ms": 61.53226003225427,
+  "limitations": [
+    "Short healthy periods give unstable false-alert rates",
+    "One application and one trial per fault; no cross-system or unseen-fault claim",
+    "Requests and faults are controlled; infrastructure/CPU/memory/Kubernetes faults not evaluated",
+    "Separate HTTP model; pretrained RCAEval GRU was not silently reused",
+    "Trace-supported service hypotheses are not causal proof"
+  ]
+}

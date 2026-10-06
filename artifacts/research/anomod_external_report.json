@@ -1,0 +1,463 @@
+{
+  "protocol": {
+    "version": "anomod-transfer-v1",
+    "models": {
+      "temporal_best.pt": "5375557b97ac324d8b90ef9fcbd8c8fd3d26b3d3e8577b0530ad6b603fbc66ab",
+      "supervised_reference.joblib": "5df5f3f251a136d63425c22956f2c00c3eb58e7343ddd95b691b532ce8b43c9e"
+    },
+    "references": {
+      "TT_data": "c2874d49862d40b534862c9209f6be1a978f90b52334c210403ac878d7d31bd9",
+      "SN_data": "3704d6775ce5277f3b18112510c598d7d41085a824e5b9fcf1bf5642772930b1"
+    },
+    "reference_access": "Whole author-designated healthy run only; fixed robust scaling; no model retraining",
+    "thresholds": {
+      "temporal": {
+        "TT_data": 0.8923273533582687,
+        "SN_data": 0.8923273533582687
+      },
+      "boosting": {
+        "TT_data": 0.9565451794149058,
+        "SN_data": 0.9763558124658233
+      }
+    },
+    "unseen_system_policy": "SN uses maximum existing RCAEval system threshold, chosen before fault inference",
+    "interval_policy": "Complete minutes within metric coverage; begin at least 300 seconds after nominal case-start timestamp",
+    "labels": "Case directories denote designed fault runs. Per-window active-fault ground truth not available.",
+    "scoring": "Fault-run alert coverage and window alert fraction; no precision, F1, detection-delay or healthy false-alert claims",
+    "sources": "CPU/memory and traces; SocialNetwork logs. TrainTicket logs excluded for unresolved timezone.",
+    "unsupported_service": "No healthy reference => all sources unavailable and service excluded from ranking",
+    "source_changes": "Synthetic SkyWalking error indicator; six unmapped metric kinds explicit missing",
+    "no_external_tuning": true
+  },
+  "policy_sha256": "a8312e5a3faabc52fbc37c88bc5008cc33e614f2bf49ed0b65a4efc04b93ddbc",
+  "designed_fault_runs": 24,
+  "evaluated_runs": 24,
+  "excluded_runs": [],
+  "windows": 355,
+  "models": {
+    "temporal": {
+      "eligible_fault_runs": 24,
+      "alerted_fault_runs": 3,
+      "alert_windows": 44
+    },
+    "boosting": {
+      "eligible_fault_runs": 24,
+      "alerted_fault_runs": 2,
+      "alert_windows": 5
+    }
+  },
+  "cases": [
+    {
+      "case": "TT_data:Lv_C_exception_injection_20251103T185917Z_em",
+      "system": "TT_data",
+      "windows": 15,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "TT_data:Lv_C_security_check_20251103T183145Z_em",
+      "system": "TT_data",
+      "windows": 13,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 3,
+        "fault_run_alerted": true,
+        "first_alert_candidates": [
+          "ts-ticket-office-service",
+          "ts-admin-basic-info-service",
+          "ts-basic-service"
+        ]
+      }
+    },
+    {
+      "case": "TT_data:Lv_C_travel_detail_failure_20251103T192904Z_em",
+      "system": "TT_data",
+      "windows": 13,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "TT_data:Lv_D_cachelimit_20251103T170657Z_em",
+      "system": "TT_data",
+      "windows": 14,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "TT_data:Lv_D_CONNECTION_POOL_exhaustion_20251103T173702Z_em",
+      "system": "TT_data",
+      "windows": 13,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "TT_data:Lv_D_TRANSACTION_timeout_20251103T180430Z_em",
+      "system": "TT_data",
+      "windows": 13,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 2,
+        "fault_run_alerted": true,
+        "first_alert_candidates": [
+          "ts-ticket-office-service",
+          "ts-news-service",
+          "ts-order-service"
+        ]
+      }
+    },
+    {
+      "case": "TT_data:Lv_P_CPU_preserve_20251103T140939Z_em",
+      "system": "TT_data",
+      "windows": 19,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "TT_data:Lv_P_DISKIO_preserve_20251103T144212Z_em",
+      "system": "TT_data",
+      "windows": 10,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "TT_data:Lv_P_NETLOSS_preserve_20251103T150613Z_em",
+      "system": "TT_data",
+      "windows": 11,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "TT_data:Lv_S_DNSFAIL_preserve_no_order_20251103T153116Z_em",
+      "system": "TT_data",
+      "windows": 11,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "TT_data:Lv_S_HTTPABORT_preserve_20251103T155524Z_em",
+      "system": "TT_data",
+      "windows": 28,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "TT_data:Lv_S_KILLPOD_preserve_20251103T163624Z_em",
+      "system": "TT_data",
+      "windows": 11,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "SN_data:Code_Stop_MediaService_20251104_024819",
+      "system": "SN_data",
+      "windows": 24,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 16,
+        "fault_run_alerted": true,
+        "first_alert_candidates": [
+          "nginx-web-server",
+          "compose-post-service",
+          "user-service"
+        ]
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "SN_data:Code_Stop_TextService_20251104_022416",
+      "system": "SN_data",
+      "windows": 15,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 14,
+        "fault_run_alerted": true,
+        "first_alert_candidates": [
+          "nginx-web-server",
+          "text-service",
+          "compose-post-service"
+        ]
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "SN_data:Code_Stop_UserService_20251104_020019",
+      "system": "SN_data",
+      "windows": 15,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 14,
+        "fault_run_alerted": true,
+        "first_alert_candidates": [
+          "nginx-web-server",
+          "compose-post-service",
+          "social-graph-service"
+        ]
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "SN_data:DB_Redis_CacheLimit_HomeTimeline_20251104_004905",
+      "system": "SN_data",
+      "windows": 14,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "SN_data:DB_Redis_CacheLimit_SocialGraph_20251104_013615",
+      "system": "SN_data",
+      "windows": 15,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "SN_data:DB_Redis_CacheLimit_UserTimeline_20251104_011238",
+      "system": "SN_data",
+      "windows": 15,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "SN_data:Perf_CPU_Contention_20251103_222601",
+      "system": "SN_data",
+      "windows": 14,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "SN_data:Perf_Disk_IO_Stress_20251103_231335",
+      "system": "SN_data",
+      "windows": 15,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "SN_data:Perf_Network_Loss_20251103_224954",
+      "system": "SN_data",
+      "windows": 15,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "SN_data:Svc_Kill_Media_20251104_000111",
+      "system": "SN_data",
+      "windows": 14,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "SN_data:Svc_Kill_SocialGraph_20251104_002506",
+      "system": "SN_data",
+      "windows": 14,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    },
+    {
+      "case": "SN_data:Svc_Kill_UserTimeline_20251103_233717",
+      "system": "SN_data",
+      "windows": 14,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      }
+    }
+  ],
+  "seconds": 60.23,
+  "limitations": [
+    "Fault-run alerts are not verified incident recall; active-fault timestamps and recovery labels unavailable",
+    "No independent healthy run: precision/F1/false alerts per hour and onset delay not calculated",
+    "No verified service ground truth used: candidate rankings are reported without root-cause accuracy",
+    "Sparse modalities and healthy-reference distribution adaptation differ from original RCAEval protocol",
+    "External data now evaluated; future tuning requires a fresh final holdout"
+  ]
+}

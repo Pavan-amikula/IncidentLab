@@ -1,0 +1,17 @@
+{
+  "code_sha256": {
+    "native_service.py": "4745b7c93c879962b0239509a3245fcc846fba8378217e0b8085f0b3d375b8ff",
+    "live_monitor.py": "1b1cf91e92129b7e3301cf685f5651d5748fb4ef7f7837785fb2eef9f83aeb73",
+    "native_experiment.py": "54db73cb97db85f22f3824dd5973a37644225fec6ea92bc07dfb542b944c444a",
+    "raw_telemetry.py": "a3b8669e06e794eee8cf69c0d8a844439c4a20e6b07132d414d1a5caae74f9be"
+  },
+  "window_seconds": 3,
+  "run_seconds": 60,
+  "healthy_loads": true,
+  "fault_targets": [
+    "frontend",
+    "checkout",
+    "inventory"
+  ],
+  "purpose": "Actual local HTTP development trials, not Kubernetes or production evidence"
+}

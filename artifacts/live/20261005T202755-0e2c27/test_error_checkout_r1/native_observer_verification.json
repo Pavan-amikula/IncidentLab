@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "source_run": "20261005T202755-0e2c27",
+  "phase": "test_error_checkout_r1",
+  "stream": "raw-replay-29c8ce0a",
+  "windows_verified": 30,
+  "restarts": 29,
+  "exact_feature_match": true,
+  "duplicate_rejected": true,
+  "checkpoint_sha256": "118e99295e06b8afe45e4101140143ed1141a4cfe1d8bd670ba8086564d28711",
+  "raw_sha256": {
+    "frontend": "a28b66d4c517a65fa15560fec3115d5750d4e5406816dd7a4e4c7ca74520bd43",
+    "checkout": "64fcc149beb270bdbd5153e7bb86d027a51131af01d7eb0f2649bda160634be2",
+    "inventory": "2b61eeab8f75070920351934b48f8cf10935886d3c69f9b3d3c598533803dd95"
+  },
+  "incident": {
+    "active": false,
+    "warning_streak": 0,
+    "clear_streak": 9,
+    "opened_incidents": 1,
+    "closed_incidents": 1,
+    "opened_at": 1791227447.2528925,
+    "first_warning_at": 1791227441.2528925,
+    "service_hypothesis": "checkout",
+    "closed_at": 1791227483.2528925
+  },
+  "processing_mean_ms": 23.44361999227355,
+  "scope": "Actual archived HTTP raw-event replay; exact offline match and durable restart, not a fresh live accuracy trial"
+}

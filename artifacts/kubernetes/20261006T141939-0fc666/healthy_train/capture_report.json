@@ -1,0 +1,7 @@
+{
+  "events": 1407,
+  "sources": 3,
+  "snapshot_count": 54,
+  "storage": "SQLite unique service/span IDs and transactional transport watermarks",
+  "limitation": "Pod deletion/rotation between polls can lose tail records; snapshots expose lifecycle changes but cannot reconstruct missing logs"
+}

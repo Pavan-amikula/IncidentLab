@@ -1,0 +1,638 @@
+{
+  "protocol": {
+    "status": "Development revision after inspecting original AnoMod results; not final held-out accuracy",
+    "base_policy_sha256": "a8312e5a3faabc52fbc37c88bc5008cc33e614f2bf49ed0b65a4efc04b93ddbc",
+    "models": {
+      "temporal_best.pt": "5375557b97ac324d8b90ef9fcbd8c8fd3d26b3d3e8577b0530ad6b603fbc66ab",
+      "supervised_reference.joblib": "5df5f3f251a136d63425c22956f2c00c3eb58e7343ddd95b691b532ce8b43c9e"
+    },
+    "alert_thresholds": {
+      "temporal": {
+        "TT_data": 0.8923273533582687,
+        "SN_data": 0.8923273533582687
+      },
+      "boosting": {
+        "TT_data": 0.9565451794149058,
+        "SN_data": 0.9763558124658233
+      }
+    },
+    "startup_exclusion_seconds": 0,
+    "sources": {
+      "external_evaluation.py": "fdbc5e87cb3905927f5a64d73bdbdfa910a81ee0ea8320ef71a0f1800f509a24",
+      "coverage_guard.py": "e1673e8abe86ea1b7327b4e22b37357cdc2c81376cb4dd3a486a5193bb515d2a",
+      "development_monitor.py": "386f4ea11b51e852379cffc54df8e7dadefd0ba2ccd3f802410d9bb4fc8b0736"
+    },
+    "changes": [
+      "retain expected healthy services even when observations vanish",
+      "do not discard five minutes at the start of a fault run",
+      "independent expected-metric-availability guard; no root-cause or down-service claim"
+    ],
+    "inventories": {
+      "TT_data": {
+        "expected_gap_minutes": {
+          "ts-admin-basic-info-service": 2,
+          "ts-admin-order-service": 2,
+          "ts-admin-route-service": 2,
+          "ts-admin-travel-service": 2,
+          "ts-admin-user-service": 2,
+          "ts-assurance-service": 2,
+          "ts-auth-service": 2,
+          "ts-avatar-service": 2,
+          "ts-basic-service": 2,
+          "ts-cancel-service": 2,
+          "ts-config-service": 2,
+          "ts-consign-price-service": 2,
+          "ts-consign-service": 2,
+          "ts-contacts-service": 2,
+          "ts-delivery-service": 2,
+          "ts-execute-service": 2,
+          "ts-food-delivery-service": 2,
+          "ts-food-service": 2,
+          "ts-gateway-service": 2,
+          "ts-inside-payment-service": 2,
+          "ts-news-service": 2,
+          "ts-notification-service": 2,
+          "ts-order-other-service": 2,
+          "ts-order-service": 2,
+          "ts-payment-service": 2,
+          "ts-preserve-other-service": 2,
+          "ts-preserve-service": 2,
+          "ts-price-service": 2,
+          "ts-rebook-service": 2,
+          "ts-route-plan-service": 2,
+          "ts-route-service": 2,
+          "ts-seat-service": 2,
+          "ts-security-service": 2,
+          "ts-station-food-service": 2,
+          "ts-station-service": 2,
+          "ts-ticket-office-service": 2,
+          "ts-train-food-service": 2,
+          "ts-train-service": 2,
+          "ts-travel-plan-service": 2,
+          "ts-travel-service": 2,
+          "ts-travel2-service": 2,
+          "ts-ui-dashboard": 2,
+          "ts-user-service": 2,
+          "ts-verification-code-service": 2,
+          "ts-voucher-service": 2,
+          "ts-wait-order-service": 2
+        },
+        "peer_coverage_required": 0.8,
+        "fitting": "Designated healthy metric availability only; no fault labels"
+      },
+      "SN_data": {
+        "expected_gap_minutes": {
+          "compose-post-redis": 2,
+          "compose-post-service": 2,
+          "home-timeline-redis": 2,
+          "home-timeline-service": 2,
+          "media-frontend": 2,
+          "media-memcached": 2,
+          "media-mongodb": 2,
+          "media-service": 2,
+          "nginx-thrift": 2,
+          "post-storage-memcached": 2,
+          "post-storage-mongodb": 2,
+          "post-storage-service": 2,
+          "social-graph-mongodb": 2,
+          "social-graph-redis": 2,
+          "social-graph-service": 2,
+          "text-service": 2,
+          "unique-id-service": 2,
+          "url-shorten-memcached": 2,
+          "url-shorten-mongodb": 2,
+          "url-shorten-service": 2,
+          "user-memcached": 2,
+          "user-mention-service": 2,
+          "user-mongodb": 2,
+          "user-service": 2,
+          "user-timeline-mongodb": 2,
+          "user-timeline-redis": 2,
+          "user-timeline-service": 2
+        },
+        "peer_coverage_required": 0.8,
+        "fitting": "Designated healthy metric availability only; no fault labels"
+      }
+    },
+    "no_model_retraining": true,
+    "no_threshold_tuning": true
+  },
+  "designed_fault_runs": 24,
+  "evaluated_runs": 24,
+  "windows": 408,
+  "excluded_runs": [],
+  "cases": [
+    {
+      "case": "TT_data:Lv_C_exception_injection_20251103T185917Z_em",
+      "system": "TT_data",
+      "windows": 15,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 2
+    },
+    {
+      "case": "TT_data:Lv_C_security_check_20251103T183145Z_em",
+      "system": "TT_data",
+      "windows": 13,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 3,
+        "fault_run_alerted": true,
+        "first_alert_candidates": [
+          "ts-ticket-office-service",
+          "ts-admin-basic-info-service",
+          "ts-basic-service"
+        ]
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "TT_data:Lv_C_travel_detail_failure_20251103T192904Z_em",
+      "system": "TT_data",
+      "windows": 13,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "TT_data:Lv_D_cachelimit_20251103T170657Z_em",
+      "system": "TT_data",
+      "windows": 14,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 2
+    },
+    {
+      "case": "TT_data:Lv_D_CONNECTION_POOL_exhaustion_20251103T173702Z_em",
+      "system": "TT_data",
+      "windows": 13,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "TT_data:Lv_D_TRANSACTION_timeout_20251103T180430Z_em",
+      "system": "TT_data",
+      "windows": 13,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 2,
+        "fault_run_alerted": true,
+        "first_alert_candidates": [
+          "ts-ticket-office-service",
+          "ts-news-service",
+          "ts-order-service"
+        ]
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 1
+    },
+    {
+      "case": "TT_data:Lv_P_CPU_preserve_20251103T140939Z_em",
+      "system": "TT_data",
+      "windows": 20,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 1,
+        "fault_run_alerted": true,
+        "first_alert_candidates": [
+          "ts-ticket-office-service",
+          "ts-preserve-other-service",
+          "ts-preserve-service"
+        ]
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "TT_data:Lv_P_DISKIO_preserve_20251103T144212Z_em",
+      "system": "TT_data",
+      "windows": 12,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "TT_data:Lv_P_NETLOSS_preserve_20251103T150613Z_em",
+      "system": "TT_data",
+      "windows": 12,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "TT_data:Lv_S_DNSFAIL_preserve_no_order_20251103T153116Z_em",
+      "system": "TT_data",
+      "windows": 12,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "TT_data:Lv_S_HTTPABORT_preserve_20251103T155524Z_em",
+      "system": "TT_data",
+      "windows": 29,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "TT_data:Lv_S_KILLPOD_preserve_20251103T163624Z_em",
+      "system": "TT_data",
+      "windows": 12,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "SN_data:Code_Stop_MediaService_20251104_024819",
+      "system": "SN_data",
+      "windows": 24,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 16,
+        "fault_run_alerted": true,
+        "first_alert_candidates": [
+          "nginx-web-server",
+          "compose-post-service",
+          "user-service"
+        ]
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 17,
+      "coverage_warning_services": [
+        "media-service"
+      ],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "SN_data:Code_Stop_TextService_20251104_022416",
+      "system": "SN_data",
+      "windows": 19,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 17,
+        "fault_run_alerted": true,
+        "first_alert_candidates": [
+          "nginx-web-server",
+          "text-service",
+          "user-service"
+        ]
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 12,
+      "coverage_warning_services": [
+        "text-service"
+      ],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "SN_data:Code_Stop_UserService_20251104_020019",
+      "system": "SN_data",
+      "windows": 19,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 18,
+        "fault_run_alerted": true,
+        "first_alert_candidates": [
+          "nginx-web-server",
+          "social-graph-service",
+          "compose-post-service"
+        ]
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 12,
+      "coverage_warning_services": [
+        "user-service"
+      ],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "SN_data:DB_Redis_CacheLimit_HomeTimeline_20251104_004905",
+      "system": "SN_data",
+      "windows": 19,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "SN_data:DB_Redis_CacheLimit_SocialGraph_20251104_013615",
+      "system": "SN_data",
+      "windows": 19,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "SN_data:DB_Redis_CacheLimit_UserTimeline_20251104_011238",
+      "system": "SN_data",
+      "windows": 19,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "SN_data:Perf_CPU_Contention_20251103_222601",
+      "system": "SN_data",
+      "windows": 19,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "SN_data:Perf_Disk_IO_Stress_20251103_231335",
+      "system": "SN_data",
+      "windows": 19,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "SN_data:Perf_Network_Loss_20251103_224954",
+      "system": "SN_data",
+      "windows": 19,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "SN_data:Svc_Kill_Media_20251104_000111",
+      "system": "SN_data",
+      "windows": 18,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "SN_data:Svc_Kill_SocialGraph_20251104_002506",
+      "system": "SN_data",
+      "windows": 18,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    },
+    {
+      "case": "SN_data:Svc_Kill_UserTimeline_20251103_233717",
+      "system": "SN_data",
+      "windows": 18,
+      "abstained_windows": 0,
+      "temporal": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "boosting": {
+        "alert_windows": 0,
+        "fault_run_alerted": false,
+        "first_alert_candidates": []
+      },
+      "coverage_warning_windows": 0,
+      "coverage_warning_services": [],
+      "insufficient_coverage_windows": 0
+    }
+  ],
+  "models": {
+    "temporal": {
+      "alerted_fault_runs": 3,
+      "alert_windows": 51,
+      "original_alerted_fault_runs": 3
+    },
+    "boosting": {
+      "alerted_fault_runs": 3,
+      "alert_windows": 6,
+      "original_alerted_fault_runs": 2
+    }
+  },
+  "coverage": {
+    "runs_with_warnings": 3,
+    "warning_windows": 41,
+    "insufficient_windows": 5
+  },
+  "checkpoints_unchanged": true,
+  "limitations": [
+    "More windows create more opportunities to alert; counts are not directly comparable recall",
+    "Coverage warnings indicate missing metric samples, not confirmed service outages",
+    "Cases and startup timestamps lack independent active-fault interval labels",
+    "Underlying trained-model transfer limitations remain; six metric categories and TT logs missing",
+    "Fresh controls and unseen data needed before reliability or improvement claims"
+  ],
+  "seconds": 63.34
+}

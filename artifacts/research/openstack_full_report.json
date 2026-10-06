@@ -1,0 +1,86 @@
+{
+  "scope": "Complete OpenStack files; explicitly instance-associated VM sessions",
+  "audits": {
+    "openstack_normal1.log": {
+      "physical_lines": 52312,
+      "parsed_events": 52311,
+      "unassigned_instance_events": 38446,
+      "explicit_instance_events": 13865,
+      "unparsed_or_continuation_lines": 1,
+      "sessions": 557
+    },
+    "openstack_normal2.log": {
+      "physical_lines": 137074,
+      "parsed_events": 137067,
+      "explicit_instance_events": 32784,
+      "unassigned_instance_events": 104283,
+      "unparsed_or_continuation_lines": 7,
+      "sessions": 1315
+    },
+    "openstack_abnormal.log": {
+      "physical_lines": 18434,
+      "parsed_events": 18434,
+      "unassigned_instance_events": 13530,
+      "explicit_instance_events": 4904,
+      "sessions": 198
+    }
+  },
+  "source_sha256": {
+    "openstack_normal1.log": "4e4d47347bdae198056bb3b0a8a755e1cb0100d6c6a30bbd4058684234769199",
+    "openstack_normal2.log": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7",
+    "openstack_abnormal.log": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4"
+  },
+  "train_sessions": 557,
+  "validation_sessions": 680,
+  "healthy_normal2_test_sessions": 634,
+  "abnormal_test_sessions": 198,
+  "annotated_positive_sessions": 4,
+  "unique_text_templates": 4264,
+  "overlap_normal2_exclusions": [
+    "0f079bdd-4117-4f6a-8b49-f3fb720b483c"
+  ],
+  "overlap_abnormal_exclusions": [],
+  "results": {
+    "isolation_forest": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.004807692307692308,
+      "threshold": 0.7731767147976263,
+      "alerted_sessions": 2,
+      "annotated_positive_hits": 0,
+      "false_alerted_normal2_sessions": 1
+    },
+    "lexical": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.009782734506872438,
+      "threshold": 0.5763907212847371,
+      "alerted_sessions": 4,
+      "annotated_positive_hits": 0,
+      "false_alerted_normal2_sessions": 3
+    },
+    "semantic": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "average_precision": 0.009688957535726416,
+      "threshold": 0.0648293939232825,
+      "alerted_sessions": 4,
+      "annotated_positive_hits": 0,
+      "false_alerted_normal2_sessions": 4
+    }
+  },
+  "checkpoint_sha256": "d6ecd6117dd95daada17d53c446065764dc5b793e8e294553e155acc9ff31672",
+  "encoder_device": "cuda",
+  "seconds": 8.09754259994952,
+  "limitations": [
+    "Only four author-annotated abnormal VM sessions; uncertainty is large",
+    "Annotation is at VM-session level; line/window labels, onset delay and root causes are not inferred",
+    "Explicit instance association covers only part of logs; all other records are counted, not assigned by guess",
+    "Unannotated abnormal-file sessions are treated as negative per supplied instance list; annotation may be incomplete",
+    "Frozen sentence encoder is general-domain; no semantic-model fine-tuning",
+    "Offline end-of-session comparison, not a streaming incident detector"
+  ]
+}

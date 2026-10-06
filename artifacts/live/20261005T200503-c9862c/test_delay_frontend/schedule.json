@@ -1,0 +1,21 @@
+{
+  "kind": "delay",
+  "target": "frontend",
+  "started": 1791223750.1505902,
+  "ended": 1791223810.1505902,
+  "onset": 1791223768.1549046,
+  "recovery": 1791223792.1547184,
+  "actions": [
+    {
+      "timestamp": 1791223768.1549046,
+      "action": "delay",
+      "target": "frontend"
+    },
+    {
+      "timestamp": 1791223792.1547184,
+      "action": "recover",
+      "target": "frontend"
+    }
+  ],
+  "dropped_workload_requests": 0
+}

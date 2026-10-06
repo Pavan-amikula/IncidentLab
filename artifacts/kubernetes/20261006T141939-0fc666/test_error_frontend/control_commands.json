@@ -1,0 +1,12 @@
+[
+  {
+    "action": "error",
+    "target": "frontend",
+    "command_completed": 1791290138.4473705
+  },
+  {
+    "action": "recover",
+    "target": "frontend",
+    "command_completed": 1791290162.4427564
+  }
+]

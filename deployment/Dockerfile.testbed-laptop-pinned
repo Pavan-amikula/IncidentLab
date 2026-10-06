@@ -1,0 +1,8 @@
+# Exact base used in the actual 6 October 2026 laptop experiment.
+FROM python:3.14-slim@sha256:f85c5697265c178cc6887276c55fe16cf3d14ca35c3df6a5eab3b360534a55d2
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+WORKDIR /app
+COPY incidentlab/__init__.py incidentlab/native_service.py ./incidentlab/
+RUN useradd --uid 10001 --create-home incidentlab && mkdir /telemetry && chown incidentlab:incidentlab /telemetry
+USER 10001:10001
+CMD ["python", "-m", "incidentlab.native_service", "--service", "inventory", "--port", "8893", "--directory", "/telemetry", "--bind", "0.0.0.0", "--stdout-events"]

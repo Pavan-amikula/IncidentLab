@@ -1,0 +1,145 @@
+{
+  "status": "complete",
+  "run_id": "20261006T140735-d370bc",
+  "quick": true,
+  "checkpoint_sha256": "a4be3893c7e289ff1e09d5fe07ba93b247695a25e63470598ba308ae6de5bfc3",
+  "device": "cpu",
+  "model": "Fresh Kubernetes healthy-fitted IsolationForest plus separate operational envelopes",
+  "training_windows": 12,
+  "calibration_windows": 12,
+  "trials": [
+    {
+      "kind": "healthy",
+      "target": null,
+      "phase": "test_healthy",
+      "healthy_windows": 12,
+      "active_fault_windows": 0,
+      "boundary_windows_excluded": 0,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 100.0,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      }
+    },
+    {
+      "kind": "surge",
+      "target": null,
+      "phase": "test_surge",
+      "healthy_windows": 12,
+      "active_fault_windows": 0,
+      "boundary_windows_excluded": 0,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 100.0,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": null,
+        "incident_detected": null,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      }
+    },
+    {
+      "kind": "delay",
+      "target": "inventory",
+      "phase": "test_delay_inventory",
+      "healthy_windows": 6,
+      "active_fault_windows": 4,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 3.519252061843872,
+        "false_alert_windows_per_healthy_hour": 200.0,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 3.519252061843872,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "error",
+      "target": "inventory",
+      "phase": "test_error_inventory",
+      "healthy_windows": 6,
+      "active_fault_windows": 4,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 0.25,
+        "incident_detected": true,
+        "detection_delay_seconds": 12.443192720413208,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      },
+      "operational_alert": {
+        "fault_window_recall": 1.0,
+        "incident_detected": true,
+        "detection_delay_seconds": 3.443192720413208,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "inventory",
+        "first_alert_service_matches_injected_target": true
+      }
+    },
+    {
+      "kind": "unavailable",
+      "target": "inventory",
+      "phase": "test_unavailable_inventory",
+      "healthy_windows": 4,
+      "active_fault_windows": 6,
+      "boundary_windows_excluded": 2,
+      "dropped_workload_requests": 0,
+      "ml_alert": {
+        "fault_window_recall": 0.0,
+        "incident_detected": false,
+        "detection_delay_seconds": null,
+        "false_alert_windows_per_healthy_hour": 600.0,
+        "first_alert_service": null,
+        "first_alert_service_matches_injected_target": null
+      },
+      "operational_alert": {
+        "fault_window_recall": 0.16666666666666666,
+        "incident_detected": true,
+        "detection_delay_seconds": 18.8034348487854,
+        "false_alert_windows_per_healthy_hour": 0.0,
+        "first_alert_service": "frontend",
+        "first_alert_service_matches_injected_target": false
+      }
+    }
+  ],
+  "inference_p95_ms": 63.37679499629302,
+  "limitations": [
+    "Control timestamps are command-completion proxies; manually review trace impact before research claims",
+    "Known controlled application faults only; no unseen infrastructure or industrial validation",
+    "Polling can lose logs on pod deletion/rotation; capture lifecycle snapshots must be reviewed",
+    "Transport delay or missing logs can resemble outages; service hypotheses are not causal proof",
+    "Short healthy periods do not establish stable operational false-alarm rates"
+  ]
+}

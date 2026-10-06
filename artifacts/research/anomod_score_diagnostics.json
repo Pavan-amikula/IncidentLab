@@ -1,0 +1,74 @@
+{
+  "note": "Reference-window score summaries reuse the healthy windows that fit each external normalization; these are optimistically biased development diagnostics, not false alarm rates.",
+  "systems": {
+    "TT_data": {
+      "healthy_reference_windows": {
+        "temporal": {
+          "windows": 9,
+          "p50": 0.0025528105907142162,
+          "p95": 0.006157387979328632,
+          "maximum": 0.006827093195170164,
+          "alerts": 0
+        },
+        "boosting": {
+          "windows": 9,
+          "p50": 0.0012367458344226467,
+          "p95": 0.0015194635821840093,
+          "maximum": 0.0015549863879751919,
+          "alerts": 0
+        }
+      },
+      "fault_run_windows": {
+        "temporal": {
+          "windows": 171,
+          "p50": 0.006453285459429026,
+          "p95": 0.419505774974823,
+          "maximum": 0.8900020718574524,
+          "alerts": 0
+        },
+        "boosting": {
+          "windows": 171,
+          "p50": 0.001288196527501587,
+          "p95": 0.4817851901753551,
+          "maximum": 0.9927702805234805,
+          "alerts": 5
+        }
+      }
+    },
+    "SN_data": {
+      "healthy_reference_windows": {
+        "temporal": {
+          "windows": 19,
+          "p50": 0.0006956420256756246,
+          "p95": 0.002288669114932418,
+          "maximum": 0.008672598749399185,
+          "alerts": 0
+        },
+        "boosting": {
+          "windows": 19,
+          "p50": 0.0005738535358836281,
+          "p95": 0.024377669440094805,
+          "maximum": 0.23502322702688397,
+          "alerts": 0
+        }
+      },
+      "fault_run_windows": {
+        "temporal": {
+          "windows": 184,
+          "p50": 0.0009223186643794179,
+          "p95": 0.999962568283081,
+          "maximum": 0.9999786615371704,
+          "alerts": 44
+        },
+        "boosting": {
+          "windows": 184,
+          "p50": 0.0017729212492671362,
+          "p95": 0.7728788577695934,
+          "maximum": 0.9520201525408851,
+          "alerts": 0
+        }
+      }
+    }
+  },
+  "interpretation": "Low fault-run scores alongside low in-reference scores indicate source/domain calibration shift. In-reference alert burden is not independent and cannot set deployment thresholds."
+}

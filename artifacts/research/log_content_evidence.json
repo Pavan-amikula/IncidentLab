@@ -1,0 +1,1532 @@
+[
+  {
+    "service": "compose-post-service",
+    "start": 1762225140,
+    "end": 1762225200,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225143.435751,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:59:03.435751] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "0eaa9cb935cfc241a50f"
+      },
+      {
+        "timestamp": 1762225148.78652,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:59:08.786520] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "2a6f63a038457d706035"
+      },
+      {
+        "timestamp": 1762225154.157199,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:59:14.157199] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "482b13d3bb0aa75c5435"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225200,
+    "end": 1762225260,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225202.426969,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:00:02.426969] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "9a5b2d262fa99890ae93"
+      },
+      {
+        "timestamp": 1762225207.808002,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:00:07.808002] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "716265d354cd88a09dc3"
+      },
+      {
+        "timestamp": 1762225213.17443,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:00:13.174430] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "910e6774953fb95efedb"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225260,
+    "end": 1762225320,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225261.460366,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:01:01.460366] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "aeda2b9d1adb65312c7f"
+      },
+      {
+        "timestamp": 1762225266.852789,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:01:06.852789] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "8ad0017a18c09ac62109"
+      },
+      {
+        "timestamp": 1762225272.213306,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:01:12.213306] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "887629b2a2f6939a8ac7"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225320,
+    "end": 1762225380,
+    "events": 48,
+    "novel_events": 24,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225320.562269,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:02:00.562269] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "4b92e8f35e419481ddb0"
+      },
+      {
+        "timestamp": 1762225325.926119,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:02:05.926119] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "10f6a379fa56383f0733"
+      },
+      {
+        "timestamp": 1762225331.297352,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:02:11.297352] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "f7e5762e4fffb139d95f"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225380,
+    "end": 1762225440,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225384.891867,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:03:04.891867] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "671903acca34f9514c86"
+      },
+      {
+        "timestamp": 1762225390.249931,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:03:10.249931] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "e953100c16d3f79fe84e"
+      },
+      {
+        "timestamp": 1762225395.601203,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:03:15.601203] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "e44133cf735315587411"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225440,
+    "end": 1762225500,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225443.911744,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:04:03.911744] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "c833bb2a71eec6ecb686"
+      },
+      {
+        "timestamp": 1762225449.303756,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:04:09.303756] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "608d737e2b9deb14d3db"
+      },
+      {
+        "timestamp": 1762225454.715334,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:04:14.715334] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "4da63b30675d8faa07d9"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225500,
+    "end": 1762225560,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225502.961486,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:05:02.961486] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "34ab3c25c38bff1f1e94"
+      },
+      {
+        "timestamp": 1762225508.331816,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:05:08.331816] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "858ddbef48387d2f9b5e"
+      },
+      {
+        "timestamp": 1762225513.727815,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:05:13.727815] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "36c15fa8a431e333b48e"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225560,
+    "end": 1762225620,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225562.176453,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:06:02.176453] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "3bc18da7cad5357d8b50"
+      },
+      {
+        "timestamp": 1762225567.52866,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:06:07.528660] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "302b6c8d46b3cbce449a"
+      },
+      {
+        "timestamp": 1762225572.878842,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:06:12.878842] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "3b408eb58b208c15e848"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225620,
+    "end": 1762225680,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225621.141545,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:07:01.141545] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "53f88c492688cf5b02fa"
+      },
+      {
+        "timestamp": 1762225626.486898,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:07:06.486898] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "9c5caf2222ff98b54d15"
+      },
+      {
+        "timestamp": 1762225631.842082,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:07:11.842082] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "a1152d640d39b6eb73bc"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225680,
+    "end": 1762225740,
+    "events": 48,
+    "novel_events": 24,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225680.019734,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:08:00.019734] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "ae43ffe03aba379aa426"
+      },
+      {
+        "timestamp": 1762225685.38795,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:08:05.387950] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "c96276dba0b4e0c2f169"
+      },
+      {
+        "timestamp": 1762225690.737017,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:08:10.737017] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "c96f49ef0f235c8d3385"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225740,
+    "end": 1762225800,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225744.348397,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:09:04.348397] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "01d14aa1849720cc310e"
+      },
+      {
+        "timestamp": 1762225749.713886,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:09:09.713886] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "e76be4e346abcb7c28e7"
+      },
+      {
+        "timestamp": 1762225755.080166,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:09:15.080166] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "640a08d9eeb70a1a27ce"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225800,
+    "end": 1762225860,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225803.302359,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:10:03.302359] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "dc9eb8bd48ccb75f8c61"
+      },
+      {
+        "timestamp": 1762225808.6676,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:10:08.667600] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "d2364678c03165ffd785"
+      },
+      {
+        "timestamp": 1762225814.029945,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:10:14.029945] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "34a061c77aed1973ef76"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225860,
+    "end": 1762225920,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225862.292289,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:11:02.292289] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "0a827fc1c7914568db78"
+      },
+      {
+        "timestamp": 1762225867.665366,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:11:07.665366] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "c66dfe4d7bf8c2f60649"
+      },
+      {
+        "timestamp": 1762225873.013397,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:11:13.013397] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "141ba0aa3cd5b758b291"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225920,
+    "end": 1762225980,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225921.350583,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:12:01.350583] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "a09705484ed2a665b76a"
+      },
+      {
+        "timestamp": 1762225926.738222,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:12:06.738222] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "00713f72fc3ca9aaf243"
+      },
+      {
+        "timestamp": 1762225932.103206,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:12:12.103206] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "e98e10686fc61737c260"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762225980,
+    "end": 1762226040,
+    "events": 48,
+    "novel_events": 24,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762225980.345569,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:13:00.345569] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "5ffb9d56d821a8b0c6a9"
+      },
+      {
+        "timestamp": 1762225985.748995,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:13:05.748995] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "2103f14a8f70f6ad39ad"
+      },
+      {
+        "timestamp": 1762225991.112719,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:13:11.112719] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "02fd58329f4a4bacb0b2"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762226040,
+    "end": 1762226100,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762226044.683101,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:14:04.683101] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "16a9847878153a7dae46"
+      },
+      {
+        "timestamp": 1762226050.028509,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:14:10.028509] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "75b3325b97e3266b2c2e"
+      },
+      {
+        "timestamp": 1762226055.395556,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:14:15.395556] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "c07578ef2155c4e5b126"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762226100,
+    "end": 1762226160,
+    "events": 44,
+    "novel_events": 22,
+    "novel_fraction": 0.5,
+    "evidence": [
+      {
+        "timestamp": 1762226103.675405,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:15:03.675405] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "dd6b2ff7706f261b8a31"
+      },
+      {
+        "timestamp": 1762226109.056422,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:15:09.056422] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "52f704b15af0e8608e80"
+      },
+      {
+        "timestamp": 1762226114.428539,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 03:15:14.428539] <error>: (ClientPool.h:114:Pop) Failed to connect media-service-client\n",
+        "evidence_id": "590c782149586cb7714c"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_MediaService_20251104_024819"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762223280,
+    "end": 1762223340,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762223284.545452,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:28:04.545452] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "c257e0e11a84c77b9b74"
+      },
+      {
+        "timestamp": 1762223289.909064,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:28:09.909064] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "658726439db5c377757e"
+      },
+      {
+        "timestamp": 1762223295.279026,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:28:15.279026] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "9d7a2a01a69749d28334"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762223340,
+    "end": 1762223400,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762223343.598897,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:29:03.598897] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "29d054d5032b7b31590f"
+      },
+      {
+        "timestamp": 1762223349.018331,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:29:09.018331] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "46d6a09ee4503bf328c0"
+      },
+      {
+        "timestamp": 1762223354.396788,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:29:14.396788] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "42727050ed342afd9cff"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762223400,
+    "end": 1762223460,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762223402.698663,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:30:02.698663] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "f374cdc3060ba11d22d0"
+      },
+      {
+        "timestamp": 1762223408.104458,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:30:08.104458] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "bb48d2e1172bb0c90195"
+      },
+      {
+        "timestamp": 1762223413.471637,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:30:13.471637] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "d8d62a426c639e210e85"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762223460,
+    "end": 1762223520,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762223461.73765,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:31:01.737650] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "a9d275df446e4c8db459"
+      },
+      {
+        "timestamp": 1762223467.101082,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:31:07.101082] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "4bcbf8585be4b4afd760"
+      },
+      {
+        "timestamp": 1762223472.458617,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:31:12.458617] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "86a3e6b68ff7724716a1"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762223520,
+    "end": 1762223580,
+    "events": 60,
+    "novel_events": 24,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762223520.893401,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:32:00.893401] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "3f43732ab278f9f913e4"
+      },
+      {
+        "timestamp": 1762223526.261538,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:32:06.261538] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "0bed018e55c5e183c12c"
+      },
+      {
+        "timestamp": 1762223531.620303,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:32:11.620303] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "738b24b69129342890d5"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762223580,
+    "end": 1762223640,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762223585.230476,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:33:05.230476] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "5fed7fe7cfaf7439724f"
+      },
+      {
+        "timestamp": 1762223590.586466,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:33:10.586466] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "dd9a586ad0de43625665"
+      },
+      {
+        "timestamp": 1762223595.931358,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:33:15.931358] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "d38c326b5bb7edb7baad"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762223640,
+    "end": 1762223700,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762223644.239046,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:34:04.239046] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "572e6c06f4bd25e41632"
+      },
+      {
+        "timestamp": 1762223649.59005,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:34:09.590050] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "1d43ac949740ab50e3ad"
+      },
+      {
+        "timestamp": 1762223654.940507,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:34:14.940507] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "7f8fbcd0381dd3919528"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762223700,
+    "end": 1762223760,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762223703.454685,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:35:03.454685] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "c28e7cbc1a9933a4c0cf"
+      },
+      {
+        "timestamp": 1762223708.826316,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:35:08.826316] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "23e5dde1917d083c8326"
+      },
+      {
+        "timestamp": 1762223714.184166,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:35:14.184166] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "d6ca97dff778a5304413"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762223760,
+    "end": 1762223820,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762223762.439717,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:36:02.439717] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "2b6c62a5cacfd0058dac"
+      },
+      {
+        "timestamp": 1762223767.816479,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:36:07.816479] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "123d12d462457dca53dd"
+      },
+      {
+        "timestamp": 1762223773.198614,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:36:13.198614] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "e0f99b14b624355a124f"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762223820,
+    "end": 1762223880,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762223821.535159,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:37:01.535159] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "193f9e3bfc963e2beed1"
+      },
+      {
+        "timestamp": 1762223826.892165,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:37:06.892165] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "59c6c5c82f44b41a4cda"
+      },
+      {
+        "timestamp": 1762223832.249375,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:37:12.249375] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "0ab0fc35ba5a550adf61"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762223880,
+    "end": 1762223940,
+    "events": 60,
+    "novel_events": 24,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762223880.573569,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:38:00.573569] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "403ac83233b160c4b195"
+      },
+      {
+        "timestamp": 1762223885.9385,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:38:05.938500] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "5b01acf53072f48ba383"
+      },
+      {
+        "timestamp": 1762223891.30521,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:38:11.305210] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "c9eb1d40e451ac9b4cb2"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762223940,
+    "end": 1762224000,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762223944.973524,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:39:04.973524] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "943acc8213a4c23ad212"
+      },
+      {
+        "timestamp": 1762223950.336428,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:39:10.336428] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "40dde3684cef22dff694"
+      },
+      {
+        "timestamp": 1762223955.705171,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:39:15.705171] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "b718253ced278e20fd2b"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762224000,
+    "end": 1762224060,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762224003.944276,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:40:03.944276] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "c6160423c1677967420d"
+      },
+      {
+        "timestamp": 1762224009.350906,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:40:09.350906] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "f00dbad9ce43f086ce72"
+      },
+      {
+        "timestamp": 1762224014.723489,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:40:14.723489] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "2c056878eedb59745338"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762224060,
+    "end": 1762224120,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762224062.993555,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:41:02.993555] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "b904c9075e8b677416e7"
+      },
+      {
+        "timestamp": 1762224068.362256,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:41:08.362256] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "36539af2c3bbfdfb1264"
+      },
+      {
+        "timestamp": 1762224073.711319,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:41:13.711319] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "edc7c2e10670dfe42514"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762224120,
+    "end": 1762224180,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762224122.067031,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:42:02.067031] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "9b2a48986f3b8b44f651"
+      },
+      {
+        "timestamp": 1762224127.433507,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:42:07.433507] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "1f4ec006e1f8aa6df747"
+      },
+      {
+        "timestamp": 1762224132.783928,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:42:12.783928] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "0f278ab03d1bf92742c3"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762224180,
+    "end": 1762224240,
+    "events": 55,
+    "novel_events": 22,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762224181.098604,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:43:01.098604] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "a2676de98d828c0e9897"
+      },
+      {
+        "timestamp": 1762224186.482972,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:43:06.482972] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "3a631f1db91ea9471393"
+      },
+      {
+        "timestamp": 1762224191.838544,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:43:11.838544] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "064372d42133e94fdf0c"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762224240,
+    "end": 1762224300,
+    "events": 60,
+    "novel_events": 24,
+    "novel_fraction": 0.4,
+    "evidence": [
+      {
+        "timestamp": 1762224240.1232,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:44:00.123200] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "ad5c7fd01fbc8a9aab20"
+      },
+      {
+        "timestamp": 1762224245.473648,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:44:05.473648] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "a6ddf7dffb34d978215b"
+      },
+      {
+        "timestamp": 1762224250.842072,
+        "novelty": 0.6987927445135258,
+        "message": "[2025-Nov-04 02:44:10.842072] <error>: (ClientPool.h:114:Pop) Failed to connect text-service-client\n",
+        "evidence_id": "939af999ff1ad5057185"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_TextService_20251104_022416"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762221840,
+    "end": 1762221900,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762221840.99523,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:04:00.995230] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "6d39b399a0e1d7929827"
+      },
+      {
+        "timestamp": 1762221846.353416,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:04:06.353416] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "d4a905454018c0274a47"
+      },
+      {
+        "timestamp": 1762221851.713987,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:04:11.713987] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "4b5abcda232aada6651f"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762221900,
+    "end": 1762221960,
+    "events": 36,
+    "novel_events": 24,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762221900.0349,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:05:00.034900] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "4b48d94555ae6c3302d5"
+      },
+      {
+        "timestamp": 1762221905.403881,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:05:05.403881] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "8bbf5610d53b99def5c4"
+      },
+      {
+        "timestamp": 1762221910.758399,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:05:10.758399] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "3e89003e3f6d3535bdb6"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762221960,
+    "end": 1762222020,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762221964.401247,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:06:04.401247] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "0a509ab2a331156920d2"
+      },
+      {
+        "timestamp": 1762221969.78157,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:06:09.781570] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "8e6ac5937da2658fa777"
+      },
+      {
+        "timestamp": 1762221975.161721,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:06:15.161721] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "c75b04c7860eebb8065c"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222020,
+    "end": 1762222080,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222023.382972,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:07:03.382972] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "1c841093888d8815fb26"
+      },
+      {
+        "timestamp": 1762222028.735468,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:07:08.735468] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "9776987f8cebefbd4bec"
+      },
+      {
+        "timestamp": 1762222034.117841,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:07:14.117841] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "e6371d58c151f00b52f2"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222080,
+    "end": 1762222140,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222082.259945,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:08:02.259945] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "4d803ddd8bd4b321bbd8"
+      },
+      {
+        "timestamp": 1762222087.610178,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:08:07.610178] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "3f55c2e9ceaa8ce241fa"
+      },
+      {
+        "timestamp": 1762222092.961346,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:08:12.961346] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "d5ecc5326c2cf714b4f8"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222140,
+    "end": 1762222200,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222141.189048,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:09:01.189048] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "fd7078676561ba6a146d"
+      },
+      {
+        "timestamp": 1762222146.58216,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:09:06.582160] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "d04a48af9539fe7da32a"
+      },
+      {
+        "timestamp": 1762222151.954883,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:09:11.954883] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "b0f06aa3102e7f9f8edc"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222200,
+    "end": 1762222260,
+    "events": 36,
+    "novel_events": 24,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222200.217117,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:10:00.217117] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "3850f7c45519fc3aa6c3"
+      },
+      {
+        "timestamp": 1762222205.590525,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:10:05.590525] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "c273a1bbd3ef51c20dc1"
+      },
+      {
+        "timestamp": 1762222210.946722,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:10:10.946722] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "ccacca26ea6ac870e264"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222260,
+    "end": 1762222320,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222264.609455,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:11:04.609455] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "85ce85474886c6fb4620"
+      },
+      {
+        "timestamp": 1762222269.967316,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:11:09.967316] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "297d6e7bedf2e9c7adc5"
+      },
+      {
+        "timestamp": 1762222275.333051,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:11:15.333051] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "931ecbabb63d7376cbad"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222320,
+    "end": 1762222380,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222323.598222,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:12:03.598222] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "1b48e28de0ad57efadab"
+      },
+      {
+        "timestamp": 1762222328.973046,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:12:08.973046] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "0493b13e4765896cbeb0"
+      },
+      {
+        "timestamp": 1762222334.330784,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:12:14.330784] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "b412a7621964ff36a3ca"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222380,
+    "end": 1762222440,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222382.581482,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:13:02.581482] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "19ba75b1f7e03ea7d5b4"
+      },
+      {
+        "timestamp": 1762222387.955588,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:13:07.955588] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "50f912a9afa353521ae8"
+      },
+      {
+        "timestamp": 1762222393.387872,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:13:13.387872] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "0c5e7ceab31287e7a50c"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222440,
+    "end": 1762222500,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222441.544455,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:14:01.544455] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "f8ce533018a6f7f9af5b"
+      },
+      {
+        "timestamp": 1762222446.905881,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:14:06.905881] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "418771a0241cfd20c3c7"
+      },
+      {
+        "timestamp": 1762222452.270218,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:14:12.270218] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "38712b75d261f38c804e"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222500,
+    "end": 1762222560,
+    "events": 36,
+    "novel_events": 24,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222500.511471,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:15:00.511471] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "bf324fd765ab2cc6b39e"
+      },
+      {
+        "timestamp": 1762222505.874025,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:15:05.874025] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "11a6c3223fc7e8bfb5c8"
+      },
+      {
+        "timestamp": 1762222511.228581,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:15:11.228581] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "33370db48f0649e0e177"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222560,
+    "end": 1762222620,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222564.801157,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:16:04.801157] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "0c8c9b9aed1b26f93933"
+      },
+      {
+        "timestamp": 1762222570.159166,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:16:10.159166] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "4e9013b809daf8b68881"
+      },
+      {
+        "timestamp": 1762222575.504511,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:16:15.504511] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "1fa5795c179c30f0e4e2"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222620,
+    "end": 1762222680,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222623.741552,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:17:03.741552] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "e828da86f354a2a8a924"
+      },
+      {
+        "timestamp": 1762222629.118353,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:17:09.118353] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "40e41501b854df555b4a"
+      },
+      {
+        "timestamp": 1762222634.509384,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:17:14.509384] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "239b2ed8638e48c6d98c"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222680,
+    "end": 1762222740,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222682.833625,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:18:02.833625] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "02c6fb0ac5dcd45f4bf5"
+      },
+      {
+        "timestamp": 1762222688.230254,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:18:08.230254] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "5ce0b9e4700423f85902"
+      },
+      {
+        "timestamp": 1762222693.612464,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:18:13.612464] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "f8a13fc28b85d6dadbf4"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222740,
+    "end": 1762222800,
+    "events": 33,
+    "novel_events": 22,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222741.853106,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:19:01.853106] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "16a9ae914de5aca0dcc9"
+      },
+      {
+        "timestamp": 1762222747.223858,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:19:07.223858] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "68b6f38f748eead1b826"
+      },
+      {
+        "timestamp": 1762222752.59587,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:19:12.595870] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "d141189ca96cd9fb253f"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  },
+  {
+    "service": "compose-post-service",
+    "start": 1762222800,
+    "end": 1762222860,
+    "events": 36,
+    "novel_events": 24,
+    "novel_fraction": 0.6666666666666666,
+    "evidence": [
+      {
+        "timestamp": 1762222800.786441,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:20:00.786441] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "3b7f37e1d87ff5bbaebe"
+      },
+      {
+        "timestamp": 1762222806.141113,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:20:06.141113] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "425c3a1a45b0491f8a58"
+      },
+      {
+        "timestamp": 1762222811.521812,
+        "novelty": 0.6286305327648058,
+        "message": "[2025-Nov-04 02:20:11.521812] <error>: (ClientPool.h:114:Pop) Failed to connect user-service-client\n",
+        "evidence_id": "d5ca29985bc3cc2cabf3"
+      }
+    ],
+    "interpretation": "Log-content drift; not confirmed fault or causal diagnosis",
+    "case": "SN_data:Code_Stop_UserService_20251104_020019"
+  }
+]

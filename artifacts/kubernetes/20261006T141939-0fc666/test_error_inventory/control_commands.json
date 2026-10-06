@@ -1,0 +1,12 @@
+[
+  {
+    "action": "error",
+    "target": "inventory",
+    "command_completed": 1791290270.46518
+  },
+  {
+    "action": "recover",
+    "target": "inventory",
+    "command_completed": 1791290294.734234
+  }
+]

@@ -1,0 +1,135 @@
+{
+  "training": {
+    "model": "TF-IDF nearest healthy template, lexical novelty only",
+    "healthy_training_events": 312968,
+    "healthy_validation_events": 4087,
+    "unique_training_templates": 74,
+    "vocabulary_size": 511,
+    "event_novelty_threshold": 0.05,
+    "window_novel_fraction": 0.1,
+    "minimum_events": 20,
+    "consecutive_minutes": 2,
+    "chronological_healthy_split": "first 70% training, final 30% validation; same normal run, not independent deployment",
+    "fault_data_used_for_fit": false,
+    "instrumentation_markers_excluded": true,
+    "input": "message text only; timestamps/paths/service IDs not vectorized"
+  },
+  "checkpoint_sha256": "ae92daa2ffaeb7f9d647e15c081805c81345064a114a2e33a8f02f5b67c29d4b",
+  "scope": "SocialNetwork lexical baseline on already-inspected AnoMod development data",
+  "evaluated_fault_runs": 12,
+  "runs_with_content_warnings": 3,
+  "processed_events": 3606959,
+  "warning_service_windows": 51,
+  "cases": [
+    {
+      "case": "SN_data:Code_Stop_MediaService_20251104_024819",
+      "warning_service_windows": 17,
+      "services": [
+        "compose-post-service"
+      ],
+      "events": 312759,
+      "unique_templates": 39,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Code_Stop_TextService_20251104_022416",
+      "warning_service_windows": 17,
+      "services": [
+        "compose-post-service"
+      ],
+      "events": 311572,
+      "unique_templates": 32,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Code_Stop_UserService_20251104_020019",
+      "warning_service_windows": 17,
+      "services": [
+        "compose-post-service"
+      ],
+      "events": 159982,
+      "unique_templates": 32,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:DB_Redis_CacheLimit_HomeTimeline_20251104_004905",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 316735,
+      "unique_templates": 59,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:DB_Redis_CacheLimit_SocialGraph_20251104_013615",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 316979,
+      "unique_templates": 59,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:DB_Redis_CacheLimit_UserTimeline_20251104_011238",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 317040,
+      "unique_templates": 59,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Perf_CPU_Contention_20251103_222601",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 316550,
+      "unique_templates": 61,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Perf_Disk_IO_Stress_20251103_231335",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 316979,
+      "unique_templates": 59,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Perf_Network_Loss_20251103_224954",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 316796,
+      "unique_templates": 59,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Svc_Kill_Media_20251104_000111",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 303476,
+      "unique_templates": 56,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Svc_Kill_SocialGraph_20251104_002506",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 301538,
+      "unique_templates": 56,
+      "excluded_instrumentation_events": 0
+    },
+    {
+      "case": "SN_data:Svc_Kill_UserTimeline_20251103_233717",
+      "warning_service_windows": 0,
+      "services": [],
+      "events": 316553,
+      "unique_templates": 60,
+      "excluded_instrumentation_events": 0
+    }
+  ],
+  "limitations": [
+    "Content drift warnings are not incident recall or root-cause accuracy",
+    "TF-IDF recognizes lexical changes, not semantic meaning; known errors can have zero novelty",
+    "Healthy validation shares one run and is short; independent healthy controls still needed",
+    "Positive/negative workload shifts can change text without a fault",
+    "No log-only TrainTicket claim; its clock normalization remains incomplete"
+  ],
+  "seconds": 105.16
+}

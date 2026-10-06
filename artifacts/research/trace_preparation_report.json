@@ -1,0 +1,6075 @@
+{
+  "cases": 733,
+  "spans_scanned": 110714052,
+  "seconds": 11.42,
+  "features": [
+    "metric_cpu_change",
+    "metric_mem_change",
+    "metric_diskio_change",
+    "metric_socket_change",
+    "metric_workload_change",
+    "metric_error_change",
+    "metric_latency-50_change",
+    "metric_latency-90_change",
+    "log_volume_change",
+    "log_error_change",
+    "logs_present",
+    "trace_volume_change",
+    "trace_mean_duration_change",
+    "trace_max_duration_change",
+    "trace_status_change",
+    "traces_present",
+    "trace_status_available"
+  ],
+  "cases_audit": [
+    {
+      "case": "re1ob_productcatalogservice_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_cartservice_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_currencyservice_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_adservice_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_checkoutservice_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ob_productcatalogservice_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_catalogue_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_payment_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_user_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_orders_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1ss_carts_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_cpu_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_disk_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_delay_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_disk_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_loss_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_mem_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_mem_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-order-service_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_cpu_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-route-service_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-train-service_loss_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-auth-service_delay_5",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re1tt_ts-travel-service_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_cpu_3",
+      "trace_rows": 408211,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_delay_2",
+      "trace_rows": 402454,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_delay_1",
+      "trace_rows": 393688,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_socket_1",
+      "trace_rows": 404289,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_loss_3",
+      "trace_rows": 363896,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_loss_1",
+      "trace_rows": 286200,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_disk_3",
+      "trace_rows": 403324,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_delay_3",
+      "trace_rows": 379232,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_socket_3",
+      "trace_rows": 398334,
+      "outside_window_rows": 2,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_cpu_3",
+      "trace_rows": 412741,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_socket_3",
+      "trace_rows": 407531,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_socket_2",
+      "trace_rows": 399964,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_loss_2",
+      "trace_rows": 365309,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_socket_1",
+      "trace_rows": 408640,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_mem_2",
+      "trace_rows": 406048,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_socket_2",
+      "trace_rows": 407700,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_socket_3",
+      "trace_rows": 408384,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_cpu_1",
+      "trace_rows": 391997,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_loss_3",
+      "trace_rows": 402931,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_mem_3",
+      "trace_rows": 385054,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_mem_2",
+      "trace_rows": 387124,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_disk_2",
+      "trace_rows": 409530,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_disk_2",
+      "trace_rows": 396097,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_mem_2",
+      "trace_rows": 327148,
+      "outside_window_rows": 55075,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_disk_2",
+      "trace_rows": 402669,
+      "outside_window_rows": 2,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_loss_2",
+      "trace_rows": 406092,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_mem_3",
+      "trace_rows": 408171,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_cpu_3",
+      "trace_rows": 410295,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_delay_2",
+      "trace_rows": 406019,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_disk_2",
+      "trace_rows": 404057,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_loss_3",
+      "trace_rows": 354303,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_mem_2",
+      "trace_rows": 395021,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_delay_1",
+      "trace_rows": 365023,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_cpu_2",
+      "trace_rows": 400287,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_socket_1",
+      "trace_rows": 383626,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_socket_1",
+      "trace_rows": 406431,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_cpu_1",
+      "trace_rows": 401542,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_cpu_3",
+      "trace_rows": 403800,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_delay_2",
+      "trace_rows": 396200,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_loss_1",
+      "trace_rows": 254889,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_cpu_1",
+      "trace_rows": 393266,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_loss_2",
+      "trace_rows": 260357,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_cpu_2",
+      "trace_rows": 199960,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_delay_3",
+      "trace_rows": 407306,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_disk_2",
+      "trace_rows": 407608,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_mem_1",
+      "trace_rows": 404657,
+      "outside_window_rows": 2,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_mem_2",
+      "trace_rows": 320661,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_socket_2",
+      "trace_rows": 404599,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_mem_3",
+      "trace_rows": 395523,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_mem_3",
+      "trace_rows": 276103,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_socket_3",
+      "trace_rows": 406913,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_loss_1",
+      "trace_rows": 299508,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_delay_1",
+      "trace_rows": 383583,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_disk_3",
+      "trace_rows": 399976,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_loss_3",
+      "trace_rows": 402659,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_disk_3",
+      "trace_rows": 410342,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_mem_1",
+      "trace_rows": 405917,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_mem_1",
+      "trace_rows": 317085,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_disk_1",
+      "trace_rows": 387034,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_mem_1",
+      "trace_rows": 379084,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_delay_2",
+      "trace_rows": 364200,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_cpu_1",
+      "trace_rows": 391057,
+      "outside_window_rows": 2,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_loss_3",
+      "trace_rows": 333739,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_disk_1",
+      "trace_rows": 391053,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_delay_1",
+      "trace_rows": 406121,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_cpu_2",
+      "trace_rows": 410139,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_loss_1",
+      "trace_rows": 385793,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_mem_3",
+      "trace_rows": 394497,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_cpu_2",
+      "trace_rows": 406293,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_disk_1",
+      "trace_rows": 361288,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_socket_2",
+      "trace_rows": 402531,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_loss_2",
+      "trace_rows": 370911,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_socket_1",
+      "trace_rows": 303835,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_socket_2",
+      "trace_rows": 410667,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_delay_3",
+      "trace_rows": 404907,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_delay_3",
+      "trace_rows": 365484,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_mem_1",
+      "trace_rows": 398876,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_cpu_2",
+      "trace_rows": 401017,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_disk_1",
+      "trace_rows": 391177,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_checkoutservice_delay_1",
+      "trace_rows": 405229,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_loss_2",
+      "trace_rows": 410063,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_disk_1",
+      "trace_rows": 383516,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_loss_1",
+      "trace_rows": 386467,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_delay_3",
+      "trace_rows": 396781,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_disk_3",
+      "trace_rows": 369748,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_cpu_1",
+      "trace_rows": 392420,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_productcatalogservice_cpu_3",
+      "trace_rows": 404922,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_emailservice_socket_3",
+      "trace_rows": 406622,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_currencyservice_delay_2",
+      "trace_rows": 385915,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ob_recommendationservice_disk_3",
+      "trace_rows": 409575,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {
+        "frontendservice": "frontend"
+      },
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_socket_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_socket_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_socket_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_socket_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_socket_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_socket_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_socket_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_delay_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_socket_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_socket_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_loss_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_cpu_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_socket_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_socket_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_socket_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_socket_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_disk_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_orders_delay_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_mem_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_cpu_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_socket_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_disk_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_catalogue_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_mem_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_cpu_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_socket_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_mem_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_loss_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_payment_delay_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_carts_loss_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2ss_user_disk_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_disk_1",
+      "trace_rows": 691762,
+      "outside_window_rows": 2,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_cpu_2",
+      "trace_rows": 125618,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_loss_3",
+      "trace_rows": 626121,
+      "outside_window_rows": 2,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_socket_2",
+      "trace_rows": 670824,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_cpu_2",
+      "trace_rows": 838936,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_delay_3",
+      "trace_rows": 947781,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_mem_3",
+      "trace_rows": 755095,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_delay_2",
+      "trace_rows": 669235,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_cpu_3",
+      "trace_rows": 849200,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_delay_2",
+      "trace_rows": 122969,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_socket_2",
+      "trace_rows": 655457,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_cpu_2",
+      "trace_rows": 807137,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_loss_1",
+      "trace_rows": 1293243,
+      "outside_window_rows": 2,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_loss_1",
+      "trace_rows": 1198291,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_loss_2",
+      "trace_rows": 773775,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_delay_1",
+      "trace_rows": 1000430,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_delay_1",
+      "trace_rows": 929570,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_delay_2",
+      "trace_rows": 653768,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_delay_3",
+      "trace_rows": 866958,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_socket_3",
+      "trace_rows": 770484,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_mem_3",
+      "trace_rows": 704920,
+      "outside_window_rows": 2,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_mem_1",
+      "trace_rows": 688564,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_disk_2",
+      "trace_rows": 868395,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_disk_1",
+      "trace_rows": 898401,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_cpu_3",
+      "trace_rows": 125549,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_disk_1",
+      "trace_rows": 1316502,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_cpu_1",
+      "trace_rows": 730224,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_disk_3",
+      "trace_rows": 544009,
+      "outside_window_rows": 2,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_mem_2",
+      "trace_rows": 887067,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_socket_2",
+      "trace_rows": 1106312,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_cpu_3",
+      "trace_rows": 799550,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_loss_3",
+      "trace_rows": 1042622,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_cpu_1",
+      "trace_rows": 758384,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_cpu_1",
+      "trace_rows": 1053578,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_loss_3",
+      "trace_rows": 126456,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_loss_1",
+      "trace_rows": 877130,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_disk_2",
+      "trace_rows": 125465,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_socket_3",
+      "trace_rows": 783847,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_loss_3",
+      "trace_rows": 1020066,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_mem_1",
+      "trace_rows": 825431,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_mem_3",
+      "trace_rows": 587772,
+      "outside_window_rows": 2,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_disk_2",
+      "trace_rows": 325410,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_loss_1",
+      "trace_rows": 961039,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_cpu_1",
+      "trace_rows": 1143435,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_delay_1",
+      "trace_rows": 783245,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_loss_3",
+      "trace_rows": 616100,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_mem_3",
+      "trace_rows": 618824,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_disk_1",
+      "trace_rows": 776573,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_delay_3",
+      "trace_rows": 671979,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_mem_1",
+      "trace_rows": 610230,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_mem_1",
+      "trace_rows": 643904,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_mem_2",
+      "trace_rows": 655259,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_loss_2",
+      "trace_rows": 875640,
+      "outside_window_rows": 3,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_cpu_2",
+      "trace_rows": 811938,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_socket_3",
+      "trace_rows": 948201,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_disk_3",
+      "trace_rows": 748981,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_socket_1",
+      "trace_rows": 163434,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_socket_2",
+      "trace_rows": 746721,
+      "outside_window_rows": 2,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_delay_2",
+      "trace_rows": 824619,
+      "outside_window_rows": 2,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_socket_1",
+      "trace_rows": 382423,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_disk_1",
+      "trace_rows": 1054124,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_loss_2",
+      "trace_rows": 988810,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_disk_2",
+      "trace_rows": 651369,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_disk_2",
+      "trace_rows": 166981,
+      "outside_window_rows": 0,
+      "traced_services": 21,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_loss_2",
+      "trace_rows": 126339,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_socket_1",
+      "trace_rows": 1535674,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_delay_3",
+      "trace_rows": 792201,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_socket_1",
+      "trace_rows": 829373,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_loss_1",
+      "trace_rows": 1025176,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_delay_3",
+      "trace_rows": 125251,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_delay_1",
+      "trace_rows": 1153677,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_socket_1",
+      "trace_rows": 1204370,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_socket_2",
+      "trace_rows": 123607,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_cpu_2",
+      "trace_rows": 796889,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_loss_2",
+      "trace_rows": 1213089,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_socket_3",
+      "trace_rows": 659525,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_disk_3",
+      "trace_rows": 126429,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_mem_3",
+      "trace_rows": 733836,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_mem_2",
+      "trace_rows": 626163,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_cpu_1",
+      "trace_rows": 628113,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_cpu_3",
+      "trace_rows": 941576,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_delay_2",
+      "trace_rows": 742553,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_socket_3",
+      "trace_rows": 974523,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_cpu_3",
+      "trace_rows": 898363,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_mem_1",
+      "trace_rows": 1088958,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-train-service_disk_3",
+      "trace_rows": 1008550,
+      "outside_window_rows": 4,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-route-service_mem_2",
+      "trace_rows": 631943,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-order-service_delay_1",
+      "trace_rows": 779417,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-travel-service_disk_3",
+      "trace_rows": 166242,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re2tt_ts-auth-service_mem_2",
+      "trace_rows": 1127077,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f1_3",
+      "trace_rows": 162573,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_currencyservice_f1_3",
+      "trace_rows": 117499,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f5_3",
+      "trace_rows": 164205,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f2_1",
+      "trace_rows": 166523,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_adservice_f5_1",
+      "trace_rows": 162900,
+      "outside_window_rows": 2,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_currencyservice_f1_1",
+      "trace_rows": 116809,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f2_3",
+      "trace_rows": 163385,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_cartservice_f1_1",
+      "trace_rows": 148799,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_adservice_f3_2",
+      "trace_rows": 162043,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f3_3",
+      "trace_rows": 167965,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f5_1",
+      "trace_rows": 164118,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_adservice_f5_3",
+      "trace_rows": 163984,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_cartservice_f1_2",
+      "trace_rows": 151036,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f4_2",
+      "trace_rows": 167321,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_adservice_f4_2",
+      "trace_rows": 164750,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f3_2",
+      "trace_rows": 166542,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_adservice_f3_3",
+      "trace_rows": 163684,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_currencyservice_f1_2",
+      "trace_rows": 119594,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f2_2",
+      "trace_rows": 164764,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f4_1",
+      "trace_rows": 165496,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_adservice_f4_3",
+      "trace_rows": 165952,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f1_1",
+      "trace_rows": 164920,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f5_2",
+      "trace_rows": 165744,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_cartservice_f1_3",
+      "trace_rows": 151000,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f4_3",
+      "trace_rows": 163268,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f1_2",
+      "trace_rows": 163613,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_adservice_f4_1",
+      "trace_rows": 164591,
+      "outside_window_rows": 1,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_adservice_f5_2",
+      "trace_rows": 164202,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_adservice_f3_1",
+      "trace_rows": 165302,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ob_emailservice_f3_1",
+      "trace_rows": 162508,
+      "outside_window_rows": 0,
+      "traced_services": 7,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_carts_f3_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_front-end_f1_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_carts_f1_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_orders_f4_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_carts_f4_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_front-end_f3_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_carts_f4_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_orders_f1_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_orders_f3_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_orders_f4_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_front-end_f1_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_front-end_f2_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_front-end_f3_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_carts_f3_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_carts_f1_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_orders_f3_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_carts_f1_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_orders_f1_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_carts_f4_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_carts_f1_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_front-end_f2_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_orders_f3_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_orders_f4_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_front-end_f3_2",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_front-end_f2_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_front-end_f1_3",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_orders_f1_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_carts_f3_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_carts_f4_4",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3ss_carts_f3_1",
+      "trace_rows": 0,
+      "outside_window_rows": 0,
+      "traced_services": 0,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f1_1",
+      "trace_rows": 173320,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f3_2",
+      "trace_rows": 95986,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f4_3",
+      "trace_rows": 212774,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f2_3",
+      "trace_rows": 90648,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f3_1",
+      "trace_rows": 91004,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f2_3",
+      "trace_rows": 188380,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f3_2",
+      "trace_rows": 185382,
+      "outside_window_rows": 1,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f4_1",
+      "trace_rows": 177939,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f4_2",
+      "trace_rows": 200957,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f1_2",
+      "trace_rows": 86057,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f3_1",
+      "trace_rows": 189488,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f4_2",
+      "trace_rows": 99998,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f2_1",
+      "trace_rows": 99146,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f2_4",
+      "trace_rows": 37936,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f2_2",
+      "trace_rows": 94502,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f2_2",
+      "trace_rows": 185410,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f3_4",
+      "trace_rows": 36407,
+      "outside_window_rows": 0,
+      "traced_services": 20,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f1_2",
+      "trace_rows": 187869,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f3_3",
+      "trace_rows": 95355,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f1_3",
+      "trace_rows": 187396,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f4_3",
+      "trace_rows": 100418,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f2_1",
+      "trace_rows": 183623,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f3_6",
+      "trace_rows": 242715,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f1_4",
+      "trace_rows": 36374,
+      "outside_window_rows": 0,
+      "traced_services": 21,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f1_3",
+      "trace_rows": 92108,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f3_5",
+      "trace_rows": 211567,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f4_1",
+      "trace_rows": 94939,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f3_4",
+      "trace_rows": 184808,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-route-service_f3_3",
+      "trace_rows": 202011,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    },
+    {
+      "case": "re3tt_ts-auth-service_f1_1",
+      "trace_rows": 88159,
+      "outside_window_rows": 0,
+      "traced_services": 27,
+      "resolved_aliases": {},
+      "unmatched_traced_services": []
+    }
+  ],
+  "limitations": [
+    "no dependency graph yet",
+    "max duration sensitive to outliers",
+    "missing sources explicit; trace-status indicator requires protocol-specific review"
+  ]
+}

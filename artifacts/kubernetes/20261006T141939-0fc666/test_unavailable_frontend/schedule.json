@@ -1,0 +1,21 @@
+{
+  "kind": "unavailable",
+  "target": "frontend",
+  "phase": "test_unavailable_frontend",
+  "onset": 1791290334.1142654,
+  "recovery": 1791290359.7541933,
+  "dropped": 0,
+  "commands": [
+    {
+      "action": "unavailable",
+      "target": "frontend",
+      "command_completed": 1791290334.1142654
+    },
+    {
+      "action": "recover",
+      "target": "frontend",
+      "command_completed": 1791290359.7541933
+    }
+  ],
+  "label_semantics": "Control command completion proxy; actual workload onset requires trace review"
+}

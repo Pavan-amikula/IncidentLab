@@ -1,0 +1,173 @@
+{
+  "modality_coverage": {
+    "TT_data": {
+      "service_rows": 7866,
+      "windows": 171,
+      "windows_with_metrics": 171,
+      "windows_with_logs": 0,
+      "windows_with_traces": 56,
+      "missing_metric_fraction_median": 0.75,
+      "feature_p50": [
+        0.6638738223355629,
+        0.2969198851440473,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.75
+      ],
+      "feature_p95": [
+        1.7844811622066747,
+        1.6770763069732868,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.0692192677008125,
+        3.1080617471753316,
+        2.251002878958923,
+        0.7485970609248556,
+        1.0,
+        1.0,
+        0.75
+      ],
+      "unsupported_services": []
+    },
+    "SN_data": {
+      "service_rows": 5152,
+      "windows": 184,
+      "windows_with_metrics": 184,
+      "windows_with_logs": 180,
+      "windows_with_traces": 175,
+      "missing_metric_fraction_median": 0.75,
+      "feature_p50": [
+        0.05004929829179256,
+        0.15007394232664126,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.75
+      ],
+      "feature_p95": [
+        1.6189504420174343,
+        1.4696267032917496,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.11858142970552427,
+        0.0,
+        1.0,
+        1.8355319822159057,
+        2.0311641933690483,
+        2.328898933332771,
+        0.0,
+        1.0,
+        0.0,
+        0.75
+      ],
+      "unsupported_services": []
+    }
+  },
+  "clock_audit": [
+    {
+      "run": "Code_Stop_MediaService_20251104_024819_traces_2025-11-04_03-21-39",
+      "paired_spans": 1595,
+      "zero_offset_verified": true
+    },
+    {
+      "run": "Code_Stop_TextService_20251104_022416_traces_2025-11-04_02-45-14",
+      "paired_spans": 1540,
+      "zero_offset_verified": true
+    },
+    {
+      "run": "Code_Stop_UserService_20251104_020019_traces_2025-11-04_02-21-10",
+      "paired_spans": 2219,
+      "zero_offset_verified": true
+    },
+    {
+      "run": "DB_Redis_CacheLimit_HomeTimeline_20251104_004905_traces_2025-11-04_01-09-27",
+      "paired_spans": 2205,
+      "zero_offset_verified": true
+    },
+    {
+      "run": "DB_Redis_CacheLimit_SocialGraph_20251104_013615_traces_2025-11-04_01-57-06",
+      "paired_spans": 2152,
+      "zero_offset_verified": true
+    },
+    {
+      "run": "DB_Redis_CacheLimit_UserTimeline_20251104_011238_traces_2025-11-04_01-33-04",
+      "paired_spans": 2050,
+      "zero_offset_verified": true
+    },
+    {
+      "run": "Perf_CPU_Contention_20251103_222601_traces_2025-11-03_22-46-44",
+      "paired_spans": 2098,
+      "zero_offset_verified": true
+    },
+    {
+      "run": "Perf_Disk_IO_Stress_20251103_231335_traces_2025-11-03_23-34-08",
+      "paired_spans": 1870,
+      "zero_offset_verified": true
+    },
+    {
+      "run": "Perf_Network_Loss_20251103_224954_traces_2025-11-03_23-10-24",
+      "paired_spans": 1713,
+      "zero_offset_verified": true
+    },
+    {
+      "run": "Svc_Kill_Media_20251104_000111_traces_2025-11-04_00-21-42",
+      "paired_spans": 2209,
+      "zero_offset_verified": true
+    },
+    {
+      "run": "Svc_Kill_SocialGraph_20251104_002506_traces_2025-11-04_00-45-42",
+      "paired_spans": 1887,
+      "zero_offset_verified": true
+    },
+    {
+      "run": "Svc_Kill_UserTimeline_20251103_233717_traces_2025-11-03_23-57-47",
+      "paired_spans": 1979,
+      "zero_offset_verified": true
+    }
+  ],
+  "conclusions": [
+    "Only CPU/memory transferred among eight metric kinds; disk/network/request-latency evidence is absent from those slots",
+    "TrainTicket log modality deliberately omitted; diagnosis under this source gap is not the original all-source experiment",
+    "Short trace collection periods and unreferenced services reduce usable evidence",
+    "Healthy full-run scaling differs from five-minute warm-up; reference policy and system shifts are confounded",
+    "Frozen supervised models do not establish cross-system robustness from the RCAEval results",
+    "No new external tuning; these cases become development evidence for future work"
+  ],
+  "checkpoints_unchanged": true
+}

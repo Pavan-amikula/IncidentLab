@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "actual_requests": 20,
+  "complete_traces": 20,
+  "event_records": 60,
+  "audit": {
+    "records_read": 60,
+    "late_records": 0,
+    "pending_records": 0,
+    "partial_record_bytes": 0,
+    "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+  },
+  "scope": "Collector/trace/process integration check, not an ML dataset or accuracy experiment"
+}

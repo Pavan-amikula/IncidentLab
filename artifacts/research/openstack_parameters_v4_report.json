@@ -1,0 +1,51 @@
+{
+  "scope": "Development comparison of operation-specific tail calibration after inspecting V3 outcomes",
+  "alpha": 0.01,
+  "calibration_sessions": 680,
+  "calibration_counts": {
+    "spawn the instance on the hypervisor": 680,
+    "build instance": 680,
+    "destroy the instance on the hypervisor": 680,
+    "deallocate network for instance": 680
+  },
+  "healthy_normal2_test_sessions": 634,
+  "results": {
+    "precision": 0.4,
+    "recall": 1.0,
+    "f1": 0.5714285714285714,
+    "annotated_positive_hits": 4,
+    "annotated_positive_sessions": 4,
+    "alerted_sessions": 10,
+    "false_alerted_normal2_sessions": 5,
+    "average_precision_eligible": 0.4,
+    "abstained_sessions": 2
+  },
+  "checkpoint_sha256": "45293e9ae8cb26fe176ff7ab25f83cfc86e2df16c73a24b6c3b640ad3fafcd60",
+  "audits": {
+    "normal2": {
+      "physical_lines": 137074,
+      "explicit_instance_events": 32784,
+      "measured_duration_events": 5251,
+      "unassigned_instance_events": 104283,
+      "unparsed_or_continuation_lines": 7,
+      "sessions": 1315,
+      "sessions_with_all_four_parameters": 1312
+    },
+    "abnormal": {
+      "physical_lines": 18434,
+      "unassigned_instance_events": 13530,
+      "explicit_instance_events": 4904,
+      "measured_duration_events": 786,
+      "sessions": 198,
+      "sessions_with_all_four_parameters": 196
+    }
+  },
+  "limitations": [
+    "Four already-inspected positives; no fresh final-test claim or outcome-based alpha tuning",
+    "One-sided operation delay question differs from V3 two-sided residual novelty",
+    "Ordered/censored log sessions can violate exchangeability; nominal alpha is not verified production false-alarm rate",
+    "Tail p-values are not probabilities that a VM or service is faulty",
+    "Missing operations remain explicit; no-duration sessions abstain",
+    "Unannotated abnormal-file sessions follow the supplied four-UUID label policy, which may be incomplete"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "records_read": 22905,
+  "late_records": 0,
+  "pending_records": 3,
+  "partial_record_bytes": 0,
+  "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+}

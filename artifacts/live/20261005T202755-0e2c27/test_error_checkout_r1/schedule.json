@@ -1,0 +1,21 @@
+{
+  "kind": "error",
+  "target": "checkout",
+  "started": 1791227414.2528925,
+  "ended": 1791227504.2528925,
+  "onset": 1791227441.254144,
+  "recovery": 1791227477.257977,
+  "actions": [
+    {
+      "timestamp": 1791227441.254144,
+      "action": "error",
+      "target": "checkout"
+    },
+    {
+      "timestamp": 1791227477.257977,
+      "action": "recover",
+      "target": "checkout"
+    }
+  ],
+  "dropped_workload_requests": 0
+}

@@ -1,0 +1,475 @@
+{
+  "status": "passed",
+  "run_id": "20261005T202755-0e2c27",
+  "phase_count": 22,
+  "windows": 1140,
+  "test_windows": 940,
+  "source_snapshots_verified": true,
+  "checkpoint_sha256": "118e99295e06b8afe45e4101140143ed1141a4cfe1d8bd670ba8086564d28711",
+  "chronological_phase_order": true,
+  "receipts": [
+    {
+      "phase": "healthy_train",
+      "windows": 100,
+      "predictions": 0,
+      "journal_predictions": 0,
+      "journal_note": null,
+      "collector": {
+        "records_read": 9771,
+        "late_records": 0,
+        "pending_records": 6,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "7083dfc4dde90fc12ced7800435db8a65efde4f135b04cdc93c637c51a5d9e29",
+        "checkout": "5a9d295205f7115413a07efa15de1e0190cc1fc20d0e63e33328a31891892b06",
+        "inventory": "cdaac64f519e85cc0e874279918ee15f4501a9e167e4700fd3f4f437b2b44f59"
+      },
+      "windows_sha256": "b772a0f2e970d6de920b1b4aed1fc36b6120160b22158d2ade150d818d4ea141",
+      "predictions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "phase": "healthy_validation",
+      "windows": 100,
+      "predictions": 0,
+      "journal_predictions": 0,
+      "journal_note": null,
+      "collector": {
+        "records_read": 9681,
+        "late_records": 0,
+        "pending_records": 6,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "6ec79f7503b4a2e552f7f79fce5335d5f06c3cb1ff456a18f340822b676c088e",
+        "checkout": "7723b65a06c1b778bd19d2a89d9b0ec2ce7c8abc0ee58579146ebfde68808f0f",
+        "inventory": "1aa42a06670f0334bbc1025a10c700e785094fd9f0e7455aea53ed611956e2e4"
+      },
+      "windows_sha256": "a6abb896578cca57e8a58e681fd30fd2a544444c38a69120741a2bb01b3d5e73",
+      "predictions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "phase": "test_healthy",
+      "windows": 200,
+      "predictions": 200,
+      "journal_predictions": 199,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 10569,
+        "late_records": 0,
+        "pending_records": 0,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "dae92a1a104fdc29da890847719e4e131773f15c3f1b4cec8d2a6d6bcc1d1a21",
+        "checkout": "2c11c3a316f5598f580f9d59f38547a083873e3ce591bbd0253c240f1fed7399",
+        "inventory": "7b7940627aee1fa7b7291a1ae158c901981935e9e8ff4893d65e83c34e074a33"
+      },
+      "windows_sha256": "1b0e36c2e39779490252c40ee0934a4f378f8644b9352754cc7556e0dcb71df4",
+      "predictions_sha256": "ddd81ae31060b95404a18cadffbbf1c607c3b51cfc059b502f459952576df06b"
+    },
+    {
+      "phase": "test_surge",
+      "windows": 200,
+      "predictions": 200,
+      "journal_predictions": 199,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 22905,
+        "late_records": 0,
+        "pending_records": 3,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "e10e96c72877160eca85ae07bb24bebd48658e38fb984ec8b41e600fad9a3229",
+        "checkout": "8058331175a782f8bea67f37e57c22b5d9f3ee34e343e6dd8bcf42a117e6cae1",
+        "inventory": "ba23171c950be53dee1b88aeffdebaf25b3560507a23632ff99f3b486fea2c3b"
+      },
+      "windows_sha256": "9c56cf99b4b2237e8040186ee7ddb7fa2fe4338be94687d8b30f5425337c1498",
+      "predictions_sha256": "7c5934ecb0fa13831c447fa70e249b7ee9bb87a873c0dd31e8c8ec6609af83c7"
+    },
+    {
+      "phase": "test_delay_frontend_r1",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1590,
+        "late_records": 0,
+        "pending_records": 3,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "a385dea848f13ab2c6a0759f6944e213453ef08803d1942af26662b4bfb11cb4",
+        "checkout": "e7aaab0a5ad542af3bdd14f306aad9b11ec8ab60f37a003792d5f93d2faeb1a8",
+        "inventory": "dd8889fb918d0035c0760722b58732ba7cfdcfe8195ddeca059a802d79d4249d"
+      },
+      "windows_sha256": "71c1c6b8b59b34d387077c353a5ee6ca0ad1088982de9e281c08ac5c6551bc3f",
+      "predictions_sha256": "449f8734bb19b487843b0927a52388f2bce925139ea2eca46404b311d1a913dc"
+    },
+    {
+      "phase": "test_delay_frontend_r2",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1590,
+        "late_records": 0,
+        "pending_records": 0,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "7e15b18176c3e6013f716784c19f9313e477eccffa526b3cc73527000407b793",
+        "checkout": "4106bb11e894600c6ae3d195612f43141f9be1f0910b550ec8483db7394c03e9",
+        "inventory": "f669bc413b34285f48f05e2f00aaaacf814c59ce97fcceb3e1b616bdd1f62608"
+      },
+      "windows_sha256": "26e8d149ca8dae0946662eb9fe2855847b9e9420db7fe60ef1aa0a8bd527281a",
+      "predictions_sha256": "ccb0c0fbdbc943aa32320351cf2b2a203485a2c6779ac69b77a092d0b02de524"
+    },
+    {
+      "phase": "test_delay_checkout_r1",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1593,
+        "late_records": 0,
+        "pending_records": 3,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "970a4df19bb6405bcda7752c30da7d7a1dabeebdaf9e76568075afdd1a27d0a5",
+        "checkout": "141b24ca692179cc094af3f7aed7bdf64c1d01a04850952ff74f5539280ace91",
+        "inventory": "e88cd7a94e55cb9dca786b31419626682e102a489b2b10667bdd144d145e931f"
+      },
+      "windows_sha256": "c42560b5ce435cd17235b59859d2b73c8f5006e4f11768d0f0085d62c6a31c6f",
+      "predictions_sha256": "ca5fdf4687841585e177b2db63ae68ffa3f365f0021a09e558f656ca588fd64c"
+    },
+    {
+      "phase": "test_delay_checkout_r2",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1593,
+        "late_records": 0,
+        "pending_records": 3,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "c4000946555435d6ea1348e40c8f5dba4afebfcf01fccfc4d17e0890eaf785bf",
+        "checkout": "e6862f847980b13605fbc124a05e3b0c6e625c7d191af30567334200c9ec9d26",
+        "inventory": "0013e3344a7a4dd53e19f2a461f273ec550b4fdb484bfcf7cd5a64e25a491e01"
+      },
+      "windows_sha256": "28c2215c4d036b0191aee7776c75ab3bcabe143824d54fa06396ff032246fa99",
+      "predictions_sha256": "9dc9a791d629ad648059e242e467f5b37ad0c4c1e228fd9b047f5cf1f91f652d"
+    },
+    {
+      "phase": "test_delay_inventory_r1",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1590,
+        "late_records": 0,
+        "pending_records": 0,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "dc2fc18d0118a504af60223e9bc983d78f0f98d27b548d7200a0f296c99178a7",
+        "checkout": "c98174be3ccedc4609fb5d3027d14dc6d363625a91cfdf975be48f65986b8aa1",
+        "inventory": "209aaf11cb0c657cd1c0f2259e4acdf61552df55b819a41ed56d03889b8ac8d1"
+      },
+      "windows_sha256": "8aed7092e7ae0042d924dc81ca120be8248016ba657ce684d09d3638a4579127",
+      "predictions_sha256": "5671c5207118709688543de408bf33f9ef00f1b26b17e06e765ff83ac713d1ff"
+    },
+    {
+      "phase": "test_delay_inventory_r2",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1593,
+        "late_records": 0,
+        "pending_records": 0,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "75eedb5f61c607f35745285b42f701aa2afd7873e8cc35cb783b58e3829e9b07",
+        "checkout": "7ca3a3452a59c7aa0792061a3694912e1fd6d9eefcfba1f9e168354a09dec445",
+        "inventory": "0284805c3b8eade12054f1c6970759863267b6a15da5855d90959b21e9a0a82b"
+      },
+      "windows_sha256": "42eccd0be701d7641ef1322743d50fa7769be930ac759794a567d29aa48936ba",
+      "predictions_sha256": "951d5cb01fdf9ccfd9ea517c961cfe0c7eac20a0c7f9c8d1a95190629b619f0e"
+    },
+    {
+      "phase": "test_error_frontend_r1",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1164,
+        "late_records": 0,
+        "pending_records": 0,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "7c11abb45034d22238f0a1f7551ec14ca053e0579437508cad18a3d9e3f283a0",
+        "checkout": "2c41927dd81a1959f96d6d5dcd25bbbe0fdbab4b571c87ed15677bd38b589b1b",
+        "inventory": "5966822282e2f9c1d55745412ac3a4006b31f452ab15aa0e5d381ab92b0060c6"
+      },
+      "windows_sha256": "67e8694250736060bf859a281b3a9af8473bc085322d7cfcaf691879bfc3d682",
+      "predictions_sha256": "12675463b904f86942cf1ec8779b9f66da51ef330f1b62b24b01e7c679afb514"
+    },
+    {
+      "phase": "test_error_frontend_r2",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1166,
+        "late_records": 0,
+        "pending_records": 0,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "5be989e2666d7d61a40735561bad9c939a9f60ea91e2b7fbedfb2f6ed6358bc4",
+        "checkout": "c9199d74ebc93419ba5b3ca6c9925540ce55281befe3af4966a4358f79e62c94",
+        "inventory": "8d24e2fe2b4fe3562c054a353abfd6cd2af188bbed33d3ecbe6d3d5f905140c9"
+      },
+      "windows_sha256": "9aa7440bdf4b5847d20da14c88e2033a605ac6358ac23c7fcb2fcb4bf0fe9ea2",
+      "predictions_sha256": "bb75e793f5c4d9b7f9d732766a249c1cf91ecf2a0302b808767f4a7a0454acfb"
+    },
+    {
+      "phase": "test_error_checkout_r1",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1378,
+        "late_records": 0,
+        "pending_records": 0,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "a28b66d4c517a65fa15560fec3115d5750d4e5406816dd7a4e4c7ca74520bd43",
+        "checkout": "64fcc149beb270bdbd5153e7bb86d027a51131af01d7eb0f2649bda160634be2",
+        "inventory": "2b61eeab8f75070920351934b48f8cf10935886d3c69f9b3d3c598533803dd95"
+      },
+      "windows_sha256": "3c219be6c6effb90540496fd74557ef6e0a9f86b946d1f9f5a869d48c12e9166",
+      "predictions_sha256": "06522feb7dc927f312b0b9a02096d303537384196b953c0f776496713cdc1a8d"
+    },
+    {
+      "phase": "test_error_checkout_r2",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1380,
+        "late_records": 0,
+        "pending_records": 3,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "0963fbd34fd46b1a635d29b3dae5568f27ccf04d906624bea151bc07d40141ab",
+        "checkout": "1ba5c711fc85e81e5ac4e4e66d9c0f131d53d2fb96bbc1db90735039fcdcded5",
+        "inventory": "df1688e21aebbe11b451b4bae91df9d8f6704e4aa0c2caf45b7721393af5ccd2"
+      },
+      "windows_sha256": "c8a1bced08abe08205b0987e776c20ee55134d4ca192dc283f8eef37cd242ab3",
+      "predictions_sha256": "a4e8c98a11beecc4175e367181b6c5e795b6fda3f312a648c43151b51a4aacab"
+    },
+    {
+      "phase": "test_error_inventory_r1",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1590,
+        "late_records": 0,
+        "pending_records": 3,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "75e6739bfbfa8647e2c490c590868e4964ea91db9160a085fa36e123364ef2ce",
+        "checkout": "40e6673dcd0c9fb77338523f7c73df1c0129053f9c9f33bf830ffad00cd88f61",
+        "inventory": "4ba88faa51e82c0e47cf7ee3ba808e438d6eccb6f2155751a76544aabae4282f"
+      },
+      "windows_sha256": "07df528269b766f5e3606a6b0b4ee4f9dd8fb3a143e4f351ed8505cb61c619dd",
+      "predictions_sha256": "64b78d9b0cb7fa9a0c62245781a86506642921c734b23c2919ff1450dbfef2b2"
+    },
+    {
+      "phase": "test_error_inventory_r2",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1590,
+        "late_records": 0,
+        "pending_records": 0,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "0b3e7328e35d151e0a93a32462fd3c7a7bb0c720e8eca6584a375f7dfed733cc",
+        "checkout": "d3af8a8dd7bba0596536178ad07a4256f44df65f1a1896b3f38d7aff1c3e6398",
+        "inventory": "e1697e7abf38a534f2afb5dc22b62632d63dfdeabe1a162a31a2ee20ae28f670"
+      },
+      "windows_sha256": "8edd901692b930f9e107819e5f60eefea9bcadfc2a899f9a27b8a70951b7993a",
+      "predictions_sha256": "a2bf1115113f9cba8b4ba021367f68edea12da481ec05e36c17dd46a3dc4ea1b"
+    },
+    {
+      "phase": "test_unavailable_frontend_r1",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 972,
+        "late_records": 0,
+        "pending_records": 3,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "b7240125430c701e26eac647a909b10dd3fdb8c09342332112e848cdbb68c04c",
+        "checkout": "6d7edf103e5426df9039be9ce36f1e3642bf4e2cf5eff4a32a7c2c9234837322",
+        "inventory": "bf746219a5c09a2295eb0570e29e77b92774896605f98273efb98297108e8676"
+      },
+      "windows_sha256": "96483616340709081a35d4e9dec818505f5daf232b8bd44a682a73fe54636827",
+      "predictions_sha256": "0fcece72ddca7c024f4ad84e69626d8ac38f2847b0f55952cc644ba8a0c581b5"
+    },
+    {
+      "phase": "test_unavailable_frontend_r2",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 975,
+        "late_records": 0,
+        "pending_records": 3,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "8562b4c5c17e880cf44bb0f4690efdad7ab05e76cf437ee6eb884f5d54c36e98",
+        "checkout": "b03b6fc180a5cd65fa740b6b2191b5c59dbfa1c8ab3aecf138b0a7924929ed4f",
+        "inventory": "3d60d908f7b9b6ec96f1ed17a5fe6928fddc5fb16efd48433f5952d2401dfffb"
+      },
+      "windows_sha256": "13d389b99267ef4e7a128d9045ed56009b33e36f10767a1b270e8fffb2d6a3dd",
+      "predictions_sha256": "049ca108ce1681dba3057ead68448b19d39edba9296a2d6d5c905dc855dcb141"
+    },
+    {
+      "phase": "test_unavailable_checkout_r1",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1167,
+        "late_records": 0,
+        "pending_records": 3,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "e967d8b72eb91231c6dfd85b89d3c6c6747621ba1234f33dc90e36c60b348335",
+        "checkout": "36be4d2c38555767caed5f1dbad188cb0fe2729ad04279e131e30a31385c8719",
+        "inventory": "2aed9d297636d4d0195494798076632487b39de76fa2165ead1ec69920160079"
+      },
+      "windows_sha256": "6b9218230b5c25e36849f9168e8569a7afcf2b4a819a82f1c8c4831c80b71296",
+      "predictions_sha256": "18576980426f6133bceb406cbaf4207ad83cf63b87d2811d57a2083fdcb8efde"
+    },
+    {
+      "phase": "test_unavailable_checkout_r2",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1162,
+        "late_records": 0,
+        "pending_records": 0,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "2ed436468845ef51bce9b1a27087849d7faf3378b5d8b7b83b17758fb78fb1e7",
+        "checkout": "7910b7819901b58be7fd05ca3ccc0f30c46752a81316e2bafcac074929f0ef0b",
+        "inventory": "31ea92b33e90b765e44ab2de7df7b3a10860aa1d161f488ffcfd2fdc065fd29d"
+      },
+      "windows_sha256": "40a8c94c77c9034065e336016b0098294f9a9d6eaae6a34f6438a80fd160a9f2",
+      "predictions_sha256": "1857f9bffb3682bf578f83eb42c4db0d6c9c9a8fcd1835cee753635db3b15814"
+    },
+    {
+      "phase": "test_unavailable_inventory_r1",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1377,
+        "late_records": 0,
+        "pending_records": 3,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "29c50a28ec92b4f7cf02cc4750147a1d8436a2ff6f9480602ad2d8f8142c2b1e",
+        "checkout": "4d8d5b05a9ae0e74fc07fb208e9436dc40de37673d3f67fc4118344e5a4221e5",
+        "inventory": "726a7e898d718b93a81cdf07546a5d248969b98c4da49adae264179d52fb72ec"
+      },
+      "windows_sha256": "f8e37a9fe59f6e068f43ef15bc6873603aaf352606a10d310464e0598c0cb4fc",
+      "predictions_sha256": "265c41243c9b90e0880de3313f0519c5e9e0ac057519974c1d000fc3e6983f49"
+    },
+    {
+      "phase": "test_unavailable_inventory_r2",
+      "windows": 30,
+      "predictions": 30,
+      "journal_predictions": 29,
+      "journal_note": "Canonical predictions.json retains final window; the archived runner omitted its last journal append",
+      "collector": {
+        "records_read": 1377,
+        "late_records": 0,
+        "pending_records": 3,
+        "partial_record_bytes": 0,
+        "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+      },
+      "raw_sha256": {
+        "frontend": "3a32cc49511535d537f15f64d561d111771ce795365ac3942f10ac60d1a86db4",
+        "checkout": "301e827f7f467dd9a69d6ae777319d86f2bf52cae824e6fca2cb307198696b20",
+        "inventory": "5af85addd6500183cefe185769fd506fcf0e72ecf9cbcb781d96b132138e7949"
+      },
+      "windows_sha256": "cec85cb7e30af5428ef4230ecc2326a77b864a9625efb35ac05da2a74648a7a0",
+      "predictions_sha256": "c1319e93b2f0f1cac4e92308d43fe885ec969944dacee46203aafa9c65ace30e"
+    }
+  ],
+  "scope": "Artifact integrity and top-level input boundaries, not a proof of algorithm correctness or production reliability"
+}

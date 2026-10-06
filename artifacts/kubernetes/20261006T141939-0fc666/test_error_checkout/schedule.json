@@ -1,0 +1,21 @@
+{
+  "kind": "error",
+  "target": "checkout",
+  "phase": "test_error_checkout",
+  "onset": 1791290203.415738,
+  "recovery": 1791290227.5518591,
+  "dropped": 0,
+  "commands": [
+    {
+      "action": "error",
+      "target": "checkout",
+      "command_completed": 1791290203.415738
+    },
+    {
+      "action": "recover",
+      "target": "checkout",
+      "command_completed": 1791290227.5518591
+    }
+  ],
+  "label_semantics": "Control command completion proxy; actual workload onset requires trace review"
+}

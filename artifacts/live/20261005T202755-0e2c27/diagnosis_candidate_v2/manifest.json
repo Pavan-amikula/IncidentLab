@@ -1,0 +1,13 @@
+{
+  "run_id": "20261005T202755-0e2c27",
+  "policy_version": "v2",
+  "created_epoch": 1791225714.2813046,
+  "created_stage": "test_healthy",
+  "code_sha256": {
+    "evidence_diagnosis.py": "0badbf1ad50e3195a62f070b868dd6ece1a7787bfe12752d741da4f468011853",
+    "llm_live_evaluation.py": "77b07739449db2117b44eec7552eb00479bac73f664ebc768bd9b6e822fd1593",
+    "semantic_models.py": "a3ac94b4c3e2578f78faede213df193890fdf9978dc56ccdbf34467d0618aa30"
+  },
+  "prompt_sha256": "d280b7ebae978b2d61843fcaf67ec7acaa204b9ec68ffb78da33e2308c01e356",
+  "note": "Candidate frozen before fault collection; known fault families and one application, not an unseen-system test"
+}

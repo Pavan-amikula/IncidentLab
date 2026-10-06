@@ -1,0 +1,8 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {"name": "Debug training", "type": "debugpy", "request": "launch", "module": "incidentlab.train", "console": "integratedTerminal", "justMyCode": true},
+    {"name": "Debug validation", "type": "debugpy", "request": "launch", "module": "incidentlab.validate", "console": "integratedTerminal", "justMyCode": true},
+    {"name": "Debug testing", "type": "debugpy", "request": "launch", "module": "incidentlab.test_model", "console": "integratedTerminal", "justMyCode": true}
+  ]
+}

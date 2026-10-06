@@ -1,0 +1,2033 @@
+{
+  "run_id": "20261006T141939-0fc666",
+  "quick": false,
+  "phases": [
+    {
+      "phase": "healthy_train",
+      "kind": "healthy_loads",
+      "target": null,
+      "event_count": 1407,
+      "client_count": 469,
+      "planned_observation_seconds": 180.0,
+      "client_requests_per_planned_second": 2.6055555555555556,
+      "window_close_to_decision_p95_ms": null,
+      "client_statuses": {
+        "200": 469
+      },
+      "client_traces_without_captured_events": 0,
+      "successful_client_traces_with_incomplete_service_chain": 0,
+      "incomplete_success_examples": [],
+      "unique_store_records": 1407,
+      "total_store_records": 1407,
+      "duplicate_records": 0,
+      "parent_links_verified": 938,
+      "parent_links_missing": 0,
+      "prediction_windows": 0,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "00f68e96-1612-4776-8dac-f6831c121f3d"
+        ],
+        "checkout": [
+          "88af97ee-6799-401c-8bc2-5b5e250abb16"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8"
+        ]
+      },
+      "snapshots_without_service": {},
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 0,
+      "ml_warning_windows": 0,
+      "impact_event_count": 0,
+      "active_client_count": 0,
+      "active_failed_clients": 0,
+      "frontend_transport_failures_during_unavailability": 0,
+      "first_impact_start": null,
+      "first_impact_completion": null,
+      "first_impact_start_minus_command_completion": null,
+      "normal_target_latency_median_ms": null,
+      "impact_target_latency_median_ms": null,
+      "reviewed_examples": [],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    },
+    {
+      "phase": "healthy_validation",
+      "kind": "healthy_loads",
+      "target": null,
+      "event_count": 1398,
+      "client_count": 466,
+      "planned_observation_seconds": 180.0,
+      "client_requests_per_planned_second": 2.588888888888889,
+      "window_close_to_decision_p95_ms": null,
+      "client_statuses": {
+        "200": 466
+      },
+      "client_traces_without_captured_events": 0,
+      "successful_client_traces_with_incomplete_service_chain": 0,
+      "incomplete_success_examples": [],
+      "unique_store_records": 1398,
+      "total_store_records": 1398,
+      "duplicate_records": 0,
+      "parent_links_verified": 932,
+      "parent_links_missing": 0,
+      "prediction_windows": 0,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "00f68e96-1612-4776-8dac-f6831c121f3d"
+        ],
+        "checkout": [
+          "88af97ee-6799-401c-8bc2-5b5e250abb16"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8"
+        ]
+      },
+      "snapshots_without_service": {},
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 0,
+      "ml_warning_windows": 0,
+      "impact_event_count": 0,
+      "active_client_count": 0,
+      "active_failed_clients": 0,
+      "frontend_transport_failures_during_unavailability": 0,
+      "first_impact_start": null,
+      "first_impact_completion": null,
+      "first_impact_start_minus_command_completion": null,
+      "normal_target_latency_median_ms": null,
+      "impact_target_latency_median_ms": null,
+      "reviewed_examples": [],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    },
+    {
+      "phase": "test_delay_checkout",
+      "kind": "delay",
+      "target": "checkout",
+      "event_count": 438,
+      "client_count": 146,
+      "planned_observation_seconds": 60.0,
+      "client_requests_per_planned_second": 2.433333333333333,
+      "window_close_to_decision_p95_ms": 6530.535626411438,
+      "client_statuses": {
+        "200": 146
+      },
+      "client_traces_without_captured_events": 0,
+      "successful_client_traces_with_incomplete_service_chain": 0,
+      "incomplete_success_examples": [],
+      "unique_store_records": 438,
+      "total_store_records": 438,
+      "duplicate_records": 0,
+      "parent_links_verified": 292,
+      "parent_links_missing": 0,
+      "prediction_windows": 20,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "00f68e96-1612-4776-8dac-f6831c121f3d"
+        ],
+        "checkout": [
+          "88af97ee-6799-401c-8bc2-5b5e250abb16"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8"
+        ]
+      },
+      "snapshots_without_service": {},
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 9,
+      "ml_warning_windows": 0,
+      "impact_event_count": 57,
+      "active_client_count": 57,
+      "active_failed_clients": 0,
+      "frontend_transport_failures_during_unavailability": 0,
+      "first_impact_start": 1791290006.6838186,
+      "first_impact_completion": 1791290006.965835,
+      "first_impact_start_minus_command_completion": 0.03503870964050293,
+      "normal_target_latency_median_ms": 24.146080017089844,
+      "impact_target_latency_median_ms": 272.7537155151367,
+      "reviewed_examples": [
+        {
+          "trigger_span": "75c2aee1b6254904bf114c46a3be4a3a",
+          "trace_id": "bf6569709c9f4217b76b068a72f76867",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 200,
+              "duration_ms": 298.53320121765137,
+              "end": 1791290006.9664614,
+              "message": "request completed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "e7a5521424c44046a80682e39c2fa435",
+              "start": 1791290006.6679282,
+              "status": 200,
+              "trace_id": "bf6569709c9f4217b76b068a72f76867"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 200,
+              "duration_ms": 282.0165157318115,
+              "end": 1791290006.965835,
+              "message": "request completed",
+              "parent_span_id": "e7a5521424c44046a80682e39c2fa435",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "75c2aee1b6254904bf114c46a3be4a3a",
+              "start": 1791290006.6838186,
+              "status": 200,
+              "trace_id": "bf6569709c9f4217b76b068a72f76867"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 14.453887939453125,
+              "end": 1791290006.964681,
+              "message": "request completed",
+              "parent_span_id": "75c2aee1b6254904bf114c46a3be4a3a",
+              "schema": "incidentlab-http-v1",
+              "service": "inventory",
+              "span_id": "fa18835c8d98465ca8902c4727b4bdbb",
+              "start": 1791290006.950227,
+              "status": 200,
+              "trace_id": "bf6569709c9f4217b76b068a72f76867"
+            }
+          ]
+        },
+        {
+          "trigger_span": "d4b99bf2722d4e93bbec396a8d14cef0",
+          "trace_id": "6276eeade7824606b723be08a0a05e81",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 200,
+              "duration_ms": 274.59168434143066,
+              "end": 1791290007.6765873,
+              "message": "request completed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "a564804efd3a4683a2b660aa8a60b160",
+              "start": 1791290007.4019957,
+              "status": 200,
+              "trace_id": "6276eeade7824606b723be08a0a05e81"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 200,
+              "duration_ms": 264.7855281829834,
+              "end": 1791290007.6759841,
+              "message": "request completed",
+              "parent_span_id": "a564804efd3a4683a2b660aa8a60b160",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "d4b99bf2722d4e93bbec396a8d14cef0",
+              "start": 1791290007.4111986,
+              "status": 200,
+              "trace_id": "6276eeade7824606b723be08a0a05e81"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 4.626750946044922,
+              "end": 1791290007.6753967,
+              "message": "request completed",
+              "parent_span_id": "d4b99bf2722d4e93bbec396a8d14cef0",
+              "schema": "incidentlab-http-v1",
+              "service": "inventory",
+              "span_id": "6f4259ffae9e4f68ba6b826c531db97e",
+              "start": 1791290007.67077,
+              "status": 200,
+              "trace_id": "6276eeade7824606b723be08a0a05e81"
+            }
+          ]
+        },
+        {
+          "trigger_span": "eea78364888045f1a8779b0cdfd92305",
+          "trace_id": "70b1f3f0e0484327a6b822bdc6c38d80",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 200,
+              "duration_ms": 291.262149810791,
+              "end": 1791290008.0338032,
+              "message": "request completed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "d15cfe4427b343ea9eff36ad343d30bd",
+              "start": 1791290007.742541,
+              "status": 200,
+              "trace_id": "70b1f3f0e0484327a6b822bdc6c38d80"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 200,
+              "duration_ms": 276.93796157836914,
+              "end": 1791290008.03332,
+              "message": "request completed",
+              "parent_span_id": "d15cfe4427b343ea9eff36ad343d30bd",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "eea78364888045f1a8779b0cdfd92305",
+              "start": 1791290007.756382,
+              "status": 200,
+              "trace_id": "70b1f3f0e0484327a6b822bdc6c38d80"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 12.220144271850586,
+              "end": 1791290008.032717,
+              "message": "request completed",
+              "parent_span_id": "eea78364888045f1a8779b0cdfd92305",
+              "schema": "incidentlab-http-v1",
+              "service": "inventory",
+              "span_id": "73328088039248c6a4e2380138f714bf",
+              "start": 1791290008.0204968,
+              "status": 200,
+              "trace_id": "70b1f3f0e0484327a6b822bdc6c38d80"
+            }
+          ]
+        }
+      ],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    },
+    {
+      "phase": "test_delay_frontend",
+      "kind": "delay",
+      "target": "frontend",
+      "event_count": 447,
+      "client_count": 149,
+      "planned_observation_seconds": 60.0,
+      "client_requests_per_planned_second": 2.4833333333333334,
+      "window_close_to_decision_p95_ms": 6206.254196166992,
+      "client_statuses": {
+        "200": 149
+      },
+      "client_traces_without_captured_events": 0,
+      "successful_client_traces_with_incomplete_service_chain": 0,
+      "incomplete_success_examples": [],
+      "unique_store_records": 447,
+      "total_store_records": 447,
+      "duplicate_records": 0,
+      "parent_links_verified": 298,
+      "parent_links_missing": 0,
+      "prediction_windows": 20,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "00f68e96-1612-4776-8dac-f6831c121f3d"
+        ],
+        "checkout": [
+          "88af97ee-6799-401c-8bc2-5b5e250abb16"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8"
+        ]
+      },
+      "snapshots_without_service": {},
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 9,
+      "ml_warning_windows": 1,
+      "impact_event_count": 61,
+      "active_client_count": 61,
+      "active_failed_clients": 0,
+      "frontend_transport_failures_during_unavailability": 0,
+      "first_impact_start": 1791289939.4147084,
+      "first_impact_completion": 1791289939.6950047,
+      "first_impact_start_minus_command_completion": 0.03802990913391113,
+      "normal_target_latency_median_ms": 36.46731376647949,
+      "impact_target_latency_median_ms": 284.3160629272461,
+      "reviewed_examples": [
+        {
+          "trigger_span": "52890a345f7145f28ffb5bcfe89be5a3",
+          "trace_id": "efc68bff71944d3aa2d06f7a62c16996",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 200,
+              "duration_ms": 280.29632568359375,
+              "end": 1791289939.6950047,
+              "message": "request completed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "52890a345f7145f28ffb5bcfe89be5a3",
+              "start": 1791289939.4147084,
+              "status": 200,
+              "trace_id": "efc68bff71944d3aa2d06f7a62c16996"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 200,
+              "duration_ms": 17.497777938842773,
+              "end": 1791289939.6940372,
+              "message": "request completed",
+              "parent_span_id": "52890a345f7145f28ffb5bcfe89be5a3",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "c065e7eb11314a9eaa2a6af8ce139ed2",
+              "start": 1791289939.6765394,
+              "status": 200,
+              "trace_id": "efc68bff71944d3aa2d06f7a62c16996"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 5.172491073608398,
+              "end": 1791289939.6929598,
+              "message": "request completed",
+              "parent_span_id": "c065e7eb11314a9eaa2a6af8ce139ed2",
+              "schema": "incidentlab-http-v1",
+              "service": "inventory",
+              "span_id": "0e1e9c9d5086439bb250ae9697a76043",
+              "start": 1791289939.6877873,
+              "status": 200,
+              "trace_id": "efc68bff71944d3aa2d06f7a62c16996"
+            }
+          ]
+        },
+        {
+          "trigger_span": "b00d22f191a4426fbe4bab48b6d31538",
+          "trace_id": "569a520506224bb09d88499b3937f253",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 200,
+              "duration_ms": 281.4979553222656,
+              "end": 1791289940.0282598,
+              "message": "request completed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "b00d22f191a4426fbe4bab48b6d31538",
+              "start": 1791289939.7467618,
+              "status": 200,
+              "trace_id": "569a520506224bb09d88499b3937f253"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 200,
+              "duration_ms": 22.3388671875,
+              "end": 1791289940.027302,
+              "message": "request completed",
+              "parent_span_id": "b00d22f191a4426fbe4bab48b6d31538",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "db459391c0a840fcb08a9011db1e1d5f",
+              "start": 1791289940.0049632,
+              "status": 200,
+              "trace_id": "569a520506224bb09d88499b3937f253"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 12.886524200439453,
+              "end": 1791289940.0261679,
+              "message": "request completed",
+              "parent_span_id": "db459391c0a840fcb08a9011db1e1d5f",
+              "schema": "incidentlab-http-v1",
+              "service": "inventory",
+              "span_id": "ba33928777594774a70377ad58cf3908",
+              "start": 1791289940.0132813,
+              "status": 200,
+              "trace_id": "569a520506224bb09d88499b3937f253"
+            }
+          ]
+        },
+        {
+          "trigger_span": "a239ab0a67454c5d9ada744491a8c1ea",
+          "trace_id": "718dea756e85421fbdd27bcc96dfb9c0",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 200,
+              "duration_ms": 286.12256050109863,
+              "end": 1791289940.3588736,
+              "message": "request completed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "a239ab0a67454c5d9ada744491a8c1ea",
+              "start": 1791289940.072751,
+              "status": 200,
+              "trace_id": "718dea756e85421fbdd27bcc96dfb9c0"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 200,
+              "duration_ms": 24.92070198059082,
+              "end": 1791289940.3578212,
+              "message": "request completed",
+              "parent_span_id": "a239ab0a67454c5d9ada744491a8c1ea",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "65acf7b38bec42c19347aa7f098b0c97",
+              "start": 1791289940.3329005,
+              "status": 200,
+              "trace_id": "718dea756e85421fbdd27bcc96dfb9c0"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 13.550043106079102,
+              "end": 1791289940.3567154,
+              "message": "request completed",
+              "parent_span_id": "65acf7b38bec42c19347aa7f098b0c97",
+              "schema": "incidentlab-http-v1",
+              "service": "inventory",
+              "span_id": "453b16f290014951859e241d57d8363e",
+              "start": 1791289940.3431654,
+              "status": 200,
+              "trace_id": "718dea756e85421fbdd27bcc96dfb9c0"
+            }
+          ]
+        }
+      ],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    },
+    {
+      "phase": "test_delay_inventory",
+      "kind": "delay",
+      "target": "inventory",
+      "event_count": 456,
+      "client_count": 152,
+      "planned_observation_seconds": 60.0,
+      "client_requests_per_planned_second": 2.533333333333333,
+      "window_close_to_decision_p95_ms": 6178.294539451599,
+      "client_statuses": {
+        "200": 152
+      },
+      "client_traces_without_captured_events": 0,
+      "successful_client_traces_with_incomplete_service_chain": 0,
+      "incomplete_success_examples": [],
+      "unique_store_records": 456,
+      "total_store_records": 456,
+      "duplicate_records": 0,
+      "parent_links_verified": 304,
+      "parent_links_missing": 0,
+      "prediction_windows": 20,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "00f68e96-1612-4776-8dac-f6831c121f3d"
+        ],
+        "checkout": [
+          "88af97ee-6799-401c-8bc2-5b5e250abb16"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8"
+        ]
+      },
+      "snapshots_without_service": {},
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 9,
+      "ml_warning_windows": 0,
+      "impact_event_count": 61,
+      "active_client_count": 61,
+      "active_failed_clients": 0,
+      "frontend_transport_failures_during_unavailability": 0,
+      "first_impact_start": 1791290073.601703,
+      "first_impact_completion": 1791290073.865051,
+      "first_impact_start_minus_command_completion": 0.0325932502746582,
+      "normal_target_latency_median_ms": 10.02645492553711,
+      "impact_target_latency_median_ms": 261.14892959594727,
+      "reviewed_examples": [
+        {
+          "trigger_span": "a994faac2ef14bd2b300e0264a974153",
+          "trace_id": "435dde0d130f4ba994903839862fb036",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 200,
+              "duration_ms": 290.88377952575684,
+              "end": 1791290073.866158,
+              "message": "request completed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "96b8eb290517453ab28d64cacb08f7ce",
+              "start": 1791290073.5752742,
+              "status": 200,
+              "trace_id": "435dde0d130f4ba994903839862fb036"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 200,
+              "duration_ms": 277.4665355682373,
+              "end": 1791290073.8656993,
+              "message": "request completed",
+              "parent_span_id": "96b8eb290517453ab28d64cacb08f7ce",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "5221d1c8a9d64756a4c04ab2e791da89",
+              "start": 1791290073.5882328,
+              "status": 200,
+              "trace_id": "435dde0d130f4ba994903839862fb036"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 263.3481025695801,
+              "end": 1791290073.865051,
+              "message": "request completed",
+              "parent_span_id": "5221d1c8a9d64756a4c04ab2e791da89",
+              "schema": "incidentlab-http-v1",
+              "service": "inventory",
+              "span_id": "a994faac2ef14bd2b300e0264a974153",
+              "start": 1791290073.601703,
+              "status": 200,
+              "trace_id": "435dde0d130f4ba994903839862fb036"
+            }
+          ]
+        },
+        {
+          "trigger_span": "c2122bd24d5e4fdbab6f42b11241a13b",
+          "trace_id": "3c0f1b09583146a2b1401dfc233184b0",
+          "linked_events": [
+            {
+              "active_requests": 2,
+              "dependency": "checkout",
+              "dependency_status": 200,
+              "duration_ms": 288.81359100341797,
+              "end": 1791290073.8917253,
+              "message": "request completed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "2edbd9caca22494b942dc146825866f7",
+              "start": 1791290073.6029117,
+              "status": 200,
+              "trace_id": "3c0f1b09583146a2b1401dfc233184b0"
+            },
+            {
+              "active_requests": 2,
+              "dependency": "inventory",
+              "dependency_status": 200,
+              "duration_ms": 275.3787040710449,
+              "end": 1791290073.891375,
+              "message": "request completed",
+              "parent_span_id": "2edbd9caca22494b942dc146825866f7",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "dbbe6c0fc3cf4fc2843e466e3e996567",
+              "start": 1791290073.6159964,
+              "status": 200,
+              "trace_id": "3c0f1b09583146a2b1401dfc233184b0"
+            },
+            {
+              "active_requests": 2,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 261.7528438568115,
+              "end": 1791290073.890867,
+              "message": "request completed",
+              "parent_span_id": "dbbe6c0fc3cf4fc2843e466e3e996567",
+              "schema": "incidentlab-http-v1",
+              "service": "inventory",
+              "span_id": "c2122bd24d5e4fdbab6f42b11241a13b",
+              "start": 1791290073.6291142,
+              "status": 200,
+              "trace_id": "3c0f1b09583146a2b1401dfc233184b0"
+            }
+          ]
+        },
+        {
+          "trigger_span": "4bcb2783f4dd4f858abab1883978dc7a",
+          "trace_id": "b10b6f2451a84529bdd92977ceffeb87",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 200,
+              "duration_ms": 291.98336601257324,
+              "end": 1791290074.2125676,
+              "message": "request completed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "bf24c418b9314664875000c1dcb98104",
+              "start": 1791290073.9205842,
+              "status": 200,
+              "trace_id": "b10b6f2451a84529bdd92977ceffeb87"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 200,
+              "duration_ms": 275.47693252563477,
+              "end": 1791290074.2121336,
+              "message": "request completed",
+              "parent_span_id": "bf24c418b9314664875000c1dcb98104",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "8b652997628d41519cced4058750934b",
+              "start": 1791290073.9366567,
+              "status": 200,
+              "trace_id": "b10b6f2451a84529bdd92977ceffeb87"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 258.8670253753662,
+              "end": 1791290074.2114866,
+              "message": "request completed",
+              "parent_span_id": "8b652997628d41519cced4058750934b",
+              "schema": "incidentlab-http-v1",
+              "service": "inventory",
+              "span_id": "4bcb2783f4dd4f858abab1883978dc7a",
+              "start": 1791290073.9526196,
+              "status": 200,
+              "trace_id": "b10b6f2451a84529bdd92977ceffeb87"
+            }
+          ]
+        }
+      ],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    },
+    {
+      "phase": "test_error_checkout",
+      "kind": "error",
+      "target": "checkout",
+      "event_count": 404,
+      "client_count": 155,
+      "planned_observation_seconds": 60.0,
+      "client_requests_per_planned_second": 2.5833333333333335,
+      "window_close_to_decision_p95_ms": 6313.825273513794,
+      "client_statuses": {
+        "200": 94,
+        "502": 61
+      },
+      "client_traces_without_captured_events": 0,
+      "successful_client_traces_with_incomplete_service_chain": 0,
+      "incomplete_success_examples": [],
+      "unique_store_records": 404,
+      "total_store_records": 404,
+      "duplicate_records": 0,
+      "parent_links_verified": 249,
+      "parent_links_missing": 0,
+      "prediction_windows": 20,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "00f68e96-1612-4776-8dac-f6831c121f3d"
+        ],
+        "checkout": [
+          "88af97ee-6799-401c-8bc2-5b5e250abb16"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8"
+        ]
+      },
+      "snapshots_without_service": {},
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 8,
+      "ml_warning_windows": 8,
+      "impact_event_count": 61,
+      "active_client_count": 61,
+      "active_failed_clients": 61,
+      "frontend_transport_failures_during_unavailability": 0,
+      "first_impact_start": 1791290203.4648867,
+      "first_impact_completion": 1791290203.4738834,
+      "first_impact_start_minus_command_completion": 0.0491485595703125,
+      "normal_target_latency_median_ms": 25.10523796081543,
+      "impact_target_latency_median_ms": 12.050390243530273,
+      "reviewed_examples": [
+        {
+          "trigger_span": "a7a09a50a6794b2a9467ee9aa4b38993",
+          "trace_id": "0a802ce02580483ea1b549f14eade601",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 503,
+              "duration_ms": 28.04088592529297,
+              "end": 1791290203.4749641,
+              "message": "downstream request failed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "9b763dac54954d93ae81a4ba194f7ff9",
+              "start": 1791290203.4469233,
+              "status": 502,
+              "trace_id": "0a802ce02580483ea1b549f14eade601"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 8.996725082397461,
+              "end": 1791290203.4738834,
+              "message": "local dependency capacity exhausted",
+              "parent_span_id": "9b763dac54954d93ae81a4ba194f7ff9",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "a7a09a50a6794b2a9467ee9aa4b38993",
+              "start": 1791290203.4648867,
+              "status": 503,
+              "trace_id": "0a802ce02580483ea1b549f14eade601"
+            }
+          ]
+        },
+        {
+          "trigger_span": "efddda820789471faabff5b369f913a0",
+          "trace_id": "72c24a10f5864096930a1558ab368306",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 503,
+              "duration_ms": 26.900291442871094,
+              "end": 1791290203.8091118,
+              "message": "downstream request failed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "83111c3782684c0c8e24690446738db1",
+              "start": 1791290203.7822115,
+              "status": 502,
+              "trace_id": "72c24a10f5864096930a1558ab368306"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 16.453981399536133,
+              "end": 1791290203.8079715,
+              "message": "local dependency capacity exhausted",
+              "parent_span_id": "83111c3782684c0c8e24690446738db1",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "efddda820789471faabff5b369f913a0",
+              "start": 1791290203.7915175,
+              "status": 503,
+              "trace_id": "72c24a10f5864096930a1558ab368306"
+            }
+          ]
+        },
+        {
+          "trigger_span": "9223e9621b754cc693b28574cf7bc9b7",
+          "trace_id": "c06f6e9e66c64c199bc9ef1a3be875d9",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 503,
+              "duration_ms": 29.434919357299805,
+              "end": 1791290204.146078,
+              "message": "downstream request failed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "148bcd379e2e4c22ac12e100992d5d8f",
+              "start": 1791290204.1166432,
+              "status": 502,
+              "trace_id": "c06f6e9e66c64c199bc9ef1a3be875d9"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 14.893293380737305,
+              "end": 1791290204.1454756,
+              "message": "local dependency capacity exhausted",
+              "parent_span_id": "148bcd379e2e4c22ac12e100992d5d8f",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "9223e9621b754cc693b28574cf7bc9b7",
+              "start": 1791290204.1305823,
+              "status": 503,
+              "trace_id": "c06f6e9e66c64c199bc9ef1a3be875d9"
+            }
+          ]
+        }
+      ],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    },
+    {
+      "phase": "test_error_frontend",
+      "kind": "error",
+      "target": "frontend",
+      "event_count": 331,
+      "client_count": 151,
+      "planned_observation_seconds": 60.0,
+      "client_requests_per_planned_second": 2.5166666666666666,
+      "window_close_to_decision_p95_ms": 6331.397473812103,
+      "client_statuses": {
+        "200": 90,
+        "503": 61
+      },
+      "client_traces_without_captured_events": 0,
+      "successful_client_traces_with_incomplete_service_chain": 0,
+      "incomplete_success_examples": [],
+      "unique_store_records": 331,
+      "total_store_records": 331,
+      "duplicate_records": 0,
+      "parent_links_verified": 180,
+      "parent_links_missing": 0,
+      "prediction_windows": 20,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "00f68e96-1612-4776-8dac-f6831c121f3d"
+        ],
+        "checkout": [
+          "88af97ee-6799-401c-8bc2-5b5e250abb16"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8"
+        ]
+      },
+      "snapshots_without_service": {},
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 8,
+      "ml_warning_windows": 8,
+      "impact_event_count": 61,
+      "active_client_count": 61,
+      "active_failed_clients": 61,
+      "frontend_transport_failures_during_unavailability": 0,
+      "first_impact_start": 1791290138.463664,
+      "first_impact_completion": 1791290138.4793305,
+      "first_impact_start_minus_command_completion": 0.01629352569580078,
+      "normal_target_latency_median_ms": 37.93048858642578,
+      "impact_target_latency_median_ms": 10.557413101196289,
+      "reviewed_examples": [
+        {
+          "trigger_span": "5a7e8ecb735041deaac719ead9fdf855",
+          "trace_id": "483dfc33e1f34044995a5a6619feb3e4",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 15.666484832763672,
+              "end": 1791290138.4793305,
+              "message": "local dependency capacity exhausted",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "5a7e8ecb735041deaac719ead9fdf855",
+              "start": 1791290138.463664,
+              "status": 503,
+              "trace_id": "483dfc33e1f34044995a5a6619feb3e4"
+            }
+          ]
+        },
+        {
+          "trigger_span": "f3af0d5b4b0d4fd782af143345d6f177",
+          "trace_id": "76d98ef055274ec78c2dd05c3be74b88",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 15.011787414550781,
+              "end": 1791290139.2711458,
+              "message": "local dependency capacity exhausted",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "f3af0d5b4b0d4fd782af143345d6f177",
+              "start": 1791290139.256134,
+              "status": 503,
+              "trace_id": "76d98ef055274ec78c2dd05c3be74b88"
+            }
+          ]
+        },
+        {
+          "trigger_span": "8ab715180fbf492597ae99ac8891e5f4",
+          "trace_id": "f29c638e4bbc430fbd074cc176e58eb7",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 14.768123626708984,
+              "end": 1791290139.627052,
+              "message": "local dependency capacity exhausted",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "8ab715180fbf492597ae99ac8891e5f4",
+              "start": 1791290139.612284,
+              "status": 503,
+              "trace_id": "f29c638e4bbc430fbd074cc176e58eb7"
+            }
+          ]
+        }
+      ],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    },
+    {
+      "phase": "test_error_inventory",
+      "kind": "error",
+      "target": "inventory",
+      "event_count": 468,
+      "client_count": 156,
+      "planned_observation_seconds": 60.0,
+      "client_requests_per_planned_second": 2.6,
+      "window_close_to_decision_p95_ms": 6160.704302787781,
+      "client_statuses": {
+        "200": 94,
+        "502": 62
+      },
+      "client_traces_without_captured_events": 0,
+      "successful_client_traces_with_incomplete_service_chain": 0,
+      "incomplete_success_examples": [],
+      "unique_store_records": 468,
+      "total_store_records": 468,
+      "duplicate_records": 0,
+      "parent_links_verified": 312,
+      "parent_links_missing": 0,
+      "prediction_windows": 20,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "00f68e96-1612-4776-8dac-f6831c121f3d"
+        ],
+        "checkout": [
+          "88af97ee-6799-401c-8bc2-5b5e250abb16"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8"
+        ]
+      },
+      "snapshots_without_service": {},
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 8,
+      "ml_warning_windows": 0,
+      "impact_event_count": 62,
+      "active_client_count": 62,
+      "active_failed_clients": 62,
+      "frontend_transport_failures_during_unavailability": 0,
+      "first_impact_start": 1791290270.5000904,
+      "first_impact_completion": 1791290270.505025,
+      "first_impact_start_minus_command_completion": 0.03491044044494629,
+      "normal_target_latency_median_ms": 11.1161470413208,
+      "impact_target_latency_median_ms": 9.1017484664917,
+      "reviewed_examples": [
+        {
+          "trigger_span": "c83ea759f74f445ab263c493a83ec026",
+          "trace_id": "d98331e507164f4a9b9ab48202262b0f",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 502,
+              "duration_ms": 26.300430297851562,
+              "end": 1791290270.5060244,
+              "message": "downstream request failed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "d4e3d95215d04b3391adb6ac7f5936b8",
+              "start": 1791290270.479724,
+              "status": 502,
+              "trace_id": "d98331e507164f4a9b9ab48202262b0f"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 503,
+              "duration_ms": 18.721818923950195,
+              "end": 1791290270.505588,
+              "message": "downstream request failed",
+              "parent_span_id": "d4e3d95215d04b3391adb6ac7f5936b8",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "58eafd125234471591f23dba0c7f3e88",
+              "start": 1791290270.4868662,
+              "status": 502,
+              "trace_id": "d98331e507164f4a9b9ab48202262b0f"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 4.934549331665039,
+              "end": 1791290270.505025,
+              "message": "local dependency capacity exhausted",
+              "parent_span_id": "58eafd125234471591f23dba0c7f3e88",
+              "schema": "incidentlab-http-v1",
+              "service": "inventory",
+              "span_id": "c83ea759f74f445ab263c493a83ec026",
+              "start": 1791290270.5000904,
+              "status": 503,
+              "trace_id": "d98331e507164f4a9b9ab48202262b0f"
+            }
+          ]
+        },
+        {
+          "trigger_span": "c182517b76f64b7390e67acfdce685c4",
+          "trace_id": "0f9d6a609569436182753a742b3018c0",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 502,
+              "duration_ms": 39.56413269042969,
+              "end": 1791290270.8707001,
+              "message": "downstream request failed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "c9be781d4c6b421eb36f0728824f732e",
+              "start": 1791290270.831136,
+              "status": 502,
+              "trace_id": "0f9d6a609569436182753a742b3018c0"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 503,
+              "duration_ms": 27.167081832885742,
+              "end": 1791290270.86833,
+              "message": "downstream request failed",
+              "parent_span_id": "c9be781d4c6b421eb36f0728824f732e",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "fb761f534be34508b5af1aecf1a9026a",
+              "start": 1791290270.841163,
+              "status": 502,
+              "trace_id": "0f9d6a609569436182753a742b3018c0"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 7.483959197998047,
+              "end": 1791290270.8670244,
+              "message": "local dependency capacity exhausted",
+              "parent_span_id": "fb761f534be34508b5af1aecf1a9026a",
+              "schema": "incidentlab-http-v1",
+              "service": "inventory",
+              "span_id": "c182517b76f64b7390e67acfdce685c4",
+              "start": 1791290270.8595405,
+              "status": 503,
+              "trace_id": "0f9d6a609569436182753a742b3018c0"
+            }
+          ]
+        },
+        {
+          "trigger_span": "06bf4282423a45088a3b9932d28a2ccb",
+          "trace_id": "13a0bd3af4c942369b90fda2f00746c3",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 502,
+              "duration_ms": 38.39516639709473,
+              "end": 1791290271.2126393,
+              "message": "downstream request failed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "809a911707394fb5b77fce569c2365b1",
+              "start": 1791290271.1742442,
+              "status": 502,
+              "trace_id": "13a0bd3af4c942369b90fda2f00746c3"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 503,
+              "duration_ms": 28.164148330688477,
+              "end": 1791290271.211554,
+              "message": "downstream request failed",
+              "parent_span_id": "809a911707394fb5b77fce569c2365b1",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "80f8b67501d4453a9e652a5914ae63fb",
+              "start": 1791290271.18339,
+              "status": 502,
+              "trace_id": "13a0bd3af4c942369b90fda2f00746c3"
+            },
+            {
+              "active_requests": 1,
+              "dependency": null,
+              "dependency_status": null,
+              "duration_ms": 9.905815124511719,
+              "end": 1791290271.210369,
+              "message": "local dependency capacity exhausted",
+              "parent_span_id": "80f8b67501d4453a9e652a5914ae63fb",
+              "schema": "incidentlab-http-v1",
+              "service": "inventory",
+              "span_id": "06bf4282423a45088a3b9932d28a2ccb",
+              "start": 1791290271.2004633,
+              "status": 503,
+              "trace_id": "13a0bd3af4c942369b90fda2f00746c3"
+            }
+          ]
+        }
+      ],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    },
+    {
+      "phase": "test_healthy",
+      "kind": "healthy",
+      "target": null,
+      "event_count": 1404,
+      "client_count": 468,
+      "planned_observation_seconds": 180.0,
+      "client_requests_per_planned_second": 2.6,
+      "window_close_to_decision_p95_ms": 6208.587598800659,
+      "client_statuses": {
+        "200": 468
+      },
+      "client_traces_without_captured_events": 0,
+      "successful_client_traces_with_incomplete_service_chain": 0,
+      "incomplete_success_examples": [],
+      "unique_store_records": 1404,
+      "total_store_records": 1404,
+      "duplicate_records": 0,
+      "parent_links_verified": 936,
+      "parent_links_missing": 0,
+      "prediction_windows": 60,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "00f68e96-1612-4776-8dac-f6831c121f3d"
+        ],
+        "checkout": [
+          "88af97ee-6799-401c-8bc2-5b5e250abb16"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8"
+        ]
+      },
+      "snapshots_without_service": {},
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 0,
+      "ml_warning_windows": 0,
+      "impact_event_count": 0,
+      "active_client_count": 0,
+      "active_failed_clients": 0,
+      "frontend_transport_failures_during_unavailability": 0,
+      "first_impact_start": null,
+      "first_impact_completion": null,
+      "first_impact_start_minus_command_completion": null,
+      "normal_target_latency_median_ms": null,
+      "impact_target_latency_median_ms": null,
+      "reviewed_examples": [],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    },
+    {
+      "phase": "test_surge",
+      "kind": "surge",
+      "target": null,
+      "event_count": 1950,
+      "client_count": 650,
+      "planned_observation_seconds": 180.0,
+      "client_requests_per_planned_second": 3.611111111111111,
+      "window_close_to_decision_p95_ms": 6279.002261161804,
+      "client_statuses": {
+        "200": 650
+      },
+      "client_traces_without_captured_events": 0,
+      "successful_client_traces_with_incomplete_service_chain": 0,
+      "incomplete_success_examples": [],
+      "unique_store_records": 1950,
+      "total_store_records": 1950,
+      "duplicate_records": 0,
+      "parent_links_verified": 1300,
+      "parent_links_missing": 0,
+      "prediction_windows": 60,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "00f68e96-1612-4776-8dac-f6831c121f3d"
+        ],
+        "checkout": [
+          "88af97ee-6799-401c-8bc2-5b5e250abb16"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8"
+        ]
+      },
+      "snapshots_without_service": {},
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 0,
+      "ml_warning_windows": 3,
+      "impact_event_count": 0,
+      "active_client_count": 0,
+      "active_failed_clients": 0,
+      "frontend_transport_failures_during_unavailability": 0,
+      "first_impact_start": null,
+      "first_impact_completion": null,
+      "first_impact_start_minus_command_completion": null,
+      "normal_target_latency_median_ms": null,
+      "impact_target_latency_median_ms": null,
+      "reviewed_examples": [],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    },
+    {
+      "phase": "test_unavailable_checkout",
+      "kind": "unavailable",
+      "target": "checkout",
+      "event_count": 335,
+      "client_count": 154,
+      "planned_observation_seconds": 60.0,
+      "client_requests_per_planned_second": 2.566666666666667,
+      "window_close_to_decision_p95_ms": 6106.6359758377075,
+      "client_statuses": {
+        "200": 94,
+        "502": 60
+      },
+      "client_traces_without_captured_events": 0,
+      "successful_client_traces_with_incomplete_service_chain": 7,
+      "incomplete_success_examples": [
+        {
+          "trace_id": "90df31d52d2a4f34aa5cb9abbcd0b665",
+          "missing_services": [
+            "checkout"
+          ],
+          "client_start": 1791290399.9080822,
+          "client_end": 1791290399.9495926
+        },
+        {
+          "trace_id": "c2a67818ab394de190fd245a4229df89",
+          "missing_services": [
+            "checkout"
+          ],
+          "client_start": 1791290400.350842,
+          "client_end": 1791290400.4007852
+        },
+        {
+          "trace_id": "bb54aee5a7cd455f84522373532c1665",
+          "missing_services": [
+            "checkout"
+          ],
+          "client_start": 1791290400.694112,
+          "client_end": 1791290400.7443
+        },
+        {
+          "trace_id": "7ffb819d72de4c4484eb18a3b4710877",
+          "missing_services": [
+            "checkout"
+          ],
+          "client_start": 1791290401.036725,
+          "client_end": 1791290401.1044292
+        },
+        {
+          "trace_id": "77f3a7ad09dc4b68982c842dd8335ac7",
+          "missing_services": [
+            "checkout"
+          ],
+          "client_start": 1791290401.372591,
+          "client_end": 1791290401.4219694
+        },
+        {
+          "trace_id": "e46266c12d1b420eafff2b8bd6799d76",
+          "missing_services": [
+            "checkout"
+          ],
+          "client_start": 1791290401.715991,
+          "client_end": 1791290401.7902699
+        },
+        {
+          "trace_id": "0ee52f157b364f318b59bf380cc7f81f",
+          "missing_services": [
+            "checkout"
+          ],
+          "client_start": 1791290402.0517938,
+          "client_end": 1791290402.1045825
+        }
+      ],
+      "unique_store_records": 335,
+      "total_store_records": 335,
+      "duplicate_records": 0,
+      "parent_links_verified": 174,
+      "parent_links_missing": 7,
+      "prediction_windows": 20,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "b653b757-0bf8-4bf9-be0f-9fd7a8532cee"
+        ],
+        "checkout": [
+          "7be4f3df-3087-4d3b-8c4b-054b75615636",
+          "88af97ee-6799-401c-8bc2-5b5e250abb16"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8"
+        ]
+      },
+      "snapshots_without_service": {
+        "checkout": 7
+      },
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 9,
+      "ml_warning_windows": 1,
+      "impact_event_count": 59,
+      "active_client_count": 65,
+      "active_failed_clients": 59,
+      "frontend_transport_failures_during_unavailability": 0,
+      "first_impact_start": 1791290402.398902,
+      "first_impact_completion": 1791290402.4121253,
+      "first_impact_start_minus_command_completion": 2.0602872371673584,
+      "normal_target_latency_median_ms": 24.570226669311523,
+      "impact_target_latency_median_ms": 1006.3295364379883,
+      "reviewed_examples": [
+        {
+          "trigger_span": "6121f7746cab426393ab667476398c30",
+          "trace_id": "37ae8bcbf9944af0ae995742f03bef8c",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 0,
+              "duration_ms": 13.223409652709961,
+              "end": 1791290402.4121253,
+              "message": "downstream request failed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "6121f7746cab426393ab667476398c30",
+              "start": 1791290402.398902,
+              "status": 502,
+              "trace_id": "37ae8bcbf9944af0ae995742f03bef8c"
+            }
+          ]
+        },
+        {
+          "trigger_span": "65c70c5a824c4df9822376869212b526",
+          "trace_id": "8173e4971b724c1eb3f994b33dfde29f",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 0,
+              "duration_ms": 13.473272323608398,
+              "end": 1791290402.7565618,
+              "message": "downstream request failed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "65c70c5a824c4df9822376869212b526",
+              "start": 1791290402.7430885,
+              "status": 502,
+              "trace_id": "8173e4971b724c1eb3f994b33dfde29f"
+            }
+          ]
+        },
+        {
+          "trigger_span": "fffc918cdc7144dda52955e5775c2658",
+          "trace_id": "8d44ee71616442e2928f3327de7709af",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 0,
+              "duration_ms": 8.077621459960938,
+              "end": 1791290403.3242476,
+              "message": "downstream request failed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "fffc918cdc7144dda52955e5775c2658",
+              "start": 1791290403.31617,
+              "status": 502,
+              "trace_id": "8d44ee71616442e2928f3327de7709af"
+            }
+          ]
+        }
+      ],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    },
+    {
+      "phase": "test_unavailable_frontend",
+      "kind": "unavailable",
+      "target": "frontend",
+      "event_count": 278,
+      "client_count": 154,
+      "planned_observation_seconds": 60.0,
+      "client_requests_per_planned_second": 2.566666666666667,
+      "window_close_to_decision_p95_ms": 6120.642721652985,
+      "client_statuses": {
+        "200": 95,
+        "0": 59
+      },
+      "client_traces_without_captured_events": 59,
+      "successful_client_traces_with_incomplete_service_chain": 7,
+      "incomplete_success_examples": [
+        {
+          "trace_id": "b4a3dfef09e044aa945a394937da90d4",
+          "missing_services": [
+            "frontend"
+          ],
+          "client_start": 1791290333.5730703,
+          "client_end": 1791290333.6333678
+        },
+        {
+          "trace_id": "ada5b8dc53df414fa5a23cd879c4d4d8",
+          "missing_services": [
+            "frontend"
+          ],
+          "client_start": 1791290334.12672,
+          "client_end": 1791290334.1617773
+        },
+        {
+          "trace_id": "91917309f43e412fb87380209336f8c3",
+          "missing_services": [
+            "frontend"
+          ],
+          "client_start": 1791290334.4603636,
+          "client_end": 1791290334.51706
+        },
+        {
+          "trace_id": "81683f9aaba1459b961cc0eb5d90b8ec",
+          "missing_services": [
+            "frontend"
+          ],
+          "client_start": 1791290334.803873,
+          "client_end": 1791290334.855101
+        },
+        {
+          "trace_id": "46f45ea97f684d028b7638714878b575",
+          "missing_services": [
+            "frontend"
+          ],
+          "client_start": 1791290335.1468153,
+          "client_end": 1791290335.1936653
+        },
+        {
+          "trace_id": "8753c9929dc84a71849f4fe048c85a45",
+          "missing_services": [
+            "frontend"
+          ],
+          "client_start": 1791290335.48957,
+          "client_end": 1791290335.5401278
+        },
+        {
+          "trace_id": "90121f85f53449a0af611853426ce80c",
+          "missing_services": [
+            "frontend"
+          ],
+          "client_start": 1791290335.8241124,
+          "client_end": 1791290335.888194
+        }
+      ],
+      "unique_store_records": 278,
+      "total_store_records": 278,
+      "duplicate_records": 0,
+      "parent_links_verified": 183,
+      "parent_links_missing": 7,
+      "prediction_windows": 20,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "00f68e96-1612-4776-8dac-f6831c121f3d",
+          "b653b757-0bf8-4bf9-be0f-9fd7a8532cee"
+        ],
+        "checkout": [
+          "88af97ee-6799-401c-8bc2-5b5e250abb16"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8"
+        ]
+      },
+      "snapshots_without_service": {
+        "frontend": 7
+      },
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 8,
+      "ml_warning_windows": 0,
+      "impact_event_count": 0,
+      "active_client_count": 65,
+      "active_failed_clients": 59,
+      "frontend_transport_failures_during_unavailability": 59,
+      "first_impact_start": null,
+      "first_impact_completion": null,
+      "first_impact_start_minus_command_completion": null,
+      "normal_target_latency_median_ms": 37.258028984069824,
+      "impact_target_latency_median_ms": null,
+      "reviewed_examples": [],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    },
+    {
+      "phase": "test_unavailable_inventory",
+      "kind": "unavailable",
+      "target": "inventory",
+      "event_count": 364,
+      "client_count": 143,
+      "planned_observation_seconds": 60.0,
+      "client_requests_per_planned_second": 2.3833333333333333,
+      "window_close_to_decision_p95_ms": 6596.168422698976,
+      "client_statuses": {
+        "200": 85,
+        "502": 58
+      },
+      "client_traces_without_captured_events": 0,
+      "successful_client_traces_with_incomplete_service_chain": 7,
+      "incomplete_success_examples": [
+        {
+          "trace_id": "fba0b92fd7794b7488a9cc6c3150fffb",
+          "missing_services": [
+            "inventory"
+          ],
+          "client_start": 1791290466.0760767,
+          "client_end": 1791290466.1157029
+        },
+        {
+          "trace_id": "f70753889a8b48d5b464818aefdf9e12",
+          "missing_services": [
+            "inventory"
+          ],
+          "client_start": 1791290466.4892101,
+          "client_end": 1791290466.5472112
+        },
+        {
+          "trace_id": "8c2401d200694d7c82b94ae1d98eb3e9",
+          "missing_services": [
+            "inventory"
+          ],
+          "client_start": 1791290466.825117,
+          "client_end": 1791290466.8643217
+        },
+        {
+          "trace_id": "0d8092c902d14fce9a5dd9befd5ed857",
+          "missing_services": [
+            "inventory"
+          ],
+          "client_start": 1791290467.1689186,
+          "client_end": 1791290467.2211795
+        },
+        {
+          "trace_id": "0da2979e86e84ea4bf418f0c1a60e07d",
+          "missing_services": [
+            "inventory"
+          ],
+          "client_start": 1791290467.5046165,
+          "client_end": 1791290467.5453064
+        },
+        {
+          "trace_id": "de7c6d63dd454b6bb9c28f2e6d4e3bb4",
+          "missing_services": [
+            "inventory"
+          ],
+          "client_start": 1791290467.841166,
+          "client_end": 1791290467.8979785
+        },
+        {
+          "trace_id": "08b11a0a500743f299bf95490c872bf2",
+          "missing_services": [
+            "inventory"
+          ],
+          "client_start": 1791290468.1831934,
+          "client_end": 1791290468.2395406
+        }
+      ],
+      "unique_store_records": 364,
+      "total_store_records": 364,
+      "duplicate_records": 0,
+      "parent_links_verified": 221,
+      "parent_links_missing": 0,
+      "prediction_windows": 20,
+      "arrival_cutoff_feature_mismatches": 0,
+      "score_decision_replay_mismatches": 0,
+      "maximum_replayed_ml_score_difference": 0.0,
+      "events_arriving_after_their_window_decision": 0,
+      "observed_pod_uids": {
+        "frontend": [
+          "b653b757-0bf8-4bf9-be0f-9fd7a8532cee"
+        ],
+        "checkout": [
+          "7be4f3df-3087-4d3b-8c4b-054b75615636"
+        ],
+        "inventory": [
+          "96df34d6-0a52-42ff-8bb6-2ba69d692fe8",
+          "cd6a8002-062c-4f82-a377-dd0e9c27019c"
+        ]
+      },
+      "snapshots_without_service": {
+        "inventory": 7
+      },
+      "maximum_observed_restart_counts": {
+        "frontend": 0,
+        "checkout": 0,
+        "inventory": 0
+      },
+      "cleanup": {
+        "status": "restored",
+        "owned_fault_active": false
+      },
+      "dropped_workload_requests": 0,
+      "operational_warning_windows": 10,
+      "ml_warning_windows": 3,
+      "impact_event_count": 58,
+      "active_client_count": 64,
+      "active_failed_clients": 58,
+      "frontend_transport_failures_during_unavailability": 0,
+      "first_impact_start": 1791290468.5489008,
+      "first_impact_completion": 1791290468.5587425,
+      "first_impact_start_minus_command_completion": 2.07141375541687,
+      "normal_target_latency_median_ms": 10.370254516601562,
+      "impact_target_latency_median_ms": 1006.0794353485107,
+      "reviewed_examples": [
+        {
+          "trigger_span": "a215bd132301471ebffcb15634aca7dd",
+          "trace_id": "c9ccaa9e1de546d9820922f3c85f4c82",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 502,
+              "duration_ms": 27.257442474365234,
+              "end": 1791290468.5592818,
+              "message": "downstream request failed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "cf61e07bcc884d558a7085c3acbce07c",
+              "start": 1791290468.5320244,
+              "status": 502,
+              "trace_id": "c9ccaa9e1de546d9820922f3c85f4c82"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 0,
+              "duration_ms": 9.841680526733398,
+              "end": 1791290468.5587425,
+              "message": "downstream request failed",
+              "parent_span_id": "cf61e07bcc884d558a7085c3acbce07c",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "a215bd132301471ebffcb15634aca7dd",
+              "start": 1791290468.5489008,
+              "status": 502,
+              "trace_id": "c9ccaa9e1de546d9820922f3c85f4c82"
+            }
+          ]
+        },
+        {
+          "trigger_span": "4a049bae2dcd4253b5de4885ae5c6df2",
+          "trace_id": "7d1f882dfe6a4d3d938619f28b25752c",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 502,
+              "duration_ms": 27.80604362487793,
+              "end": 1791290468.9235904,
+              "message": "downstream request failed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "c6b28cda585049c5bc2fa7fa57a71713",
+              "start": 1791290468.8957844,
+              "status": 502,
+              "trace_id": "7d1f882dfe6a4d3d938619f28b25752c"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 0,
+              "duration_ms": 14.406681060791016,
+              "end": 1791290468.9223263,
+              "message": "downstream request failed",
+              "parent_span_id": "c6b28cda585049c5bc2fa7fa57a71713",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "4a049bae2dcd4253b5de4885ae5c6df2",
+              "start": 1791290468.9079196,
+              "status": 502,
+              "trace_id": "7d1f882dfe6a4d3d938619f28b25752c"
+            }
+          ]
+        },
+        {
+          "trigger_span": "dc66430b5c874a0fb7e059da6a76423d",
+          "trace_id": "e4f331f2300a4c0aa1a3a0d987b17ad5",
+          "linked_events": [
+            {
+              "active_requests": 1,
+              "dependency": "checkout",
+              "dependency_status": 502,
+              "duration_ms": 19.647836685180664,
+              "end": 1791290469.5508866,
+              "message": "downstream request failed",
+              "parent_span_id": null,
+              "schema": "incidentlab-http-v1",
+              "service": "frontend",
+              "span_id": "5d7622d4efcb4576a8024220d4bb5516",
+              "start": 1791290469.5312388,
+              "status": 502,
+              "trace_id": "e4f331f2300a4c0aa1a3a0d987b17ad5"
+            },
+            {
+              "active_requests": 1,
+              "dependency": "inventory",
+              "dependency_status": 0,
+              "duration_ms": 12.309789657592773,
+              "end": 1791290469.5503006,
+              "message": "downstream request failed",
+              "parent_span_id": "5d7622d4efcb4576a8024220d4bb5516",
+              "schema": "incidentlab-http-v1",
+              "service": "checkout",
+              "span_id": "dc66430b5c874a0fb7e059da6a76423d",
+              "start": 1791290469.5379908,
+              "status": 502,
+              "trace_id": "e4f331f2300a4c0aa1a3a0d987b17ad5"
+            }
+          ]
+        }
+      ],
+      "interpretation": "Trace inspection alongside control-command proxies; delay >=200ms is an inspection filter for the configured 250ms injection, not a tuned detector"
+    }
+  ],
+  "model_review": {
+    "frontend": {
+      "training_feature_min": [
+        32.05680847167969,
+        0.0,
+        0.6666666666666666,
+        1.0
+      ],
+      "training_feature_max": [
+        54.57305908203125,
+        0.0,
+        5.666666666666667,
+        1.0
+      ],
+      "feature_names": [
+        "p95_latency_ms",
+        "error_fraction",
+        "requests_per_second",
+        "max_active_requests"
+      ],
+      "split_counts_by_feature": {
+        "requests_per_second": 1402,
+        "p95_latency_ms": 2656
+      },
+      "ml_threshold": 0.6261870906944784,
+      "latency_limit_ms": 116.05353355407709,
+      "error_fraction_limit": 0.05
+    },
+    "checkout": {
+      "training_feature_min": [
+        19.885826110839844,
+        0.0,
+        0.6666666666666666,
+        1.0
+      ],
+      "training_feature_max": [
+        34.5349907875061,
+        0.0,
+        5.666666666666667,
+        1.0
+      ],
+      "feature_names": [
+        "p95_latency_ms",
+        "error_fraction",
+        "requests_per_second",
+        "max_active_requests"
+      ],
+      "split_counts_by_feature": {
+        "requests_per_second": 1418,
+        "p95_latency_ms": 2631
+      },
+      "ml_threshold": 0.6147080038501037,
+      "latency_limit_ms": 77.5438725948333,
+      "error_fraction_limit": 0.05
+    },
+    "inventory": {
+      "training_feature_min": [
+        8.48701000213623,
+        0.0,
+        0.6666666666666666,
+        1.0
+      ],
+      "training_feature_max": [
+        16.243386268615723,
+        0.0,
+        5.666666666666667,
+        1.0
+      ],
+      "feature_names": [
+        "p95_latency_ms",
+        "error_fraction",
+        "requests_per_second",
+        "max_active_requests"
+      ],
+      "split_counts_by_feature": {
+        "requests_per_second": 1380,
+        "p95_latency_ms": 2721
+      },
+      "ml_threshold": 0.6738105335778745,
+      "latency_limit_ms": 50.0,
+      "error_fraction_limit": 0.05
+    }
+  },
+  "checkpoint_sha256": "9629e93d01a422fd5beef264d3a459341631669cbf6c9ec7ba8ad96e45b91c61",
+  "stored_checkpoint_digest_matches_report": true,
+  "boundary": "Window-level operational/ML flags are reviewed separately; the cluster runner does not implement grouped incident counts. Missing spans during pod deletion cannot be reconstructed."
+}

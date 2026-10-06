@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "device": "cpu",
+  "source": "Extracted handoff, new actual localhost HTTP requests",
+  "windows": 20,
+  "dropped_workload_requests": 0,
+  "last_collector": {
+    "records_read": 1104,
+    "late_records": 51,
+    "pending_records": 0,
+    "partial_record_bytes": 0,
+    "policy": "Completed newline-framed events, incremental offsets, explicit late/capacity accounting"
+  },
+  "final_operational_alert": false,
+  "final_ml_alert": false,
+  "opened_incidents": 0,
+  "training_performed": false,
+  "docker_kubernetes_executed": false
+}

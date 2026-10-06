@@ -1,0 +1,21 @@
+{
+  "kind": "unavailable",
+  "target": "inventory",
+  "started": 1791228236.8724127,
+  "ended": 1791228326.8724127,
+  "onset": 1791228263.8764675,
+  "recovery": 1791228300.316424,
+  "actions": [
+    {
+      "timestamp": 1791228263.8764675,
+      "action": "unavailable",
+      "target": "inventory"
+    },
+    {
+      "timestamp": 1791228300.316424,
+      "action": "recover",
+      "target": "inventory"
+    }
+  ],
+  "dropped_workload_requests": 0
+}

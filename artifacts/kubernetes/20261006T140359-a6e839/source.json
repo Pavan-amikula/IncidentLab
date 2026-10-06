@@ -1,0 +1,13 @@
+{
+  "context": "kind-incidentlab",
+  "namespace": "incidentlab-testbed",
+  "quick": true,
+  "code_sha256": {
+    "kubernetes_experiment.py": "3e6f79ecfc89f257fa5f37aab65b414629756efb8809494a7514d69ab424ca57",
+    "kubernetes_telemetry.py": "a51cd465b08d7774c299b633d9f8b9882a05c4327fd4819aa7b4bd06e71743f2",
+    "native_service.py": "fa5ecfb65f272d8484045c7cef441c18c00f1b1ec8ef8d5e3b07df63300cb57c",
+    "live_monitor.py": "1b1cf91e92129b7e3301cf685f5651d5748fb4ef7f7837785fb2eef9f83aeb73",
+    "raw_telemetry.py": "a3b8669e06e794eee8cf69c0d8a844439c4a20e6b07132d414d1a5caae74f9be"
+  },
+  "intended_purpose": "Fresh low-resource kind CPU calibration and controlled fault evaluation; not production"
+}

@@ -1,0 +1,300 @@
+# Rendered staging assets; not deployed/cluster-validated.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: incidentlab-testbed
+  labels:
+    app.kubernetes.io/part-of: incidentlab-testbed
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  namespace: incidentlab-testbed
+  labels: &id001
+    app.kubernetes.io/name: frontend
+    app.kubernetes.io/part-of: incidentlab-testbed
+spec:
+  replicas: 1
+  selector:
+    matchLabels: *id001
+  template:
+    metadata:
+      labels: *id001
+    spec:
+      automountServiceAccountToken: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+      - name: frontend
+        image: incidentlab-testbed:dev
+        imagePullPolicy: IfNotPresent
+        command:
+        - python
+        args:
+        - -m
+        - incidentlab.native_service
+        - --service
+        - frontend
+        - --port
+        - '8891'
+        - --directory
+        - /telemetry
+        - --bind
+        - 0.0.0.0
+        - --stdout-events
+        - --downstream
+        - checkout:8892
+        - --downstream-host
+        - checkout
+        ports:
+        - containerPort: 8891
+          name: http
+        readinessProbe:
+          httpGet: &id002
+            path: /health
+            port: 8891
+          periodSeconds: 5
+          timeoutSeconds: 2
+          failureThreshold: 3
+        livenessProbe:
+          httpGet: *id002
+          periodSeconds: 5
+          timeoutSeconds: 2
+          failureThreshold: 3
+          initialDelaySeconds: 5
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop:
+            - ALL
+        resources:
+          requests:
+            cpu: 100m
+            memory: 64Mi
+          limits:
+            cpu: 500m
+            memory: 128Mi
+        volumeMounts:
+        - name: telemetry
+          mountPath: /telemetry
+      volumes:
+      - name: telemetry
+        emptyDir:
+          sizeLimit: 128Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+  namespace: incidentlab-testbed
+  labels: &id001
+    app.kubernetes.io/name: frontend
+    app.kubernetes.io/part-of: incidentlab-testbed
+spec:
+  type: ClusterIP
+  selector: *id001
+  ports:
+  - port: 8891
+    targetPort: http
+    name: http
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: checkout
+  namespace: incidentlab-testbed
+  labels: &id001
+    app.kubernetes.io/name: checkout
+    app.kubernetes.io/part-of: incidentlab-testbed
+spec:
+  replicas: 1
+  selector:
+    matchLabels: *id001
+  template:
+    metadata:
+      labels: *id001
+    spec:
+      automountServiceAccountToken: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+      - name: checkout
+        image: incidentlab-testbed:dev
+        imagePullPolicy: IfNotPresent
+        command:
+        - python
+        args:
+        - -m
+        - incidentlab.native_service
+        - --service
+        - checkout
+        - --port
+        - '8892'
+        - --directory
+        - /telemetry
+        - --bind
+        - 0.0.0.0
+        - --stdout-events
+        - --downstream
+        - inventory:8893
+        - --downstream-host
+        - inventory
+        ports:
+        - containerPort: 8892
+          name: http
+        readinessProbe:
+          httpGet: &id002
+            path: /health
+            port: 8892
+          periodSeconds: 5
+          timeoutSeconds: 2
+          failureThreshold: 3
+        livenessProbe:
+          httpGet: *id002
+          periodSeconds: 5
+          timeoutSeconds: 2
+          failureThreshold: 3
+          initialDelaySeconds: 5
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop:
+            - ALL
+        resources:
+          requests:
+            cpu: 100m
+            memory: 64Mi
+          limits:
+            cpu: 500m
+            memory: 128Mi
+        volumeMounts:
+        - name: telemetry
+          mountPath: /telemetry
+      volumes:
+      - name: telemetry
+        emptyDir:
+          sizeLimit: 128Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: checkout
+  namespace: incidentlab-testbed
+  labels: &id001
+    app.kubernetes.io/name: checkout
+    app.kubernetes.io/part-of: incidentlab-testbed
+spec:
+  type: ClusterIP
+  selector: *id001
+  ports:
+  - port: 8892
+    targetPort: http
+    name: http
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inventory
+  namespace: incidentlab-testbed
+  labels: &id001
+    app.kubernetes.io/name: inventory
+    app.kubernetes.io/part-of: incidentlab-testbed
+spec:
+  replicas: 1
+  selector:
+    matchLabels: *id001
+  template:
+    metadata:
+      labels: *id001
+    spec:
+      automountServiceAccountToken: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+      - name: inventory
+        image: incidentlab-testbed:dev
+        imagePullPolicy: IfNotPresent
+        command:
+        - python
+        args:
+        - -m
+        - incidentlab.native_service
+        - --service
+        - inventory
+        - --port
+        - '8893'
+        - --directory
+        - /telemetry
+        - --bind
+        - 0.0.0.0
+        - --stdout-events
+        ports:
+        - containerPort: 8893
+          name: http
+        readinessProbe:
+          httpGet: &id002
+            path: /health
+            port: 8893
+          periodSeconds: 5
+          timeoutSeconds: 2
+          failureThreshold: 3
+        livenessProbe:
+          httpGet: *id002
+          periodSeconds: 5
+          timeoutSeconds: 2
+          failureThreshold: 3
+          initialDelaySeconds: 5
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop:
+            - ALL
+        resources:
+          requests:
+            cpu: 100m
+            memory: 64Mi
+          limits:
+            cpu: 500m
+            memory: 128Mi
+        volumeMounts:
+        - name: telemetry
+          mountPath: /telemetry
+      volumes:
+      - name: telemetry
+        emptyDir:
+          sizeLimit: 128Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: inventory
+  namespace: incidentlab-testbed
+  labels: &id001
+    app.kubernetes.io/name: inventory
+    app.kubernetes.io/part-of: incidentlab-testbed
+spec:
+  type: ClusterIP
+  selector: *id001
+  ports:
+  - port: 8893
+    targetPort: http
+    name: http

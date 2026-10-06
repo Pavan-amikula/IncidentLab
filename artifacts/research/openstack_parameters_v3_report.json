@@ -1,0 +1,90 @@
+{
+  "scope": "Development revision restoring numeric lifecycle durations after inspecting V1/V2 failures",
+  "feature_schema": "openstack-lifecycle-parameters-v1",
+  "source_sha256": {
+    "openstack_normal1.log": "4e4d47347bdae198056bb3b0a8a755e1cb0100d6c6a30bbd4058684234769199",
+    "openstack_normal2.log": "3c51741dcea1fb0731d1f86588b12587707e7abea01e725ee16c9441b8b68db7",
+    "openstack_abnormal.log": "7ab718fbb2f2b804893955cecf37ad9533cfa0efaf5b03009474d5bb019b6af4"
+  },
+  "audits": {
+    "openstack_normal1.log": {
+      "physical_lines": 52312,
+      "unassigned_instance_events": 38446,
+      "explicit_instance_events": 13865,
+      "measured_duration_events": 2224,
+      "unparsed_or_continuation_lines": 1,
+      "sessions": 557,
+      "sessions_with_all_four_parameters": 556
+    },
+    "openstack_normal2.log": {
+      "physical_lines": 137074,
+      "explicit_instance_events": 32784,
+      "measured_duration_events": 5251,
+      "unassigned_instance_events": 104283,
+      "unparsed_or_continuation_lines": 7,
+      "sessions": 1315,
+      "sessions_with_all_four_parameters": 1312
+    },
+    "openstack_abnormal.log": {
+      "physical_lines": 18434,
+      "unassigned_instance_events": 13530,
+      "explicit_instance_events": 4904,
+      "measured_duration_events": 786,
+      "sessions": 198,
+      "sessions_with_all_four_parameters": 196
+    }
+  },
+  "train_sessions": 557,
+  "validation_sessions": 680,
+  "healthy_normal2_test_sessions": 634,
+  "abnormal_test_sessions": 198,
+  "annotated_positive_sessions": 4,
+  "results": {
+    "parameter_residual": {
+      "precision": 0.2222222222222222,
+      "recall": 1.0,
+      "f1": 0.36363636363636365,
+      "threshold": 12.21000000000006,
+      "alerted_sessions": 18,
+      "annotated_positive_hits": 4,
+      "average_precision_eligible": 0.6,
+      "abstained_sessions": 2,
+      "abstained_annotated_sessions": 0,
+      "false_alerted_normal2_sessions": 13
+    },
+    "parameter_isolation_forest": {
+      "precision": 0.25,
+      "recall": 0.5,
+      "f1": 0.3333333333333333,
+      "threshold": 0.6269796666892885,
+      "alerted_sessions": 8,
+      "annotated_positive_hits": 2,
+      "average_precision_eligible": 0.29775641025641025,
+      "abstained_sessions": 0,
+      "abstained_annotated_sessions": 0,
+      "false_alerted_normal2_sessions": 5
+    }
+  },
+  "checkpoint_sha256": "0ccce48c38482de2e231bbff0a157055af6739a6f289d45934e1cf9bbcdd6b96",
+  "center_seconds": {
+    "spawn the instance on the hypervisor": 19.73,
+    "build instance": 20.545,
+    "destroy the instance on the hypervisor": 1.02,
+    "deallocate network for instance": 0.47
+  },
+  "scale_seconds": {
+    "spawn the instance on the hypervisor": 0.4200000000000017,
+    "build instance": 0.41499999999999915,
+    "destroy the instance on the hypervisor": 0.010000000000000009,
+    "deallocate network for instance": 0.019999999999999962
+  },
+  "seconds": 0.48521690000779927,
+  "limitations": [
+    "Four previously inspected annotated sessions; this is development evidence, not a fresh final test",
+    "No label-derived thresholds: all feature normalization/training uses normal1 and calibration uses healthy normal2 only",
+    "Native logs and timings are not Kubernetes operational validation",
+    "Reported parameters appear at completion; do not infer early detection or fault onset from a session label",
+    "Missing parameters remain explicit; incomplete sessions may be censored by capture boundaries",
+    "Instance association still uses explicit IDs; no guessed cross-request association"
+  ]
+}

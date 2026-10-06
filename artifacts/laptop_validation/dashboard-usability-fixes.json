@@ -1,0 +1,14 @@
+{
+  "custom_black_tooltip_removed": true,
+  "single_native_tooltip": true,
+  "dropdown_checks": [
+    "healthy/delay choice updates explanation",
+    "saved demo changes displayed history",
+    "cluster phase auto-loads",
+    "cluster window changes evidence",
+    "research model auto-loads after case availability"
+  ],
+  "javascript_syntax": "passed",
+  "research_replay_checked": "baseline archive 1/65 loaded",
+  "boundary": "UI fixes; research artifacts and model thresholds unchanged"
+}

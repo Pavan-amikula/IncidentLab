@@ -1,0 +1,30 @@
+{
+  "format": "incidentlab-laptop-source-amendments-v1",
+  "reason": "Measured HTTP framing fix and authorized guided dashboard/source changes; research evidence and immutable handoff manifest retained.",
+  "files": {
+    "incidentlab/native_service.py": {
+      "original_sha256": "fa5ecfb65f272d8484045c7cef441c18c00f1b1ec8ef8d5e3b07df63300cb57c",
+      "sha256": "d78a431f0573d2992cae2532084a74d5bc0bd425b42984c596941aad6d48af7b"
+    },
+    "incidentlab/research_server.py": {
+      "original_sha256": "1af760fde1ad9780498e6177236f575c8586bb9f53694f37ec201770ff463676",
+      "sha256": "dc0cca8545440a519d17ed886d35dd73297ddaa41bf08d9bb58bf2d1878f9b1e"
+    },
+    "scripts/verify_laptop.py": {
+      "original_sha256": "a7fcb8b5c8faf587f3e19e1ca01b751faee7d32c27867f833d0034d82e7e74d3",
+      "sha256": "badc5648328be61d7eb4f2e3438f09363022c35690a98fbef4abcb0cd13b25cf"
+    },
+    "Setup-Laptop.ps1": {
+      "original_sha256": "597ec0cc327fc7f4ee10f8ce7379fe57344c61a21df738a72bae720d17da9b1b",
+      "sha256": "3f6a07022d7c07306c5a7790a5fa4fffa1e56f9f7c1ea4dcdb0f1d66571e35d7"
+    },
+    "web/live.html": {
+      "original_sha256": "5994a96c562525b338b125123fb6930e48db4095d48ea35b534466da3617be73",
+      "sha256": "490e3ea011eaa24bad0383bfd3fd73cfd3e63c96ed4d39467a3ac24d6576c808"
+    },
+    "web/research.html": {
+      "original_sha256": "4eca58c78d3cec0cf299a9700275c370b659a81053945341e60fd4a68528c145",
+      "sha256": "12afb8807417f640632e789ddb5090c9a495d0bbfb47e2f1382425c49c92ead5"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "OpenStack": {
+    "total_log_lines": 207820
+  },
+  "AnoMod": {
+    "file_count": 38349,
+    "expanded_bytes": 3076340723,
+    "extensions": {
+      "": 4,
+      ".DS_Store": 4,
+      ".json": 91,
+      ".exec": 1066,
+      ".csv": 234,
+      ".txt": 699,
+      ".xml": 673,
+      ".log": 846,
+      ".jsonl": 26,
+      ".html": 20747,
+      ".gif": 8528,
+      ".js": 1066,
+      ".css": 1206,
+      ".gcov": 2179,
+      ".info": 140,
+      ".png": 840
+    },
+    "missing_extracted_files": []
+  },
+  "RCAEval": {
+    "available_parquet_files": 1335,
+    "acquisition_complete": true,
+    "case_index": {
+      "rows": 735,
+      "columns": [
+        "case",
+        "dataset",
+        "suite",
+        "system",
+        "system_name",
+        "root_cause_service",
+        "fault",
+        "fault_description",
+        "repetition",
+        "inject_time",
+        "n_metrics",
+        "n_timesteps",
+        "time_start",
+        "time_end",
+        "duration_minutes",
+        "normal_timesteps",
+        "faulty_timesteps",
+        "has_logs",
+        "n_logs",
+        "has_traces",
+        "n_traces",
+        "has_root_cause_file"
+      ],
+      "example": [
+        {
+          "case": "re1ob_adservice_cpu_1",
+          "dataset": "RE1-OB",
+          "suite": "RE1",
+          "system": "ob",
+          "system_name": "Online Boutique",
+          "root_cause_service": "adservice",
+          "fault": "cpu",
+          "fault_description": "CPU stress",
+          "repetition": 1,
+          "inject_time": 1685202688,
+          "n_metrics": 49,
+          "n_timesteps": 4201,
+          "time_start": 1685200588,
+          "time_end": 1685204788,
+          "duration_minutes": 70.0,
+          "normal_timesteps": 2100,
+          "faulty_timesteps": 2101,
+          "has_logs": false,
+          "n_logs": 0,
+          "has_traces": false,
+          "n_traces": 0,
+          "has_root_cause_file": false
+        }
+      ]
+    },
+    "index_declared_suite_totals": {
+      "RE1": {
+        "cases": 375,
+        "logs": 0,
+        "traces": 0,
+        "missing_logs": 375,
+        "missing_traces": 375
+      },
+      "RE2": {
+        "cases": 270,
+        "logs": 43631464,
+        "traces": 101806286,
+        "missing_logs": 1,
+        "missing_traces": 90
+      },
+      "RE3": {
+        "cases": 90,
+        "logs": 6021307,
+        "traces": 8907766,
+        "missing_logs": 0,
+        "missing_traces": 30
+      }
+    },
+    "index_consistency": {
+      "missing_expected_files": [],
+      "row_count_mismatches": []
+    }
+  }
+}

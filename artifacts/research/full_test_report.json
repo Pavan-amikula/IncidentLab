@@ -1,0 +1,54 @@
+{
+  "overall": {
+    "windows": 2535,
+    "precision": 0.9719775820656525,
+    "recall": 0.7425076452599388,
+    "f1": 0.841886269070735,
+    "pr_auc": 0.962938625414425,
+    "false_alert_windows_per_healthy_hour": 2.3333333333333335
+  },
+  "by_system": {
+    "ob": {
+      "windows": 1153,
+      "precision": 0.9904153354632588,
+      "recall": 0.8869814020028612,
+      "f1": 0.9358490566037736,
+      "pr_auc": 0.9948641147831162,
+      "false_alert_windows_per_healthy_hour": 0.7929515418502203
+    },
+    "ss": {
+      "windows": 631,
+      "precision": 0.9917355371900827,
+      "recall": 0.821917808219178,
+      "f1": 0.898876404494382,
+      "pr_auc": 0.9905171509257014,
+      "false_alert_windows_per_healthy_hour": 0.9326424870466321
+    },
+    "tt": {
+      "windows": 751,
+      "precision": 0.9,
+      "recall": 0.46987951807228917,
+      "f1": 0.6174142480211082,
+      "pr_auc": 0.9173694661451073,
+      "false_alert_windows_per_healthy_hour": 6.16600790513834
+    }
+  },
+  "test_cases": 147,
+  "incident_recall": 0.8639455782312925,
+  "ranking_at_first_alert": {
+    "top1": 0.7346938775510204,
+    "top3": 0.8367346938775511,
+    "top5": 0.8571428571428571
+  },
+  "prior_only": {
+    "top1": 0.19047619047619047,
+    "top3": 0.5306122448979592,
+    "top5": 0.891156462585034
+  },
+  "limitations": [
+    "controlled benchmark, not production validation",
+    "ranking is statistical evidence, not causal proof",
+    "false-alert rate is per window, not deduplicated incidents",
+    "initial healthy warm-up assumption"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "error",
+  "target": "frontend",
+  "phase": "test_error_frontend",
+  "onset": 1791290138.4473705,
+  "recovery": 1791290162.4427564,
+  "dropped": 0,
+  "commands": [
+    {
+      "action": "error",
+      "target": "frontend",
+      "command_completed": 1791290138.4473705
+    },
+    {
+      "action": "recover",
+      "target": "frontend",
+      "command_completed": 1791290162.4427564
+    }
+  ],
+  "label_semantics": "Control command completion proxy; actual workload onset requires trace review"
+}

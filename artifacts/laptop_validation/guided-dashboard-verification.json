@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "demos": [
+    {
+      "stream": "demo-20261006T150714-2d40ca08",
+      "scenario": "healthy",
+      "status": "complete",
+      "windows": 20,
+      "dropped_workload_requests": 0,
+      "error": null,
+      "ended_epoch": 1791292101.085549,
+      "cleanup_complete": true,
+      "measured_spans": 1098,
+      "measured_inventory_delay_spans": 0,
+      "operational_warning_windows": 0,
+      "ml_warning_windows": 0,
+      "opened_incidents": 0,
+      "checkpoint_sha256": "118e99295e06b8afe45e4101140143ed1141a4cfe1d8bd670ba8086564d28711"
+    },
+    {
+      "stream": "demo-20261006T150827-62a88c69",
+      "scenario": "delay",
+      "status": "complete",
+      "windows": 20,
+      "dropped_workload_requests": 0,
+      "error": null,
+      "ended_epoch": 1791292173.0849388,
+      "cleanup_complete": true,
+      "measured_spans": 1089,
+      "measured_inventory_delay_spans": 118,
+      "operational_warning_windows": 8,
+      "ml_warning_windows": 8,
+      "opened_incidents": 1,
+      "checkpoint_sha256": "118e99295e06b8afe45e4101140143ed1141a4cfe1d8bd670ba8086564d28711"
+    },
+    {
+      "stream": "demo-20261006T150951-a9b60a36",
+      "scenario": "delay",
+      "status": "stopped",
+      "windows": 9,
+      "dropped_workload_requests": 0,
+      "error": null,
+      "ended_epoch": 1791292225.30422,
+      "cleanup_complete": true,
+      "measured_spans": 513,
+      "measured_inventory_delay_spans": 47,
+      "operational_warning_windows": 3,
+      "ml_warning_windows": 3,
+      "opened_incidents": 1,
+      "checkpoint_sha256": "118e99295e06b8afe45e4101140143ed1141a4cfe1d8bd670ba8086564d28711"
+    }
+  ],
+  "http": {
+    "/": {
+      "status": 200,
+      "bytes": 25735
+    },
+    "/research": {
+      "status": 200,
+      "bytes": 11392
+    },
+    "/live": {
+      "status": 200,
+      "bytes": 13224
+    },
+    "/api/workspace": {
+      "status": 200,
+      "bytes": 104648
+    },
+    "/api/workspace/cluster/test_delay_inventory": {
+      "status": 200,
+      "bytes": 63249
+    },
+    "/api/workspace/figures/report-figures.zip": {
+      "status": 200,
+      "bytes": 988804
+    },
+    "/api/workspace/figures/research-gru-confusion.png": {
+      "status": 200,
+      "bytes": 59584
+    }
+  },
+  "training_performed": false,
+  "boundary": "Short controlled localhost runs verify user workflow; no industrial reliability estimate."
+}

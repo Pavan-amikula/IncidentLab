@@ -1,0 +1,46 @@
+[
+  {
+    "mode": "default",
+    "timeout": 0.3,
+    "error": "timed out",
+    "total_ms": 369.37570000009146
+  },
+  {
+    "mode": "default",
+    "timeout": 2,
+    "status": 200,
+    "open_ms": 7.124199997633696,
+    "total_ms": 1008.8039999973262,
+    "body": "{\"service\": \"frontend\", \"pid\": 1, \"instance_id\": null}"
+  },
+  {
+    "mode": "default",
+    "timeout": 2,
+    "status": 200,
+    "open_ms": 6.247400000574999,
+    "total_ms": 1007.6888000039617,
+    "body": "{\"service\": \"frontend\", \"pid\": 1, \"instance_id\": null}"
+  },
+  {
+    "mode": "no_proxy",
+    "timeout": 0.3,
+    "error": "timed out",
+    "total_ms": 334.9604000104591
+  },
+  {
+    "mode": "no_proxy",
+    "timeout": 2,
+    "status": 200,
+    "open_ms": 6.480600000941195,
+    "total_ms": 1007.437199994456,
+    "body": "{\"service\": \"frontend\", \"pid\": 1, \"instance_id\": null}"
+  },
+  {
+    "mode": "no_proxy",
+    "timeout": 2,
+    "status": 200,
+    "open_ms": 22.23020000383258,
+    "total_ms": 1023.4122999972897,
+    "body": "{\"service\": \"frontend\", \"pid\": 1, \"instance_id\": null}"
+  }
+]

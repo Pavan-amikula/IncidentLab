@@ -1,0 +1,12 @@
+{
+  "case": "re2ob_checkoutservice_delay_1",
+  "windows": 19,
+  "stream": "integration-7c5440ac6a59",
+  "max_probability_difference": 0.00023806095123291016,
+  "duplicate_status": 409,
+  "http_latency_ms": {
+    "p50": 33.95110002020374,
+    "p95": 42.33955001691355
+  },
+  "scope": "Local HTTP, archived feature windows, includes SQLite commit; excludes raw normalization, collection and network transport from services"
+}

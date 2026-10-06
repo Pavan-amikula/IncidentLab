@@ -1,0 +1,10 @@
+{
+  "code_sha256": {
+    "native_service.py": "4bc425942f0ce406008c4e5dd69593c56bde4ae3a1d58e52de7c230dd1486bfc",
+    "live_monitor.py": "80357854e225c4dcff5fc77365e9ab4c35358cb3277729d967b6fbc2e9b24b37",
+    "native_experiment.py": "1b47b1e41676a73678beb8716a4029140e5897518bcf4ba84a8add3ed32e4890"
+  },
+  "window_seconds": 3,
+  "run_seconds": 60,
+  "purpose": "Actual local HTTP development trials, not Kubernetes or production evidence"
+}

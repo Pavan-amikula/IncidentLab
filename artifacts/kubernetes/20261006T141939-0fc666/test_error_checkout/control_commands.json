@@ -1,0 +1,12 @@
+[
+  {
+    "action": "error",
+    "target": "checkout",
+    "command_completed": 1791290203.415738
+  },
+  {
+    "action": "recover",
+    "target": "checkout",
+    "command_completed": 1791290227.5518591
+  }
+]

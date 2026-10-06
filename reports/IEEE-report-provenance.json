@@ -1,0 +1,13 @@
+{
+  "author": "Amikula Pavan Kumar Goud",
+  "source_sha256": {
+    "artifacts/laptop_validation/final_summary.json": "d56812d375af25fe31c8e459d2bddb3b962d2f21300dd06f6324063685ed86bc",
+    "artifacts/research/temporal_training_report.json": "987a381f8acadee350efe11607378c2cbe3e2b2da841a16fabf5ed44d9a3b103",
+    "artifacts/report_figures/figure-data.json": "fccdd48c62376ccd83a0381bedec8d44109368e09ba4b0c26ec9f27df4671040",
+    "artifacts/kubernetes/20261006T141939-0fc666/test_delay_inventory/predictions.json": "5512b0e77e4f73b712fd7a6036cfccedfa8af489f84875f0fe72dc3687125e6e",
+    "artifacts/research/temporal_test_predictions.json": "e5357d7547a680db271a4ff11177760db06d51e2fbf150021f83beff014e843b",
+    "artifacts/research/full_test_predictions.json": "cdd914aa46a3c4d1495b271a8597f4003fed5004c33a9d50482d678ba54a4274"
+  },
+  "training_performed": false,
+  "style": "IEEEtran conference; no venue submission claimed"
+}

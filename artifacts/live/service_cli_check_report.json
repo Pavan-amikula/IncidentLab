@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "bind": "0.0.0.0",
+  "downstream_host": "localhost",
+  "stdout_matches_jsonl": true,
+  "trace_parent_verified": true,
+  "scope": "Native CLI integration only; image/cluster execution unverified"
+}

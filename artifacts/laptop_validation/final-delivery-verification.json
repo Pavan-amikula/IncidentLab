@@ -1,0 +1,56 @@
+{
+  "downloads": {
+    "ieee.pdf": {
+      "bytes": 661622,
+      "sha256": "555126befc6aaa04f35ee0650dd630518530267665eb40515014bd4877f7b26d"
+    },
+    "ieee-source.zip": {
+      "bytes": 29045,
+      "sha256": "9f320ae32b2d3ae6feea156be8ca78b53e2fcc2cb1b0c024f0c95f2f3906e5b9"
+    },
+    "resume.md": {
+      "bytes": 6035,
+      "sha256": "bf8ce302673fd6314435b15ec60be1516b34c15465e66877c69efdceb78c4990"
+    }
+  },
+  "cluster_health": {
+    "checked_at": 1791308638.9911377,
+    "context": "kind-incidentlab",
+    "namespace": "incidentlab-testbed",
+    "node_container": "incidentlab-control-plane",
+    "pods": [
+      {
+        "service": "checkout",
+        "name": "checkout-5b4d647689-c7c2v",
+        "ready": true,
+        "phase": "Running",
+        "restarts": 0,
+        "node": "incidentlab-control-plane"
+      },
+      {
+        "service": "frontend",
+        "name": "frontend-79f7df7774-wqd5j",
+        "ready": true,
+        "phase": "Running",
+        "restarts": 0,
+        "node": "incidentlab-control-plane"
+      },
+      {
+        "service": "inventory",
+        "name": "inventory-76c85bcc59-5vs9q",
+        "ready": true,
+        "phase": "Running",
+        "restarts": 1,
+        "node": "incidentlab-control-plane"
+      }
+    ],
+    "status": "ready",
+    "boundary": "Live Kubernetes pod status only. The charts below are saved experiment data.",
+    "message": "All three apps are ready."
+  },
+  "lean_cpu_tests": 75,
+  "ieeetran_compilation": "unavailable: platform directory error",
+  "pdf_visual_review": "All five pages inspected",
+  "restart_check": "infrastructure-20261006T194017-f133aa",
+  "industrial_validation": "remaining; see final delivery report"
+}

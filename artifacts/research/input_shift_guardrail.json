@@ -1,0 +1,163 @@
+{
+  "method": "Per-window fraction of observable service-feature values outside the validation 0.1\u201399.9 percentile range",
+  "validation_cases": 147,
+  "validation_windows": 2617,
+  "validation_q99_cutoff": 0.09090909090909091,
+  "external_cases": 24,
+  "high_shift_cases": 5,
+  "cases": {
+    "TT_data:Lv_C_exception_injection_20251103T185917Z_em": {
+      "eligible_windows": 644,
+      "high_shift_windows": 2,
+      "high_shift_fraction": 0.003105590062111801
+    },
+    "TT_data:Lv_C_security_check_20251103T183145Z_em": {
+      "eligible_windows": 598,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "TT_data:Lv_C_travel_detail_failure_20251103T192904Z_em": {
+      "eligible_windows": 598,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "TT_data:Lv_D_cachelimit_20251103T170657Z_em": {
+      "eligible_windows": 586,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "TT_data:Lv_D_CONNECTION_POOL_exhaustion_20251103T173702Z_em": {
+      "eligible_windows": 598,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "TT_data:Lv_D_TRANSACTION_timeout_20251103T180430Z_em": {
+      "eligible_windows": 571,
+      "high_shift_windows": 1,
+      "high_shift_fraction": 0.0017513134851138354
+    },
+    "TT_data:Lv_P_CPU_preserve_20251103T140939Z_em": {
+      "eligible_windows": 874,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "TT_data:Lv_P_DISKIO_preserve_20251103T144212Z_em": {
+      "eligible_windows": 460,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "TT_data:Lv_P_NETLOSS_preserve_20251103T150613Z_em": {
+      "eligible_windows": 506,
+      "high_shift_windows": 1,
+      "high_shift_fraction": 0.001976284584980237
+    },
+    "TT_data:Lv_S_DNSFAIL_preserve_no_order_20251103T153116Z_em": {
+      "eligible_windows": 506,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "TT_data:Lv_S_HTTPABORT_preserve_20251103T155524Z_em": {
+      "eligible_windows": 1288,
+      "high_shift_windows": 1,
+      "high_shift_fraction": 0.0007763975155279503
+    },
+    "TT_data:Lv_S_KILLPOD_preserve_20251103T163624Z_em": {
+      "eligible_windows": 506,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "SN_data:Code_Stop_MediaService_20251104_024819": {
+      "eligible_windows": 647,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "SN_data:Code_Stop_TextService_20251104_022416": {
+      "eligible_windows": 407,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "SN_data:Code_Stop_UserService_20251104_020019": {
+      "eligible_windows": 407,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "SN_data:DB_Redis_CacheLimit_HomeTimeline_20251104_004905": {
+      "eligible_windows": 392,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "SN_data:DB_Redis_CacheLimit_SocialGraph_20251104_013615": {
+      "eligible_windows": 420,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "SN_data:DB_Redis_CacheLimit_UserTimeline_20251104_011238": {
+      "eligible_windows": 420,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "SN_data:Perf_CPU_Contention_20251103_222601": {
+      "eligible_windows": 392,
+      "high_shift_windows": 1,
+      "high_shift_fraction": 0.002551020408163265
+    },
+    "SN_data:Perf_Disk_IO_Stress_20251103_231335": {
+      "eligible_windows": 419,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "SN_data:Perf_Network_Loss_20251103_224954": {
+      "eligible_windows": 420,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "SN_data:Svc_Kill_Media_20251104_000111": {
+      "eligible_windows": 391,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "SN_data:Svc_Kill_SocialGraph_20251104_002506": {
+      "eligible_windows": 392,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    },
+    "SN_data:Svc_Kill_UserTimeline_20251103_233717": {
+      "eligible_windows": 392,
+      "high_shift_windows": 0,
+      "high_shift_fraction": 0.0
+    }
+  },
+  "flagged": [
+    [
+      "TT_data:Lv_C_exception_injection_20251103T185917Z_em",
+      2,
+      644
+    ],
+    [
+      "TT_data:Lv_D_TRANSACTION_timeout_20251103T180430Z_em",
+      1,
+      571
+    ],
+    [
+      "TT_data:Lv_P_NETLOSS_preserve_20251103T150613Z_em",
+      1,
+      506
+    ],
+    [
+      "TT_data:Lv_S_HTTPABORT_preserve_20251103T155524Z_em",
+      1,
+      1288
+    ],
+    [
+      "SN_data:Perf_CPU_Contention_20251103_222601",
+      1,
+      392
+    ]
+  ],
+  "interpretation": "This is an abstention/review signal for input shift, not an anomaly detector or root-cause prediction. RCAEval validation case/system overlap makes it a development guardrail, not independent cross-system calibration.",
+  "limitations": [
+    "Threshold uses RCAEval validation data; the source domain differs from AnoMod.",
+    "Metric missingness is partially observable; six metric dimensions lack compatible external mappings.",
+    "No decision guarantees fault detection; review every high-shift input."
+  ]
+}

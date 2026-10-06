@@ -1,0 +1,11 @@
+{
+  "run_id": "infrastructure-20261006T193813-30c2ae",
+  "status": "failed",
+  "kind": "same-pod-container-restart",
+  "target": "inventory",
+  "training": false,
+  "pod_uid": "cd6a8002-062c-4f82-a377-dd0e9c27019c",
+  "previous_restart_count": 0,
+  "restart_command_started": 1791308296.0674107,
+  "error": "Container did not recover within 90 seconds"
+}

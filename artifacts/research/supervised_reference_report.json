@@ -1,0 +1,93 @@
+{
+  "model": "non-temporal supervised histogram gradient boosting",
+  "input": "same current-window modalities and context; no temporal history or service identity",
+  "validation": {
+    "overall": {
+      "windows": 2617,
+      "precision": 0.996005326231691,
+      "recall": 0.9006622516556292,
+      "f1": 0.9459374012013911,
+      "pr_auc": 0.99710830914506,
+      "false_alert_windows_per_healthy_hour": 0.37656903765690375
+    },
+    "cases": 147,
+    "incident_recall": 0.9863945578231292,
+    "top1_at_first_alert": 0.891156462585034,
+    "top3_at_first_alert": 0.9591836734693877,
+    "median_detection_delay_seconds": 60.0,
+    "by_system": {
+      "ob": {
+        "windows": 1243,
+        "precision": 0.9955947136563876,
+        "recall": 0.9274965800273598,
+        "f1": 0.9603399433427762,
+        "pr_auc": 0.9989177634637157,
+        "false_alert_windows_per_healthy_hour": 0.3515625
+      },
+      "ss": {
+        "windows": 629,
+        "precision": 0.9974554707379135,
+        "recall": 0.8990825688073395,
+        "f1": 0.9457177322074789,
+        "pr_auc": 0.9958032732703989,
+        "false_alert_windows_per_healthy_hour": 0.31088082901554404
+      },
+      "tt": {
+        "windows": 745,
+        "precision": 0.9953271028037384,
+        "recall": 0.8623481781376519,
+        "f1": 0.9240780911062907,
+        "pr_auc": 0.9942545953235976,
+        "false_alert_windows_per_healthy_hour": 0.4780876494023904
+      }
+    }
+  },
+  "development_test": {
+    "overall": {
+      "windows": 2535,
+      "precision": 0.996,
+      "recall": 0.9137614678899083,
+      "f1": 0.9531100478468899,
+      "pr_auc": 0.9978456059483429,
+      "false_alert_windows_per_healthy_hour": 0.4
+    },
+    "cases": 147,
+    "incident_recall": 0.9863945578231292,
+    "top1_at_first_alert": 0.9115646258503401,
+    "top3_at_first_alert": 0.9727891156462585,
+    "median_detection_delay_seconds": 60.0,
+    "by_system": {
+      "ob": {
+        "windows": 1153,
+        "precision": 1.0,
+        "recall": 0.9241773962804005,
+        "f1": 0.9605947955390335,
+        "pr_auc": 0.9995658340828711,
+        "false_alert_windows_per_healthy_hour": 0.0
+      },
+      "ss": {
+        "windows": 631,
+        "precision": 0.9926650366748166,
+        "recall": 0.9269406392694064,
+        "f1": 0.9586776859504132,
+        "pr_auc": 0.997657878398362,
+        "false_alert_windows_per_healthy_hour": 0.9326424870466321
+      },
+      "tt": {
+        "windows": 751,
+        "precision": 0.9932584269662922,
+        "recall": 0.8875502008032129,
+        "f1": 0.9374337221633086,
+        "pr_auc": 0.9941342724963855,
+        "false_alert_windows_per_healthy_hour": 0.7114624505928854
+      }
+    }
+  },
+  "thresholds": {
+    "ob": 0.9763558124658233,
+    "ss": 0.7152948166613085,
+    "tt": 0.9565451794149058
+  },
+  "seconds": 11.64,
+  "external_final_used": false
+}

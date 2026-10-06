@@ -1,0 +1,223 @@
+{
+  "run_id": "20261005T200503-c9862c",
+  "policy": "Two consecutive operational-warning windows open; two clear windows close",
+  "decision_inputs": "Operational warnings only; no schedules, injected targets or labels",
+  "trials": [
+    {
+      "phase": "test_healthy",
+      "target": null,
+      "episodes": [],
+      "opened_incidents": 0,
+      "healthy_false_incidents": 0,
+      "healthy_exposure_seconds": 60.0,
+      "false_incidents_per_healthy_hour": 0.0,
+      "fault_incident_detected": null,
+      "fault_openings": 0,
+      "detection_delay_seconds": null,
+      "first_hypothesis_matches_injected_target": null
+    },
+    {
+      "phase": "test_surge",
+      "target": null,
+      "episodes": [],
+      "opened_incidents": 0,
+      "healthy_false_incidents": 0,
+      "healthy_exposure_seconds": 60.0,
+      "false_incidents_per_healthy_hour": 0.0,
+      "fault_incident_detected": null,
+      "fault_openings": 0,
+      "detection_delay_seconds": null,
+      "first_hypothesis_matches_injected_target": null
+    },
+    {
+      "phase": "test_delay_frontend",
+      "target": "frontend",
+      "episodes": [
+        {
+          "opened_at": 1791223774.1505902,
+          "first_warning_window_start": 1791223768.1505902,
+          "service_hypothesis": "frontend",
+          "closed_at": 1791223801.1505902
+        }
+      ],
+      "opened_incidents": 1,
+      "healthy_false_incidents": 0,
+      "healthy_exposure_seconds": 36.00018620491028,
+      "false_incidents_per_healthy_hour": 0.0,
+      "fault_incident_detected": true,
+      "fault_openings": 1,
+      "detection_delay_seconds": 5.995685577392578,
+      "first_hypothesis_matches_injected_target": true
+    },
+    {
+      "phase": "test_delay_checkout",
+      "target": "checkout",
+      "episodes": [
+        {
+          "opened_at": 1791223835.5038824,
+          "first_warning_window_start": 1791223829.5038824,
+          "service_hypothesis": "checkout",
+          "closed_at": 1791223859.5038824
+        }
+      ],
+      "opened_incidents": 1,
+      "healthy_false_incidents": 0,
+      "healthy_exposure_seconds": 35.99662804603577,
+      "false_incidents_per_healthy_hour": 0.0,
+      "fault_incident_detected": true,
+      "fault_openings": 1,
+      "detection_delay_seconds": 5.996911525726318,
+      "first_hypothesis_matches_injected_target": true
+    },
+    {
+      "phase": "test_delay_inventory",
+      "target": "inventory",
+      "episodes": [
+        {
+          "opened_at": 1791223896.8210807,
+          "first_warning_window_start": 1791223890.8210807,
+          "service_hypothesis": "inventory",
+          "closed_at": 1791223923.8210807
+        }
+      ],
+      "opened_incidents": 1,
+      "healthy_false_incidents": 0,
+      "healthy_exposure_seconds": 35.998111724853516,
+      "false_incidents_per_healthy_hour": 0.0,
+      "fault_incident_detected": true,
+      "fault_openings": 1,
+      "detection_delay_seconds": 5.99620795249939,
+      "first_hypothesis_matches_injected_target": true
+    },
+    {
+      "phase": "test_error_frontend",
+      "target": "frontend",
+      "episodes": [
+        {
+          "opened_at": 1791223958.1260931,
+          "first_warning_window_start": 1791223952.1260931,
+          "service_hypothesis": "frontend",
+          "closed_at": 1791223982.1260931
+        }
+      ],
+      "opened_incidents": 1,
+      "healthy_false_incidents": 0,
+      "healthy_exposure_seconds": 35.996294260025024,
+      "false_incidents_per_healthy_hour": 0.0,
+      "fault_incident_detected": true,
+      "fault_openings": 1,
+      "detection_delay_seconds": 5.996689558029175,
+      "first_hypothesis_matches_injected_target": true
+    },
+    {
+      "phase": "test_error_checkout",
+      "target": "checkout",
+      "episodes": [
+        {
+          "opened_at": 1791224019.491632,
+          "first_warning_window_start": 1791224013.491632,
+          "service_hypothesis": "checkout",
+          "closed_at": 1791224043.491632
+        }
+      ],
+      "opened_incidents": 1,
+      "healthy_false_incidents": 0,
+      "healthy_exposure_seconds": 35.999380111694336,
+      "false_incidents_per_healthy_hour": 0.0,
+      "fault_incident_detected": true,
+      "fault_openings": 1,
+      "detection_delay_seconds": 5.997433662414551,
+      "first_hypothesis_matches_injected_target": true
+    },
+    {
+      "phase": "test_error_inventory",
+      "target": "inventory",
+      "episodes": [
+        {
+          "opened_at": 1791224080.8172753,
+          "first_warning_window_start": 1791224074.8172753,
+          "service_hypothesis": "inventory",
+          "closed_at": 1791224104.8172753
+        }
+      ],
+      "opened_incidents": 1,
+      "healthy_false_incidents": 0,
+      "healthy_exposure_seconds": 35.998268604278564,
+      "false_incidents_per_healthy_hour": 0.0,
+      "fault_incident_detected": true,
+      "fault_openings": 1,
+      "detection_delay_seconds": 5.997189521789551,
+      "first_hypothesis_matches_injected_target": true
+    },
+    {
+      "phase": "test_unavailable_frontend",
+      "target": "frontend",
+      "episodes": [
+        {
+          "opened_at": 1791224142.1491797,
+          "first_warning_window_start": 1791224136.1491797,
+          "service_hypothesis": "frontend",
+          "closed_at": 1791224166.1491797
+        }
+      ],
+      "opened_incidents": 1,
+      "healthy_false_incidents": 0,
+      "healthy_exposure_seconds": 35.552387714385986,
+      "false_incidents_per_healthy_hour": 0.0,
+      "fault_incident_detected": true,
+      "fault_openings": 1,
+      "detection_delay_seconds": 5.998669624328613,
+      "first_hypothesis_matches_injected_target": true
+    },
+    {
+      "phase": "test_unavailable_checkout",
+      "target": "checkout",
+      "episodes": [
+        {
+          "opened_at": 1791224203.5485322,
+          "first_warning_window_start": 1791224197.5485322,
+          "service_hypothesis": "checkout",
+          "closed_at": 1791224230.5485322
+        }
+      ],
+      "opened_incidents": 1,
+      "healthy_false_incidents": 0,
+      "healthy_exposure_seconds": 35.574838161468506,
+      "false_incidents_per_healthy_hour": 0.0,
+      "fault_incident_detected": true,
+      "fault_openings": 1,
+      "detection_delay_seconds": 5.997702360153198,
+      "first_hypothesis_matches_injected_target": true
+    },
+    {
+      "phase": "test_unavailable_inventory",
+      "target": "inventory",
+      "episodes": [
+        {
+          "opened_at": 1791224264.8894975,
+          "first_warning_window_start": 1791224258.8894975,
+          "service_hypothesis": "inventory",
+          "closed_at": 1791224291.8894975
+        }
+      ],
+      "opened_incidents": 1,
+      "healthy_false_incidents": 0,
+      "healthy_exposure_seconds": 35.5566041469574,
+      "false_incidents_per_healthy_hour": 0.0,
+      "fault_incident_detected": true,
+      "fault_openings": 1,
+      "detection_delay_seconds": 5.994966506958008,
+      "first_hypothesis_matches_injected_target": true
+    }
+  ],
+  "detected_fault_trials": 9,
+  "fault_trials": 9,
+  "healthy_false_incidents": 0,
+  "healthy_exposure_seconds": 442.6726989746094,
+  "limitations": [
+    "Grouping policy is a development design choice, not optimized on the current run",
+    "Opening-time classification differs from fault-window recall; control boundaries are not used in grouping",
+    "Short, correlated controlled trials do not establish production incident rate or reliability",
+    "Service hypotheses are not proven causes; workload and collector absence can be confounded"
+  ]
+}

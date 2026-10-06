@@ -1,0 +1,8 @@
+# Staging only: build and pin the base/image digest when a container engine is available.
+FROM python:3.14-slim
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+WORKDIR /app
+COPY incidentlab/__init__.py incidentlab/native_service.py ./incidentlab/
+RUN useradd --uid 10001 --create-home incidentlab && mkdir /telemetry && chown incidentlab:incidentlab /telemetry
+USER 10001:10001
+CMD ["python", "-m", "incidentlab.native_service", "--service", "inventory", "--port", "8893", "--directory", "/telemetry", "--bind", "0.0.0.0", "--stdout-events"]

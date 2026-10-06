@@ -1,0 +1,4632 @@
+[
+  {
+    "start": 1791227140.1851265,
+    "end": 1791227143.1851265,
+    "ml_alert": true,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          83.2685351371765,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4918963002924377,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "2d78ca380c954a7ca05285a4a5dcb58e",
+            "trace_id": "f8f642b0c7ad4e63bb0dab29d21cf889",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 91.60518646240234,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "1ba93c6685464b4690af76d8cf331e1a",
+            "trace_id": "480dc0ae155b456ca9c13c041b124068",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 81.79736137390137,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "d4c3111d6c8749b6ac9750f88a389230",
+            "trace_id": "2db8ff81b9ff444c9c48eeffcc3d5ec7",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 81.50196075439453,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          54.99346256256103,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.6625772965235712,
+        "ml_alert": true,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "f3376315bf174e399c1031b1c434dfb4",
+            "trace_id": "9024d5538a19481f8b2d39b150ad0674",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 57.36899375915527,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "764a9de5bb124dc28ae8bef382da616f",
+            "trace_id": "480dc0ae155b456ca9c13c041b124068",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 54.57425117492676,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "387100a235204f98be9f63ca3785f0d8",
+            "trace_id": "f8f642b0c7ad4e63bb0dab29d21cf889",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 51.79738998413086,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          16.2788987159729,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4578831873951388,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "29b113f24856412ea278bf0b8e1287c6",
+            "trace_id": "480dc0ae155b456ca9c13c041b124068",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.710758209228516,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "17b0d983a4c247148be6cf625dd09b84",
+            "trace_id": "9024d5538a19481f8b2d39b150ad0674",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.202688217163086,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "71f8308f83b340479c7dd386b33ebca5",
+            "trace_id": "de5432a7c9c34533b1b15b4d065e8fad",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 14.693737030029297,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 14.53010004479438,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227143.2270246,
+    "window_close_to_decision_ms": 41.89801216125488
+  },
+  {
+    "start": 1791227143.1851265,
+    "end": 1791227146.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 17,
+        "features": [
+          79.75687980651855,
+          0.0,
+          5.666666666666667,
+          1
+        ],
+        "ml_score": 0.4732372964218925,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "2576c4851a004a6ca35ea3a921a7f1ca",
+            "trace_id": "0f5955c95e41405aa637267a27a21cf0",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 85.85238456726074,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "0567ee1703664505a158bdb1a14e289d",
+            "trace_id": "e53a51dba76a4ee282ce7a018b9709cf",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 78.23300361633301,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "32ade96b9d164605b2145f83620d3ce1",
+            "trace_id": "a67982bab80c4402947dac4982a4d7b2",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 73.40455055236816,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 17,
+        "features": [
+          46.78850173950195,
+          0.0,
+          5.666666666666667,
+          1
+        ],
+        "ml_score": 0.47558565708436146,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "a0fed079777549728a23b088469abd26",
+            "trace_id": "0f5955c95e41405aa637267a27a21cf0",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 48.57015609741211,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "9d095dd60ad64bd684c9938a1097dfb7",
+            "trace_id": "e53a51dba76a4ee282ce7a018b9709cf",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 46.343088150024414,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "b77ba753b0f84b948a5bb31abf8887f2",
+            "trace_id": "6b9ef9bd7601400b98ca0afe79fbd2fc",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 44.40617561340332,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 17,
+        "features": [
+          15.394878387451172,
+          0.0,
+          5.666666666666667,
+          1
+        ],
+        "ml_score": 0.48172888287409493,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "838fc3f7347a46c3a08b091b97cc9369",
+            "trace_id": "e413c63b9db848ba92a24fc79031af7a",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.00503921508789,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "c688bcd7f4b44675891893d302eefb03",
+            "trace_id": "6b9ef9bd7601400b98ca0afe79fbd2fc",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.242338180541992,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "932a501066de489994136a9c28586607",
+            "trace_id": "e53a51dba76a4ee282ce7a018b9709cf",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 14.693975448608398,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 13.070999993942678,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227146.2426374,
+    "window_close_to_decision_ms": 57.5108528137207
+  },
+  {
+    "start": 1791227146.1851265,
+    "end": 1791227149.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          86.46817207336426,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.5738856608774423,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "62fe78f1b8be48fca1f14e7d11370560",
+            "trace_id": "f2ef3d86b13a4971b4b386343f349aba",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 87.62979507446289,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "4a8c7820295e43faa76f0e721fe8e2c9",
+            "trace_id": "55af37f9438c486f93d6b818d5d92d0d",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 86.26317977905273,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "cc6ef247a2804beca4d650cf3bb501db",
+            "trace_id": "5216330cb3d74611afb4b93c8fa01df2",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 85.69145202636719,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          51.07802152633667,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.5135009707059954,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "5f8e441c8d5c408ebb980c5a7b6ba555",
+            "trace_id": "f2ef3d86b13a4971b4b386343f349aba",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 52.724599838256836,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "e8a16123fbfc44239f533159de7fefcc",
+            "trace_id": "22cc634d07004bf7b6d0c293d12ce737",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 50.78744888305664,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "d7ebb15372db49c5928feafb18d2d692",
+            "trace_id": "5216330cb3d74611afb4b93c8fa01df2",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 47.53923416137695,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          16.07922315597534,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4640633803383419,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "f7db2b66ba5844e7ae12a53a8e80e235",
+            "trace_id": "f10b09324f334bf4a72d161ad128a06d",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 18.101930618286133,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "a9128cf4b93d4da7b41ef169c8ae0988",
+            "trace_id": "560e6a0fc23d4c8ca2f9cd1215a9b245",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.722274780273438,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "5b7e344a348841e99b195f0a4c2a2a36",
+            "trace_id": "f2ef3d86b13a4971b4b386343f349aba",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.5487060546875,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 13.343399972654879,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227149.2384439,
+    "window_close_to_decision_ms": 53.31730842590332
+  },
+  {
+    "start": 1791227149.1851265,
+    "end": 1791227152.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          81.28678798675537,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.43809515695118345,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "e950b6c0261c48b5a308eef593acb430",
+            "trace_id": "2b6a4ef569754ad18bad2f092aab0931",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 84.23948287963867,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "8598b6d18e53413d94beb8e4fe350ea7",
+            "trace_id": "25e0e2d991cb48d98175bea0c42291c0",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 80.7657241821289,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "fd10642348114f91873565fe087e6cd7",
+            "trace_id": "c20b482b2c5946279522d6a9b6a8c2e9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 79.75339889526367,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          50.14861822128295,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4541369792178342,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "4f8137ede0484b3f9043f2ec552409f7",
+            "trace_id": "9476f6d90c47438abd2452a4914c6e31",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 56.39386177062988,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "c96e7cffe987480a98d5e32400677617",
+            "trace_id": "7f323b06f4404465990332d337982808",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 49.04651641845703,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "9b02e7a3bfcd4fba93012eec68f92ee3",
+            "trace_id": "25e0e2d991cb48d98175bea0c42291c0",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 48.61140251159668,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          16.686856746673584,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.5482306843351727,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "e32f5bce66ad4ae38aac7a23a8541b52",
+            "trace_id": "9476f6d90c47438abd2452a4914c6e31",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.821622848510742,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "b9a9c35c50104beda496af3c32a491b9",
+            "trace_id": "25e0e2d991cb48d98175bea0c42291c0",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.663074493408203,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "a1cced324c5f4bd285c409a13e7bdecd",
+            "trace_id": "2b6a4ef569754ad18bad2f092aab0931",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.02315902709961,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 15.527600073255599,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227152.231329,
+    "window_close_to_decision_ms": 46.20242118835449
+  },
+  {
+    "start": 1791227152.1851265,
+    "end": 1791227155.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          86.35929822921752,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.573568710878446,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "3f9c90583ce0428f81221c5919bfad9a",
+            "trace_id": "7504fdfec9434d0a93493ba44f9409fd",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 90.83414077758789,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "106ce706bb7d4a7db0dd314c4b5e93eb",
+            "trace_id": "27da739d290e46ef893e3accad04f101",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 85.56962013244629,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "2bc96e851d844183adffb0fddbc382b4",
+            "trace_id": "96d1d5bf2d4f4b6daec235458058b143",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 81.82573318481445,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          50.684845447540276,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.48092435372899506,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "e5d94a154996477c98e38bfc20fc8eb0",
+            "trace_id": "0c21a241fd0c47179d3b399baf590a4a",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 56.87212944030762,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "3250da9ba2784d0dbcbd8eadab7099e7",
+            "trace_id": "5eaebf6eab3841f3838338550c8845f3",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 49.59297180175781,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "43d27c9b3e2c41b4a393f09d9e17d9dd",
+            "trace_id": "6c2f23105d6c4ff8869a572149aaf815",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 49.16977882385254,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          16.416549682617188,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4942020025844047,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "5c4975fad0a64fc897172171deca508e",
+            "trace_id": "6157c2cdd34843da8b34a2ff24b22e34",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.501665115356445,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "357ade7382434c069b35fe9b419268fc",
+            "trace_id": "0c21a241fd0c47179d3b399baf590a4a",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.40152931213379,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "0fed8932520c4123b9dba9e831330167",
+            "trace_id": "96d1d5bf2d4f4b6daec235458058b143",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.279220581054688,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 15.638599987141788,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227155.2499838,
+    "window_close_to_decision_ms": 64.85724449157715
+  },
+  {
+    "start": 1791227155.1851265,
+    "end": 1791227158.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 17,
+        "features": [
+          83.0667495727539,
+          0.0,
+          5.666666666666667,
+          1
+        ],
+        "ml_score": 0.5178511685594581,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "778adabfa8e74174ae308a0bf392e26a",
+            "trace_id": "fe0be25f4dc34e0ca16de9e6e68615a5",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 85.30712127685547,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "6117b22829184220ad46b4615291768d",
+            "trace_id": "f06d30c9cf2e4497a7f83e19482bb331",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 82.50665664672852,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "e3287195fd40481fa59122ccf1fc7a89",
+            "trace_id": "27a70b9ebd2f450f84813af7825c07fe",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 79.31971549987793,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 17,
+        "features": [
+          53.80821228027344,
+          0.0,
+          5.666666666666667,
+          1
+        ],
+        "ml_score": 0.6331164559658925,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "6d855d0e4e6b4e82a058b523a44c4d1e",
+            "trace_id": "32c597fd00f149068d3d653177363999",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 55.680274963378906,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "810f52892a7a49a5ae991d63332e7541",
+            "trace_id": "fe0be25f4dc34e0ca16de9e6e68615a5",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 53.34019660949707,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "f09ef57d2e88477c9d2aebf72bcb2b44",
+            "trace_id": "620c7d7f4710404da956051e712caac6",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 47.267913818359375,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 17,
+        "features": [
+          15.96674919128418,
+          0.0,
+          5.666666666666667,
+          1
+        ],
+        "ml_score": 0.4954074285521082,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "b14f07a69d654de894a74afaf8324dff",
+            "trace_id": "f06d30c9cf2e4497a7f83e19482bb331",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.185522079467773,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "5014d1a1c4cf4378b7e81425a827b595",
+            "trace_id": "c668ea077f2a414382aaffd265dc4db9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.912055969238281,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "443cea2e21d843a485302c4a8c0c64ca",
+            "trace_id": "32c597fd00f149068d3d653177363999",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 14.859676361083984,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 15.26329992339015,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227158.242574,
+    "window_close_to_decision_ms": 57.44743347167969
+  },
+  {
+    "start": 1791227158.1851265,
+    "end": 1791227161.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          83.60912799835204,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4999644249801948,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "ecf11435f8e14b58b0aa048e4e191ddd",
+            "trace_id": "27eb3278773448028f22187818cf2094",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 90.04020690917969,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "7bb827831ea447df99dcf11317cb5366",
+            "trace_id": "095998f480714b2da6a55e7638619767",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 82.4742317199707,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "a328a6a3ee3f4d5796f119d3cda95a3b",
+            "trace_id": "0e6b9870538141a9af9bb6e929908625",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 82.38077163696289,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          50.051367282867425,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4472962818831405,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "d7fccd92b7b04984bd8feaa4cab35d4b",
+            "trace_id": "c6327322ee134d8f957957b56fcf7ac2",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 53.847312927246094,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "cc072fae40ca46cfb41755b00bf0cf53",
+            "trace_id": "27eb3278773448028f22187818cf2094",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 49.38149452209473,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "0e51eecf758046ca8cf0918f584ccbb9",
+            "trace_id": "4412365b40eb4344b130c115457c7f5f",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 49.196720123291016,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          16.370725631713867,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.47957846036758384,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "06b73a57038244648ec7a7b024f4a1cf",
+            "trace_id": "4412365b40eb4344b130c115457c7f5f",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.4947509765625,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "42de7198ded34debb3ff0243397b7256",
+            "trace_id": "095998f480714b2da6a55e7638619767",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.348838806152344,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "169d181624ba4607b373c610a0b5bfb0",
+            "trace_id": "d2fe93eb66fb43c88f72885eadb09642",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.23702049255371,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 13.452599989250302,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227161.2305014,
+    "window_close_to_decision_ms": 45.37487030029297
+  },
+  {
+    "start": 1791227161.1851265,
+    "end": 1791227164.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          76.7235517501831,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.5673782868863834,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "df507f9782024cf784057a249632d0b2",
+            "trace_id": "6053166d1ecd4b27b0776d79eafbd001",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 80.57522773742676,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "9f59a7afdeef4f8d9053d7d5c8c3f78f",
+            "trace_id": "014fcbab5f6d45a295e80f1db73ed928",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 76.04384422302246,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "453cfa116cbc4a549877e6e967040258",
+            "trace_id": "97462f86084442078b0220d66e412835",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 75.55270195007324,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          44.19056177139282,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.5925167038907915,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "6a77121ab808471ea74d04d8c563019a",
+            "trace_id": "6053166d1ecd4b27b0776d79eafbd001",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 44.91019248962402,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "70739bc6aa794b938c262ec5204aa341",
+            "trace_id": "97462f86084442078b0220d66e412835",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 44.063568115234375,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "6b01a3858b2f489784e680584526fadb",
+            "trace_id": "34d5cc4eeb7c4bc986f3018087f82d3f",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 43.923139572143555,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          13.21977376937866,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.6226369055065656,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "9ca110cfb2eb49f0bc889de1b11c0c97",
+            "trace_id": "d2a57897785f44a1a6280dc2ef9f3d1e",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 13.921976089477539,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "f6a6049866b440ebb16a2199dd1aa59a",
+            "trace_id": "fd09ddc2a363431a9498fd3c5b3f41a0",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 13.095855712890625,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "d349cf63e5804e418085fb7672d59ab9",
+            "trace_id": "6746732b69db474d909ad0fc714a80bc",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 12.801170349121094,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 13.31530010793358,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227164.2249355,
+    "window_close_to_decision_ms": 39.80898857116699
+  },
+  {
+    "start": 1791227164.1851265,
+    "end": 1791227167.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          85.88709831237793,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.5631081615804208,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "08d64c5e3f2f4c71b12ea8e2bc7d57fe",
+            "trace_id": "2b2028c0229d4fb0976e936b1e3ee059",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 85.98518371582031,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "66b7510370f34fadbf859cf53b2df4aa",
+            "trace_id": "b8c4fd0740634b7db420360f5f334918",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 85.86978912353516,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "d5e88ae1e73344e187a0eae601961049",
+            "trace_id": "032c882d981042e38d13d06faa00deb7",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 84.18583869934082,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          47.897350788116455,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4155532740665197,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "429780d989d34bcca3ae64daeb5c2a25",
+            "trace_id": "2b2028c0229d4fb0976e936b1e3ee059",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 49.40652847290039,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "a64e9c971042405e9ae04d312d109283",
+            "trace_id": "b8c4fd0740634b7db420360f5f334918",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 47.631025314331055,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "639defa7a64c48bbac58cf58a6e4d1d7",
+            "trace_id": "628d417d022040b79815f603f53bd931",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 46.43368721008301,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          13.564717769622801,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.5692067466932409,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "47196448aa1c47c88622f6d1946e70b1",
+            "trace_id": "b8c4fd0740634b7db420360f5f334918",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 14.48822021484375,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "c1f697c6f7e64bb7b32b208a4581431f",
+            "trace_id": "518d9fa3479b47eea41164ed8c8c150a",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 13.40174674987793,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "2e76eccd408145618c379afb6d2a21d0",
+            "trace_id": "628d417d022040b79815f603f53bd931",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 13.330221176147461,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 13.15209991298616,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227167.2442667,
+    "window_close_to_decision_ms": 59.14020538330078
+  },
+  {
+    "start": 1791227167.1851265,
+    "end": 1791227170.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 16,
+        "features": [
+          266.438364982605,
+          0.0,
+          5.333333333333333,
+          2
+        ],
+        "ml_score": 0.6604840749138344,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "a3388debb4564190a4f0fed6a375a7c1",
+            "trace_id": "da4d875891fc48c889369d79e5f8874b",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 267.20476150512695,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "8e0f783a39024581820883790172b43c",
+            "trace_id": "d5c1163dc9354dd98078ad4e4f5262af",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 266.18289947509766,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "c27b05e5816744aba8e4469674b37eac",
+            "trace_id": "27ee9908ca1847e8824d31891b34be40",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.93852043151855,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 16,
+        "features": [
+          334.4495892524719,
+          0.0,
+          5.333333333333333,
+          3
+        ],
+        "ml_score": 0.6822980633522497,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "ebcc7109ddb44b76a1e162e4b3fd7749",
+            "trace_id": "da4d875891fc48c889369d79e5f8874b",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 337.9631042480469,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "416338ece748478ba87e05f7f5f41027",
+            "trace_id": "5d672ea5b17a4d0e98ff0dfdf4d22643",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 333.2784175872803,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "7c1a526c6c8a4a1494b6fded00b9220a",
+            "trace_id": "9f18c32411a44065bef60234f2e3e67e",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 333.1267833709717,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 16,
+        "features": [
+          302.30599641799927,
+          0.0,
+          5.333333333333333,
+          2
+        ],
+        "ml_score": 0.7150532024956435,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "794c5bad5d304d31b0af4623b0132bf4",
+            "trace_id": "da4d875891fc48c889369d79e5f8874b",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 304.7666549682617,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "2717268cdda0488484fe9953222764ac",
+            "trace_id": "6e1cfb6fa85142d9b2a4c488a992d5a9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 301.4857769012451,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "872f4c23419f465cba327764c6ef54f2",
+            "trace_id": "9f18c32411a44065bef60234f2e3e67e",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 299.9899387359619,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 13.113500084728003,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227170.2375975,
+    "window_close_to_decision_ms": 52.47092247009277
+  },
+  {
+    "start": 1791227170.1851265,
+    "end": 1791227173.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 17,
+        "features": [
+          267.2971248626709,
+          0.0,
+          5.666666666666667,
+          2
+        ],
+        "ml_score": 0.6590442611681849,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "ea0ce355f8534d6f94bc2073392fa6ad",
+            "trace_id": "f18ec88c962b4d65993a412e56d7cc69",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 267.4987316131592,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "e082d6c277c94e75a65be20779b102fa",
+            "trace_id": "501bfb8642ea496cbb4ee33dfe4295cd",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 267.2467231750488,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "83d74989108847a4a4f9dfab86d59a8c",
+            "trace_id": "ffe545e3d2a64576815567947e5ee45b",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.9192085266113,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 17,
+        "features": [
+          334.4691753387451,
+          0.0,
+          5.666666666666667,
+          3
+        ],
+        "ml_score": 0.6841853132994338,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "14608c92b3394392828d0efe2dfa150a",
+            "trace_id": "f18ec88c962b4d65993a412e56d7cc69",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 337.0530605316162,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "492dc3267cc94ded8a9cfb39503de920",
+            "trace_id": "501bfb8642ea496cbb4ee33dfe4295cd",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 333.82320404052734,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "f7ca936c38854f0f9a9befb64ba6a519",
+            "trace_id": "33b43b22e1214f89bc0329f6514f7da4",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 326.2920379638672,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 17,
+        "features": [
+          302.9253959655762,
+          0.0,
+          5.666666666666667,
+          2
+        ],
+        "ml_score": 0.7141817605638919,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "f08b9b336d69456588bf60cebefd3377",
+            "trace_id": "306f2c8edbd24f9f9825c3c3c24f8507",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 307.51657485961914,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "44d1aa3a7b1f4281ba8341b7d62d17f6",
+            "trace_id": "d149825a9deb430988124d1923647ede",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 301.77760124206543,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "254f89f9e1f1479b8884e090371a5eb5",
+            "trace_id": "ffe545e3d2a64576815567947e5ee45b",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 300.417423248291,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 13.3790000109002,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227173.2330837,
+    "window_close_to_decision_ms": 47.95718193054199
+  },
+  {
+    "start": 1791227173.1851265,
+    "end": 1791227176.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          265.59797525405884,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.6345348597369603,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "8d0ed9311f5643dea7e517a7aee6a49e",
+            "trace_id": "afc064084b7a410d84c0333c1706d122",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 266.7877674102783,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "00398aa84daa428d8685e3bc2d22d5f5",
+            "trace_id": "b645f633ebb04a9cbbba4e297dddfa5e",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.38801193237305,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "ae176e422abd4a13ae981c3feb5aacbe",
+            "trace_id": "936b7f39601a49ce9d85080090464d16",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 264.85586166381836,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          331.0464024543762,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.673234337094402,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "f8357979f41c49e5a0680cafb332c51b",
+            "trace_id": "b645f633ebb04a9cbbba4e297dddfa5e",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 337.06021308898926,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "0315dc1255594745bf802f913c62aa12",
+            "trace_id": "7617d5e1a2a9416082bc494f79b8b427",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 329.9851417541504,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "1077b3cf021045fb9fd4ce54c103259f",
+            "trace_id": "b4bda8acd6e748dd9fc1fe0ab80f7dae",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 328.3829689025879,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          298.98157119750977,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.708840153727813,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "f1aaa6d0f4174b058d05b28ab338edb2",
+            "trace_id": "b645f633ebb04a9cbbba4e297dddfa5e",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 305.9415817260742,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "be13ceb8a7644566ab75102ef7e4882a",
+            "trace_id": "936b7f39601a49ce9d85080090464d16",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 297.75333404541016,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "5e2bb6cf30324e07979e120f9cad46d1",
+            "trace_id": "7617d5e1a2a9416082bc494f79b8b427",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 296.2071895599365,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 14.448800007812679,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227176.2315187,
+    "window_close_to_decision_ms": 46.392202377319336
+  },
+  {
+    "start": 1791227176.1851265,
+    "end": 1791227179.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          266.13471508026123,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.6345348597369603,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "0807289dc0034453aed503ca66cd3e94",
+            "trace_id": "01e047291ac2463f8f81d514e3d2bfcd",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 266.19672775268555,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "c39dc862bece484e93b6db35119daa0d",
+            "trace_id": "d0dcad3bd0b549fc9ea8ce2836ce0cd9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 266.12377166748047,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "e4b5b2697b924c549b0b22e88dbd1f71",
+            "trace_id": "da7eacd0369d470e902310ebe4e65d98",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.69676399230957,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          331.20853900909424,
+          0.0,
+          6.0,
+          3
+        ],
+        "ml_score": 0.6830523378330826,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "8d54a9388fac46539be03b2c31dafb53",
+            "trace_id": "da7eacd0369d470e902310ebe4e65d98",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 334.2325687408447,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "efaa26b14b194623a3032502b977b55a",
+            "trace_id": "ef4c0e2dc47b40959c69afe688d484ac",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 330.6748867034912,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "63f3bb011f55412896c5ad57df1d8731",
+            "trace_id": "70db7e852b1f4000956baed488a0b785",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 329.5879364013672,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          298.7820506095886,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.708840153727813,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "62f614d75fb44222a9e9d70b364b2de0",
+            "trace_id": "d0dcad3bd0b549fc9ea8ce2836ce0cd9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 299.8044490814209,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "edcfbd5f48ff401eb14204c475be2ff2",
+            "trace_id": "ef4c0e2dc47b40959c69afe688d484ac",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 298.6016273498535,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "af451e8f4b6747c9b6141bdff78d7661",
+            "trace_id": "70db7e852b1f4000956baed488a0b785",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 297.687292098999,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 14.831400010734797,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227179.2177477,
+    "window_close_to_decision_ms": 32.621145248413086
+  },
+  {
+    "start": 1791227179.1851265,
+    "end": 1791227182.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          264.43426609039307,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.6345348597369603,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "deb17cb12a2a4cf8ab7b5f11b686bc3a",
+            "trace_id": "6de28566497949a2b503f344ec61a65e",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.3336524963379,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "7a01ce84ac504a35832dfe43558447dc",
+            "trace_id": "3eae7b17c2c14d0ebd2716654e8791d9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 264.27555084228516,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "c080063d608f4957a4d6371943754bec",
+            "trace_id": "db21d5a604e44da4b38a368f7b6b3d17",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 263.704776763916,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          330.4696559906006,
+          0.0,
+          6.0,
+          3
+        ],
+        "ml_score": 0.6830523378330826,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "f4f0079f197c47ada06a1d9224c4287a",
+            "trace_id": "2f51e43c8ecd4f5c801c7340767cc424",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 334.9013328552246,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "b7b0ef6a7f5f4f11a2538dbe5ee48f3e",
+            "trace_id": "6de28566497949a2b503f344ec61a65e",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 329.68759536743164,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "483ee0ae0da645dab0aec8b1310c5d9f",
+            "trace_id": "db21d5a604e44da4b38a368f7b6b3d17",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 329.50282096862793,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          299.3629813194275,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.708840153727813,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "95cfa86ac6794b98b5f3fc62c50d7ea6",
+            "trace_id": "414c724032474344b80beab9bffa0127",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 300.71449279785156,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "8b61c5ef62a0441ebf607ecbd980b960",
+            "trace_id": "6de28566497949a2b503f344ec61a65e",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 299.12447929382324,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "d3a4b81266a54d76a6e85e7bea56d17d",
+            "trace_id": "db21d5a604e44da4b38a368f7b6b3d17",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 296.83876037597656,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 14.745799941010773,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227182.2418232,
+    "window_close_to_decision_ms": 56.69665336608887
+  },
+  {
+    "start": 1791227182.1851265,
+    "end": 1791227185.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 17,
+        "features": [
+          266.00170135498047,
+          0.0,
+          5.666666666666667,
+          2
+        ],
+        "ml_score": 0.6590442611681849,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "b96c30a5074b44acba525e9c45138c01",
+            "trace_id": "0748d0a8abef4006ad25dce80120cb13",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 267.7030563354492,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "ae50fdffafc24c49a8605d7bc95ea755",
+            "trace_id": "dae690cf46b2486b9b3849fa4b628d2f",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.5763626098633,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "a154be4106614ab09d68b30a4c21a886",
+            "trace_id": "36eb6930690446729da8570beeec56a5",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.3515338897705,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 17,
+        "features": [
+          334.763765335083,
+          0.0,
+          5.666666666666667,
+          3
+        ],
+        "ml_score": 0.6841853132994338,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "e0d701ccadc044068a2e16f0e5784cd0",
+            "trace_id": "9c2cb59e5ca14146937f377b755a6078",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 341.7999744415283,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "757c3123f29d4c4e949e6107fe88993b",
+            "trace_id": "0748d0a8abef4006ad25dce80120cb13",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 333.0047130584717,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "c624ec70563144febc18b57472a11729",
+            "trace_id": "dae690cf46b2486b9b3849fa4b628d2f",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 331.7441940307617,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 17,
+        "features": [
+          301.34711265563965,
+          0.0,
+          5.666666666666667,
+          2
+        ],
+        "ml_score": 0.7141817605638919,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "49a92b0bcc16465095ec383c256c6fb2",
+            "trace_id": "9c2cb59e5ca14146937f377b755a6078",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 303.7402629852295,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "527b9ea5275740c9b8f4b4017facaf84",
+            "trace_id": "0748d0a8abef4006ad25dce80120cb13",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 300.7488250732422,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "e0638a54f06b48ad8347d335fbfc5117",
+            "trace_id": "dae690cf46b2486b9b3849fa4b628d2f",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 300.08387565612793,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 12.741300044581294,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227185.2229645,
+    "window_close_to_decision_ms": 37.837982177734375
+  },
+  {
+    "start": 1791227185.1851265,
+    "end": 1791227188.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          266.7717456817627,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.6345348597369603,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "4602c585979b4e6996227c47d36ab01b",
+            "trace_id": "8fd98a5d64754fd8b4d8941f500e0d20",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 267.0862674713135,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "fd27be964cf14793a76262e0ffdc84cc",
+            "trace_id": "1f1dbf395a6a448981f6e0bc1e3716a9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 266.71624183654785,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "cac914724e2a4798b0f2e6c3d255d862",
+            "trace_id": "0ffab9bc9155450a9843da581ffcaa5f",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 266.2665843963623,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          331.77794218063354,
+          0.0,
+          6.0,
+          3
+        ],
+        "ml_score": 0.6830523378330826,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "993dd04c772246038285c5d486593c80",
+            "trace_id": "49e0941c613444de96f695d5c5b61d5f",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 332.37314224243164,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "ffe21d8471f143d587816a7bf1a7bbff",
+            "trace_id": "8fd98a5d64754fd8b4d8941f500e0d20",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 331.67290687561035,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "7d6e44e4921f4cc4820da6325d6daa8f",
+            "trace_id": "ca936af0fbf64ea8b48c6c15e979cef9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 329.23221588134766,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          297.7802515029907,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.708840153727813,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "e7fb24ee87c34a5c810ba864df07366f",
+            "trace_id": "8fd98a5d64754fd8b4d8941f500e0d20",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 299.2243766784668,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "3e3c95fe4d7440bf87a3c1509efdddf6",
+            "trace_id": "ca936af0fbf64ea8b48c6c15e979cef9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 297.52540588378906,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "287c4c22957849d39ac7589a480040c3",
+            "trace_id": "49e0941c613444de96f695d5c5b61d5f",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 295.73583602905273,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 12.661000015214086,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227188.2205913,
+    "window_close_to_decision_ms": 35.46476364135742
+  },
+  {
+    "start": 1791227188.1851265,
+    "end": 1791227191.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          265.17672538757324,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.6345348597369603,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "6348dda8c57e4332b61e7f591c415003",
+            "trace_id": "6121065f3e174b17a6764b17c33214a6",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.9006118774414,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "b4a7ddf61bb24abcbce7cdb9f2649f9e",
+            "trace_id": "955363a349ac4ceba70221c676fd1d8a",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.0489807128906,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "7a18ae8f06ff47128d5109be5be0d846",
+            "trace_id": "232a3cffa9584537b958c428a017488d",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 264.9698257446289,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          335.9176754951477,
+          0.0,
+          6.0,
+          3
+        ],
+        "ml_score": 0.6830523378330826,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "1123564e942f4f4983e6e4a71e9e79a3",
+            "trace_id": "232a3cffa9584537b958c428a017488d",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 336.84563636779785,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "0710bc762d02407ab808b47cd6402184",
+            "trace_id": "18d306c961684d84b44285c810acd390",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 335.7539176940918,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "5ff29d6ed2914756b1d70992751920bb",
+            "trace_id": "2698156a1feb4757810f3f35cc77e3c7",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 331.65764808654785,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          301.37195587158203,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.708840153727813,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "c639da0a033f4b31b0b773e5e6f31e84",
+            "trace_id": "18d306c961684d84b44285c810acd390",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 302.5522232055664,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "304b575be42b4471a94d96f2a8b21745",
+            "trace_id": "dd083c0a667b46b6a40e3071cc60edd1",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 301.1636734008789,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "d900b4de92a040cf84a91cd9aa038f2f",
+            "trace_id": "2698156a1feb4757810f3f35cc77e3c7",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 299.910306930542,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 12.618700042366982,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227191.2383585,
+    "window_close_to_decision_ms": 53.23195457458496
+  },
+  {
+    "start": 1791227191.1851265,
+    "end": 1791227194.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 17,
+        "features": [
+          263.5651111602783,
+          0.0,
+          5.666666666666667,
+          2
+        ],
+        "ml_score": 0.6590442611681849,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "4f9bdcf72fcf493f9ce3ba151d49d87e",
+            "trace_id": "9e5748bef2c0414bb3489980d31c9fdd",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 264.21093940734863,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "d5a769eaa00c4210a1b03df98e0b3b9b",
+            "trace_id": "037749278d4a43c1b0ff2912ef854f67",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 263.40365409851074,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "b9958cc856114055b06f62ed41980d0b",
+            "trace_id": "6510a81a52694ed68bf55b1643ccb265",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 262.99357414245605,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 17,
+        "features": [
+          331.1336040496826,
+          0.0,
+          5.666666666666667,
+          2
+        ],
+        "ml_score": 0.6747236690843676,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "d99c50f4ff564f40b98274cb6a68a6ff",
+            "trace_id": "74a9a5425ddc4cf59ded23ab91e5158c",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 331.4216136932373,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "fa75515d6a7a45618bfdba3d7b9dcb89",
+            "trace_id": "037749278d4a43c1b0ff2912ef854f67",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 331.06160163879395,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "95c1fe64a3844eb58fb78d51bad2974f",
+            "trace_id": "51b9db6e5b4f4a38a384f6c265f2e2e9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 330.14535903930664,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 17,
+        "features": [
+          296.5949535369873,
+          0.0,
+          5.666666666666667,
+          2
+        ],
+        "ml_score": 0.7141817605638919,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "27a8a20e62ac43a0935dc28d5a089116",
+            "trace_id": "51b9db6e5b4f4a38a384f6c265f2e2e9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 296.75841331481934,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "e80e0235b3b240a2b3633845ca3d9846",
+            "trace_id": "9e5748bef2c0414bb3489980d31c9fdd",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 296.5540885925293,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "e3c7b6800cff4f6da07722e68ad0bd0b",
+            "trace_id": "037749278d4a43c1b0ff2912ef854f67",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 296.0505485534668,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 12.591300066560507,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227194.2171783,
+    "window_close_to_decision_ms": 32.051801681518555
+  },
+  {
+    "start": 1791227194.1851265,
+    "end": 1791227197.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          266.12350940704346,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.6345348597369603,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "7c3087d1014c477b8f384cb7ba0f91e9",
+            "trace_id": "8138021ae51247ce9b04928864a006fb",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 267.2393321990967,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "3d512399427e4f07b5225aec3729c298",
+            "trace_id": "11e610f7e2734c0a841a201533fddd7d",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.9265995025635,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "e574ed9d97774498bf73acfe737d3d57",
+            "trace_id": "dbdf307fd7b14b3c9dff1a6de4b776f9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.90538024902344,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          332.7160716056824,
+          0.0,
+          6.0,
+          3
+        ],
+        "ml_score": 0.6830523378330826,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "26de86061fde43f0a3e7243eb6b837d3",
+            "trace_id": "80a25fd2aec845f6af1b7a2b6fcd9352",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 336.8196487426758,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "0691cdb2fb904505808a06124e3e514a",
+            "trace_id": "8138021ae51247ce9b04928864a006fb",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 331.99191093444824,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "0ec886912e9d4bfe80d4dfa8a829ae7f",
+            "trace_id": "921d41b2cc5d42c6bcde68369ad0e9e0",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 329.09560203552246,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          302.95573472976685,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.708840153727813,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "edb7f8e1c2244a9894c74bea763df58c",
+            "trace_id": "90e13d5bbb874ae498309f83ea064fa3",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 303.65753173828125,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "187911e66d0b44ca84d6839100f5c695",
+            "trace_id": "80a25fd2aec845f6af1b7a2b6fcd9352",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 302.83188819885254,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "b274d0289ebe4af4b747d5b62d97d3b6",
+            "trace_id": "8138021ae51247ce9b04928864a006fb",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 299.58057403564453,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 13.982499949634075,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227197.2361798,
+    "window_close_to_decision_ms": 51.05328559875488
+  },
+  {
+    "start": 1791227197.1851265,
+    "end": 1791227200.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          265.03233909606934,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.6345348597369603,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "8dfb6046153b4e5d8d780fdc0509715a",
+            "trace_id": "2a0724f6d5e043a8969db0755d1c13e9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 266.7078971862793,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "ff573ca3078b4028bff1d59bdeb9f40a",
+            "trace_id": "b86c9e747f5e47f8be5cb60e841886f1",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 264.7366523742676,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "890bbac58c8c4113b142cddd18673020",
+            "trace_id": "bc035f6de4b84102944262d7ad775524",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 262.6943588256836,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          333.0428957939148,
+          0.0,
+          6.0,
+          3
+        ],
+        "ml_score": 0.6830523378330826,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "5030d4f9a23743e2aa132e1b0d751850",
+            "trace_id": "bc035f6de4b84102944262d7ad775524",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 333.4038257598877,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "ac113d233370434e92a06511539dddd2",
+            "trace_id": "2a0724f6d5e043a8969db0755d1c13e9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 332.9792022705078,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "c29d20ee5a47495f872e7319c3f98d15",
+            "trace_id": "00940abf528f4995b060a9bc07d4a415",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 330.87706565856934,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          299.96782541275024,
+          0.0,
+          6.0,
+          2
+        ],
+        "ml_score": 0.708840153727813,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "4bb04179e92f445cac445d7a6c1a1905",
+            "trace_id": "2a0724f6d5e043a8969db0755d1c13e9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 301.7096519470215,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "ec085ed12cc14f95846aaf4c600776a8",
+            "trace_id": "bc035f6de4b84102944262d7ad775524",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 299.66044425964355,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "03e4db7bf44c4c25a672aa2a86419969",
+            "trace_id": "b86c9e747f5e47f8be5cb60e841886f1",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 299.0574836730957,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 12.67970004118979,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227200.2197006,
+    "window_close_to_decision_ms": 34.574031829833984
+  },
+  {
+    "start": 1791227200.1851265,
+    "end": 1791227203.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 17,
+        "features": [
+          265.9905433654785,
+          0.0,
+          5.666666666666667,
+          2
+        ],
+        "ml_score": 0.6590442611681849,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "e0c94da21a5a49c992d9dbb1885d85c2",
+            "trace_id": "1d57aba6efa24307a6a87e9d1d416114",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 266.9377326965332,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "908ebb857af34cea98d7dbfd80925b9a",
+            "trace_id": "13c72364340a4fae8ee7c5d10b5cbb7b",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.75374603271484,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "7c9c01bc7bfa4248b91c21c22f3c969d",
+            "trace_id": "76d7c8e3dce34092b07e7cf6e8c817ac",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 265.0759220123291,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 17,
+        "features": [
+          334.47065353393555,
+          0.0,
+          5.666666666666667,
+          3
+        ],
+        "ml_score": 0.6841853132994338,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "fad9811054e94c8b975edc5e8de1ee8d",
+            "trace_id": "76d7c8e3dce34092b07e7cf6e8c817ac",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 335.3104591369629,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "38ed317ac1294a66993504e77742054d",
+            "trace_id": "6c45d7dbe94248739e6a962aa830f7ce",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 334.2607021331787,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "e355f85b0e53404aafe273a8df53fd7b",
+            "trace_id": "13c72364340a4fae8ee7c5d10b5cbb7b",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 332.3049545288086,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 17,
+        "features": [
+          300.13108253479004,
+          0.0,
+          5.666666666666667,
+          2
+        ],
+        "ml_score": 0.7141817605638919,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "19e3d39dce184c1ead00ca1541087bc0",
+            "trace_id": "76d7c8e3dce34092b07e7cf6e8c817ac",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 300.87971687316895,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "71e063942d8441618f94008375ea9c48",
+            "trace_id": "6c45d7dbe94248739e6a962aa830f7ce",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 299.9439239501953,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "0db865901a804b759d6423a267bb8784",
+            "trace_id": "13c72364340a4fae8ee7c5d10b5cbb7b",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 298.21157455444336,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 12.636899948120117,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227203.2360873,
+    "window_close_to_decision_ms": 50.96077919006348
+  },
+  {
+    "start": 1791227203.1851265,
+    "end": 1791227206.1851265,
+    "ml_alert": true,
+    "operational_alert": true,
+    "candidates": [
+      {
+        "service": "inventory",
+        "count": 19,
+        "features": [
+          261.6833209991455,
+          0.0,
+          6.333333333333333,
+          2
+        ],
+        "ml_score": 0.6364261131863567,
+        "ml_alert": false,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "2934ee50d1ef46f1a2f06e6d89ee87df",
+            "trace_id": "016b99e9ff8c4288841789a1a72a7ee2",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 262.0811462402344,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "2704db6ff474456393a6415340f7da69",
+            "trace_id": "54a034b371db43269e59e9859e4273fc",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 261.6391181945801,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "a8ce0ac3684e4793bfd0fe4f0ab74974",
+            "trace_id": "815c9267a8134331b554e2700144eac9",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.779733657836914,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 3,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "frontend",
+        "count": 19,
+        "features": [
+          317.1586751937866,
+          0.0,
+          6.333333333333333,
+          2
+        ],
+        "ml_score": 0.673234337094402,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "c7b4007518074a87840a2117ec597bcd",
+            "trace_id": "016b99e9ff8c4288841789a1a72a7ee2",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 327.1985054016113,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "74dcee3d7f2f4b72ac635ae69808293a",
+            "trace_id": "54a034b371db43269e59e9859e4273fc",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 316.0431385040283,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "574dc7dc43df45b5a8195da8d97b6fa1",
+            "trace_id": "91c1c48ee8c444ab97d5a3e6524e1f67",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 90.55423736572266,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "checkout"
+        ]
+      },
+      {
+        "service": "checkout",
+        "count": 19,
+        "features": [
+          289.8498773574829,
+          0.0,
+          6.333333333333333,
+          2
+        ],
+        "ml_score": 0.708840153727813,
+        "ml_alert": true,
+        "operational_alert": true,
+        "reasons": [
+          "request latency exceeds healthy validation envelope"
+        ],
+        "evidence": [
+          {
+            "span_id": "7c81af2b4b1444999f0fd6517177a7c0",
+            "trace_id": "016b99e9ff8c4288841789a1a72a7ee2",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 294.09098625183105,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "668a4163f2c44de185acdb5463ed312a",
+            "trace_id": "54a034b371db43269e59e9859e4273fc",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 289.3786430358887,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "eced7ecf1b0448be9eeb152d29929b93",
+            "trace_id": "91c1c48ee8c444ab97d5a3e6524e1f67",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 56.978464126586914,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 1,
+        "dependency_edges": [],
+        "affected_dependencies": [
+          "inventory"
+        ]
+      }
+    ],
+    "inference_ms": 12.575399945490062,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227206.2263644,
+    "window_close_to_decision_ms": 41.237831115722656
+  },
+  {
+    "start": 1791227206.1851265,
+    "end": 1791227209.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          84.87132787704468,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.5447627582397772,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "d48fca0ebd5c493ab4ca5b864a010947",
+            "trace_id": "41a99014a8904deb9977fba80793afbc",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 87.53848075866699,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "eb689360888545d3b122570b9b9c6ec4",
+            "trace_id": "aa0abc7ffe304d87808398fbb4565d95",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 84.40065383911133,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "9ffcd0ed7a8a4230b156928e316b4499",
+            "trace_id": "7f2934f0c7c64d0ebff610bf056da6d1",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 81.8784236907959,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          49.01117086410522,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4149827615403537,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "8799c03604df4a769ed5ba18388b2517",
+            "trace_id": "aa0abc7ffe304d87808398fbb4565d95",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 51.19681358337402,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "995953b4c74946dfbdeec33844be5aff",
+            "trace_id": "41a99014a8904deb9977fba80793afbc",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 48.62546920776367,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "4a9ca5b8222d42bbbb7d88267eb87557",
+            "trace_id": "7f2934f0c7c64d0ebff610bf056da6d1",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 46.945810317993164,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          16.38343334197998,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4837339960697627,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "ef76f507c27e4c2d8408427671424fd2",
+            "trace_id": "321c3a5404824a7ca4b34e45228670d1",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.75105094909668,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "75d375af31874c48b5aae10589f2a4a1",
+            "trace_id": "b6366eef35ea4ee88ce845ee597646fa",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.318559646606445,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "43692974c739492eacbb3c15526b77ed",
+            "trace_id": "aa0abc7ffe304d87808398fbb4565d95",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.97452163696289,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 13.030200032517314,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227209.241956,
+    "window_close_to_decision_ms": 56.82945251464844
+  },
+  {
+    "start": 1791227209.1851265,
+    "end": 1791227212.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          85.92008352279663,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.5640421862468127,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "1dc874b2b4454aac8d6815935c380663",
+            "trace_id": "d2ab5c26656845ec97d69e2b36ce3671",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 87.51964569091797,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "76ea54dab0134a51a056a963076b0515",
+            "trace_id": "9e8ec1d1aedf45babe5bae956e25e669",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 85.63780784606934,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "ff1fd292329c49fa847725aba5967935",
+            "trace_id": "47b7ca1af679450ca6955229164d7931",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 81.23540878295898,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          49.96540546417236,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.44605008879196495,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "49f6996b131d4c408b3d0a05094d4803",
+            "trace_id": "d2ab5c26656845ec97d69e2b36ce3671",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 50.235748291015625,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "152d10b1b8644db5a330057300e6cd7a",
+            "trace_id": "49b27693a13c46fabb73e247bfd83e0c",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 49.91769790649414,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "cdc59516cff440638645ab6d25d75e27",
+            "trace_id": "47b7ca1af679450ca6955229164d7931",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 49.721717834472656,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          15.329003334045407,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4558880774117342,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "6e43014fb00c4ec986f02414831d9a2a",
+            "trace_id": "d2ab5c26656845ec97d69e2b36ce3671",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.932010650634766,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "1ec580f5fa8c42e4bd907b2100dedd74",
+            "trace_id": "9b32b2e3e1594a289619a9aed62e9640",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.046119689941406,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "8906838b1af54269b33812e8c84da6da",
+            "trace_id": "9e8ec1d1aedf45babe5bae956e25e669",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 14.507770538330078,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 12.572800042107701,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227212.2250087,
+    "window_close_to_decision_ms": 39.88218307495117
+  },
+  {
+    "start": 1791227212.1851265,
+    "end": 1791227215.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 17,
+        "features": [
+          87.25285530090332,
+          0.0,
+          5.666666666666667,
+          1
+        ],
+        "ml_score": 0.6022659392755536,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "35306030386d48e59208d1dd4bfca7f9",
+            "trace_id": "5e2efe5bf4d7460594ba520b8977398f",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 93.85228157043457,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "142d60d8d5e843f298d721caf9b970fb",
+            "trace_id": "c4a6aec9136a48ffa341edceb9a0dae8",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 85.60299873352051,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "5f936f442d424b64b3ade73b1b45ac0d",
+            "trace_id": "4e6b81a33aad449891260b9ef41d1ebd",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 77.99053192138672,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 17,
+        "features": [
+          53.11894416809082,
+          0.0,
+          5.666666666666667,
+          1
+        ],
+        "ml_score": 0.6098742498420267,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "108a467b696a42fa96a8a6fd5f407dd1",
+            "trace_id": "5e2efe5bf4d7460594ba520b8977398f",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 55.442094802856445,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "c6bb8e2a2ced4471a628709d51f8ab04",
+            "trace_id": "c4a6aec9136a48ffa341edceb9a0dae8",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 52.538156509399414,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "25e9d39dd5544ec5bc62717c5c9880aa",
+            "trace_id": "53b49e289670463582fedd1286dc2bac",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 48.06017875671387,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 17,
+        "features": [
+          16.294097900390625,
+          0.0,
+          5.666666666666667,
+          1
+        ],
+        "ml_score": 0.515027884515748,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "80bc5d97a38b4434be13d0f139bdbc56",
+            "trace_id": "714b7a937355469e9837e6c4eec7f138",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.714096069335938,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "23ec6e3f71264f95beeeec571af22d74",
+            "trace_id": "5e2efe5bf4d7460594ba520b8977398f",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.189098358154297,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "fd8fea82efb94dfc8e5a6a323ff37697",
+            "trace_id": "53b49e289670463582fedd1286dc2bac",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.805959701538086,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 15.474600018933415,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227215.2514293,
+    "window_close_to_decision_ms": 66.30277633666992
+  },
+  {
+    "start": 1791227215.1851265,
+    "end": 1791227218.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          84.06157493591309,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.5216891341495667,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "a3dc66d26cb548328989bf6e3b6054f1",
+            "trace_id": "9f1034f9276b4a1b928c5fab31cb33f0",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 85.92844009399414,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "49d3adbe416c4606a670f345c31819d6",
+            "trace_id": "c31eaf695d2f4542b7bf687b3e0cdf6c",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 83.73212814331055,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "fa0b43c46b53456b8f9f1643ea929ad6",
+            "trace_id": "e59179e674f1491584c07b31b8fb1544",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 81.79068565368652,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          53.015351295471184,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.5820698022021983,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "5e0e0836c089437c9bbf6ee70d9199d6",
+            "trace_id": "db607cb78a0f4911a8c22ce9f5c54376",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 55.38439750671387,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "f14628464f4145d5bbc25269dd55a2d1",
+            "trace_id": "9f1034f9276b4a1b928c5fab31cb33f0",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 52.5972843170166,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "e108ea220103401f83d64441c34bbe8c",
+            "trace_id": "c31eaf695d2f4542b7bf687b3e0cdf6c",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 51.2847900390625,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          16.23256206512451,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.45961788473581927,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "edc1d4c14a754a068d2ee39685007ce9",
+            "trace_id": "a6bd119933e54c51aa618c1118e145de",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.4031982421875,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "603fd7d6ef744dc19386da6127653ce1",
+            "trace_id": "6fd4b813522846d085ab8011e511be43",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.202449798583984,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "d3a9aef204ad464ea43485653098e54d",
+            "trace_id": "9f1034f9276b4a1b928c5fab31cb33f0",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.170501708984375,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 13.544399989768863,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227218.242005,
+    "window_close_to_decision_ms": 56.87856674194336
+  },
+  {
+    "start": 1791227218.1851265,
+    "end": 1791227221.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          79.44010496139525,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.42845154402355934,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "475ea0100a8a41c28447c79ac73e91c7",
+            "trace_id": "27bf693820c741559cb9430db0f9ad86",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 85.67643165588379,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "2667a488be0a41f59d2b8bef79686c46",
+            "trace_id": "cb0618ebdc2f49e0ab6f2754ea194ca6",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 78.3395767211914,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "7c1b3776627e46c0b741ef58d1cc5681",
+            "trace_id": "50f2b5b2ec994ee8b5b5a5d8672c19aa",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 77.83937454223633,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          45.398688316345215,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.5416432366820604,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "32f3e595c90e41f19d401036177854e2",
+            "trace_id": "cb0618ebdc2f49e0ab6f2754ea194ca6",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 45.84980010986328,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "8fa7b9c16dc94f5fa7a85e7161aebc50",
+            "trace_id": "50f2b5b2ec994ee8b5b5a5d8672c19aa",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 45.3190803527832,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "ade1df05749b4a4eb07a9eb1a7d27e12",
+            "trace_id": "27bf693820c741559cb9430db0f9ad86",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 44.971466064453125,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          13.22628259658813,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.6208178178879347,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "b12411ef484d487ca9ab84e9c8814be6",
+            "trace_id": "0507f4ebbc4d418382e69243d2a1afcc",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.510725021362305,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "3a31f9eaa44b4a1fad4ab4c9dd5bcc6a",
+            "trace_id": "50f2b5b2ec994ee8b5b5a5d8672c19aa",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 12.646675109863281,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "f8a00cb72378491e82361204fb48c929",
+            "trace_id": "de7b4aa6bece4c7b96e8c30dc2a04c89",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 11.66081428527832,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 12.545200064778328,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227221.2296736,
+    "window_close_to_decision_ms": 44.547080993652344
+  },
+  {
+    "start": 1791227221.1851265,
+    "end": 1791227224.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 17,
+        "features": [
+          84.98587608337402,
+          0.0,
+          5.666666666666667,
+          1
+        ],
+        "ml_score": 0.563795795969654,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "e8a46514e78b4afc860172b1b2799d3e",
+            "trace_id": "c4f1e6c6ced74c7d822ab98bc6f0ca98",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 85.71124076843262,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "64b7749570384614b8931e59b0fbadc7",
+            "trace_id": "e1d8b627ea674fec9c3a18ffa809dfa1",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 84.80453491210938,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "72cfa9009111461390a0db4c44c33142",
+            "trace_id": "a4fd09e4720c47f7a5dacabe57180f74",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 82.32331275939941,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 17,
+        "features": [
+          50.254011154174805,
+          0.0,
+          5.666666666666667,
+          1
+        ],
+        "ml_score": 0.47731479587920905,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "647ec817d447496e8a82ae623929feef",
+            "trace_id": "c4f1e6c6ced74c7d822ab98bc6f0ca98",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 51.297903060913086,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "a0689a7296f540ffa5f3d6fab5b2e5ba",
+            "trace_id": "a4fd09e4720c47f7a5dacabe57180f74",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 49.993038177490234,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "d7c6d82049f44fcfa13e23f3d781ebd3",
+            "trace_id": "e1d8b627ea674fec9c3a18ffa809dfa1",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 46.8292236328125,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 17,
+        "features": [
+          15.84463119506836,
+          0.0,
+          5.666666666666667,
+          1
+        ],
+        "ml_score": 0.47390661305869597,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "9d8601e33f3d428b9bc871ff3e18dd72",
+            "trace_id": "a4fd09e4720c47f7a5dacabe57180f74",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 16.757488250732422,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "7e32b50a96d94dddbeca11a66616dcda",
+            "trace_id": "c4f1e6c6ced74c7d822ab98bc6f0ca98",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.616416931152344,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "6edcdf6a54524d9ebfd4600c7bd027af",
+            "trace_id": "e1d8b627ea674fec9c3a18ffa809dfa1",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.02537727355957,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 13.052400085143745,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227224.2575831,
+    "window_close_to_decision_ms": 72.45659828186035
+  },
+  {
+    "start": 1791227224.1851265,
+    "end": 1791227227.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          84.64789390563965,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.537602211132769,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "42f3253a8b2f4704b70aeef7a2237336",
+            "trace_id": "32458681efe74e029ccbb826023145ec",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 87.71610260009766,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "402526fd3aa0487a85a9d21c7c711444",
+            "trace_id": "301045fe06e444b3ba46cfaa02af3648",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 84.1064453125,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "02b50c3371884dcd99d0342ed285c54a",
+            "trace_id": "21397a11c1a446e9bb3e49cd507be7d7",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 80.02471923828125,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          50.81603527069092,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4913681374084008,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "5505dce1bebb4b29995f31f564f1b2a1",
+            "trace_id": "301045fe06e444b3ba46cfaa02af3648",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 51.67245864868164,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "5195fb26791a45458ecd508a7d684d15",
+            "trace_id": "0e93a7b32d3c427eaa795e27534d53b4",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 50.66490173339844,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "408f598c9cbc42839983805f7acc697f",
+            "trace_id": "32458681efe74e029ccbb826023145ec",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 47.87278175354004,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          15.80665111541748,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4530403453193826,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "8257bdbdc2fd4f96b9f7e56b39cd8790",
+            "trace_id": "99c896290ce74106a10e8ee2b0130d7a",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.892982482910156,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "d4032e2904c54dc3a6e0b6fa7294c771",
+            "trace_id": "301045fe06e444b3ba46cfaa02af3648",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.79141616821289,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "5e53f6bbf4ca42258406b20a926f91de",
+            "trace_id": "32458681efe74e029ccbb826023145ec",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 15.093803405761719,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 14.095599995926023,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227227.243672,
+    "window_close_to_decision_ms": 58.54535102844238
+  },
+  {
+    "start": 1791227227.1851265,
+    "end": 1791227230.1851265,
+    "ml_alert": false,
+    "operational_alert": false,
+    "candidates": [
+      {
+        "service": "frontend",
+        "count": 18,
+        "features": [
+          81.4173698425293,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4402114142818641,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "cf23907426c84c46b0b825c936d0eb08",
+            "trace_id": "85ab967ec06c4ea8a00069046dd63bb4",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 84.91277694702148,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "e3524416f9b24ef0a7b2516ff288afe9",
+            "trace_id": "e97b3b78232b48bbb4b801fb8a5ceb33",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 80.80053329467773,
+            "dependency": "checkout",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "10cd02a640d94901b983f2aa25a2e12b",
+            "trace_id": "c9a3a58d6ba14af0b9abd4edfa3a0650",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 80.67464828491211,
+            "dependency": "checkout",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "checkout",
+        "count": 18,
+        "features": [
+          49.11881685256958,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4183993511048826,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "780f1873f76a44c289f74a97b9fb7e17",
+            "trace_id": "e97b3b78232b48bbb4b801fb8a5ceb33",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 49.851417541503906,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "eaa0010e799a40b2a86a7b520311b5a1",
+            "trace_id": "85ab967ec06c4ea8a00069046dd63bb4",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 48.98953437805176,
+            "dependency": "inventory",
+            "dependency_status": 200
+          },
+          {
+            "span_id": "eae3d74462fa40848c3c6817830e5059",
+            "trace_id": "c9a3a58d6ba14af0b9abd4edfa3a0650",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 48.614501953125,
+            "dependency": "inventory",
+            "dependency_status": 200
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      },
+      {
+        "service": "inventory",
+        "count": 18,
+        "features": [
+          14.627325534820557,
+          0.0,
+          6.0,
+          1
+        ],
+        "ml_score": 0.4722580892015054,
+        "ml_alert": false,
+        "operational_alert": false,
+        "reasons": [],
+        "evidence": [
+          {
+            "span_id": "f65561f9ff8a40849cdf437bd2954d18",
+            "trace_id": "85ab967ec06c4ea8a00069046dd63bb4",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 14.948129653930664,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "4301c42f489c429f8cbcfd79c56e8927",
+            "trace_id": "373e6d81c3334789b5b41602da3f6c13",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 14.57071304321289,
+            "dependency": null,
+            "dependency_status": null
+          },
+          {
+            "span_id": "d89eea3249584bd382776e46d1740d63",
+            "trace_id": "e97b3b78232b48bbb4b801fb8a5ceb33",
+            "message": "request completed",
+            "status": 200,
+            "duration_ms": 14.165401458740234,
+            "dependency": null,
+            "dependency_status": null
+          }
+        ],
+        "hypothesis_priority": 0,
+        "dependency_edges": [],
+        "affected_dependencies": []
+      }
+    ],
+    "inference_ms": 12.58640002924949,
+    "interpretation": "Service hypotheses with measured HTTP trace evidence; not confirmed causal probabilities",
+    "decision_at": 1791227230.2235854,
+    "window_close_to_decision_ms": 38.458824157714844
+  }
+]

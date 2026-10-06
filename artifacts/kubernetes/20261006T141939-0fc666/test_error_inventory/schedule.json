@@ -1,0 +1,21 @@
+{
+  "kind": "error",
+  "target": "inventory",
+  "phase": "test_error_inventory",
+  "onset": 1791290270.46518,
+  "recovery": 1791290294.734234,
+  "dropped": 0,
+  "commands": [
+    {
+      "action": "error",
+      "target": "inventory",
+      "command_completed": 1791290270.46518
+    },
+    {
+      "action": "recover",
+      "target": "inventory",
+      "command_completed": 1791290294.734234
+    }
+  ],
+  "label_semantics": "Control command completion proxy; actual workload onset requires trace review"
+}
