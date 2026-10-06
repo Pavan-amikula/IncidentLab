@@ -1,6 +1,5 @@
 # IncidentLab — Cloud Incident Detection and Evidence-Supported Investigation
 
-## Ready-to-use resume entry
 
 **IncidentLab | End-to-End ML, Cloud Observability & Kubernetes**
 
@@ -12,7 +11,6 @@
 - Deployed a **three-service HTTP testbed on Docker/kind Kubernetes** and evaluated delay, HTTP-error and unavailability faults; operational checks flagged **9/9 controlled trials**, compared with **4/9 for ML alone**.
 - Verified **300 held-out observation windows** through arrival-bounded feature/score replay with **zero mismatches**; produced confusion matrices, ROC/PR curves, training curves and reproducible experiment reports.
 
-Use three or four bullets if your resume has limited space. Keep the detector distinction and development-test qualification when shortening.
 
 ## Short project description
 
@@ -44,6 +42,3 @@ Machine Learning Engineering; End-to-End ML Pipeline; Data Engineering; Telemetr
 
 Do not add AWS/Azure/GCP deployment, production-scale reliability, reliable LLM diagnosis, automated remediation or ML-only 100% fault recall: those are not demonstrated.
 
-## Interview explanation (about 30 seconds)
-
-“I built IncidentLab to connect ML research with real service behavior. I processed about 50 million logs and 111 million spans, trained a temporal GRU and compared it with conventional models. Then I served frozen models on CPU and deployed three HTTP services in a local Kubernetes cluster. I injected delays, errors and outages and used traces to investigate the impact. Operational checks caught all nine cluster fault trials, while ML alone caught four. I also documented false alarms, missing telemetry and weak external transfer, so the results stay reproducible and honest.”
