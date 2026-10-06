@@ -118,7 +118,6 @@ Confusion matrices, per-system ROC/PR curves, original training curves and measu
 | Paper/report | [Readable IEEE-style PDF](reports/IncidentLab-IEEE-readable.pdf) · [Editable IEEEtran source](reports/IncidentLab-IEEE.tex) |
 | Dataset/source attribution | [Third-party notices](THIRD_PARTY_NOTICES.md) |
 
-The report's PDF is a reviewed two-column fallback because the built-in LaTeX compiler failed on this host. IEEEtran source is editable; publication and venue-compliant compilation are not claimed.
 
 ## 🗂️ Repository structure
 
